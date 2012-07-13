@@ -1660,37 +1660,43 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H3" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H4" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
+<part name="LTC-OUT1" library="SparkFun" deviceset="M02" device="5MM"/>
+<part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="-38.1" y="119.38" size="1.778" layer="91">Solar IN</text>
-<text x="-40.64" y="106.68" size="1.778" layer="91">Battery IN</text>
-<text x="-45.72" y="73.66" size="1.778" layer="91">19v DC/DC IN</text>
-<text x="-40.64" y="83.82" size="1.778" layer="91">5v DC/DC IN</text>
-<text x="106.68" y="48.26" size="1.778" layer="91" rot="R90">TO 19v DC/DC</text>
-<text x="20.32" y="33.02" size="1.778" layer="91" rot="R90">TO RELAY</text>
-<text x="93.98" y="137.16" size="1.778" layer="91" rot="R90">TO POWER SWITCH</text>
-<text x="109.22" y="137.16" size="1.778" layer="91" rot="R90">FROM POWER SWITCH</text>
-<text x="50.8" y="137.16" size="1.778" layer="91" rot="R90">TO SOLAR CONVERTOR</text>
-<text x="71.12" y="137.16" size="1.778" layer="91" rot="R90">FROM SOLAR CONVERTOR</text>
-<text x="35.56" y="33.02" size="1.778" layer="91" rot="R90">FROM RELAY</text>
-<text x="68.58" y="43.18" size="1.778" layer="91">5v OUT</text>
-<text x="45.72" y="30.48" size="1.778" layer="91">19v OUT</text>
-<text x="-25.4" y="35.56" size="1.778" layer="91" rot="R90">TO RELAY</text>
-<text x="-10.16" y="35.56" size="1.778" layer="91" rot="R90">FROM RELAY</text>
-<text x="114.3" y="99.06" size="1.778" layer="91">LTC out</text>
-<text x="0" y="30.48" size="1.778" layer="91">19v OUT</text>
+<text x="-38.1" y="119.38" size="1.778" layer="97">Solar IN</text>
+<text x="-40.64" y="106.68" size="1.778" layer="97">Battery IN</text>
+<text x="-45.72" y="73.66" size="1.778" layer="97">19v DC/DC IN</text>
+<text x="-40.64" y="83.82" size="1.778" layer="97">5v DC/DC IN</text>
+<text x="106.68" y="48.26" size="1.778" layer="97" rot="R90">TO 19v DC/DC</text>
+<text x="20.32" y="33.02" size="1.778" layer="97" rot="R90">TO RELAY</text>
+<text x="93.98" y="137.16" size="1.778" layer="97" rot="R90">TO POWER SWITCH</text>
+<text x="109.22" y="137.16" size="1.778" layer="97" rot="R90">FROM POWER SWITCH</text>
+<text x="50.8" y="137.16" size="1.778" layer="97" rot="R90">TO SOLAR CONVERTOR</text>
+<text x="71.12" y="137.16" size="1.778" layer="97" rot="R90">FROM SOLAR CONVERTOR</text>
+<text x="35.56" y="33.02" size="1.778" layer="97" rot="R90">FROM RELAY</text>
+<text x="68.58" y="43.18" size="1.778" layer="97">5v OUT</text>
+<text x="45.72" y="30.48" size="1.778" layer="97">19v OUT</text>
+<text x="-25.4" y="35.56" size="1.778" layer="97" rot="R90">TO RELAY</text>
+<text x="-10.16" y="35.56" size="1.778" layer="97" rot="R90">FROM RELAY</text>
+<text x="114.3" y="99.06" size="1.778" layer="97">LTC out</text>
+<text x="0" y="30.48" size="1.778" layer="97">19v OUT</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-66.04" y="-5.08"/>
 <instance part="FRAME1" gate="G$2" x="81.28" y="-5.08"/>
-<instance part="R1" gate="G$1" x="0" y="121.92"/>
-<instance part="LED-SOLAR-IN" gate="G$1" x="7.62" y="121.92" rot="R90"/>
-<instance part="R7" gate="G$1" x="0" y="109.22"/>
+<instance part="R1" gate="G$1" x="-5.08" y="132.08" rot="R90"/>
+<instance part="LED-SOLAR-IN" gate="G$1" x="-2.54" y="137.16" rot="R90"/>
+<instance part="R7" gate="G$1" x="10.16" y="132.08" rot="R90"/>
 <instance part="R8" gate="G$1" x="0" y="96.52"/>
 <instance part="R9" gate="G$1" x="0" y="76.2"/>
-<instance part="LED-BATTERY-IN" gate="G$1" x="7.62" y="109.22" rot="R90"/>
+<instance part="LED-BATTERY-IN" gate="G$1" x="12.7" y="137.16" rot="R90"/>
 <instance part="LED-5V-DC/DC-IN" gate="G$1" x="7.62" y="96.52" rot="R90"/>
 <instance part="LED-19V-DC/DC-IN" gate="G$1" x="7.62" y="76.2" rot="R90"/>
 <instance part="5V-OUT-1" gate="G$1" x="71.12" y="48.26" rot="R90"/>
@@ -1701,7 +1707,10 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="R3" gate="G$1" x="35.56" y="53.34"/>
 <instance part="19V-DC/DC-IN" gate="G$1" x="-22.86" y="73.66"/>
 <instance part="TO-19V-DC/DC" gate="G$1" x="101.6" y="48.26" rot="R90"/>
-<instance part="19V-OUT-1" gate="G$1" x="48.26" y="35.56" rot="MR90"/>
+<instance part="19V-OUT-1" gate="G$1" x="48.26" y="35.56" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="43.18" y="33.02" size="1.778" layer="96" rot="MR90"/>
+<attribute name="NAME" x="55.88" y="34.798" size="1.778" layer="95" rot="MR180"/>
+</instance>
 <instance part="19V-OUT-2" gate="G$1" x="2.54" y="35.56" rot="MR90"/>
 <instance part="RELAY-19V-1" gate="G$1" x="30.48" y="35.56" rot="R90"/>
 <instance part="SWITCH" gate="G$1" x="99.06" y="144.78" rot="R270"/>
@@ -1721,7 +1730,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="SUPPLY6" gate="GND" x="15.24" y="76.2" rot="R90"/>
 <instance part="SUPPLY7" gate="GND" x="124.46" y="116.84" rot="R90"/>
 <instance part="SUPPLY8" gate="GND" x="-12.7" y="71.12"/>
-<instance part="SUPPLY9" gate="GND" x="15.24" y="109.22" rot="R90"/>
+<instance part="SUPPLY9" gate="GND" x="17.78" y="134.62"/>
 <instance part="SUPPLY10" gate="GND" x="15.24" y="96.52" rot="R90"/>
 <instance part="SUPPLY11" gate="GND" x="5.08" y="53.34" rot="R90"/>
 <instance part="SUPPLY12" gate="GND" x="50.8" y="53.34" rot="R90"/>
@@ -1729,6 +1738,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <instance part="H2" gate="G$1" x="-22.86" y="0"/>
 <instance part="H3" gate="G$1" x="-15.24" y="0"/>
 <instance part="H4" gate="G$1" x="-7.62" y="0"/>
+<instance part="LTC-OUT1" gate="G$1" x="119.38" y="76.2" rot="R180"/>
+<instance part="SUPPLY1" gate="GND" x="109.22" y="81.28" rot="R90"/>
+<instance part="SUPPLY2" gate="GND" x="-48.26" y="88.9"/>
+<instance part="SUPPLY5" gate="GND" x="78.74" y="104.14"/>
+<instance part="SUPPLY13" gate="GND" x="-15.24" y="104.14"/>
+<instance part="SUPPLY14" gate="GND" x="55.88" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -1757,36 +1772,16 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="LED-19V-DC/DC-IN" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$26" class="0">
-<segment>
-<wire x1="101.6" y1="137.16" x2="101.6" y2="116.84" width="0.2032" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="116.84" x2="101.6" y2="101.6" width="0.2032" layer="91"/>
-<wire x1="101.6" y1="101.6" x2="101.6" y2="91.44" width="0.2032" layer="91"/>
-<wire x1="101.6" y1="91.44" x2="101.6" y2="55.88" width="0.2032" layer="91"/>
-<wire x1="101.6" y1="116.84" x2="104.14" y2="116.84" width="0.2032" layer="91"/>
-<pinref part="TO-19V-DC/DC" gate="G$1" pin="1"/>
-<pinref part="SWITCH" gate="G$1" pin="2"/>
-<junction x="101.6" y="101.6"/>
-<wire x1="101.6" y1="101.6" x2="-48.26" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="-48.26" y1="101.6" x2="-48.26" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="DC1" gate="G$1" pin="+VIN"/>
-<wire x1="-48.26" y1="96.52" x2="-45.72" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="LTC-OUT" gate="G$1" pin="2"/>
-<wire x1="111.76" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
-<junction x="101.6" y="91.44"/>
-</segment>
-</net>
 <net name="N$12" class="0">
 <segment>
-<wire x1="-15.24" y1="119.38" x2="12.7" y2="119.38" width="0.2032" layer="91"/>
-<wire x1="12.7" y1="119.38" x2="58.42" y2="119.38" width="0.2032" layer="91"/>
+<wire x1="-15.24" y1="119.38" x2="2.54" y2="119.38" width="0.2032" layer="91"/>
+<wire x1="2.54" y1="119.38" x2="58.42" y2="119.38" width="0.2032" layer="91"/>
 <wire x1="58.42" y1="119.38" x2="58.42" y2="137.16" width="0.2032" layer="91"/>
 <pinref part="TO-SOLAR-CONVERTOR" gate="G$1" pin="2"/>
 <pinref part="SOLAR-IN" gate="G$1" pin="1"/>
 <pinref part="LED-SOLAR-IN" gate="G$1" pin="C"/>
-<wire x1="12.7" y1="121.92" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
-<junction x="12.7" y="119.38"/>
+<wire x1="2.54" y1="137.16" x2="2.54" y2="119.38" width="0.1524" layer="91"/>
+<junction x="2.54" y="119.38"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -1818,22 +1813,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="30.48" y1="22.86" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="VBAT" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="109.22" x2="-5.08" y2="109.22" width="0.2032" layer="91"/>
-<wire x1="-5.08" y1="109.22" x2="-5.08" y2="114.3" width="0.2032" layer="91"/>
-<wire x1="-5.08" y1="114.3" x2="22.86" y2="114.3" width="0.2032" layer="91"/>
-<wire x1="22.86" y1="114.3" x2="22.86" y2="109.22" width="0.2032" layer="91"/>
-<wire x1="22.86" y1="109.22" x2="76.2" y2="109.22" width="0.2032" layer="91"/>
+<wire x1="10.16" y1="127" x2="10.16" y2="109.22" width="0.2032" layer="91"/>
+<wire x1="10.16" y1="109.22" x2="76.2" y2="109.22" width="0.2032" layer="91"/>
 <wire x1="76.2" y1="109.22" x2="76.2" y2="137.16" width="0.2032" layer="91"/>
 <wire x1="76.2" y1="109.22" x2="99.06" y2="109.22" width="0.2032" layer="91"/>
 <wire x1="99.06" y1="109.22" x2="99.06" y2="137.16" width="0.2032" layer="91"/>
 <junction x="76.2" y="109.22"/>
-<junction x="99.06" y="109.22"/>
 <pinref part="FROM-SOLAR-CONVERTOR" gate="G$1" pin="1"/>
 <pinref part="SWITCH" gate="G$1" pin="1"/>
 <pinref part="BATTERY-IN" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="109.22" x2="-15.24" y2="109.22" width="0.1524" layer="91"/>
+<junction x="10.16" y="109.22"/>
+<label x="43.18" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -1866,12 +1860,10 @@ In this library the device names are the same as the pin names of the symbols, t
 </net>
 <net name="N$15" class="0">
 <segment>
-<wire x1="-5.08" y1="127" x2="22.86" y2="127" width="0.2032" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="121.92" x2="-5.08" y2="127" width="0.2032" layer="91"/>
 <wire x1="-15.24" y1="121.92" x2="-5.08" y2="121.92" width="0.2032" layer="91"/>
-<wire x1="55.88" y1="121.92" x2="22.86" y2="121.92" width="0.2032" layer="91"/>
-<wire x1="22.86" y1="121.92" x2="22.86" y2="127" width="0.2032" layer="91"/>
+<wire x1="55.88" y1="121.92" x2="-5.08" y2="121.92" width="0.2032" layer="91"/>
+<wire x1="-5.08" y1="121.92" x2="-5.08" y2="127" width="0.2032" layer="91"/>
 <wire x1="55.88" y1="121.92" x2="55.88" y2="137.16" width="0.2032" layer="91"/>
 <pinref part="TO-SOLAR-CONVERTOR" gate="G$1" pin="1"/>
 <pinref part="SOLAR-IN" gate="G$1" pin="2"/>
@@ -1885,7 +1877,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="5V-OUT-1" gate="G$1" pin="1"/>
 <pinref part="5V-OUT-2" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="99.06" x2="81.28" y2="55.88" width="0.2032" layer="91"/>
-<junction x="81.28" y="99.06"/>
 <wire x1="71.12" y1="99.06" x2="81.28" y2="99.06" width="0.2032" layer="91"/>
 <wire x1="71.12" y1="99.06" x2="71.12" y2="55.88" width="0.2032" layer="91"/>
 <wire x1="-5.08" y1="99.06" x2="71.12" y2="99.06" width="0.2032" layer="91"/>
@@ -1947,13 +1938,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="-20.32" y1="91.44" x2="-15.24" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="5V-OUT-2" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="91.44" x2="78.74" y2="55.88" width="0.2032" layer="91"/>
-<junction x="78.74" y="91.44"/>
 <pinref part="5V-OUT-1" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="91.44" x2="68.58" y2="55.88" width="0.2032" layer="91"/>
 <wire x1="68.58" y1="91.44" x2="78.74" y2="91.44" width="0.2032" layer="91"/>
 <wire x1="-15.24" y1="91.44" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
 <junction x="68.58" y="91.44"/>
 <junction x="-15.24" y="91.44"/>
+<label x="43.18" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="19V-OUT-1" gate="G$1" pin="2"/>
+<pinref part="SUPPLY14" gate="GND" pin="GND"/>
+<wire x1="55.88" y1="43.18" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="19V-DC/DC-IN" gate="G$1" pin="1"/>
@@ -1963,14 +1959,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="5.08" y1="43.18" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-12.7" y="73.66"/>
-<pinref part="19V-OUT-1" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="73.66" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
-<junction x="5.08" y="73.66"/>
 </segment>
 <segment>
-<wire x1="-10.16" y1="106.68" x2="-15.24" y2="106.68" width="0.2032" layer="91"/>
-<wire x1="-10.16" y1="106.68" x2="78.74" y2="106.68" width="0.2032" layer="91"/>
+<pinref part="DC1" gate="G$1" pin="-VIN"/>
+<wire x1="-45.72" y1="91.44" x2="-48.26" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="BATTERY-IN" gate="G$1" pin="1"/>
+<pinref part="SUPPLY13" gate="GND" pin="GND"/>
+</segment>
+<segment>
 <wire x1="78.74" y1="106.68" x2="78.74" y2="137.16" width="0.2032" layer="91"/>
 <wire x1="78.74" y1="106.68" x2="99.06" y2="106.68" width="0.2032" layer="91"/>
 <wire x1="99.06" y1="106.68" x2="99.06" y2="55.88" width="0.2032" layer="91"/>
@@ -1979,19 +1978,45 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="99.06" y1="106.68" x2="106.68" y2="106.68" width="0.2032" layer="91"/>
 <pinref part="TO-19V-DC/DC" gate="G$1" pin="2"/>
 <pinref part="FROM-SOLAR-CONVERTOR" gate="G$1" pin="2"/>
-<pinref part="BATTERY-IN" gate="G$1" pin="1"/>
-<pinref part="DC1" gate="G$1" pin="-VIN"/>
-<wire x1="-45.72" y1="91.44" x2="-50.8" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="91.44" x2="-50.8" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="104.14" x2="-10.16" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="104.14" x2="-10.16" y2="106.68" width="0.1524" layer="91"/>
-<junction x="-10.16" y="106.68"/>
 <wire x1="106.68" y1="106.68" x2="106.68" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="LTC-OUT" gate="G$1" pin="1"/>
 <wire x1="106.68" y1="104.14" x2="106.68" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <junction x="106.68" y="104.14"/>
+<wire x1="106.68" y1="93.98" x2="106.68" y2="81.28" width="0.1524" layer="91"/>
+<junction x="106.68" y="93.98"/>
+<pinref part="LTC-OUT1" gate="G$1" pin="1"/>
+<wire x1="106.68" y1="81.28" x2="106.68" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="GND" pin="GND"/>
+<junction x="106.68" y="81.28"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+</segment>
+</net>
+<net name="VLTC" class="0">
+<segment>
+<pinref part="LTC-OUT1" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="73.66" x2="111.76" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="137.16" x2="101.6" y2="116.84" width="0.2032" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="101.6" y1="116.84" x2="101.6" y2="101.6" width="0.2032" layer="91"/>
+<wire x1="101.6" y1="101.6" x2="101.6" y2="91.44" width="0.2032" layer="91"/>
+<wire x1="101.6" y1="91.44" x2="101.6" y2="73.66" width="0.2032" layer="91"/>
+<wire x1="101.6" y1="73.66" x2="101.6" y2="55.88" width="0.2032" layer="91"/>
+<wire x1="101.6" y1="116.84" x2="104.14" y2="116.84" width="0.2032" layer="91"/>
+<pinref part="TO-19V-DC/DC" gate="G$1" pin="1"/>
+<pinref part="SWITCH" gate="G$1" pin="2"/>
+<junction x="101.6" y="101.6"/>
+<wire x1="101.6" y1="101.6" x2="-48.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="101.6" x2="-48.26" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="DC1" gate="G$1" pin="+VIN"/>
+<wire x1="-48.26" y1="96.52" x2="-45.72" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="LTC-OUT" gate="G$1" pin="2"/>
+<wire x1="111.76" y1="91.44" x2="101.6" y2="91.44" width="0.1524" layer="91"/>
+<junction x="101.6" y="91.44"/>
+<junction x="101.6" y="73.66"/>
+<label x="43.18" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
