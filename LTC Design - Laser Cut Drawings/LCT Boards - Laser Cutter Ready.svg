@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="855"
+   height="1000.8"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="LCT Boards - Laser Cutter Ready.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.0949495"
+     inkscape:cx="375.74365"
+     inkscape:cy="204.9303"
+     inkscape:document-units="in"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="in"
+     inkscape:window-width="1280"
+     inkscape:window-height="753"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-page="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3045"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       units="in"
+       spacingx="0.01in"
+       spacingy="0.01in" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="274.5,697.5"
+       id="guide4088" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="outline"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-51.562)"
+     style="display:inline">
+    <path
+       style="fill:none;stroke:#00eb00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 499.5,768.86199 0,45 31.5,0 18,18 0,144 27,0 9,9 0,31.50001 225,0 0,-45.00001 -54,0 -9,-9 0,-117 31.5,-31.5 31.5,0 0,-45 -45,0 0,27 -40.5,40.5 0,22.5 -139.5,0 -18,0 0,-40.5 -22.5,-22.5 0,-27 z"
+       id="path3939"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccccccccccccccccccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccc"
+       inkscape:connector-curvature="0"
+       id="path4086"
+       d="m 45,692.36202 0,67 31.5,0 18,18 0,122 72,0 31.5,31.5 58.5,0 9,9 0,62.99998 9,9 130.5,0 0,-35.99998 -45,0 -9,-9 0,-36 18,-18 0,-139.5 13.5,-13.5 22.5,0 0,-67.5 -36.5,0 0.5,45 -22.5,22.5 -67.5,0 -94.5,0 -63,0 -18,0 -22.5,-22.5 0,-45 z"
+       style="fill:none;stroke:#00eb00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  </g>
+</svg>

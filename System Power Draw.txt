@@ -1,0 +1,29 @@
+Beagleboard
+5v 950mA – no HDMI monitor attached w/ wireless keyboard
+Ignition Board – 5v 100mA (?)
+
+Murata OKI-78SR-5/1.5-W36-C
+
+5v DC/DC 5V 1.2A * (factor) = 2amps
+
+24v 3amp DC/DC
+
+Phidgets
+12v 200mA (all relays triggered)
+
+
+Powered on system - 500mA
+BB running w/wi-fi
+5v power convertor running
+phidgets running
+
+Turned off 24v convertor (18v)	Added 60mA
+
+Relay triggered 20mA (each)
+
+
+everything on = 660/670mA
+
+
+System 700mA
+-------------------
