@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8040,7 +8040,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="IGNITION" library="launch-tower" deviceset="SCREW-TERMINAL-5MM" device="" value=""/>
 <part name="JP2" library="launch-tower" deviceset="SCREW-TERMINAL-5MM" device="" value=""/>
 <part name="JP3" library="launch-tower" deviceset="SCREW-TERMINAL-5MM" device="" value=""/>
-<part name="D5" library="launch-tower" deviceset="DIODE-NORM" device=""/>
+<part name="D5" library="launch-tower" deviceset="DIODE-NORM" device="" value=""/>
 <part name="D3" library="launch-tower" deviceset="DIODE-NORM" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device="" value="Vdd (+5v)"/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
@@ -8064,7 +8064,7 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <part name="TEST-LEAD-ROCKETREADY" library="SparkFun" deviceset="JUMPER-2" device="PTH"/>
 <part name="TEST-LEAD-VSAMPLE" library="SparkFun" deviceset="JUMPER-2" device="PTH"/>
 <part name="LED-POWER-INDICATOR" library="launch-tower" deviceset="LED-550-XX04" device=""/>
-<part name="R8" library="rcl_custom" deviceset="R-US_" device="0805-B" value="350"/>
+<part name="R8" library="rcl_custom" deviceset="R-US_" device="0805-B" value="100"/>
 <part name="R1" library="rcl_custom" deviceset="R-US_" device="0805-B" value="10k"/>
 <part name="R3" library="rcl_custom" deviceset="R-US_" device="0805-B" value="10k"/>
 <part name="R11" library="rcl_custom" deviceset="R-US_" device="0805-B" value="10k"/>
@@ -8092,70 +8092,70 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <sheets>
 <sheet>
 <plain>
-<text x="12.7" y="83.82" size="1.778" layer="97">ROCKET-READY is a 5V (@ 50 mA max)</text>
-<text x="12.7" y="81.28" size="1.778" layer="97">signal from the rocket.</text>
-<text x="12.7" y="71.12" size="1.778" layer="97">VSAMPLE is the shore power connector</text>
-<text x="12.7" y="68.58" size="1.778" layer="97">to the rocket (CALCED @ 24v).</text>
+<text x="12.7" y="78.74" size="1.778" layer="97">ROCKET-READY is a 5V (@ 50 mA max)</text>
+<text x="12.7" y="76.2" size="1.778" layer="97">signal from the rocket.</text>
+<text x="12.7" y="68.58" size="1.778" layer="97">VSAMPLE is the shore power connector</text>
+<text x="12.7" y="66.04" size="1.778" layer="97">to the rocket (CALCED @ 24v).</text>
 <text x="152.4" y="12.7" size="1.778" layer="104">OUT</text>
 <text x="152.4" y="12.7" size="1.778" layer="104">OUT</text>
 <text x="152.4" y="12.7" size="1.778" layer="95">OUT</text>
-<text x="93.98" y="45.72" size="1.778" layer="97">R4: I=V/R = 5v/10,000 Ohm = 0.0005A = 0.5mA</text>
-<text x="93.98" y="66.04" size="1.778" layer="97">Time constant for charging</text>
-<text x="93.98" y="63.5" size="1.778" layer="97">T = R (Ohms) x C (farads)</text>
-<text x="93.98" y="60.96" size="1.778" layer="97">Capacitor @ supply voltage @ 5T or 5 x RC</text>
-<text x="93.98" y="58.42" size="1.778" layer="97">Full voltage time (secs) = 5 (R x C)</text>
-<text x="93.98" y="55.88" size="1.778" layer="97">Note: Want small capacitor for fast discharge</text>
-<text x="93.98" y="38.1" size="1.778" layer="97">Vout = (Z2 / (Z1 + z2) ) x Vin</text>
-<text x="93.98" y="35.56" size="1.778" layer="97">R1 = ( (R2 x Vin) / (Vout) ) - R2</text>
-<text x="93.98" y="33.02" size="1.778" layer="97">R2 = ( R1 / (Vin / Vout) - 1 )</text>
-<text x="93.98" y="30.48" size="1.778" layer="97">Vout / Vin = R2 / (R1 + R2)</text>
+<text x="93.98" y="22.86" size="1.778" layer="97">R4: I=V/R = 5v/10,000 Ohm = 0.0005A = 0.5mA</text>
+<text x="93.98" y="78.74" size="1.778" layer="97">Time constant for charging</text>
+<text x="93.98" y="76.2" size="1.778" layer="97">T = R (Ohms) x C (farads)</text>
+<text x="93.98" y="71.12" size="1.778" layer="97">Capacitor @ supply voltage @ 5T or 5 x RC</text>
+<text x="93.98" y="68.58" size="1.778" layer="97">Full voltage time (secs) = 5 (R x C)</text>
+<text x="93.98" y="58.42" size="1.778" layer="97">Note: Want small capacitor for fast discharge</text>
+<text x="93.98" y="43.18" size="1.778" layer="97">Vout = (Z2 / (Z1 + z2) ) x Vin</text>
+<text x="93.98" y="40.64" size="1.778" layer="97">R1 = ( (R2 x Vin) / (Vout) ) - R2</text>
+<text x="93.98" y="38.1" size="1.778" layer="97">R2 = ( R1 / (Vin / Vout) - 1 )</text>
+<text x="93.98" y="35.56" size="1.778" layer="97">Vout / Vin = R2 / (R1 + R2)</text>
 <text x="12.7" y="20.32" size="1.778" layer="97">0.5A 1s || 1A 1 ms || 4A 1μs</text>
-<text x="93.98" y="25.4" size="1.778" layer="97">R1 (r4) = 10k</text>
+<text x="93.98" y="30.48" size="1.778" layer="97">R1 (r4) = 10k</text>
 <text x="12.7" y="30.48" size="1.778" layer="97">Gate Input Voltage --&gt; up to 5.5v</text>
 <text x="12.7" y="40.64" size="1.778" layer="97">DC Input or Output Voltage --&gt; 0V to VCC</text>
 <text x="12.7" y="33.02" size="1.778" layer="97">P/N: SN74LVC1G08</text>
 <text x="12.7" y="43.18" size="1.778" layer="97">P/N: CD74HC14M96</text>
 <text x="12.7" y="53.34" size="1.778" layer="97">P/N: 4N35-300E</text>
 <text x="12.7" y="50.8" size="1.778" layer="97">Input Voltage --&gt; 1.2v - 1.5v</text>
-<text x="93.98" y="22.86" size="1.778" layer="97">R2 (r5) = 10k / ( (24v - 5v) - 1 ) = 2.6K</text>
+<text x="93.98" y="27.94" size="1.778" layer="97">R2 (r5) = 10k / ( (24v - 5v) - 1 ) = 2.6K</text>
 <text x="12.7" y="22.86" size="1.778" layer="97">P/N: 1N4148/1N4448</text>
-<text x="93.98" y="53.34" size="1.778" layer="97">http://www.electronics-tutorials.ws/rc/rc_1.html</text>
+<text x="93.98" y="55.88" size="1.778" layer="97">http://www.electronics-tutorials.ws/rc/rc_1.html</text>
 <text x="228.6" y="142.24" size="1.778" layer="97">5 second charge time</text>
 <wire x1="220.98" y1="185.42" x2="220.98" y2="139.7" width="0.2032" layer="97"/>
 <wire x1="220.98" y1="139.7" x2="266.7" y2="139.7" width="0.2032" layer="97"/>
 <wire x1="266.7" y1="139.7" x2="266.7" y2="185.42" width="0.2032" layer="97"/>
 <wire x1="266.7" y1="185.42" x2="220.98" y2="185.42" width="0.2032" layer="97"/>
-<text x="104.14" y="76.2" size="1.778" layer="91">Chnage to 1 time constant</text>
-<text x="104.14" y="73.66" size="1.778" layer="91">~ 4.7M resistor</text>
 <text x="93.98" y="10.16" size="1.778" layer="97">Safety kill at ignition point instead of</text>
 <text x="93.98" y="7.62" size="1.778" layer="97">battery-in point so battery can charge when</text>
-<wire x1="91.44" y1="15.24" x2="91.44" y2="2.54" width="0.2032" layer="97"/>
-<wire x1="91.44" y1="2.54" x2="165.1" y2="2.54" width="0.2032" layer="97"/>
-<wire x1="165.1" y1="2.54" x2="165.1" y2="15.24" width="0.2032" layer="97"/>
-<wire x1="165.1" y1="15.24" x2="91.44" y2="15.24" width="0.2032" layer="97"/>
+<wire x1="91.44" y1="15.24" x2="91.44" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="2.54" x2="165.1" y2="2.54" width="0.1524" layer="97"/>
+<wire x1="165.1" y1="2.54" x2="165.1" y2="15.24" width="0.1524" layer="97"/>
+<wire x1="165.1" y1="15.24" x2="91.44" y2="15.24" width="0.1524" layer="97"/>
 <text x="93.98" y="5.08" size="1.778" layer="97">system is NOT armed</text>
-<wire x1="91.44" y1="20.32" x2="91.44" y2="43.18" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="43.18" x2="165.1" y2="43.18" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="20.32" x2="91.44" y2="48.26" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="97"/>
 <wire x1="165.1" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="97"/>
-<wire x1="165.1" y1="20.32" x2="165.1" y2="43.18" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="97"/>
-<wire x1="165.1" y1="50.8" x2="165.1" y2="71.12" width="0.1524" layer="97"/>
-<wire x1="165.1" y1="71.12" x2="91.44" y2="71.12" width="0.1524" layer="97"/>
-<wire x1="91.44" y1="71.12" x2="91.44" y2="50.8" width="0.1524" layer="97"/>
-<wire x1="81.28" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="97"/>
-<wire x1="10.16" y1="63.5" x2="10.16" y2="88.9" width="0.1524" layer="97"/>
-<wire x1="10.16" y1="88.9" x2="81.28" y2="88.9" width="0.1524" layer="97"/>
-<wire x1="81.28" y1="88.9" x2="81.28" y2="63.5" width="0.1524" layer="97"/>
+<wire x1="165.1" y1="20.32" x2="165.1" y2="48.26" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="165.1" y1="53.34" x2="165.1" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="165.1" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="91.44" y1="83.82" x2="91.44" y2="53.34" width="0.1524" layer="97"/>
+<wire x1="81.28" y1="60.96" x2="10.16" y2="60.96" width="0.1524" layer="97"/>
+<wire x1="10.16" y1="60.96" x2="10.16" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="10.16" y1="83.82" x2="81.28" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="81.28" y1="83.82" x2="81.28" y2="60.96" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="58.42" x2="81.28" y2="58.42" width="0.1524" layer="97"/>
 <wire x1="81.28" y1="58.42" x2="81.28" y2="17.78" width="0.1524" layer="97"/>
 <wire x1="81.28" y1="17.78" x2="10.16" y2="17.78" width="0.1524" layer="97"/>
 <wire x1="10.16" y1="17.78" x2="10.16" y2="58.42" width="0.1524" layer="97"/>
+<text x="93.98" y="66.04" size="1.778" layer="97">At 1 Time Constant - capacitor is at 63.2%</text>
+<text x="93.98" y="63.5" size="1.778" layer="97">62.3% will trigger the circuit.</text>
 </plain>
 <instances>
 <instance part="SUPPLY1" gate="GND" x="246.38" y="149.86"/>
 <instance part="U2" gate="A" x="154.94" y="144.78"/>
 <instance part="U1" gate="G$1" x="99.06" y="152.4"/>
-<instance part="U4" gate="G$1" x="200.66" y="162.56"/>
+<instance part="U4" gate="G$1" x="200.66" y="162.56" smashed="yes"/>
 <instance part="SUPPLY3" gate="GND" x="55.88" y="144.78"/>
 <instance part="SUPPLY4" gate="GND" x="83.82" y="144.78"/>
 <instance part="SUPPLY5" gate="GND" x="116.84" y="96.52"/>
@@ -8166,7 +8166,9 @@ Pad definition corrected 2006.05.15, librarian@cadsoft.de
 <instance part="VDD1" gate="G$1" x="119.38" y="182.88"/>
 <instance part="SUPPLY10" gate="GND" x="170.18" y="91.44"/>
 <instance part="VDD3" gate="G$1" x="139.7" y="190.5"/>
-<instance part="VDD4" gate="G$1" x="208.28" y="190.5"/>
+<instance part="VDD4" gate="G$1" x="208.28" y="190.5" smashed="yes">
+<attribute name="VALUE" x="205.74" y="182.88" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="SUPPLY11" gate="GND" x="208.28" y="152.4"/>
 <instance part="VDD5" gate="G$1" x="205.74" y="109.22"/>
 <instance part="IGNITION" gate="G$1" x="241.3" y="106.68" smashed="yes" rot="MR0">

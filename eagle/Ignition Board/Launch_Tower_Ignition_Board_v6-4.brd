@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23,16 +23,16 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -52,13 +52,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1521,7 +1521,7 @@ type 0207, grid 10 mm</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requirements for our double sided products. For questions, comments, suggestions, please contact Sunstone Customer Support  Email:  mailto:support@sunstone.com 
@@ -1710,7 +1710,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <element name="JP3" library="launch-tower" package="SCREW-TERM-5MM" value="" x="7.62" y="39.37" smashed="yes" rot="R270">
 <attribute name="VALUE" x="8.89" y="43.18" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="D5" library="launch-tower" package="DIODE" value="DIODE-NORM" x="30.48" y="15.24" smashed="yes">
+<element name="D5" library="launch-tower" package="DIODE" value="" x="30.48" y="15.24" smashed="yes">
 <attribute name="NAME" x="29.464" y="12.319" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="26.67" y="12.065" size="1.27" layer="27"/>
 </element>
@@ -1753,7 +1753,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <attribute name="VALUE" x="31.75" y="24.765" size="1.27" layer="27"/>
 </element>
 <element name="LED-POWER-INDICATOR" library="launch-tower" package="LED-550" value="LED-550-XX04" x="16.51" y="5.08" smashed="yes"/>
-<element name="R8" library="rcl_custom" package="0805-B" value="350" x="15.24" y="41.91" smashed="yes">
+<element name="R8" library="rcl_custom" package="0805-B" value="100" x="15.24" y="41.91" smashed="yes">
 <attribute name="NAME" x="14.44" y="43.164" size="1.016" layer="25" ratio="10"/>
 <attribute name="VALUE" x="14.44" y="39.91" size="1" layer="27" ratio="10"/>
 </element>
@@ -2246,29 +2246,6 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <wire x1="67.31" y1="25.03" x2="67.31" y2="27.94" width="0.5842" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="6,1,d82aa3d4bb68c096"/>
-<approved hash="6,1,fa58a89aaa34f8f6"/>
-<approved hash="6,1,b50e12e013e2b40c"/>
-<approved hash="6,1,befe586bd86c3ef9"/>
-<approved hash="6,1,c8f56260e26548f0"/>
-<approved hash="6,1,efce1e201f20eece"/>
-<approved hash="6,1,900993f78b4c88b2"/>
-<approved hash="6,1,ca5a18981a2ac8e8"/>
-<approved hash="6,1,f162cf8cce8ef060"/>
-<approved hash="6,1,fb5476967424f9e6"/>
-<approved hash="6,1,4a6d218320814b6f"/>
-<approved hash="6,1,fa5cd89eda2cf8ee"/>
-<approved hash="6,1,4972439c42994877"/>
-<approved hash="6,1,479a73b26c5e5876"/>
-<approved hash="6,1,ce4669d3e9d44e41"/>
-<approved hash="6,1,183eb3ab33ad9838"/>
-<approved hash="6,1,3b9993b18c52247a"/>
-<approved hash="6,1,4c72459c44994d77"/>
-<approved hash="6,1,fa5bc899ca2af8e8"/>
-<approved hash="6,1,a16f9f819e82a06c"/>
-<approved hash="6,1,fb5a9e989c2af9e8"/>
-</errors>
 </board>
 </drawing>
 </eagle>
