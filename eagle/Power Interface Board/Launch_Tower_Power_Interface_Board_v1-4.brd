@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1367,7 +1367,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="en">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requirements for our double sided products. For questions, comments, suggestions, please contact Sunstone Customer Support  Email:  mailto:support@sunstone.com 
@@ -1565,7 +1565,7 @@ Phone: 503-829-9108 x555.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance
 <element name="LTC-OUT-1" library="launch-tower" package="SCREW-TERM-5MM" value="" x="21.59" y="78.74" smashed="yes" rot="R180">
 <attribute name="VALUE" x="25.4" y="77.47" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="DC2" library="launch-tower" package="UWE" value="DC/DC_CONV_24V" x="74.93" y="40.64" smashed="yes" rot="R90">
+<element name="DC2" library="launch-tower" package="UWE" value="UWE-24/3-Q12P-C" x="74.93" y="40.64" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.42" y="42.72" size="1.27" layer="25" rot="R180"/>
 </element>
 <element name="5V-OUT-1" library="launch-tower" package="SCREW-TERM-5MM" value="" x="41.656" y="78.74" smashed="yes" rot="R180">

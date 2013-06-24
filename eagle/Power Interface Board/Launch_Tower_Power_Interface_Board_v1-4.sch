@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4768,7 +4768,7 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
-<part name="DC2" library="launch-tower" deviceset="DC/DC_CONV_24V" device=""/>
+<part name="DC2" library="launch-tower" deviceset="DC/DC_CONV_24V" device="" value="UWE-24/3-Q12P-C"/>
 <part name="SUPPLY15" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
@@ -4813,9 +4813,10 @@ This package is identical to 0603-B, but has its tPlace silkscreen layer removed
 <text x="195.58" y="109.22" size="1.778" layer="97">TO PHIDGET BOARD</text>
 <text x="127" y="10.16" size="1.778" layer="97">TO BEAGLE BOARD</text>
 <text x="157.48" y="10.16" size="1.778" layer="97">TO IGNITION BOARD</text>
-<text x="42.418" y="58.674" size="1.778" layer="97" rot="R90">24 V DC/DC</text>
+<text x="42.418" y="53.594" size="1.778" layer="97" rot="R90">UWE-24/3-Q12P-C</text>
 <text x="30.48" y="10.16" size="1.778" layer="97">TO ROCKET UMBILICAL</text>
 <text x="71.12" y="10.16" size="1.778" layer="97">EXPANSION</text>
+<text x="39.878" y="58.674" size="1.778" layer="97" rot="R90">24 V DC/DC</text>
 </plain>
 <instances>
 <instance part="24V-OUT-1" gate="G$1" x="40.64" y="20.32" smashed="yes" rot="MR90">
