@@ -26,3 +26,9 @@
  1. Register the script with `update-rc.d phidgetswebservice defaults`
  1. Start it with `/etc/init.d/phidgetswebservice start`
  1. Check that it is working with launch-tower-comm
+ 1. Prevent the OS from enumerating different wifi dongles, do the following
+     1. `cd /etc/udev/rules.d`
+     1. `touch /etc/udev/rules.d/75-persistent-net-generator.r`
+     1. `rm 70-persistent-net.rules`
+     1. Reboot and see if it will still work.
+     1. Reboot with a different wifi dongle and it should work.
