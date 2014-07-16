@@ -1,0 +1,33 @@
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+# ----- The loopback network interface -----
+auto lo
+iface lo inet loopback
+
+
+# ----- hotplug settings for interfaces -----
+allow-hotplug eth0
+allow-hotplug wlan0
+
+
+# ----- Wireless network -----
+# note :: Enabling WPA Supplicant with interface 
+auto wlan0
+iface wlan0 inet static
+    address 10.0.0.2
+    netmask 255.255.255.0
+    gateway 10.0.0.1
+    wpa-ssid psas
+    wpa-psk psasrocket
+    wireless-essid psas
+    wireless-mode managed
+
+
+
+
+# ----- The on-board ethernet interface
+auto eth0
+iface eth0 inet static
+    address 10.10.10.1
+    netmask 255.255.255.0
