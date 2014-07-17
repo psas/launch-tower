@@ -20,6 +20,7 @@
  1. Change hostname to ltc `echo ltc > /etc/hostname`
  1. Update password to the PSAS standard with `psswd`
  1. Update `/etc/network/interfaces` (see file in this directory)
+ 1. Disable the `wicd` network connection manager by editing `/etc/default/wicd` and setting `START_DAEMON=no`
  1. In `/etc/sysctl.conf` uncomment the line `#net.ipv4.ip forward=1`
  1. Install the phidgets library and webservice
  1. Add the phidgetswebservice init.d script to `/etc/init.d/`
