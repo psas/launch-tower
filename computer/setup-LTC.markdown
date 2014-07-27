@@ -14,22 +14,23 @@
  1. Remove the SD card and power it up.
 
 ## System Setup
- 1. Update the packages `apt-get update`
- 1. Install all security updates and available upgrades in aptitude.
- 1. Install `vim htop lsof tcpdump iptraf` 
- 1. Change hostname to ltc `echo ltc > /etc/hostname`
- 1. Update password to the PSAS standard with `psswd`
+ 1. Update the package list `apt-get update`
+ 1. Install all updates. `apt-get upgrade`
+ 1. Install packages we want `apt-get install vim htop lsof tcpdump iptraf wavemon` 
+ 1. Change hostname to ltc 
+     1. `echo ltc > /etc/hostname`
+     1. `sed -i 's/beaglebone/ltc/' /etc/hosts`
+ 1. Update password to the PSAS standard with `passwd`
  1. Update `/etc/network/interfaces` (see file in this directory)
  1. Disable the `wicd` network connection manager by editing `/etc/default/wicd` and setting `START_DAEMON=no`
- 1. In `/etc/sysctl.conf` uncomment the line `#net.ipv4.ip forward=1`
+ 1. Enable ipv4 forwarding in `/etc/sysctl.conf` uncomment the line `#net.ipv4.ip_forward=1`
  1. Install the phidgets library and webservice
  1. Add the phidgetswebservice init.d script to `/etc/init.d/`
  1. Register the script with `update-rc.d phidgetswebservice defaults`
- 1. Start it with `/etc/init.d/phidgetswebservice start`
- 1. Check that it is working with launch-tower-comm
+ 1. Start phidgets with `/etc/init.d/phidgetswebservice start`
+ 1. Check that launch-tower-comm runs and connects without errors
  1. Prevent the OS from enumerating different wifi dongles, do the following
-     1. `cd /etc/udev/rules.d`
      1. `touch /etc/udev/rules.d/75-persistent-net-generator.r`
-     1. `rm 70-persistent-net.rules`
-     1. Reboot and see if it will still work.
-     1. Reboot with a different wifi dongle and it should work.
+     1. `rm /etc/udev/rules.d/70-persistent-net.rules`
+     1. Reboot and see if networking comes up with wlan0.
+     1. Reboot with a different wifi dongle and it should also come up as wlan0.
