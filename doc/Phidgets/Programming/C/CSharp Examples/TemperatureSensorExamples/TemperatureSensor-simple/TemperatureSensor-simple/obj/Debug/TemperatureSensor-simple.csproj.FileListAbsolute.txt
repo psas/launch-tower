@@ -1,0 +1,5 @@
+C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\TemperatureSensor-simple\bin\Debug\TemperatureSensor-simple.exe
+C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\TemperatureSensor-simple\bin\Debug\TemperatureSensor-simple.pdb
+C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\TemperatureSensor-simple\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\TemperatureSensor-simple\obj\Debug\TemperatureSensor-simple.exe
+C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\TemperatureSensor-simple\obj\Debug\TemperatureSensor-simple.pdb

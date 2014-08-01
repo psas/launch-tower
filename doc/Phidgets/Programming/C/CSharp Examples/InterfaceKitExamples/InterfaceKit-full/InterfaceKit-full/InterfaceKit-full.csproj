@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CD02F60-F761-4063-819C-1A858B01838C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InterfaceKit_full</RootNamespace>
+    <AssemblyName>InterfaceKit-full</AssemblyName>
+    <ApplicationIcon>1018_1.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Phidget21.NET, Version=2.1.7.18, Culture=neutral, PublicKeyToken=c2b1f2a3594bce52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Phidget21.NET\Phidget21.NET\bin\Debug\Phidget21.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedSensorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedSensorForm.Designer.cs">
+      <DependentUpon>AdvancedSensorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorEventBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorEventBox.Designer.cs">
+      <DependentUpon>ErrorEventBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\BaseSensor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\BaseSensor.Designer.cs">
+      <DependentUpon>BaseSensor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1101 GP2D120.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1101 GP2D120.designer.cs">
+      <DependentUpon>Sensor1101 GP2D120.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1101 GP2Y0A02YK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1101 GP2Y0A02YK.designer.cs">
+      <DependentUpon>Sensor1101 GP2Y0A02YK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1101 GP2D12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1101 GP2D12.designer.cs">
+      <DependentUpon>Sensor1101 GP2D12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1129.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1129.Designer.cs">
+      <DependentUpon>Sensor1129.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1130ORP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1130ORP.Designer.cs">
+      <DependentUpon>Sensor1130ORP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1120.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1120.Designer.cs">
+      <DependentUpon>Sensor1120.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1135.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1135.Designer.cs">
+      <DependentUpon>Sensor1135.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1134.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1134.Designer.cs">
+      <DependentUpon>Sensor1134.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1133.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1133.Designer.cs">
+      <DependentUpon>Sensor1133.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1132.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1132.Designer.cs">
+      <DependentUpon>Sensor1132.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1131.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1131.Designer.cs">
+      <DependentUpon>Sensor1131.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1130pH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1130pH.Designer.cs">
+      <DependentUpon>Sensor1130pH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1106.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1106.Designer.cs">
+      <DependentUpon>Sensor1106.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1122AC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1122AC.Designer.cs">
+      <DependentUpon>Sensor1122AC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1122DC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1122DC.Designer.cs">
+      <DependentUpon>Sensor1122DC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1119DC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1119DC.Designer.cs">
+      <DependentUpon>Sensor1119DC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1119AC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1119AC.Designer.cs">
+      <DependentUpon>Sensor1119AC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1123.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1123.Designer.cs">
+      <DependentUpon>Sensor1123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1117.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1117.Designer.cs">
+      <DependentUpon>Sensor1117.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1118DC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1118DC.Designer.cs">
+      <DependentUpon>Sensor1118DC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1118AC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1118AC.Designer.cs">
+      <DependentUpon>Sensor1118AC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1121.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1121.Designer.cs">
+      <DependentUpon>Sensor1121.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1115.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1115.Designer.cs">
+      <DependentUpon>Sensor1115.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1126.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1126.Designer.cs">
+      <DependentUpon>Sensor1126.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1128.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1128.Designer.cs">
+      <DependentUpon>Sensor1128.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1102.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1102.Designer.cs">
+      <DependentUpon>Sensor1102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1103.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1103.Designer.cs">
+      <DependentUpon>Sensor1103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1104.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1104.Designer.cs">
+      <DependentUpon>Sensor1104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1113Y.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1113Y.Designer.cs">
+      <DependentUpon>Sensor1113Y.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1113X.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1113X.Designer.cs">
+      <DependentUpon>Sensor1113X.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1116.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1116.Designer.cs">
+      <DependentUpon>Sensor1116.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1109.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1109.Designer.cs">
+      <DependentUpon>Sensor1109.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1112.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1112.Designer.cs">
+      <DependentUpon>Sensor1112.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1107.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1107.Designer.cs">
+      <DependentUpon>Sensor1107.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1105.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1105.Designer.cs">
+      <DependentUpon>Sensor1105.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1125T.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1125T.Designer.cs">
+      <DependentUpon>Sensor1125T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1125H.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1125H.Designer.cs">
+      <DependentUpon>Sensor1125H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1108.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1108.Designer.cs">
+      <DependentUpon>Sensor1108.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1127.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1127.Designer.cs">
+      <DependentUpon>Sensor1127.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1111.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1111.Designer.cs">
+      <DependentUpon>Sensor1111.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1110.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1110.Designer.cs">
+      <DependentUpon>Sensor1110.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1124.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor1124.Designer.cs">
+      <DependentUpon>Sensor1124.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor3120.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor3120.Designer.cs">
+      <DependentUpon>Sensor3120.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor3500.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\Sensor3500.designer.cs">
+      <DependentUpon>Sensor3500.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SensorExamples\SensorBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SensorExamples\SensorBox.Designer.cs">
+      <DependentUpon>SensorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextInputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TextInputBox.Designer.cs">
+      <DependentUpon>TextInputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdvancedSensorForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AdvancedSensorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorEventBox.resx">
+      <DependentUpon>ErrorEventBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\BaseSensor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseSensor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1101 GP2D120.resx">
+      <DependentUpon>Sensor1101 GP2D120.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1101 GP2Y0A02YK.resx">
+      <DependentUpon>Sensor1101 GP2Y0A02YK.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1101 GP2D12.resx">
+      <DependentUpon>Sensor1101 GP2D12.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1129.resx">
+      <DependentUpon>Sensor1129.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1130ORP.resx">
+      <DependentUpon>Sensor1130ORP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1120.resx">
+      <DependentUpon>Sensor1120.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1135.resx">
+      <DependentUpon>Sensor1135.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1134.resx">
+      <DependentUpon>Sensor1134.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1133.resx">
+      <DependentUpon>Sensor1133.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1132.resx">
+      <DependentUpon>Sensor1132.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1131.resx">
+      <DependentUpon>Sensor1131.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1130pH.resx">
+      <DependentUpon>Sensor1130pH.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1106.resx">
+      <DependentUpon>Sensor1106.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1122AC.resx">
+      <DependentUpon>Sensor1122AC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1122DC.resx">
+      <DependentUpon>Sensor1122DC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1119DC.resx">
+      <DependentUpon>Sensor1119DC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1119AC.resx">
+      <DependentUpon>Sensor1119AC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1123.resx">
+      <DependentUpon>Sensor1123.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1117.resx">
+      <DependentUpon>Sensor1117.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1118DC.resx">
+      <DependentUpon>Sensor1118DC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1118AC.resx">
+      <DependentUpon>Sensor1118AC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1121.resx">
+      <DependentUpon>Sensor1121.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1115.resx">
+      <DependentUpon>Sensor1115.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1126.resx">
+      <DependentUpon>Sensor1126.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1128.resx">
+      <DependentUpon>Sensor1128.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1102.resx">
+      <DependentUpon>Sensor1102.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1103.resx">
+      <DependentUpon>Sensor1103.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1104.resx">
+      <DependentUpon>Sensor1104.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1113Y.resx">
+      <DependentUpon>Sensor1113Y.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1113X.resx">
+      <DependentUpon>Sensor1113X.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1116.resx">
+      <DependentUpon>Sensor1116.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1109.resx">
+      <DependentUpon>Sensor1109.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1112.resx">
+      <DependentUpon>Sensor1112.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1107.resx">
+      <DependentUpon>Sensor1107.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1105.resx">
+      <DependentUpon>Sensor1105.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1125T.resx">
+      <DependentUpon>Sensor1125T.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1125H.resx">
+      <DependentUpon>Sensor1125H.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1108.resx">
+      <DependentUpon>Sensor1108.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1127.resx">
+      <DependentUpon>Sensor1127.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1111.resx">
+      <DependentUpon>Sensor1111.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1110.resx">
+      <DependentUpon>Sensor1110.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor1124.resx">
+      <DependentUpon>Sensor1124.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor3120.resx">
+      <DependentUpon>Sensor3120.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\Sensor3500.resx">
+      <DependentUpon>Sensor3500.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SensorExamples\SensorBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SensorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TextInputBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TextInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1018_1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

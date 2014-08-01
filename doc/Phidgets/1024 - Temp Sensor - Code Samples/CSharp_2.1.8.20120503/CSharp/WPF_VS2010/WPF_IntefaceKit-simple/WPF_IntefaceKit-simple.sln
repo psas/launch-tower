@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_IntefaceKit-simple", "WPF_IntefaceKit-simple\WPF_IntefaceKit-simple.csproj", "{1445C2CC-1F1E-4D6C-9B2E-9851C51ECA75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1445C2CC-1F1E-4D6C-9B2E-9851C51ECA75}.Debug|x86.ActiveCfg = Debug|x86
+		{1445C2CC-1F1E-4D6C-9B2E-9851C51ECA75}.Debug|x86.Build.0 = Debug|x86
+		{1445C2CC-1F1E-4D6C-9B2E-9851C51ECA75}.Release|x86.ActiveCfg = Release|x86
+		{1445C2CC-1F1E-4D6C-9B2E-9851C51ECA75}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

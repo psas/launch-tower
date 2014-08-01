@@ -1,0 +1,255 @@
+﻿<Window x:Class="WPF_IntefaceKit.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF - IntefaceKit" Height="350" Width="650" Closing="Window_Closing" Loaded="Window_Loaded">
+    <Grid Margin="10,10,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="90" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        
+        <!-- InterfaceKit Info -->
+        <GroupBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" Header="InterfaceKit Info">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+            
+                <StackPanel Grid.Column="0" Grid.Row="0" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Attached:</Label>
+                    <Label Margin="0,0,0,5" Name="attachedLbl"></Label>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="1" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Name:</Label>
+                    <Label Margin="0,0,0,5" Name="nameLbl"></Label>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Serial No:</Label>
+                    <Label Margin="0,0,0,5" Name="serialNoLbl"></Label>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="3" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Version:</Label>
+                    <Label Margin="0,0,0,5" Name="versionLbl"></Label>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="4" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Digital Inputs:</Label>
+                    <Label Margin="0,0,0,5" Name="digitalInputCountLbl"></Label>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="5" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Digital Outputs:</Label>
+                    <Label Margin="0,0,0,5" Name="digitalOutputCountLbl"></Label>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Grid.Row="6" Orientation="Horizontal">
+                    <Label Margin="0,0,0,5">Analog Inputs:</Label>
+                    <Label Margin="0,0,0,5" Name="sensorCountLbl"></Label>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <!-- Digital In Display -->
+        <GroupBox Grid.Column="1" Grid.Row="0" Header="Digital In">
+            <Grid VerticalAlignment="Center" Name="digitalInDisplay">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+
+                <CheckBox Tag="0" Name="digiInChk0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="1" Name="digiInChk1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="2" Name="digiInChk2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="3" Name="digiInChk3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="4" Name="digiInChk4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="5" Name="digiInChk5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="6" Name="digiInChk6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="7" Name="digiInChk7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="7" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="8" Name="digiInChk8" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="8" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="9" Name="digiInChk9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="9" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="10" Name="digiInChk10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="10" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="11" Name="digiInChk11" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="11" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="12" Name="digiInChk12" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="12" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="13" Name="digiInChk13" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="13" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="14" Name="digiInChk14" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="14" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="15" Name="digiInChk15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="15" Grid.Row="0" IsEnabled="False" />
+
+                <Label Tag="0" Name="digitInLbl0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1">0</Label>
+                <Label Tag="1" Name="digitInLbl1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">1</Label>
+                <Label Tag="2" Name="digitInLbl2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1">2</Label>
+                <Label Tag="3" Name="digitInLbl3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1">3</Label>
+                <Label Tag="4" Name="digitInLbl4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1">4</Label>
+                <Label Tag="5" Name="digitInLbl5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="1">5</Label>
+                <Label Tag="6" Name="digitInLbl6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="1">6</Label>
+                <Label Tag="7" Name="digitInLbl7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="7" Grid.Row="1">7</Label>
+                <Label Tag="8" Name="digitInLbl8" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="8" Grid.Row="1">8</Label>
+                <Label Tag="9" Name="digitInLbl9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="9" Grid.Row="1">9</Label>
+                <Label Tag="10" Name="digitInLbl10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="10" Grid.Row="1">10</Label>
+                <Label Tag="11" Name="digitInLbl11" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="11" Grid.Row="1">11</Label>
+                <Label Tag="12" Name="digitInLbl12" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="12" Grid.Row="1">12</Label>
+                <Label Tag="13" Name="digitInLbl13" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="13" Grid.Row="1">13</Label>
+                <Label Tag="14" Name="digitInLbl14" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="14" Grid.Row="1">14</Label>
+                <Label Tag="15" Name="digitInLbl15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="15" Grid.Row="1">15</Label>
+            
+            </Grid>
+        </GroupBox>
+        
+        <!-- Digital Out Display -->
+        <GroupBox Grid.Column="1" Grid.Row="1" Header="Digital Out">
+            <Grid VerticalAlignment="Center" Name="digitalOutDisplay">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <CheckBox Tag="0" Name="digiOutDispChk0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="1" Name="digiOutDispChk1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="2" Name="digiOutDispChk2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="3" Name="digiOutDispChk3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="4" Name="digiOutDispChk4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="5" Name="digiOutDispChk5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="6" Name="digiOutDispChk6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="7" Name="digiOutDispChk7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="7" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="8" Name="digiOutDispChk8" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="8" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="9" Name="digiOutDispChk9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="9" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="10" Name="digiOutDispChk10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="10" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="11" Name="digiOutDispChk11" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="11" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="12" Name="digiOutDispChk12" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="12" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="13" Name="digiOutDispChk13" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="13" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="14" Name="digiOutDispChk14" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="14" Grid.Row="0" IsEnabled="False" />
+                <CheckBox Tag="15" Name="digiOutDispChk15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="15" Grid.Row="0" IsEnabled="False" />
+
+                <CheckBox Name="digiOutTglChk0" Tag="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk1" Tag="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk2" Tag="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk3" Tag="3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk4" Tag="4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk5" Tag="5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk6" Tag="6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk7" Tag="7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="7" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk8" Tag="8" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="8" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk9" Tag="9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="9" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk10" Tag="10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="10" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk11" Tag="11" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="11" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk12" Tag="12" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="12" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk13" Tag="13" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="13" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk14" Tag="14" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="14" Grid.Row="1" Click="CheckBox_Click" />
+                <CheckBox Name="digiOutTglChk15" Tag="15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="15" Grid.Row="1" Click="CheckBox_Click" />
+
+                <Label Tag="0" Name="digiOutLbl0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2">0</Label>
+                <Label Tag="1" Name="digiOutLbl1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2">1</Label>
+                <Label Tag="2" Name="digiOutLbl2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2">2</Label>
+                <Label Tag="3" Name="digiOutLbl3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="2">3</Label>
+                <Label Tag="4" Name="digiOutLbl4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="2">4</Label>
+                <Label Tag="5" Name="digiOutLbl5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="2">5</Label>
+                <Label Tag="6" Name="digiOutLbl6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="2">6</Label>
+                <Label Tag="7" Name="digiOutLbl7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="7" Grid.Row="2">7</Label>
+                <Label Tag="8" Name="digiOutLbl8" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="8" Grid.Row="2">8</Label>
+                <Label Tag="9" Name="digiOutLbl9" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="9" Grid.Row="2">9</Label>
+                <Label Tag="10" Name="digiOutLbl10" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="10" Grid.Row="2">10</Label>
+                <Label Tag="11" Name="digiOutLbl11" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="11" Grid.Row="2">11</Label>
+                <Label Tag="12" Name="digiOutLbl12" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="12" Grid.Row="2">12</Label>
+                <Label Tag="13" Name="digiOutLbl13" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="13" Grid.Row="2">13</Label>
+                <Label Tag="14" Name="digiOutLbl14" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="14" Grid.Row="2">14</Label>
+                <Label Tag="15" Name="digiOutLbl15" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="15" Grid.Row="2">15</Label>
+            </Grid>
+        </GroupBox>
+        
+        <!-- Analog In Display -->
+        <GroupBox Grid.Column="1" Grid.Row="2" Header="Analog In">
+            <Grid VerticalAlignment="Center" Name="analogInDisplay">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="24" />
+                    <RowDefinition Height="21" />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <TextBox Tag="0" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="1" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="2" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="3" Grid.Column="3" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="4" Grid.Column="4" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="5" Grid.Column="5" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="6" Grid.Column="6" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+                <TextBox Tag="7" Grid.Column="7" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="33" Height="20" IsEnabled="False"></TextBox>
+
+                <Label Tag="0" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1">0</Label>
+                <Label Tag="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">1</Label>
+                <Label Tag="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1">2</Label>
+                <Label Tag="3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Grid.Row="1">3</Label>
+                <Label Tag="4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="4" Grid.Row="1">4</Label>
+                <Label Tag="5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="5" Grid.Row="1">5</Label>
+                <Label Tag="6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="6" Grid.Row="1">6</Label>
+                <Label Tag="7" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="7" Grid.Row="1">7</Label>
+                
+               
+                <CheckBox Name="ratiometricChk" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="2" Click="ratiometricChk_Click">Ratiometric</CheckBox>
+                <StackPanel Name="sensitivityPanel" Grid.Column="0" Grid.ColumnSpan="8" Grid.Row="3" Orientation="Horizontal">
+                    <Label Name="sensitivityLbl">Input Sensitivity:</Label>
+                    <Slider Name="sensitivitySlider" Margin="5,0,5,0" Width="180" TickFrequency="10" Maximum="150" ValueChanged="sensitivitySlider_ValueChanged" />
+                    <TextBox Name="sensitivityTxt" Width="42" Height="20" />
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

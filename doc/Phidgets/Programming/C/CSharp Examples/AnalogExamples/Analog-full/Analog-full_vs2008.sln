@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analog-full_vs2008", "Analog-full\Analog-full_vs2008.csproj", "{DA4B4DC5-3D77-4E67-A70A-D9425376A626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA4B4DC5-3D77-4E67-A70A-D9425376A626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4B4DC5-3D77-4E67-A70A-D9425376A626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4B4DC5-3D77-4E67-A70A-D9425376A626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4B4DC5-3D77-4E67-A70A-D9425376A626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

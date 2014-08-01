@@ -1,0 +1,10 @@
+﻿Build started 6/8/2012 12:49:45 AM.
+     1>Project "C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\VC++ Examples\Visual Studio Projects\InterfaceKit-simple\InterfaceKit-simple.vcxproj" on node 2 (ClCompile target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\Phidgets" /Zi /nologo /W1 /WX- /O2 /Oy- /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt "..\..\source\InterfaceKit-simple.c"
+         InterfaceKit-simple.c
+     1>Done Building Project "C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\VC++ Examples\Visual Studio Projects\InterfaceKit-simple\InterfaceKit-simple.vcxproj" (ClCompile target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01

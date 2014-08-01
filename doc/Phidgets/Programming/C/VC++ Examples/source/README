@@ -1,0 +1,26 @@
+C Examples for Phidget21 on Linux, MacOS, Windows, etc.
+
+To build all examples on Linux or MacOS:
+
+./configure
+make
+
+These examples will build on any UNIX like system with Phdiget21 installed.
+
+To build an example manually on Linux:
+gcc example.c -lphidget21
+
+To build an example manually on MacOS:
+gcc example.c -I/Library/Frameworks/Phidget21.framework/Headers -framework Phidget21
+
+
+In addition, these examples will also run on Windows platform with a MinGW, Cygwin, and Borland C++ environment.
+
+To build an example manually on MinGW:
+gcc example.c -I"C:\Program Files\Phidgets" -L"C:\Program Files\Phidgets" -lphidget21
+
+To build an example manually on Cygwin:
+gcc example.c -I"/cygdrive/c/Program Files/Phidgets" -L"/cygdrive/c/Program Files/Phidgets" -lphidget21
+
+To build an example manually on Borland C++:
+bcc32 -I"C:\Program Files\Phidgets" -L"C:\Program Files\Phidgets" phidget21bcc.lib example.c

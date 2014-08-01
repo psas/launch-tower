@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TemperatureSensor-simple">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\TemperatureSensor-simple.sln">
+</Property><Property Name="Date" Value="Saturday, June 09, 2012">
+</Property><Property Name="Time" Value="13:53 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="TemperatureSensor-simple.sln" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\Backup\TemperatureSensor-simple.sln">
+</Event><Event ErrorLevel="0" Project="TemperatureSensor-simple" Source="TemperatureSensor-simple\TemperatureSensor-simple.csproj" Description="Project file successfully backed up as C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\Backup\TemperatureSensor-simple\TemperatureSensor-simple.csproj">
+</Event><Event ErrorLevel="0" Project="TemperatureSensor-simple" Source="TemperatureSensor-simple\Program.cs" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\Backup\TemperatureSensor-simple\Program.cs">
+</Event><Event ErrorLevel="0" Project="TemperatureSensor-simple" Source="TemperatureSensor-simple\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\Administrator\Desktop\Phidgets\Programming\C\CSharp Examples\TemperatureSensorExamples\TemperatureSensor-simple\Backup\TemperatureSensor-simple\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TemperatureSensor-simple" Source="TemperatureSensor-simple\TemperatureSensor-simple.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TemperatureSensor-simple" Source="TemperatureSensor-simple\TemperatureSensor-simple.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TemperatureSensor-simple.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TemperatureSensor-simple.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TemperatureSensor-simple" Source="TemperatureSensor-simple\TemperatureSensor-simple.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
