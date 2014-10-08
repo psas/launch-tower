@@ -15,7 +15,9 @@ doc
     Documentation, what there is of it.
 
 eagle
-    Schematics and PCB layouts, made with Eagle.
+    Schematics and PCB layouts, made with Eagle_.
+
+.. _Eagle: http://www.cadsoftusa.com/eagle-pcb-design-software/product-overview/
 
 laser_cut_drawings
     Line art of the power and ignition boards' mounting panels,
