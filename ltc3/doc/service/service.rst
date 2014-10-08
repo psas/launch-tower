@@ -1,0 +1,6 @@
+PSAS Launch Tower Computer III Service Manual
+#############################################
+
+
+Some day, this document will contain service instructions for LTC 3.
+But not yet.  We're not finished with the new design yet.
