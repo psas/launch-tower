@@ -1,5 +1,8 @@
+==============================================
 PSAS Launch Tower Computer III Design Overview
-##############################################
+==============================================
+
+FIXME: Feel free to make any additions or corrections.
 
 
 Abstract
@@ -7,33 +10,87 @@ Abstract
 
 The existing launch tower computer (LTC), the second major design
 since the group's founding, is due for an overhaul.  It's only been
-two years since LTC II was put into service, but we've seen rapid
+two years since LTC II was put into service, but there have been rapid
 advances in available off-the-shelf technology, and our understanding
-of what we need (and don't want) in an LTC has evolved.
+of what we need (and don't want) in an LTC has continued to evolve.
 
 
 LTC II: Pro and Con
 ===================
 
-FIXME: Please feel free to fill in the following pro/con lists.
-
 The Good
 --------
+
+* Safety interlocks!
+* Solar charging.
+* LIPO ignition battery.
 * I/O devices are almost all USB-based.  *In situ* software
   development is not confined to the LTC's mainboard, but rather can
   take place on any Linux system equipped with USB and a comparable
   Phidgets kit.
-* LIPO launch battery.
 
 The Bad
 -------
-* Difficult to service various components without major disassembly of
-  entire LTC.
+
+* Peripherals comprised of multiple custom PCBs, each layered with a
+  variety of Phidget-based sensors.
 * Phidgets.  Expensive, fiddly, and require their own interface board.
   Their software stack is thick and troublesome to install.
+* Difficult to service various components without major disassembly of
+  entire LTC.  Wires everywhere!
 
 
 LTC III Goals
 =============
 
 * Simplify.
+* Reduction in size: boards, batteries, enclosure.
+* Field-replaceable components that can be swapped out in a reasonable
+  amount of time.
+* Backups for every major component.  Two is one and one is none!
+* User-friendly.  Any member of PSAS should be able to achieve a
+  high-level understanding of the LTC in a short amount of time.  Any
+  member should be able to service the LTC given suitable
+  documentation.
+
+
+Design Overview
+===============
+
+* BeagleBone Black SBC
+* Peripherals (sensors, relays, etc.) contained on a single custom
+  PCB.
+* BBB flipped upside down and mated to peripheral board via pin
+  headers.  A kilt, rather than a cape!
+* Replace lead-acid (car) batteries with high-capacity LiPo cells.
+* Use a battery module in common with the rocket.
+* Improved enclosure-to-tower mounting apparatus.
+* Detectable rocket umbilical connection state.
+* Improved external connectors (more robust).
+* Improved labeling of various components, connectors, switches, etc.
+* Thermal analysis!
+
+External Interface
+------------------
+
+* Rocket umbilical
+* Away box
+* WiFi coax
+* Power + Ethernet spare (future capacity)
+* Debug Ethernet
+* Camera triggers
+
+
+Design Details
+==============
+
+Power Distribution Subsystem
+----------------------------
+
+* Solar power in
+* Battery charger
+* Main battery
+* Ignition battery
+
+Ignition Subsystem
+------------------
