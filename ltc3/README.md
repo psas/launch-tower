@@ -1,5 +1,4 @@
-PSAS Launch Tower Computer III
-##############################
+# PSAS Launch Tower Computer III
 
 This subdirectory contains everything related to the third generation
 launch tower computer (LTC3), with the exception of the userspace
