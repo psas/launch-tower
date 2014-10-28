@@ -1,6 +1,8 @@
-= PSAS Launch Tower Computer III Design Overview
+= PSAS Launch Tower Computer III Design Specification
 
-FIXME: Feel free to make any additions or corrections.
+FIXME: Feel free to make any additions or corrections.  When adding
+new content, please reference specific requirements in the Functional
+Specification, if appropriate.
 
 
 == Abstract
@@ -11,40 +13,9 @@ two years since LTC II was put into service, but there have been rapid
 advances in available off-the-shelf technology, and our understanding
 of what we need (and don't want) in an LTC has continued to evolve.
 
-
-== LTC II: Pro and Con
-
-=== The Good
-
-* Safety interlocks!
-* Solar charging.
-* LIPO ignition battery.
-* I/O devices are almost all USB-based.  *In situ* software
-  development is not confined to the LTC's mainboard, but rather can
-  take place on any Linux system equipped with USB and a comparable
-  Phidgets kit.
-
-=== The Bad
-
-* Peripherals comprised of multiple custom PCBs, each layered with a
-  variety of Phidget-based sensors.
-* Phidgets.  Expensive, fiddly, and require their own interface board.
-  Their software stack is thick and troublesome to install.
-* Difficult to service various components without major disassembly of
-  entire LTC.  Wires everywhere!
-
-
-== LTC III Goals
-
-* Simplify.
-* Reduction in size: boards, batteries, enclosure.
-* Field-replaceable components that can be swapped out in a reasonable
-  amount of time.
-* Backups for every major component.  Two is one and one is none!
-* User-friendly.  Any member of PSAS should be able to achieve a
-  high-level understanding of the LTC in a short amount of time.  Any
-  member should be able to service the LTC given suitable
-  documentation.
+This document describes how the new LTC design will be implemented (as
+opposed to what it should do for us, which is the domain of the
+Functional Specification).
 
 
 == Design Overview
@@ -92,4 +63,3 @@ TODO: words
 
 http://kilobaser.com/blog/2014-07-15-beaglebone-black-gpios["BeagleBone
 Black GPIOs"], KiloBaser.
-
