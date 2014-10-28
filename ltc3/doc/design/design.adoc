@@ -1,12 +1,9 @@
-==============================================
-PSAS Launch Tower Computer III Design Overview
-==============================================
+= PSAS Launch Tower Computer III Design Overview
 
 FIXME: Feel free to make any additions or corrections.
 
 
-Abstract
-========
+== Abstract
 
 The existing launch tower computer (LTC), the second major design
 since the group's founding, is due for an overhaul.  It's only been
@@ -15,11 +12,9 @@ advances in available off-the-shelf technology, and our understanding
 of what we need (and don't want) in an LTC has continued to evolve.
 
 
-LTC II: Pro and Con
-===================
+== LTC II: Pro and Con
 
-The Good
---------
+=== The Good
 
 * Safety interlocks!
 * Solar charging.
@@ -29,8 +24,7 @@ The Good
   take place on any Linux system equipped with USB and a comparable
   Phidgets kit.
 
-The Bad
--------
+=== The Bad
 
 * Peripherals comprised of multiple custom PCBs, each layered with a
   variety of Phidget-based sensors.
@@ -40,8 +34,7 @@ The Bad
   entire LTC.  Wires everywhere!
 
 
-LTC III Goals
-=============
+== LTC III Goals
 
 * Simplify.
 * Reduction in size: boards, batteries, enclosure.
@@ -54,8 +47,7 @@ LTC III Goals
   documentation.
 
 
-Design Overview
-===============
+== Design Overview
 
 * BeagleBone Black SBC
 * Peripherals (sensors, relays, etc.) contained on a single custom
@@ -69,9 +61,10 @@ Design Overview
 * Improved external connectors (more robust).
 * Improved labeling of various components, connectors, switches, etc.
 * Thermal analysis!
+* Smaller, metal enclosure; https://en.wikipedia.org/wiki/DIN_rail[DIN rail] mounting (or something
+  similar).
 
-External Interface
-------------------
+=== External Interface
 
 * Rocket umbilical
 * Away box
@@ -81,16 +74,22 @@ External Interface
 * Camera triggers
 
 
-Design Details
-==============
+== Design Details
 
-Power Distribution Subsystem
-----------------------------
+=== Power Distribution Subsystem
 
 * Solar power in
 * Battery charger
 * Main battery
 * Ignition battery
 
-Ignition Subsystem
-------------------
+=== Ignition Subsystem
+
+TODO: words
+
+
+== External References
+
+http://kilobaser.com/blog/2014-07-15-beaglebone-black-gpios["BeagleBone
+Black GPIOs"], KiloBaser.
+
