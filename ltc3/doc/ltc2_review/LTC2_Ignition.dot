@@ -1,0 +1,67 @@
+graph LTC2_Ignition {
+
+  label = "LTC II Ignition Control"
+  node [shape = record];
+  edge [dir = forward];
+
+
+// Nodes
+//
+
+computer [label = "BeagleBoard SBC"];
+
+battery_ignition [label = "Ignition Battery"];
+
+subgraph cluster_relays {
+  label = "Relay Board";
+  style = dashed;
+  color = black;
+
+  relay_ignition [label = "Ignition Relay"];
+}
+
+board_ignition [label = "Ignition Board"];
+
+ignition_interlocks [label = "Interlocks"];
+
+subgraph cluster_rocket {
+  label = "Rocket";
+  style = dotted;
+  color = grey;
+
+  rocket_igniter [label = "Igniter"];
+  rocket_flight_computer [label = "Flight Computer"];
+}
+
+
+// Connections
+//
+
+computer -- rocket_flight_computer
+  [dir = both
+   color = green
+   label = "Serial"];
+
+board_ignition -- rocket_flight_computer
+  [color = green
+   label = "Rocket Ready"];
+
+board_ignition -- relay_ignition
+  [color = red];
+
+relay_ignition -- ignition_interlocks
+  [color = red];
+
+ignition_interlocks -- battery_ignition
+  [color = red];
+
+board_ignition -- rocket_igniter
+  [color = red];
+
+battery_ignition -- rocket_igniter
+  [color = red];
+
+computer -- ignition_interlocks
+  [dir = both
+   color = green];
+}

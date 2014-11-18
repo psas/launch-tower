@@ -1,0 +1,80 @@
+graph LTC2_Data {
+
+  label = "LTC II Data Flow\n(excluding ignition control)";
+  node [shape = record];
+  edge [dir = forward];
+
+
+// Nodes
+//
+
+computer [label = "BeagleBoard SBC"];
+
+subgraph cluster_wifi {
+  label = "WiFi";
+  style = dotted;
+  color = grey;
+
+  wifi_adapter [label = "WiFi Adapter"];
+  wifi_antenna [label = "WiFi Antenna"];
+}
+
+subgraph cluster_sensors {
+  label = "Sensors";
+  style = dotted;
+  color = grey;
+
+  board_phidget_interface [label = "Phidget Interface Board"];
+  sensor_v_power_12v_in [label = "Power 12 Vin"];
+  sensor_v_power_5v_out [label = "Power 5 Vout"];
+  sensor_v_power_24v_out [label = "Power 24 Vout"];
+  sensor_t_battery_ign [label = "Ign Batt T"];
+  sensor_v_battery_ign [label = "Ign Batt V"];
+}
+
+subgraph cluster_rocket {
+  label = "Rocket";
+  style = dotted;
+  color = grey;
+
+  rocket_flight_computer [label = "Flight Computer"];
+}
+
+
+// Connections
+//
+
+computer -- wifi_adapter
+  [dir = both
+   color = green
+   label = "USB"];
+
+wifi_adapter -- wifi_antenna
+  [dir = both
+   color = green];
+
+computer -- rocket_flight_computer
+  [dir = both
+   color = green
+   label = "Serial"];
+
+
+board_phidget_interface -- computer
+  [color = green
+   label = "USB"];
+
+sensor_v_power_12v_in -- board_phidget_interface
+  [color = green];
+
+sensor_v_power_5v_out -- board_phidget_interface
+  [color = green];
+                       
+sensor_v_power_24v_out -- board_phidget_interface
+  [color = green];
+                       
+sensor_t_battery_ign -- board_phidget_interface
+  [color = green];
+                       
+sensor_v_battery_ign -- board_phidget_interface
+  [color = green];
+}
