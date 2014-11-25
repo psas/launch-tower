@@ -1,11 +1,11 @@
 graph LTC2_Power {
 
-  label = "LTC II Power Distribution"
+  label = "LTC II Power Distribution\narrows point from source to sink"
   layout = circo
 //overlap = false
   node [shape = record];
   edge [color = red
-        dir = none];
+        dir = forward];
 
 
 // Nodes
@@ -50,7 +50,6 @@ subgraph cluster_sinks {
 
 
 pv_panel -- power_board
-  [dir = forward];
 
 power_board -- battery_main
   [dir = both];
@@ -62,23 +61,25 @@ power_board -- battery_charger
   [dir = both label = "Vbatt"];
 
 battery_charger -- ignition_board
-  [dir = forward label = "Vbatt"];
+  [label = "Vbatt"];
 
 power_board -- dcdc_converter
-  [dir = both];
 
 
 power_board -- computer
-  [dir = forward label = "5 V"];
+  [label = "5 V"];
 
 power_board -- board_phidget_interface
-  [dir = forward label = "Vbatt"];
+  [label = "Vbatt"];
 
 power_board -- ignition_board
-  [dir = forward label = "5 V, 24 V"];
+  [label = "5 V, 24 V"];
 
-power_board -- rocket_pdu
-  [dir = forward label = "24 V"];
+dcdc_converter -- relay
+  [label = "24 V"];
+
+relay -- rocket_pdu
+  [label = "24 V"];
 
 
 ignition_board -- battery_ignition

@@ -63,3 +63,10 @@ TODO: words
 
 http://kilobaser.com/blog/2014-07-15-beaglebone-black-gpios["BeagleBone
 Black GPIOs"], KiloBaser.
+
+
+
+== Unanswered Questions
+* Combine LTC2's power and ignition boards into one single board for
+  LTC3, or keep functional separation and create several small
+  "capes" that stack on top of the BBB?
