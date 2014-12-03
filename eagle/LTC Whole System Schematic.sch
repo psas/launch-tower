@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1308,6 +1308,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <plain>
 <text x="-54.356" y="-43.942" size="1.778" layer="92">SIDE PANEL</text>
 <text x="202.692" y="-51.562" size="1.778" layer="92">BOTTOM PANEL</text>
+<wire x1="210.82" y1="91.44" x2="210.82" y2="88.9" width="0.1524" layer="97"/>
+<wire x1="210.82" y1="88.9" x2="210.82" y2="73.66" width="0.1524" layer="97"/>
+<wire x1="210.82" y1="73.66" x2="243.84" y2="73.66" width="0.1524" layer="97"/>
+<wire x1="243.84" y1="73.66" x2="243.84" y2="93.98" width="0.1524" layer="97"/>
+<wire x1="243.84" y1="93.98" x2="210.82" y2="93.98" width="0.1524" layer="97"/>
+<wire x1="210.82" y1="93.98" x2="210.82" y2="91.44" width="0.1524" layer="97"/>
+<text x="215.9" y="83.82" size="1.778" layer="97">DC-DC Converter</text>
+<text x="217.678" y="74.168" size="1.27" layer="97">19V Out</text>
+<text x="229.108" y="74.168" size="1.27" layer="97">VBatt (12V) in</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="63.5" y="-17.78"/>
@@ -1437,6 +1446,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="33.02" y1="7.62" x2="38.1" y2="7.62" width="0.2032" layer="91"/>
 <wire x1="38.1" y1="7.62" x2="38.1" y2="-2.54" width="0.2032" layer="91"/>
 <wire x1="38.1" y1="-2.54" x2="48.26" y2="-2.54" width="0.2032" layer="91"/>
+<wire x1="38.1" y1="7.62" x2="38.1" y2="20.32" width="0.1524" layer="91"/>
+<junction x="38.1" y="7.62"/>
+<wire x1="38.1" y1="20.32" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="236.22" y1="20.32" x2="236.22" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -1535,23 +1548,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="78.74" y1="-2.54" x2="81.28" y2="-2.54" width="0.2032" layer="91"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SHOREPOW+" class="0">
 <segment>
-<pinref part="U$10" gate="G$1" pin="-"/>
-<pinref part="U$10" gate="G$1" pin="+"/>
-<wire x1="15.24" y1="7.62" x2="17.78" y2="7.62" width="0.2032" layer="91"/>
-<wire x1="17.78" y1="7.62" x2="17.78" y2="12.7" width="0.2032" layer="91"/>
-<wire x1="17.78" y1="12.7" x2="43.18" y2="12.7" width="0.2032" layer="91"/>
-<wire x1="43.18" y1="12.7" x2="43.18" y2="2.54" width="0.2032" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="E-"/>
-<pinref part="U$1" gate="G$1" pin="E+"/>
-<wire x1="73.66" y1="-2.54" x2="76.2" y2="-2.54" width="0.2032" layer="91"/>
-<wire x1="76.2" y1="-2.54" x2="76.2" y2="7.62" width="0.2032" layer="91"/>
-<wire x1="76.2" y1="7.62" x2="124.46" y2="7.62" width="0.2032" layer="91"/>
 <wire x1="124.46" y1="7.62" x2="185.42" y2="7.62" width="0.2032" layer="91"/>
 <wire x1="185.42" y1="7.62" x2="185.42" y2="-7.62" width="0.2032" layer="91"/>
-<wire x1="43.18" y1="2.54" x2="73.66" y2="2.54" width="0.2032" layer="91"/>
-<wire x1="73.66" y1="2.54" x2="73.66" y2="-2.54" width="0.2032" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="GND"/>
 <wire x1="190.5" y1="-10.16" x2="190.5" y2="-7.62" width="0.2032" layer="91"/>
 <wire x1="190.5" y1="-7.62" x2="185.42" y2="-7.62" width="0.2032" layer="91"/>
@@ -1562,6 +1562,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-35.56" y1="124.46" x2="-35.56" y2="91.44" width="0.2032" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="R+"/>
 <wire x1="-35.56" y1="91.44" x2="-27.94" y2="91.44" width="0.2032" layer="91"/>
+<wire x1="124.46" y1="7.62" x2="86.36" y2="7.62" width="0.2032" layer="91"/>
+<junction x="124.46" y="7.62"/>
+<wire x1="86.36" y1="7.62" x2="83.82" y2="7.62" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="R4-1"/>
+<wire x1="83.82" y1="7.62" x2="83.82" y2="33.02" width="0.1524" layer="91"/>
+<label x="76.2" y="30.48" size="0.8128" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -1846,6 +1852,29 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="-60.96" y1="-53.34" x2="-48.26" y2="-53.34" width="0.2032" layer="91"/>
 <wire x1="-48.26" y1="104.14" x2="-17.78" y2="104.14" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="E+"/>
+<pinref part="U$1" gate="G$1" pin="E-"/>
+<wire x1="73.66" y1="-2.54" x2="76.2" y2="-2.54" width="0.2032" layer="91"/>
+<wire x1="73.66" y1="2.54" x2="73.66" y2="-2.54" width="0.2032" layer="91"/>
+<wire x1="43.18" y1="2.54" x2="73.66" y2="2.54" width="0.2032" layer="91"/>
+<wire x1="43.18" y1="12.7" x2="43.18" y2="2.54" width="0.2032" layer="91"/>
+<wire x1="17.78" y1="12.7" x2="43.18" y2="12.7" width="0.2032" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="-"/>
+<wire x1="17.78" y1="7.62" x2="17.78" y2="12.7" width="0.2032" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="+"/>
+<wire x1="15.24" y1="7.62" x2="17.78" y2="7.62" width="0.2032" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="R4-2"/>
+<wire x1="86.36" y1="33.02" x2="86.36" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="5.08" x2="220.98" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="5.08" x2="220.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
