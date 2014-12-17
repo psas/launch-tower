@@ -1,0 +1,208 @@
+= PSAS Launch Tower Computer III Design Specification
+
+FIXME: Feel free to make any additions or corrections.
+
+
+== Abstract
+
+The existing launch tower computer (LTC), the second major design
+since the group's founding, is due for an overhaul.  It's only been
+two years since LTC II was put into service, but there have been rapid
+advances in available off-the-shelf technology, and our understanding
+of what we need (and don't want) in an LTC has continued to evolve.
+
+This document should be considered the source of authority for all
+questions related to the design and implementation of the LTC III.
+
+
+
+== Definitions
+
+Computer::
+  The single-board computer that comprises the core of the LTC.
+
+Launch Tower Computer (LTC)::
+  The entire system, including the enclosure, the single-board
+  computer, the peripherals, etc.
+
+
+
+== LTC II Review
+
+
+=== The Good
+
+* Safety interlocks!
+
+* Solar charging.
+
+* LiPo ignition battery.
+
+
+=== The Bad
+
+* http://www.phidgets.com/[Phidgets].  Expensive (relatively), fiddly,
+  and require their own interface board.  Their software stack is
+  thick and troublesome to install.
+
+* The shore power DC-DC converter integrated with the power board was
+  sorely inadequate.
+
+* Lead-acid car batteries (LTC II's main power source) are bulky and
+  heavy.
+
+* The door covering the side bulkhead (power and arm switches) can't
+  be closed when the shorting bar is in place.  The bar has to be
+  stored elsewhere when the LTC not in use.
+
+* The PowerPole connectors on the bottom bulkhead are too deeply
+  recessed, located too close together, and poorly labeled.
+
+
+
+== LTC III Goals
+
+* Simplify!  LTC II has too many circuit boards, too many wires, too
+  many everything.  It's difficult to service most of LTC II's
+  components without major disassembly.  Peripherals (sensors, relays,
+  etc.) should be contained on a single custom PCB.
+
+* Make it smaller.  Reduce the size of the boards, batteries, and
+  potentially even the enclosure.
+
+* Replace LTC II's plastic enclosure with a metal enclosure, for
+  durability and RFI protection.
+
+* Improve the enclosure-to-tower mounting apparatus;
+  make it fast and easy to mount (and dismount) the enclosure to the
+  tower (https://en.wikipedia.org/wiki/DIN_rail[DIN rail] mounting (or
+  something similar).
+
+* Strive for field-replaceable units (FRU) whenever possible.  FRUs
+  can be swapped out with basic tools, in a minimum amount of time.
+
+* Make it user-friendly (i.e., fool-proof).  Any member of PSAS
+  should be able to achieve a high-level understanding of the LTC in a
+  short amount of time.  Any member should be able to operate, and if
+  necessary service, the LTC given suitable documentation.
+
+* Conduct a thermal analysis.  Do we need an active cooling system to
+  deal with the heat of a desert launch site?
+
+
+
+== Requirements
+
+
+=== Power Sources
+
+All the ways the LTC can get the juice it needs.
+
+* 12 VDC rail from main batteries.
+
+* 12 VDC rail from photovoltaic panels.
+
+
+=== Power Supplies
+
+The power rails the LTC provides to its various peripherals.
+
+* 5 VDC rail to power to computer, etc.
+
+* 12 VDC rail to ignition battery charger.
+
+* 24 VDC rail to shore power.
+
+* Several external expansion power connectors; switchable by the
+  computer.
+
+
+=== Sensors
+
+* Voltage sensors for each power rail.
+
+* Temperature sensor for enclosure interior.
+
+* Support for at least four relays.
+
+* External USB-connected WiFi adapter for computer.
+
+* Add second enclosure access panel.  Divide main power switch; and
+  ignition arming switch, shorting bar, and fuse into separate panels.
+
+
+=== User Interface
+
+* Stand-alone voltmeters on the front panel, for each power rail.
+  (Stand-alone meters have no dependency on the computer being
+  booted.)
+
+* Front panel LEDs indicating the status of each relay, and the
+  rocket-ready status.
+
+* Main power switch
+
+* Ignition arming switch.
+
+* Ignition shorting bar.
+
+* Ignition fuse.
+
+* Label all the things!  Components, connectors, switches, oh my!
+
+
+=== External Connections
+
+* Rocket umbilical.  Connection state should be detectable by the
+  computer.
+
+* Away box
+
+* WiFi coax
+
+* Distinct, keyed connectors for each external connection.  There
+  should be no way to accidentally connect a data cable to a power
+  outlet; or to reverse the polarity of a connector.
+
+* Several Ethernet connectors that provide external access to the
+  LTC's internal subnet, for debug and expansion purposes.
+
+* Several expansion trigger switches, for computer control of cameras,
+  etc.  Switches short two external inputs together.  Nate proposes
+  1/8" phono connectors for these.
+
+* Expansion Ethernet and power connectors can be paired up for use
+  with passive PoE injectors, providing single-cable power and network
+  support for off-board devices (e.g., weather station).
+
+
+
+== Design
+
+TODO: More words, please.
+
+* BeagleBone Black SBC
+
+* BBB flipped upside down and mated to peripheral board via pin
+  headers.  A kilt, rather than a cape!
+
+
+=== Power Sources
+
+
+=== Power Supplies
+
+
+=== Ignition Subsystem
+
+
+=== Networking
+
+* Internal Ethernet switch.
+
+
+
+== References
+
+http://kilobaser.com/blog/2014-07-15-beaglebone-black-gpios["BeagleBone
+Black GPIOs"], KiloBaser.
