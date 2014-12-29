@@ -1,8 +1,5 @@
 = PSAS Launch Tower Computer III Design Specification
 
-FIXME: Feel free to make any additions or corrections.
-
-
 == Abstract
 
 The existing launch tower computer (LTC), the second major design
@@ -38,6 +35,7 @@ Launch Tower Computer (LTC)::
 
 * LiPo ignition battery.
 
+* Smaller and less heavy compared to LTC v1
 
 === The Bad
 
@@ -58,7 +56,9 @@ Launch Tower Computer (LTC)::
 * The PowerPole connectors on the bottom bulkhead are too deeply
   recessed, located too close together, and poorly labeled.
 
+* While smaller and lighter than LTV v1, still big and bulky and a pain to carry around.
 
+* Complicated, heavily mod-wired, and difficult to trace wires make it all hard to debug.
 
 == LTC III Goals
 
@@ -70,8 +70,8 @@ Launch Tower Computer (LTC)::
 * Make it smaller.  Reduce the size of the boards, batteries, and
   potentially even the enclosure.
 
-* Replace LTC II's plastic enclosure with a metal enclosure, for
-  durability and RFI protection.
+* Optional: Replace LTC II's plastic enclosure with a metal enclosure, for
+  durability and RFI protection, without sacrificing light weight.
 
 * Improve the enclosure-to-tower mounting apparatus;
   make it fast and easy to mount (and dismount) the enclosure to the
@@ -98,20 +98,21 @@ Launch Tower Computer (LTC)::
 
 All the ways the LTC can get the juice it needs.
 
-* 12 VDC rail from main batteries.
+* (10,12,14.7) VDC from main batteries.
 
-* 12 VDC rail from photovoltaic panels.
+* (10,12,17) VDC from photovoltaic ("PV") panels.
 
+* 12V "Shore" power connection while not in the field.
 
 === Power Supplies
 
 The power rails the LTC provides to its various peripherals.
 
-* 5 VDC rail to power to computer, etc.
+* 5 VDC for computer power, etc.
 
-* 12 VDC rail to ignition battery charger.
+* 12 VDC for ignition battery charger (assuming a buck/boost battery charger, else > 14.7 V)
 
-* 24 VDC rail to shore power.
+* 19 VDC for shore power.
 
 * Several external expansion power connectors; switchable by the
   computer.
@@ -135,7 +136,7 @@ The power rails the LTC provides to its various peripherals.
 
 * Stand-alone voltmeters on the front panel, for each power rail.
   (Stand-alone meters have no dependency on the computer being
-  booted.)
+  booted.) Voltmeters must be low power, or else have on/off switches.
 
 * Front panel LEDs indicating the status of each relay, and the
   rocket-ready status.
@@ -158,7 +159,9 @@ The power rails the LTC provides to its various peripherals.
 
 * Away box
 
-* WiFi coax
+* WiFi coax to external antenna
+
+* Power (PV and shore)
 
 * Distinct, keyed connectors for each external connection.  There
   should be no way to accidentally connect a data cable to a power
@@ -168,7 +171,7 @@ The power rails the LTC provides to its various peripherals.
   LTC's internal subnet, for debug and expansion purposes.
 
 * Several expansion trigger switches, for computer control of cameras,
-  etc.  Switches short two external inputs together.  Nate proposes
+  etc.  Switches short two external inputs together.  Nathan proposes
   1/8" phono connectors for these.
 
 * Expansion Ethernet and power connectors can be paired up for use
@@ -189,8 +192,14 @@ TODO: More words, please.
 
 === Power Sources
 
-
+* 12V nominal input from an external wall-mount power supply
+* 17V (open circuit) PV power input
+   * MPPT?
+* Internal LiPo power pack (10,14.4,16.8)V @ ??? AHr
+   * Battery charger from PV? Shore power?
+   
 === Power Supplies
+
 
 
 === Ignition Subsystem
