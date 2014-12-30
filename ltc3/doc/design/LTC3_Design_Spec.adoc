@@ -1,19 +1,27 @@
-= PSAS Launch Tower Computer III Design Specification
+Portland State Aerospace Society Launch Tower Computer III Design Specification
+===============================================================================
+PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
+v0.1, January 2015: DRAFT
 
-== Abstract
+Summary
+-------
 
 The existing launch tower computer (LTC), the second major design
-since the group's founding, is due for an overhaul.  It's only been
-two years since LTC II was put into service, but there have been rapid
+since the founding of the http://psas.pdx.edu/[Portland State
+Aerospace Society] (PSAS), is due for an overhaul.  It's only been two
+years since LTC II was put into service, but there have been rapid
 advances in available off-the-shelf technology, and our understanding
 of what we need (and don't want) in an LTC has continued to evolve.
 
-This document should be considered the source of authority for all
-questions related to the design and implementation of the LTC III.
+This document is the source of authority for all questions related to
+the design and implementation of the LTC III.  If the design of the
+LTC doesn't conform to this document, either fix the design, or update
+the document.
 
 
 
-== Definitions
+Definitions
+-----------
 
 Computer::
   The single-board computer that comprises the core of the LTC.
@@ -22,13 +30,25 @@ Launch Tower Computer (LTC)::
   The entire system, including the enclosure, the single-board
   computer, the peripherals, etc.
 
+Power Source::
+  All the ways the LTC can get the juice it needs.  External power
+  from the outside world that the LTC sinks for various internal
+  purposes.
+
+Power Supply::
+  The power rails the LTC provides to its various peripherals.
+  Internal LTC circuits that sink external power, convert and
+  condition it, and supply it to other (internal and external)
+  subsystems.
 
 
-== LTC II Review
+
+LTC II Review
+-------------
 
 
-=== The Good
-
+The Good
+~~~~~~~~
 * Safety interlocks!
 
 * Solar charging.
@@ -37,7 +57,9 @@ Launch Tower Computer (LTC)::
 
 * Smaller and less heavy compared to LTC v1
 
-=== The Bad
+
+The Bad
+~~~~~~~
 
 * http://www.phidgets.com/[Phidgets].  Expensive (relatively), fiddly,
   and require their own interface board.  Their software stack is
@@ -60,7 +82,10 @@ Launch Tower Computer (LTC)::
 
 * Complicated, heavily mod-wired, and difficult to trace wires make it all hard to debug.
 
-== LTC III Goals
+
+
+Goals
+-----
 
 * Simplify!  LTC II has too many circuit boards, too many wires, too
   many everything.  It's difficult to service most of LTC II's
@@ -91,12 +116,11 @@ Launch Tower Computer (LTC)::
 
 
 
-== Requirements
+Requirements
+------------
 
-
-=== Power Sources
-
-All the ways the LTC can get the juice it needs.
+Power Sources
+~~~~~~~~~~~~~
 
 * (10,12,14.7) VDC from main batteries.
 
@@ -104,9 +128,8 @@ All the ways the LTC can get the juice it needs.
 
 * 12V "Shore" power connection while not in the field.
 
-=== Power Supplies
-
-The power rails the LTC provides to its various peripherals.
+Power Supplies
+~~~~~~~~~~~~~~
 
 * 5 VDC for computer power, etc.
 
@@ -118,21 +141,24 @@ The power rails the LTC provides to its various peripherals.
   computer.
 
 
-=== Sensors
+Networking
+~~~~~~~~~~
+
+* WiFi connection to Launch Control.
+
+* Ethernet connection to the rocket; debug; expansion.
+
+
+Sensors
+~~~~~~~
 
 * Voltage sensors for each power rail.
 
 * Temperature sensor for enclosure interior.
 
-* Support for at least four relays.
 
-* External USB-connected WiFi adapter for computer.
-
-* Add second enclosure access panel.  Divide main power switch; and
-  ignition arming switch, shorting bar, and fuse into separate panels.
-
-
-=== User Interface
+User Interface
+~~~~~~~~~~~~~~
 
 * Stand-alone voltmeters on the front panel, for each power rail.
   (Stand-alone meters have no dependency on the computer being
@@ -152,7 +178,8 @@ The power rails the LTC provides to its various peripherals.
 * Label all the things!  Components, connectors, switches, oh my!
 
 
-=== External Connections
+External Connections
+~~~~~~~~~~~~~~~~~~~~
 
 * Rocket umbilical.  Connection state should be detectable by the
   computer.
@@ -180,7 +207,8 @@ The power rails the LTC provides to its various peripherals.
 
 
 
-== Design
+Design
+------
 
 TODO: More words, please.
 
@@ -190,28 +218,37 @@ TODO: More words, please.
   headers.  A kilt, rather than a cape!
 
 
-=== Power Sources
+Power Sources
+~~~~~~~~~~~~~
 
 * 12V nominal input from an external wall-mount power supply
+
 * 17V (open circuit) PV power input
-   * MPPT?
+
+** MPPT?
+
 * Internal LiPo power pack (10,14.4,16.8)V @ ??? AHr
-   * Battery charger from PV? Shore power?
-   
-=== Power Supplies
+
+** Battery charger from PV? Shore power?
 
 
+Power Supplies
+~~~~~~~~~~~~~~
 
-=== Ignition Subsystem
+
+Ignition Subsystem
+~~~~~~~~~~~~~~~~~~
 
 
-=== Networking
+Networking
+~~~~~~~~~~
 
 * Internal Ethernet switch.
 
 
 
-== References
+References
+----------
 
 http://kilobaser.com/blog/2014-07-15-beaglebone-black-gpios["BeagleBone
 Black GPIOs"], KiloBaser.

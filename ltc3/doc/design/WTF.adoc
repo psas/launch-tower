@@ -1,0 +1,21 @@
+*.adoc files are text files encoded in AsciiDoc format.  It's a
+compromise between the excessive simplicity of Markdown, and the
+mind-numbing intricacies of reStructuredText.
+
+
+Read all about it on Wikipedia:
+
+  https://en.wikipedia.org/wiki/AsciiDoc
+
+
+Converting *.adoc files to "final" formats is easy.  E.g.:
+
+	asciidoctor -b html5 happy_fun_document.adoc
+
+	asciidoctor -b docbook happy_fun_document.adoc
+	dblatex happy_fun_document.xml
+
+
+A handy Writer's Guide to AsciiDoc markup:
+
+  http://asciidoctor.org/docs/asciidoc-writers-guide/
