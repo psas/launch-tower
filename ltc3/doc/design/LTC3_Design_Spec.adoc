@@ -9,7 +9,13 @@ v0.1, 27 January 2015: DRAFT
 Summary
 -------
 
-The existing launch tower computer (LTC), the second major design
+The launch tower computer (LTC) is an integral component in the
+Portland State Aerospace Society (PSAS) launch vehicle complex.  It is
+responsible for providing shore power to the rocket while it remains
+on the launch pad; manages the ignition safety interlock system; and
+ignites the rocket motor at launch time.
+
+The existing launch tower computer, the second major design
 since the founding of the http://psas.pdx.edu/[Portland State
 Aerospace Society] (PSAS), is due for an overhaul.  It's only been two
 years since LTC II was put into service, but there have been rapid
