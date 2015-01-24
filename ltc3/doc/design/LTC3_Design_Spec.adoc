@@ -174,9 +174,19 @@ Where the juice comes from.
 ** ThinkPad switching "pregnant snake" power supply: 19 V, several A
 
 
+Power Loads
+~~~~~~~~~~~
+Who the juice goes to.
+
+* Several external expansion power connectors
+** Switchable by the computer
+* Computer peripherals (5V)
+** Ignition board
+
+
 Power Supplies
 ~~~~~~~~~~~~~~
-Juice the LTC provides.
+Power conditioning that the LTC provides.
 
 * 5 VDC for computer power, etc.
 ** TODO: power/current requirement... ~10 W
@@ -188,14 +198,6 @@ Juice the LTC provides.
 
 * 19 VDC @ 4 A for rocket shore power
 ** LTC2 was browning out @ 2 A; replacement converter is 4 A
-
-
-Power Loads
-~~~~~~~~~~~
-Who the juice goes to.
-
-* Several external expansion power connectors
-** Switchable by the computer
 
 
 Relays
@@ -216,6 +218,7 @@ Networking
 
 * Internal Ethernet switch
 ** LTC computer; rocket; external (debug, expansion peripherals)
+** Switch or dumb hub? Is there any debugging value to being able to see all the internal traffic via a hub?
 
 
 Sensors
@@ -253,6 +256,7 @@ User Interface
 ** Independent of SBC.  Useful for debug.
 ** IDEA: an entire LCD display driven by the SBC.  If the SBC can't come
    up, independent meters aren't worth much.
+*** Grayscale transflective display
 *** On panel; acrylic shield; sun shade.
 ** IDEA: keep the panel DMM, unconnected, for debug use
 ** IDEA: scrap the panel DMM, include a real DMM for debug (internally mounted)
@@ -333,7 +337,9 @@ Power Supplies
 
 Ignition Subsystem
 ~~~~~~~~~~~~~~~~~~
-
+* The ignition signal is controlled by two relays in series
+** One on the ignition board controlled by RocketReady (from the FC)
+** One on the relay board controlled by the LTC
 
 Networking
 ~~~~~~~~~~
