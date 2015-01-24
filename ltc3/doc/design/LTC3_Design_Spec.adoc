@@ -1,7 +1,10 @@
 Portland State Aerospace Society Launch Tower Computer III Design Specification
 ===============================================================================
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, January 2015: DRAFT
+v0.1, 27 January 2015: DRAFT
+
+:imagesdir: ./images
+
 
 Summary
 -------
@@ -49,38 +52,68 @@ LTC II Review
 
 The Good
 ~~~~~~~~
+* Smaller and less heavy than LTC I
+
+[[image-ltc_i]]
+.The guts of LTC I
+image::LTC_I.jpeg[]
+
 * Safety interlocks!
 
 * Solar charging.
 
 * LiPo ignition battery.
 
-* Smaller and less heavy compared to LTC v1
+[[image-ltc_ii_lipo_ignition_battery_pack]]
+.LTC III ignition board and LiPo battery pack.
+image::LTC_II_LiPo_Ignition_Battery_Pack.jpeg[]
 
 
-The Bad
-~~~~~~~
+The Not-So-Good
+~~~~~~~~~~~~~~~
+
+* While smaller and lighter than LTV v1, still big and bulky and a
+  pain to carry around.
+
+* Complicated, heavily mod-wired, and difficult to trace wires make it
+  all hard to debug.
+
+[[image-ltc_ii]]
+.The guts of LTC II
+image::LTC_II.jpeg[Photo of the interior of LTC II]
+
+* The shore power DC-DC converter integrated with the power board was
+  sorely inadequate.
+
+[[image-ltc_ii_power_board]]
+.LTC II power board.
+image::LTC_II_Power_Board.jpeg[Photo of LTC II's power supply board.]
+
+* Lead-acid car batteries (LTC II's main power source) are bulky and
+  heavy.
 
 * http://www.phidgets.com/[Phidgets].  Expensive (relatively), fiddly,
   and require their own interface board.  Their software stack is
   thick and troublesome to install.
 
-* The shore power DC-DC converter integrated with the power board was
-  sorely inadequate.
-
-* Lead-acid car batteries (LTC II's main power source) are bulky and
-  heavy.
+[[image-ltc_ii_phidgets]]
+.LTC II Phidgets interface board.
+image::LTC_II_Phidget_Interface_Board.jpeg[Photo of LTC II's Phidgets interface board.]
 
 * The door covering the side bulkhead (power and arm switches) can't
   be closed when the shorting bar is in place.  The bar has to be
   stored elsewhere when the LTC not in use.
 
+[[image-ltc_ii_bulkhead_door]]
+.LTC II bulkhead access door.
+image::LTC_II_Bulkhead_Door.jpeg[Photo of LTC II's bulkhead access door.]
+
 * The PowerPole connectors on the bottom bulkhead are too deeply
   recessed, located too close together, and poorly labeled.
 
-* While smaller and lighter than LTV v1, still big and bulky and a pain to carry around.
-
-* Complicated, heavily mod-wired, and difficult to trace wires make it all hard to debug.
+[[image-ltc_ii_power_connectors]]
+.LTC II external power connectors.
+image::LTC_II_Power_Connectors.jpeg[Photo of LTC II's power connectors.]
 
 
 
@@ -121,24 +154,53 @@ Requirements
 
 Power Sources
 ~~~~~~~~~~~~~
+Where the juice comes from.
 
-* (10,12,14.7) VDC from main batteries.
+* (10, 14.4, 16.8) VDC from main batteries
+** Internal; permanent.
+** Sufficient capacity to source internal and external loads (~4 AH)
 
-* (10,12,17) VDC from photovoltaic ("PV") panels.
+* (10, 12, 17) VDC from photovoltaic ("PV") panels
+** External.
 
-* 12V "Shore" power connection while not in the field.
+* max 24 VDC lab power connection (while not in the field)
+** External; separate from PV input.
+** ThinkPad switching "pregnant snake" power supply: 19 V, several A
+
 
 Power Supplies
 ~~~~~~~~~~~~~~
+Juice the LTC provides.
 
 * 5 VDC for computer power, etc.
+** TODO: power/current requirement... ~10 W
 
-* 12 VDC for ignition battery charger (assuming a buck/boost battery charger, else > 14.7 V)
+* 12-15 VDC for ignition battery charger
+** Assuming a buck/boost battery charger, else > 14.7 V
+** NOT integral to LTC. Separate system.
+** COTS, not a custom design!
 
-* 19 VDC for shore power.
+* 19 VDC @ 4 A for rocket shore power
+** LTC2 was browning out @ 2 A; replacement converter is 4 A
 
-* Several external expansion power connectors; switchable by the
-  computer.
+
+Power Loads
+~~~~~~~~~~~
+Who the juice goes to.
+
+* Several external expansion power connectors
+** Switchable by the computer
+
+
+Relays
+~~~~~~
+
+* Internal: ignition
+
+* External: expansion peripherals
+** Power connectors
+** Switch across input pair (no power)
+*** Opto-isolated
 
 
 Networking
@@ -146,26 +208,31 @@ Networking
 
 * WiFi connection to Launch Control.
 
-* Ethernet connection to the rocket; debug; expansion.
+* Internal Ethernet switch
+** LTC computer; rocket; external (debug, expansion peripherals)
 
 
 Sensors
 ~~~~~~~
 
 * Voltage sensors for each power rail.
+** 5 VDC; 19 VDC; main battery; ignition battery; PV; lab
 
-* Temperature sensor for enclosure interior.
+* Temperature sensors
+** Board; main battery pack; enclosure interior
+
+* Ignition fuse state
+
+* Current consumption
+** PV; battery; rocket
+
+* Rocket-ready status
+
+* Umbilical connection state
 
 
 User Interface
 ~~~~~~~~~~~~~~
-
-* Stand-alone voltmeters on the front panel, for each power rail.
-  (Stand-alone meters have no dependency on the computer being
-  booted.) Voltmeters must be low power, or else have on/off switches.
-
-* Front panel LEDs indicating the status of each relay, and the
-  rocket-ready status.
 
 * Main power switch
 
@@ -175,35 +242,57 @@ User Interface
 
 * Ignition fuse.
 
+* Front panel voltmeters for each power rail.
+** Activated by momentary push-button.
+** Independent of SBC.  Useful for debug.
+** IDEA: an entire LCD display driven by the SBC.  If the SBC can't come
+   up, independent meters aren't worth much.
+*** On panel; acrylic shield; sun shade.
+** IDEA: keep the panel DMM, unconnected, for debug use
+** IDEA: scrap the panel DMM, include a real DMM for debug (internally mounted)
+
+[[image-panel_dmm]]
+image:panel_dmm-30303.jpeg[Photo of an panel-mount digital volt- and ammeter.]
+
+* Front panel LEDs indicating the status of each relay, and the
+  rocket-ready status.
+** relays; triggers
+** must be daylight-readable (shrouded?)
+
 * Label all the things!  Components, connectors, switches, oh my!
 
 
 External Connections
 ~~~~~~~~~~~~~~~~~~~~
 
-* Rocket umbilical.  Connection state should be detectable by the
-  computer.
+* Power In
+** solar panels
+** lab (AKA "shore shore")
+
+* Rocket umbilical
+** Ethernet, shore power, rocket-ready
 
 * Away box
 
 * WiFi coax to external antenna
 
-* Power (PV and shore)
+* Expansion support
+** Power connectors, connected directly to main battery rail.
+
+** Several Ethernet connectors that provide external access to the
+   LTC's internal switch, for debug and expansion purposes.
+
+** Several expansion trigger switches, for computer control of cameras,
+   etc.  Switches short two external inputs together.  Nathan proposes
+   1/8" phono connectors for these.
+
+** Expansion Ethernet and power connectors can be paired up for use
+   with passive PoE injectors, providing single-cable power and network
+   support for off-board devices (e.g., weather station).
 
 * Distinct, keyed connectors for each external connection.  There
   should be no way to accidentally connect a data cable to a power
   outlet; or to reverse the polarity of a connector.
-
-* Several Ethernet connectors that provide external access to the
-  LTC's internal subnet, for debug and expansion purposes.
-
-* Several expansion trigger switches, for computer control of cameras,
-  etc.  Switches short two external inputs together.  Nathan proposes
-  1/8" phono connectors for these.
-
-* Expansion Ethernet and power connectors can be paired up for use
-  with passive PoE injectors, providing single-cable power and network
-  support for off-board devices (e.g., weather station).
 
 
 
@@ -245,6 +334,27 @@ Networking
 
 * Internal Ethernet switch.
 
+
+Wish List
+---------
+
+* Improved enclosure.
+** Smaller; metal.
+** IDEA: narrow (tower width); shoebox-ish size
+** Metal more robust; RF proof.  May soak up more solar heat.
+** IDEA: Pelican case. Handles!
+** Lay-flat-able!
+*** At least one side free of protuberances.
+
+* Improved enclosure-to-tower mounting apparatus
+
+* Andrew strongly suggests a single-board LTC3.
+** Lots of Maxim Test Points along traces between sub-systems.
+
+* Multiple backup LTCs.
+
+* Prototyping area
+** 0.1" hole grid; off-board connectors
 
 
 References
