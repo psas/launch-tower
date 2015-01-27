@@ -46,13 +46,13 @@ image::LTC_I.jpeg[]
 image::LTC_II_LiPo_Ignition_Battery_Pack.jpeg[]
 
 
-=== The Not-So-Good
+=== The Not So Good
 
 * While smaller and lighter than LTV v1, still big and bulky and a
   pain to carry around.
 
-* Complicated, heavily mod-wired, and difficult to trace wires make it
-  all hard to debug.
+* Complicated, heavily mod-wired, and difficult-to-trace wires all
+  conspire to make debugging a real chore.
 
 .The guts of LTC II
 image::LTC_II.jpeg[Photo of the interior of LTC II]
@@ -149,7 +149,7 @@ The LTC must provide power to the following sub-systems:
 ** 5 ±0.25 VDC at 1.0 A max. (BeagleBone Black spec.)
 
 * Rocket
-** "Shore" power
+** Shore power
 ** 19 VDC @ 4 A
 
 * Ignition board
@@ -169,6 +169,9 @@ The LTC must provide power to the following sub-systems:
 * COTS single-board computer (SBC).
 * Able to run a current Debian "stable" Linux system.
 * Strongly prefer to keep the existing BeagleBone Black.
+* At least one Gigabit Ethernet port.
+** *TODO*: Gigabit or 100MB?
+* At least two USB 2.0 ports.
 
 
 === Network
