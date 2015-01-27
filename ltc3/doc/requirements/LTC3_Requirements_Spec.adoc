@@ -1,0 +1,302 @@
+= Portland State Aerospace Society Launch Tower Computer III Requirements
+PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
+v0.1, 27 January 2015: DRAFT
+
+:imagesdir: ./images
+
+
+
+== Summary
+
+The launch tower computer (LTC) is an integral component in the
+Portland State Aerospace Society (PSAS) launch vehicle complex.  It is
+responsible for providing shore power to the rocket while it remains
+on the launch pad; manages the ignition safety interlock system; and
+ignites the rocket motor at launch time.
+
+The existing launch tower computer, the second major design
+since the founding of the http://psas.pdx.edu/[Portland State
+Aerospace Society] (PSAS), is due for an overhaul.  It's only been two
+years since LTC II was put into service, but there have been rapid
+advances in available off-the-shelf technology, and our understanding
+of what we need (and don't want) in an LTC has continued to evolve.
+
+This document is the source of authority for all questions related to
+the requirements of the LTC III.  If the document does not conform to
+the known requirements, then either the requirements are incorrect, or
+the document needs to be updated!
+
+
+
+== LTC II Review
+
+=== The Good
+* Smaller and less heavy than LTC I
+
+.The guts of LTC I
+image::LTC_I.jpeg[]
+
+* Safety interlocks!
+
+* Solar charging.
+
+* LiPo ignition battery.
+
+.LTC III ignition board and LiPo battery pack.
+image::LTC_II_LiPo_Ignition_Battery_Pack.jpeg[]
+
+
+=== The Not-So-Good
+
+* While smaller and lighter than LTV v1, still big and bulky and a
+  pain to carry around.
+
+* Complicated, heavily mod-wired, and difficult to trace wires make it
+  all hard to debug.
+
+.The guts of LTC II
+image::LTC_II.jpeg[Photo of the interior of LTC II]
+
+* The shore power DC-DC converter integrated with the power board was
+  sorely inadequate.
+
+.LTC II power board.
+image::LTC_II_Power_Board.jpeg[Photo of LTC II's power supply board.]
+
+* Lead-acid car batteries (LTC II's main power source) are bulky and
+  heavy.
+
+* http://www.phidgets.com/[Phidgets].  Expensive (relatively), fiddly,
+  and require their own interface board.  Their software stack is
+  thick and troublesome to install.
+
+.LTC II Phidgets interface board.
+image::LTC_II_Phidget_Interface_Board.jpeg[Photo of LTC II's Phidgets interface board.]
+
+* The door covering the side bulkhead (power and arm switches) can't
+  be closed when the shorting bar is in place.  The bar has to be
+  stored elsewhere when the LTC not in use.
+
+.LTC II bulkhead access door.
+image::LTC_II_Bulkhead_Door.jpeg[Photo of LTC II's bulkhead access door.]
+
+* The PowerPole connectors on the bottom bulkhead are too deeply
+  recessed, located too close together, and poorly labeled.
+
+.LTC II external power connectors.
+image::LTC_II_Power_Connectors.jpeg[Photo of LTC II's power connectors.]
+
+
+
+== Goals
+
+* Simplify!  LTC II has too many circuit boards, too many wires, too
+  many everything.  It's difficult to service most of LTC II's
+  components without major disassembly.  Peripherals (sensors, relays,
+  etc.) should be contained on a single custom PCB.
+
+* Make it smaller.  Reduce the size of the boards, batteries, and
+  potentially even the enclosure.
+
+* Use commercial, off-the-shelf (COTS) hardware whenever possible.
+  COTS hardware will (ideally) have been subjected to far more
+  engineering scrutiny than we'll be able to afford.
+
+* Strive for field-replaceable units (FRU) whenever possible.  FRUs
+  can be swapped out with basic tools, in a minimum amount of time.
+
+* Make it user-friendly (i.e., fool-proof).  Any member of PSAS
+  should be able to achieve a high-level understanding of the LTC in a
+  short amount of time.  Any member should be able to operate, and if
+  necessary service, the LTC given suitable documentation.
+
+* Conduct a thermal analysis.  Do we need an active cooling system to
+  deal with the heat of a desert launch site?
+
+* Improve the enclosure-to-tower mounting apparatus;
+  make it fast and easy to mount (and dismount) the enclosure to the
+  tower (https://en.wikipedia.org/wiki/DIN_rail[DIN rail] mounting (or
+  something similar).
+
+* Optional: Replace LTC II's plastic enclosure with a metal enclosure, for
+  durability and RFI protection, without sacrificing light weight.
+
+
+
+== Requirements
+
+=== Power
+The LTC will receive power from the following external sources:
+
+* Photovoltaic (PV) panels
+** Provide 10.0/12.0/17.0 VDC (min., nominal, max.)
+
+* Lab power connection
+** Used when power from PV panels is not available.
+** Maximum 24 VDC
+** Suggested: use a ThinkPad switching "pregnant snake" power supply
+   (19 VDC, several amps).
+
+The LTC must include a bank of internal LiPo cells ("main" batteries):
+
+* Voltage must be 10.0/14.4/16.8 VDC (min., nominal, max.).
+* Capacity must be sufficient to provide power to both internal and
+  external loads (approx. 4 AH).
+
+The LTC must provide power to the following sub-systems:
+
+* Computer
+** 5 ±0.25 VDC at 1.0 A max. (BeagleBone Black spec.)
+
+* Rocket
+** "Shore" power
+** 19 VDC @ 4 A
+
+* Ignition board
+** 5 VDC.
+
+* Ignition battery charger
+** 12 VDC, direct from PV panels
+** _Not_ integral to the LTC main board
+** COTS hardware strongly preferred
+
+* Several external expansion devices
+** Via external connectors
+** Switchable by the computer
+
+
+=== Computer
+* COTS single-board computer (SBC).
+* Able to run a current Debian "stable" Linux system.
+* Strongly prefer to keep the existing BeagleBone Black.
+
+
+=== Network
+
+* WiFi connection to Launch Control.
+
+* Internal Ethernet switch
+** Able to support the computer; rocket; several external hosts
+   (debug, expansion peripherals)
+** *TODO*: Switch or dumb hub? Is there any debug value to being
+   able to see all traffic from one port?  Will there even be any
+   traffic that does not include the computer?
+
+
+=== Relays
+
+* Internal: ignition
+
+* External: expansion peripherals
+** Power connectors
+** Switch across input pair (no power)
+*** Opto-isolated
+
+
+=== Sensors
+
+The LTC must provide sensors to support the following:
+
+* Voltage on each power rail
+
+* Current consumption
+** PV panels
+** Main battery
+** Rocket shore power
+
+* Temperature
+** Main board
+** Main battery pack
+** Enclosure interior
+
+* Rocket-ready status
+
+* Umbilical connection state
+
+* Ignition fuse state
+
+
+=== User Interface
+
+* Main power switch
+
+* Ignition arming switch.
+
+* Ignition shorting bar.
+
+* Ignition fuse.
+
+* Front panel display with "vital signs"
+** Activated by momentary push-button.
+** Suggested: a display panel driven by the computer.  Panel should be
+   easily visible in broad daylight (e.g., transflective grayscale LCDs).
+   Panel would need to be protected from impact damage (i.e., mounted
+   behind an acrylic window).
+
+* Front panel status LEDs
+** Relays open/closed
+** Rocket ready/not-ready
+** External triggers activated
+** Must be daylight-readable (shrouded?)
+
+* Label all the things!  Components, connectors, switches, oh my!
+
+
+=== External Connections
+
+* Power In
+** solar panels
+** lab (AKA "shore shore")
+
+* Rocket umbilical
+** Ethernet, shore power, rocket-ready
+
+* Away box
+
+* WiFi coax to external antenna
+
+* Expansion support
+** Power connectors, connected directly to main battery rail.
+
+** Several Ethernet connectors that provide external access to the
+   LTC's internal switch, for debug and expansion purposes.
+
+** Several expansion trigger switches, for computer control of cameras,
+   etc.  Switches short two external inputs together.  Nathan proposes
+   1/8" phono connectors for these.
+
+** Expansion Ethernet and power connectors can be paired up for use
+   with passive PoE injectors, providing single-cable power and network
+   support for off-board devices (e.g., weather station).
+
+* Distinct, keyed connectors for each external connection.  There
+  should be no way to accidentally connect a data cable to a power
+  outlet; or to reverse the polarity of a connector.
+
+
+=== Enclosure
+
+* Metal
+** More robust than plastic.
+** Provides greater protection from EMI than plastic.
+** *TODO*: Are we concerned about a metal enclosure soaking up more
+   desert heat than plastic?
+
+* Width no greater than the tower it mounts to.
+
+* Able to lay flat on a tabletop.
+
+* Improved mounting apparatus
+** Able to be mounted by a single individual.
+** Tool-free, preferably.
+
+
+=== Wish List
+
+* Andrew strongly suggests a single-board LTC3.
+** Lots of Maxim Test Points along traces between sub-systems.
+
+* Prototyping area on main board
+** 0.1" hole grid; off-board connectors
+
+* Multiple backup LTCs.
