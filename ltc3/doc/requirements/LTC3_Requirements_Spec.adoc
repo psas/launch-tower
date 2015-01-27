@@ -185,12 +185,14 @@ The LTC must provide power to the following sub-systems:
 
 === Relays
 
-* Internal: ignition
+* Ignition
 
-* External: expansion peripherals
-** Power connectors
+* Rocket ready
+** Controlled by the rocket, independent of the LTC
+
+* Expansion peripherals
 ** Switch across input pair (no power)
-*** Opto-isolated
+** Opto-isolated
 
 
 === Sensors
