@@ -160,7 +160,6 @@ The LTC must provide power to the following sub-systems:
 ** 12 VDC, direct from PV panels
 ** _Not_ integral to the LTC main board
 ** COTS hardware strongly preferred
-*** *TODO*: recommended manufacturer/source?
 
 * Several external expansion devices
 ** Via external connectors
@@ -171,8 +170,7 @@ The LTC must provide power to the following sub-systems:
 * COTS single-board computer (SBC).
 * Able to run a current Debian "stable" Linux system.
 * Strongly prefer to keep the existing BeagleBone Black.
-* At least one Gigabit Ethernet port.
-** *TODO*: Gigabit or 100MB?
+* At least one 100MB Ethernet port.
 * At least two USB 2.0 ports.
 
 
@@ -183,9 +181,6 @@ The LTC must provide power to the following sub-systems:
 * Internal Ethernet switch
 ** Able to support the computer; rocket; several external hosts
    (debug, expansion peripherals)
-** *TODO*: Switch or dumb hub? Is there any debug value to being
-   able to see all traffic from one port?  Will there even be any
-   traffic that does not include the computer?
 
 
 === Relays
@@ -286,8 +281,6 @@ The LTC must provide sensors to support the following:
 * Metal
 ** More robust than plastic.
 ** Provides greater protection from EMI than plastic.
-** *TODO*: Are we concerned about a metal enclosure soaking up more
-   desert heat than plastic?
 
 * Width no greater than the tower it mounts to.
 
