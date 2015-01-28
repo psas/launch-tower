@@ -129,7 +129,7 @@ image::LTC_II_Power_Connectors.jpeg[Photo of LTC II's power connectors.]
 The LTC will receive power from the following external sources:
 
 * Photovoltaic (PV) panels
-** Provide 10.0/12.0/17.0 VDC (min., nominal, max.)
+** Panels provide 10.0/12.0/17.0 VDC (min., nominal, max.)
 
 * Lab power connection
 ** Used when power from PV panels is not available.
@@ -142,6 +142,7 @@ The LTC must include a bank of internal LiPo cells ("main" batteries):
 * Voltage must be 10.0/14.4/16.8 VDC (min., nominal, max.).
 * Capacity must be sufficient to provide power to both internal and
   external loads (approx. 4 AH).
+* Batteries must be charged by available external power.
 
 The LTC must provide power to the following sub-systems:
 
@@ -152,13 +153,14 @@ The LTC must provide power to the following sub-systems:
 ** Shore power
 ** 19 VDC @ 4 A
 
-* Ignition board
+* Ignition, etc. control board(s)
 ** 5 VDC.
 
 * Ignition battery charger
 ** 12 VDC, direct from PV panels
 ** _Not_ integral to the LTC main board
 ** COTS hardware strongly preferred
+*** *TODO*: recommended manufacturer/source?
 
 * Several external expansion devices
 ** Via external connectors
