@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.0278209"
+     inkscape:cx="249.4157"
+     inkscape:cy="941.31803"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g4030"
+       transform="translate(16,0)">
+      <rect
+         y="35.582829"
+         x="377.5986"
+         height="209.14467"
+         width="303.89529"
+         id="rect2985"
+         style="color:#000000;fill:#808080;fill-opacity:0;fill-rule:nonzero;stroke:#959595;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:0.49315072;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <flowRoot
+         transform="translate(258.9049,-247.27743)"
+         style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+         id="flowRoot3755"
+         xml:space="preserve"><flowRegion
+           id="flowRegion3757"><rect
+             y="285.85843"
+             x="125.1579"
+             height="16.263464"
+             width="123.03658"
+             id="rect3759" /></flowRegion><flowPara
+           id="flowPara3761">Phidgets and sensors</flowPara></flowRoot>    </g>
+    <rect
+       style="color:#000000;fill:#808080;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.88500738;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3765"
+       width="80.191597"
+       height="45.597092"
+       x="90.590508"
+       y="18.512218" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3771"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       transform="translate(5.4583681,13.256037)"><flowRegion
+         id="flowRegion3773"><rect
+           id="rect3775"
+           width="70.958786"
+           height="25.732307"
+           x="92.792259"
+           y="21.510378" /></flowRegion><flowPara
+         id="flowPara3777">Solar converter</flowPara></flowRoot>    <rect
+       style="color:#000000;fill:#ff0000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:1.50000000000000000;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3779"
+       width="156.73315"
+       height="94.351799"
+       x="171.54871"
+       y="100.26683" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.25,63.987185 0,10.5 9.5,9.5 49.25,0 19.5,0 33.375,0 5,5.375 0,10.875005"
+       id="path3867"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       x="158.25"
+       y="82.987183"
+       id="text3871"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3873"
+         x="158.25"
+         y="82.987183">Solar at MPP</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3943"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"><flowRegion
+         id="flowRegion3945"><rect
+           id="rect3947"
+           width="22.458397"
+           height="14.201632"
+           x="443.22305"
+           y="84.008987" /></flowRegion><flowPara
+         id="flowPara3949">Voltage Sen</flowPara></flowRoot>    <g
+       id="g3955"
+       transform="translate(0,1.9816232)">
+      <rect
+         y="71.070694"
+         x="434.93073"
+         height="40.391903"
+         width="63.5625"
+         id="rect3877"
+         style="color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.73722565;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3951"
+         y="92.926292"
+         x="440.91116"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+         xml:space="preserve"><tspan
+           style="font-size:8px"
+           y="92.926292"
+           x="440.91116"
+           id="tspan3953"
+           sodipodi:role="line">Voltage Sensor</tspan></text>
+    </g>
+    <g
+       transform="translate(-0.36998609,56.814825)"
+       id="g3955-5">
+      <rect
+         y="71.070694"
+         x="434.93073"
+         height="40.391903"
+         width="63.5625"
+         id="rect3877-0"
+         style="color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.73722565;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3951-7"
+         y="92.926292"
+         x="440.91116"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+         xml:space="preserve"><tspan
+           style="font-size:8px"
+           y="92.926292"
+           x="440.91116"
+           id="tspan3953-1"
+           sodipodi:role="line">Voltage Sensor</tspan></text>
+    </g>
+    <g
+       transform="translate(-0.36998604,113.29108)"
+       id="g3955-4">
+      <rect
+         y="71.070694"
+         x="434.93073"
+         height="40.391903"
+         width="63.5625"
+         id="rect3877-07"
+         style="color:#000000;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.73722565;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3951-8"
+         y="92.926292"
+         x="440.91116"
+         style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+         xml:space="preserve"><tspan
+           style="font-size:8px"
+           y="92.926292"
+           x="440.91116"
+           id="tspan3953-5"
+           sodipodi:role="line">Voltage Sensor</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 325.97701,114.06361 39.3022,0 31.22633,-18.028533 7.87039,-4.543973 31.91144,0"
+       id="path4008"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 326.30728,151.71445 51.85248,0 6.95622,-4.01617 51.17139,0"
+       id="path4014"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 325.97701,184.41123 44.25625,0 21.96299,21.96299 43.76085,0"
+       id="path4016"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       x="331.46848"
+       y="162.02016"
+       id="text4018"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4020"
+         x="331.46848"
+         y="162.02016">5V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       x="330.46106"
+       y="194.94881"
+       id="text4022"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4024"
+         x="330.46106"
+         y="194.94881">24V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       x="329.76044"
+       y="123.5267"
+       id="text4026"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4028"
+         x="329.76044"
+         y="123.5267">Vbatt (12V)</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4037"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:UnBatang;font-style:normal;font-weight:normal;font-size:10px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:UnBatang;font-stretch:normal;font-variant:normal"><flowRegion
+         id="flowRegion4039"><rect
+           id="rect4041"
+           width="0"
+           height="18.164879"
+           x="206.08881"
+           y="136.19173" /></flowRegion><flowPara
+         id="flowPara4043"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:UnBatang;-inkscape-font-specification:UnBatang"
+       x="222.60234"
+       y="150.0631"
+       id="text4045"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4047"
+         x="222.60234"
+         y="150.0631">Power Board</tspan><tspan
+         sodipodi:role="line"
+         x="222.60234"
+         y="162.5631"
+         id="tspan4049" /></text>
+  </g>
+</svg>
