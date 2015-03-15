@@ -47,6 +47,55 @@ TODO: More words, please.
 
 == Power Supplies
 
+=== 12-to-5 V DC-DC Converter
+
+.12-to-5 V DC-DC Converters Considered
+[cols="1,1,3a,1", options="header"]
+|===
+|Mfr/Vendor
+|Model/Part #
+|Features
+|Price
+
+|PowerStream
+|http://www.powerstream.com/dc-dcz0503.htm[PST-DCZ0503]
+| * output: ± 0.1 VDC, 3.0 A max
+  * max ripple: 10mV p-p;
+  * efficiency: ~90% @ 1.0 A
+  * overload protection
+  * overheat protection
+  * "very rugged electrically and can be operated continuously at
+    75°C"
+  * "Common ground, the negative input is tied to the negative output.
+    The frame is isolated."
+|$47.60 (direct)
+
+|===
+
+
+=== 12-to-19 V DC-DC Converter
+
+.12-to-19 V DC-DC Converters Considered
+[cols="1,1,3a,1", options="header"]
+|===
+|Mfr/Vendor
+|Model/Part #
+|Features
+|Price
+
+|Vicor
+|http://www.vicorpower.com/cms/render/live/en_US/sites/vicor/home/products.html?productType=cfg&productKey=VI-20N-CX[VI-20N]
+| * output: FIXME
+  * max ripple: FIXME
+  * efficiency: FIXME
+  * remote sense and current limit
+  * OVP, thermal shutdown
+  * logic disable
+  * optional integrated heat sink
+  * chassis or board mount packages
+|$129.05 (http://www.digikey.com/product-detail/en/VI-20N-EY/VI-20N-EY-ND/2967401[Digi-Key])
+
+|===
 
 
 == Ignition Subsystem
@@ -59,6 +108,15 @@ TODO: More words, please.
 == Networking
 
 * Internal Ethernet switch.
+
+
+== Physical
+
+=== External Connectors
+
+Powerpole connectors will be mounted to the enclosure with
+http://www.portableuniversalpower.com/anderson-autogrip/[Anderson
+AutoGrips].  They're robust and inexpensive.
 
 
 
