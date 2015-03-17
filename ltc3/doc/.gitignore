@@ -3,3 +3,4 @@
 *.xml
 
 !datasheets/*.pdf
+!third_party/*.pdf

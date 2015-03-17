@@ -1,6 +1,6 @@
 = Portland State Aerospace Society Launch Tower Computer III Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 24 February 2015: DRAFT
+v0.1, 17 March 2015: DRAFT
 
 :imagesdir: ./images
 
@@ -22,12 +22,42 @@ incorrect, or the document needs to be updated!
 
 == Computer
 
-TODO: More words, please.
+The heart of the Launch Tower Computer III will be a BeagleBone Black
+(BBB) single-board computer.
 
-* BeagleBone Black SBC
+The BBB will interface with the main board via a pair of 46-pin
+headers.  The main board will appear to the BBB as a standard
+http://beagleboard.org/cape["cape"].  The main board will be on the
+bottom, with the BBB mounted on top, upside-down.
 
-* BBB flipped upside down and mated to peripheral board via pin
-  headers.  A kilt, rather than a cape!
+* Cape EEPROM
+
+
+== Sensors
+
+.Sensors Considered
+[cols="1,1,3a,1", options="header"]
+|===
+|Mfr/Vendor
+|Model/Part #
+|Features
+|Price
+
+|Texas Instruments
+|INA139 High-Side Measurement Current Shunt Monitor
+|* analog ouput
+ * one input per IC
+|$2.15 (https://www.digikey.com/product-detail/en/INA139NA%2F250/INA139NA%2F250CT-ND/379721[Digi-Key])
+
+|Linear Technologies
+|LTC2991 Octal I2C Voltage, Current, and Temperature Monitor
+|* I2C (digital) interface
+ * up to eight inputs per IC
+|$11.06 (mil-spec, https://www.digikey.com/product-detail/en/LTC2991IMS%23PBF/LTC2991IMS%23PBF-ND/2734961[Digi-Key])
+
+|
+
+|===
 
 
 
@@ -45,7 +75,7 @@ TODO: More words, please.
 
 
 
-== Power Supplies
+== Power
 
 === 12-to-5 V DC-DC Converter
 
@@ -70,6 +100,18 @@ TODO: More words, please.
     The frame is isolated."
 |$47.60 (direct)
 
+|Vicor
+|http://www.vicorpower.com/cms/render/live/en_US/sites/vicor/home/products.html?productType=cfg&productKey=VI-J00-CZ[VI-J00]
+| * output: 12.0 VDC; 5.0 W
+  * max ripple: FIXME
+  * efficiency: FIXME
+  * remote sense and current limit
+  * OVP, thermal shutdown
+  * logic disable
+  * optional integrated heat sink
+  * chassis or board mount packages
+|$137.00 direct; $153.70 https://www.digikey.com/product-detail/en/VI-J00-CZ/VI-J00-CZ-ND/2970554[Digi-Key]
+
 |===
 
 
@@ -85,7 +127,7 @@ TODO: More words, please.
 
 |Vicor
 |http://www.vicorpower.com/cms/render/live/en_US/sites/vicor/home/products.html?productType=cfg&productKey=VI-20N-CX[VI-20N]
-| * output: FIXME
+| * output: 18.5 VDC; 75.0 W
   * max ripple: FIXME
   * efficiency: FIXME
   * remote sense and current limit
@@ -93,7 +135,7 @@ TODO: More words, please.
   * logic disable
   * optional integrated heat sink
   * chassis or board mount packages
-|$129.05 (http://www.digikey.com/product-detail/en/VI-20N-EY/VI-20N-EY-ND/2967401[Digi-Key])
+|$179.00 direct; $129.05 http://www.digikey.com/product-detail/en/VI-20N-EY/VI-20N-EY-ND/2967401[Digi-Key]
 
 |===
 
@@ -110,11 +152,33 @@ TODO: More words, please.
 * Internal Ethernet switch.
 
 
+== External Triggers
+
+=== Relays
+
+.External Trigger Relays Considered
+[cols="1,1,3a,1", options="header"]
+|===
+|Mfr/Vendor
+|Model/Part #
+|Features
+|Price
+
+|Omron
+|https://www.components.omron.com/components/web/PDFLIB.nsf/0/A140CFCA6C49AD6685257201007DD4E2/$file/G8HN_0607.pdf[G8HN] Micro ISO Automotive Relay
+|* max. switching voltage: 16 V
+ * max. switching current: 60 A inrush, 20 A steady (NC pole)
+ * min. switching current: 1 A (too high?)
+|$5.58 (https://www.digikey.com/product-detail/en/G8HN-1C2T-R%20DC12/Z2247-ND/765512[Digi-Key])
+
+|===
+
+
 == Physical
 
 === External Connectors
 
-Powerpole connectors will be mounted to the enclosure with
+IDEA: Powerpole connectors will be mounted to the enclosure with
 http://www.portableuniversalpower.com/anderson-autogrip/[Anderson
 AutoGrips].  They're robust and inexpensive.
 
