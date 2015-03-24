@@ -1,6 +1,6 @@
 = Portland State Aerospace Society Launch Tower Computer III Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 17 March 2015: DRAFT
+v0.1, 24 March 2015: DRAFT
 
 :imagesdir: ./images
 
@@ -36,20 +36,23 @@ bottom, with the BBB mounted on top, upside-down.
 == Sensors
 
 .Sensors Considered
-[cols="1,1,1,3a,1", options="header"]
+[cols="1,1,1,3a,3a,1", options="header"]
 |===
 |Mfr/Vendor
 |Model/Part #
 |Type
 |Features
+|Pros & Cons
 |Price
 
 |Texas Instruments
 |http://www.ti.com/lit/ds/symlink/ina139.pdf[INA139] High-Side Measurement Current Shunt Monitor
 |current
-|* analog ouput
+|* analog output
  * one input per IC
-|$2.15 (https://www.digikey.com/product-detail/en/INA139NA%2F250/INA139NA%2F250CT-ND/379721[Digi-Key])
+|* PRO: inexpensive
+ * CON: requires ADC
+|$2.15, https://www.digikey.com/product-detail/en/INA139NA%2F250/INA139NA%2F250CT-ND/379721[Digi-Key]
 
 |Microchip
 |http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010749[TC74] Tiny Serial Digital Thermal Sensor
@@ -57,7 +60,8 @@ bottom, with the BBB mounted on top, upside-down.
 |* I2C interface
  * ±3 °C Accuracy from 0 °C to +125 °C
  * Supply Voltage of 2.7 V to 5.5 V
-|$1.04 (https://www.digikey.com/product-detail/en/TC74A5-5.0VCTTR/TC74A5-5.0VCTCT-ND/459179[Digi-Key])
+|* PRO: inexpensive
+|$1.04, https://www.digikey.com/product-detail/en/TC74A5-5.0VCTTR/TC74A5-5.0VCTCT-ND/459179[Digi-Key]
 
 |Microchip
 |http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en556182[MCP9808] Digital Temperature Sensor
@@ -67,7 +71,8 @@ bottom, with the BBB mounted on top, upside-down.
  * Supply Voltage of 2.7 V to 5.5 V
  * User-selectable measurement resolution
  * User-selectable temperature limits (via "alert" pin)
-|$1.36 (https://www.digikey.com/product-detail/en/MCP9808-E%2FMS/MCP9808-E%2FMS-ND/2802083[Digi-Key])
+|* PRO: inexpensive
+|$1.36, https://www.digikey.com/product-detail/en/MCP9808-E%2FMS/MCP9808-E%2FMS-ND/2802083[Digi-Key]
 
 |Texas Instruments
 |http://www.ti.com/lit/ds/symlink/tmp102.pdf[TMP102] Low-Power Digital Temperature Sensor w/ Two-Wire Serial Interface
@@ -75,16 +80,17 @@ bottom, with the BBB mounted on top, upside-down.
 |* I2C interface
  * ±0.5 °C without need for calibration
  * Supply Voltage of 1.4 V to 3.6 V
-|$2.53 (https://www.digikey.com/product-detail/en/TMP102AIDRLT/296-22055-1-ND/1649890[Digi-Key])
+|* PRO: inexpensive
+|$2.53, https://www.digikey.com/product-detail/en/TMP102AIDRLT/296-22055-1-ND/1649890[Digi-Key]
 
 |Linear Technologies
 |http://cds.linear.com/docs/en/datasheet/2991fd.pdf[LTC2991] Octal I2C Voltage, Current, and Temperature Monitor
 |voltage, current and temperature
 |* I2C interface
  * up to eight inputs per IC
-|$11.06 (mil-spec, https://www.digikey.com/product-detail/en/LTC2991IMS%23PBF/LTC2991IMS%23PBF-ND/2734961[Digi-Key])
-
-|
+|* CON: expensive
+ * CON: requires complex software to interface
+|$11.06, mil-spec, https://www.digikey.com/product-detail/en/LTC2991IMS%23PBF/LTC2991IMS%23PBF-ND/2734961[Digi-Key]
 
 |===
 
@@ -108,6 +114,11 @@ bottom, with the BBB mounted on top, upside-down.
 
 === 12-to-5 V DC-DC Converter
 
+5 VDC power will be provided by a Cincon EC4BU-12S05 DC-DC converter.
+It was selected over others for its balance of voltage accuracy,
+operating temperature range (full output to 85°C), and price.
+
+
 .12-to-5 V DC-DC Converters Considered
 [cols="1,1,3a,1", options="header"]
 |===
@@ -116,30 +127,39 @@ bottom, with the BBB mounted on top, upside-down.
 |Features
 |Price
 
+|TDK-Lambda
+|http://www.mouser.com/ds/2/400/cc-e-524996.pdf[CC10-1205SF-E]
+| * output: 5 V, 2 A
+  * Vout tolerance: ±3%
+  * max. operating temp: 81°C
+  * PCB mounted (through-hole)
+|$26.26, Mouser
+
+|Cincon
+|http://www.mouser.com/ds/2/75/EC4BU-190623.pdf[EC4BU-12S05]
+| * output: 5 V, 2 A
+  * line regulation: ±1.5%
+  * max. operating temp: 85°C
+  * PCB mounted (through-hole)
+|$26.46, Mouser
+
 |PowerStream
 |http://www.powerstream.com/dc-dcz0503.htm[PST-DCZ0503]
-| * output: ± 0.1 VDC, 3.0 A max
-  * max ripple: 10mV p-p;
-  * efficiency: ~90% @ 1.0 A
-  * overload protection
-  * overheat protection
-  * "very rugged electrically and can be operated continuously at
-    75°C"
-  * "Common ground, the negative input is tied to the negative output.
-    The frame is isolated."
-|$47.60 (direct)
+| * output: 5 V, 3 A
+  * load regulation: ±1.0%
+  * max. operating temp: 75°C
+  * Screw terminal connections
+|$47.60, direct
 
 |Vicor
 |http://www.vicorpower.com/cms/render/live/en_US/sites/vicor/home/products.html?productType=cfg&productKey=VI-J00-CZ[VI-J00]
-| * output: 12.0 VDC; 5.0 W
-  * max ripple: FIXME
-  * efficiency: FIXME
+| * output: 5.0 VDC; 25 W
+  * load regulation: ±0.5%
+  * max. operating temp: 100°C
   * remote sense and current limit
-  * OVP, thermal shutdown
-  * logic disable
   * optional integrated heat sink
   * chassis or board mount packages
-|$137.00 direct; $153.70 https://www.digikey.com/product-detail/en/VI-J00-CZ/VI-J00-CZ-ND/2970554[Digi-Key]
+|$137.00, direct; $153.70, https://www.digikey.com/product-detail/en/VI-J00-CZ/VI-J00-CZ-ND/2970554[Digi-Key]
 
 |===
 
@@ -164,7 +184,7 @@ bottom, with the BBB mounted on top, upside-down.
   * logic disable
   * optional integrated heat sink
   * chassis or board mount packages
-|$179.00 direct; $129.05 http://www.digikey.com/product-detail/en/VI-20N-EY/VI-20N-EY-ND/2967401[Digi-Key]
+|$179.00, direct; $129.05, http://www.digikey.com/product-detail/en/VI-20N-EY/VI-20N-EY-ND/2967401[Digi-Key]
 
 |===
 
@@ -210,10 +230,3 @@ bottom, with the BBB mounted on top, upside-down.
 IDEA: Powerpole connectors will be mounted to the enclosure with
 http://www.portableuniversalpower.com/anderson-autogrip/[Anderson
 AutoGrips].  They're robust and inexpensive.
-
-
-
-== References
-
-http://kilobaser.com/blog/2014-07-15-beaglebone-black-gpios["BeagleBone
-Black GPIOs"], KiloBaser.
