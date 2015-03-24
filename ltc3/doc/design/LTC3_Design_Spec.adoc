@@ -152,7 +152,7 @@ operating temperature range (full output to 85°C), and price.
 |$47.60, direct
 
 |Vicor
-|http://www.vicorpower.com/cms/render/live/en_US/sites/vicor/home/products.html?productType=cfg&productKey=VI-J00-CZ[VI-J00]
+|http://cdn.vicorpower.com/documents/datasheets/ds_vi-j00.pdf[VI-J00-EZ]
 | * output: 5.0 VDC; 25 W
   * load regulation: ±0.5%
   * max. operating temp: 100°C
@@ -166,6 +166,9 @@ operating temperature range (full output to 85°C), and price.
 
 === 12-to-19 V DC-DC Converter
 
+Finding a converter than can produce 19 VDC (or even come close) is
+not easy.  Even the gold-plated Vicor is out of stock at Digi-Key.
+
 .12-to-19 V DC-DC Converters Considered
 [cols="1,1,3a,1", options="header"]
 |===
@@ -175,16 +178,14 @@ operating temperature range (full output to 85°C), and price.
 |Price
 
 |Vicor
-|http://www.vicorpower.com/cms/render/live/en_US/sites/vicor/home/products.html?productType=cfg&productKey=VI-20N-CX[VI-20N]
+|http://cdn.vicorpower.com/documents/datasheets/ds_vi-200.pdf[VI-20N-EX]
 | * output: 18.5 VDC; 75.0 W
-  * max ripple: FIXME
-  * efficiency: FIXME
+  * load regulation: ±0.5%
+  * max. operating temp: 85°C
   * remote sense and current limit
-  * OVP, thermal shutdown
-  * logic disable
   * optional integrated heat sink
   * chassis or board mount packages
-|$179.00, direct; $129.05, http://www.digikey.com/product-detail/en/VI-20N-EY/VI-20N-EY-ND/2967401[Digi-Key]
+|$179.00, direct; $140.65, http://www.digikey.com/product-detail/en/VI-20N-EX/VI-20N-EX-ND/2967401[Digi-Key]
 
 |===
 
