@@ -31,6 +31,7 @@ LIBS:contrib
 LIBS:valves
 LIBS:headers
 LIBS:DIP_switches
+LIBS:LTC299x
 LIBS:memory_devices
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 27 0
@@ -39,7 +40,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
 Title "Launch Tower Computer III (LTC3)"
-Date "15 mar 2015"
+Date "16 mar 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
