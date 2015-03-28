@@ -226,6 +226,13 @@ not easy.  Even the gold-plated Vicor is out of stock at Digi-Key.
 
 == Physical
 
+=== Printed Circuit Board
+
+Trace widths must be sufficient minimize circuit impedance, and to
+limit temperature rise.  Assume a maximum ambient temperature
+(enclosure interior) of 60°C.  Maximum trace temperature rise should
+be no more than 20°C.
+
 === External Connectors
 
 IDEA: Powerpole connectors will be mounted to the enclosure with
