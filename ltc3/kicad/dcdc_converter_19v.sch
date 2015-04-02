@@ -49,8 +49,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3500 2150 2    60   Output ~ 0
+Text HLabel 7300 3500 2    60   Output ~ 0
 VCC_19V
-Text HLabel 2250 2150 0    60   Input ~ 0
+Text HLabel 4200 3500 0    60   Input ~ 0
 VCC_12V
+Text Notes 6550 3550 2    60   ~ 0
+TODO: 12-to-19 V DC-DC converter\nwhatchamacallit goes here.
+Wire Notes Line
+	4750 3300 4750 3800
+Wire Notes Line
+	4750 3800 6700 3800
+Wire Notes Line
+	6700 3800 6700 3300
+Wire Notes Line
+	6700 3300 4750 3300
 $EndSCHEMATC

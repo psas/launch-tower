@@ -49,8 +49,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 2950 1900 2    60   Output ~ 0
+Text HLabel 6400 3000 2    60   Output ~ 0
 VCC_5V
-Text HLabel 1750 1900 0    60   Input ~ 0
+Text HLabel 4250 3000 0    60   Input ~ 0
 VCC_12V
+Text Notes 5950 3000 2    60   ~ 0
+TODO: 12-to-5 V DC-DC\nconverter business goes here.
+Wire Notes Line
+	4500 2800 6050 2800
+Wire Notes Line
+	6050 2800 6050 3200
+Wire Notes Line
+	6050 3200 4500 3200
+Wire Notes Line
+	4500 3200 4500 2800
 $EndSCHEMATC

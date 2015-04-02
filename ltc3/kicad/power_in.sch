@@ -49,6 +49,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 6000 2900 0    60   Output ~ 0
+Text HLabel 4600 2600 2    60   Output ~ 0
 VCC_12V
+Text HLabel 2650 2500 0    60   Input ~ 0
+SOLAR_12V
+Text HLabel 2650 2750 0    60   Input ~ 0
+LAB_12V
+Text Notes 4250 2650 2    60   ~ 0
+TODO: Magic happens here!
+Wire Notes Line
+	2900 2400 4350 2400
+Wire Notes Line
+	4350 2400 4350 2800
+Wire Notes Line
+	4350 2800 2900 2800
+Wire Notes Line
+	2900 2800 2900 2400
 $EndSCHEMATC
