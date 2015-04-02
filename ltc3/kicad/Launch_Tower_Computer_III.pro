@@ -1,4 +1,4 @@
-update=Sun 15 Mar 2015 12:37:51 PM PDT
+update=Wed 01 Apr 2015 04:18:41 PM PDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -88,3 +88,4 @@ LibName31=headers
 LibName32=DIP_switches
 LibName33=LTC299x
 LibName34=memory_devices
+LibName35=switches

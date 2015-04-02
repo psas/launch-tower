@@ -1,0 +1,469 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:headers
+LIBS:DIP_switches
+LIBS:LTC299x
+LIBS:memory_devices
+LIBS:switches
+LIBS:Launch_Tower_Computer_III-cache
+EELAYER 27 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 5 6
+Title "LTC3 BeagleBone Black Cape Interface"
+Date "2 apr 2015"
+Rev "1"
+Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L HEADER_2X23 U2
+U 1 1 550524C5
+P 2450 2300
+F 0 "U2" H 2450 2200 50  0000 C CNN
+F 1 "header P8" H 2450 3650 50  0000 C CNN
+F 2 "" H 2650 2300 50  0001 C CNN
+F 3 "" H 2650 2300 50  0001 C CNN
+	1    2450 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_2X23 U3
+U 1 1 550524D4
+P 6500 2300
+F 0 "U3" H 6500 2200 50  0000 C CNN
+F 1 "header P9" H 6500 3650 50  0000 C CNN
+F 2 "" H 6700 2300 50  0001 C CNN
+F 3 "" H 6700 2300 50  0001 C CNN
+	1    6500 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5505254B
+P 1550 5950
+F 0 "#PWR3" H 1550 5950 30  0001 C CNN
+F 1 "GND" H 1550 5880 30  0001 C CNN
+F 2 "" H 1550 5950 60  0000 C CNN
+F 3 "" H 1550 5950 60  0000 C CNN
+	1    1550 5950
+	1    0    0    -1  
+$EndComp
+Text Label 4050 5700 0    60   ~ 0
+I2C2_SCL
+Text Label 4050 5800 0    60   ~ 0
+I2C2_SDA
+$Comp
+L C C1
+U 1 1 55052668
+P 3250 6250
+F 0 "C1" H 3250 6350 40  0000 L CNN
+F 1 "0.1μ" H 3256 6165 40  0000 L CNN
+F 2 "~" H 3288 6100 30  0000 C CNN
+F 3 "~" H 3250 6250 60  0000 C CNN
+	1    3250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 550526AB
+P 3250 6650
+F 0 "#PWR5" H 3250 6650 30  0001 C CNN
+F 1 "GND" H 3250 6580 30  0001 C CNN
+F 2 "" H 3250 6650 60  0000 C CNN
+F 3 "" H 3250 6650 60  0000 C CNN
+	1    3250 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR4
+U 1 1 55052725
+P 3250 4800
+F 0 "#PWR4" H 3250 4900 30  0001 C CNN
+F 1 "VDD" H 3250 4910 30  0000 C CNN
+F 2 "" H 3250 4800 60  0000 C CNN
+F 3 "" H 3250 4800 60  0000 C CNN
+	1    3250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 55052963
+P 1400 5150
+F 0 "R1" V 1480 5150 40  0000 C CNN
+F 1 "5.6k" V 1407 5151 40  0000 C CNN
+F 2 "~" V 1330 5150 30  0000 C CNN
+F 3 "~" H 1400 5150 30  0000 C CNN
+	1    1400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 55052990
+P 3400 5150
+F 0 "R2" V 3480 5150 40  0000 C CNN
+F 1 "5.6k" V 3407 5151 40  0000 C CNN
+F 2 "~" V 3330 5150 30  0000 C CNN
+F 3 "~" H 3400 5150 30  0000 C CNN
+	1    3400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR2
+U 1 1 55052AEA
+P 1400 4800
+F 0 "#PWR2" H 1400 4900 30  0001 C CNN
+F 1 "VDD" H 1400 4910 30  0000 C CNN
+F 2 "" H 1400 4800 60  0000 C CNN
+F 3 "" H 1400 4800 60  0000 C CNN
+	1    1400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 55052CA3
+P 3600 5150
+F 0 "R3" V 3680 5150 40  0000 C CNN
+F 1 "5.6k" V 3607 5151 40  0000 C CNN
+F 2 "~" V 3530 5150 30  0000 C CNN
+F 3 "~" H 3600 5150 30  0000 C CNN
+	1    3600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 55052CB2
+P 3800 5150
+F 0 "R4" V 3880 5150 40  0000 C CNN
+F 1 "5.6k" V 3807 5151 40  0000 C CNN
+F 2 "~" V 3730 5150 30  0000 C CNN
+F 3 "~" H 3800 5150 30  0000 C CNN
+	1    3800 5150
+	1    0    0    -1  
+$EndComp
+Text Label 5450 3000 0    60   ~ 0
+I2C2_SCL
+Text Label 5450 3100 0    60   ~ 0
+I2C2_SDA
+Text Label 5450 1200 0    60   ~ 0
+GND
+Text Label 5450 1400 0    60   ~ 0
+DC_3.3V
+Text Label 5450 1600 0    60   ~ 0
+VDD_5V
+Text Label 5450 1800 0    60   ~ 0
+SYS_5V
+Text Label 7400 3100 0    60   ~ 0
+GND
+Text Label 1400 1200 0    60   ~ 0
+GND
+Text HLabel 5450 1600 0    60   Input ~ 0
+VCC_5V
+$Comp
+L LTC2991 U4
+U 1 1 5505DFCE
+P 7800 5650
+F 0 "U4" H 7800 5550 50  0000 C CNN
+F 1 "LTC2991" H 7800 5750 50  0000 C CNN
+F 2 "" H 7800 5650 50  0001 C CNN
+F 3 "" H 7800 5650 50  0001 C CNN
+	1    7800 5650
+	1    0    0    -1  
+$EndComp
+Text Notes 1950 5150 0    60   ~ 0
+Cape EEPROM\nIC2 addr 0x54
+Text Notes 7300 4950 0    60   ~ 0
+Voltage & Temp Sensor\nI2C addr 0x90
+$Comp
+L 24C256 U1
+U 1 1 5505E066
+P 2400 5650
+F 0 "U1" H 2400 5600 50  0000 C CNN
+F 1 "24C256" H 2400 5700 50  0000 C CNN
+F 2 "~" H 2400 5950 50  0001 C CNN
+F 3 "~" H 2400 5350 50  0001 C CNN
+	1    2400 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER JP1
+U 1 1 5505E1B2
+P 3650 6250
+F 0 "JP1" H 3650 6400 60  0000 C CNN
+F 1 "WP DISABLE" H 3650 6170 40  0000 C CNN
+F 2 "~" H 3650 6250 60  0000 C CNN
+F 3 "~" H 3650 6250 60  0000 C CNN
+	1    3650 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L VDD #PWR6
+U 1 1 5505E4DB
+P 8700 4950
+F 0 "#PWR6" H 8700 5050 30  0001 C CNN
+F 1 "VDD" H 8700 5060 30  0000 C CNN
+F 2 "" H 8700 4950 60  0000 C CNN
+F 3 "" H 8700 4950 60  0000 C CNN
+	1    8700 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 5505E52D
+P 8700 6650
+F 0 "#PWR7" H 8700 6650 30  0001 C CNN
+F 1 "GND" H 8700 6580 30  0001 C CNN
+F 2 "" H 8700 6650 60  0000 C CNN
+F 3 "" H 8700 6650 60  0000 C CNN
+	1    8700 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5505E60F
+P 8900 5400
+F 0 "R5" V 8980 5400 40  0000 C CNN
+F 1 "5.6k" V 8907 5401 40  0000 C CNN
+F 2 "~" V 8830 5400 30  0000 C CNN
+F 3 "~" H 8900 5400 30  0000 C CNN
+	1    8900 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5505E61E
+P 9150 5400
+F 0 "R6" V 9230 5400 40  0000 C CNN
+F 1 "5.6k" V 9157 5401 40  0000 C CNN
+F 2 "~" V 9080 5400 30  0000 C CNN
+F 3 "~" H 9150 5400 30  0000 C CNN
+	1    9150 5400
+	1    0    0    -1  
+$EndComp
+Text Label 9450 5900 0    60   ~ 0
+I2C2_SDA
+Text Label 9450 5800 0    60   ~ 0
+I2C2_SCL
+Wire Wire Line
+	1550 5800 1650 5800
+Wire Wire Line
+	1550 5500 1550 5950
+Wire Wire Line
+	3150 5700 4050 5700
+Wire Wire Line
+	3150 5800 4050 5800
+Wire Wire Line
+	3250 5500 3150 5500
+Wire Wire Line
+	3150 5600 3400 5600
+Wire Wire Line
+	3250 6450 3250 6650
+Wire Wire Line
+	3600 5400 3600 5700
+Connection ~ 3600 5700
+Wire Wire Line
+	3800 5400 3800 5800
+Connection ~ 3800 5800
+Wire Wire Line
+	3400 4900 3400 4850
+Wire Wire Line
+	3250 4850 3800 4850
+Wire Wire Line
+	3600 4850 3600 4900
+Connection ~ 3400 4850
+Wire Wire Line
+	3800 4850 3800 4900
+Connection ~ 3600 4850
+Wire Wire Line
+	5950 3000 5450 3000
+Wire Wire Line
+	5950 3100 5450 3100
+Wire Wire Line
+	5450 1200 5950 1200
+Wire Wire Line
+	5950 1300 5850 1300
+Wire Wire Line
+	5850 1300 5850 1200
+Connection ~ 5850 1200
+Wire Wire Line
+	5450 1400 5950 1400
+Wire Wire Line
+	5950 1500 5850 1500
+Wire Wire Line
+	5850 1500 5850 1400
+Connection ~ 5850 1400
+Wire Wire Line
+	5450 1600 5950 1600
+Wire Wire Line
+	5950 1700 5850 1700
+Wire Wire Line
+	5850 1700 5850 1600
+Connection ~ 5850 1600
+Wire Wire Line
+	5450 1800 5950 1800
+Wire Wire Line
+	5950 1900 5850 1900
+Wire Wire Line
+	5850 1900 5850 1800
+Connection ~ 5850 1800
+Wire Wire Line
+	7050 3200 7150 3200
+Wire Wire Line
+	7150 3100 7150 3400
+Connection ~ 7150 3100
+Wire Wire Line
+	7150 3300 7050 3300
+Connection ~ 7150 3200
+Wire Wire Line
+	7150 3400 7050 3400
+Connection ~ 7150 3300
+Wire Wire Line
+	1400 1200 1900 1200
+Wire Wire Line
+	1900 1300 1800 1300
+Wire Wire Line
+	1800 1300 1800 1200
+Connection ~ 1800 1200
+Wire Wire Line
+	1400 4800 1400 4900
+Wire Wire Line
+	1650 5600 1550 5600
+Connection ~ 1550 5800
+Wire Wire Line
+	1650 5500 1550 5500
+Connection ~ 1550 5600
+Wire Wire Line
+	3650 6550 3650 6600
+Wire Wire Line
+	3650 6600 3250 6600
+Connection ~ 3250 6600
+Wire Wire Line
+	1650 5700 1400 5700
+Wire Wire Line
+	1400 5700 1400 5400
+Wire Wire Line
+	3250 4800 3250 6050
+Connection ~ 3250 5500
+Connection ~ 3250 4850
+Wire Wire Line
+	3400 5400 3400 5900
+Wire Wire Line
+	3400 5900 3650 5900
+Wire Wire Line
+	3650 5900 3650 5950
+Connection ~ 3400 5600
+Wire Wire Line
+	8550 5400 8700 5400
+Wire Wire Line
+	8700 5400 8700 6650
+Wire Wire Line
+	8550 5500 8700 5500
+Connection ~ 8700 5500
+Wire Wire Line
+	8700 5300 8550 5300
+Wire Wire Line
+	8700 4950 8700 5300
+Connection ~ 8900 5800
+Connection ~ 9150 5900
+Wire Wire Line
+	7050 3100 7550 3100
+$Comp
+L GND #PWR1
+U 1 1 5505EAAD
+P 1400 1350
+F 0 "#PWR1" H 1400 1350 30  0001 C CNN
+F 1 "GND" H 1400 1280 30  0001 C CNN
+F 2 "" H 1400 1350 60  0000 C CNN
+F 3 "" H 1400 1350 60  0000 C CNN
+	1    1400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1350 1400 1200
+Wire Wire Line
+	5950 2800 5450 2800
+Wire Wire Line
+	5950 2900 5450 2900
+Text Label 5450 2800 0    60   ~ 0
+I2C1_SCL
+Text Label 5450 2900 0    60   ~ 0
+I2C1_SDA
+Wire Wire Line
+	8550 5600 8700 5600
+Connection ~ 8700 5600
+Wire Wire Line
+	8550 5800 9450 5800
+Wire Wire Line
+	8550 5900 9450 5900
+Wire Wire Line
+	8900 5800 8900 5650
+Wire Wire Line
+	9150 5650 9150 5900
+Wire Wire Line
+	8900 5150 8900 5050
+Wire Wire Line
+	8700 5050 9150 5050
+Connection ~ 8700 5050
+Wire Wire Line
+	9150 5050 9150 5150
+Connection ~ 8900 5050
+Wire Wire Line
+	3000 1900 3500 1900
+Wire Wire Line
+	3000 2000 3500 2000
+Wire Wire Line
+	3000 2300 3500 2300
+Wire Wire Line
+	3000 2100 3500 2100
+Text Label 3500 1900 2    60   ~ 0
+GPIO_10
+Text Label 3500 2000 2    60   ~ 0
+GPIO_11
+Text Label 3500 2300 2    60   ~ 0
+GPIO_8
+Text Label 3500 2100 2    60   ~ 0
+GPIO_9
+Text HLabel 3500 2300 2    60   Output ~ 0
+GPIO_TRIGGER_1
+Text HLabel 3500 2100 2    60   Output ~ 0
+GPIO_TRIGGER_2
+Text HLabel 3500 2000 2    60   Output ~ 0
+GPIO_TRIGGER_3
+Text HLabel 3500 1900 2    60   Output ~ 0
+GPIO_TRIGGER_4
+Text Notes 1600 7400 0    60   ~ 0
+TODO: Rearrange pins on symbols so that they're schematically\nuseful, not necessarily in physical order.
+$EndSCHEMATC
