@@ -41,7 +41,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 6
 Title "Launch Tower Computer III (LTC3)"
-Date "2 apr 2015"
+Date "3 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

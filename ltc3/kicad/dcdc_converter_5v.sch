@@ -41,7 +41,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 3 6
 Title "LTC3 12V-to-5V DC/DC Converter"
-Date "2 apr 2015"
+Date "3 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
