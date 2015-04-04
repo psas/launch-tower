@@ -35,6 +35,31 @@ bottom, with the BBB mounted on top, upside-down.
 
 == Sensors
 
+=== Voltage
+
+.Sensors Considered
+[cols="1,1,1,3a,3a,1", options="header"]
+|===
+|Mfr/Vendor
+|Model/Part #
+|Type
+|Features
+|Pros & Cons
+|Price
+
+|Linear Technologies
+|http://cds.linear.com/docs/en/datasheet/2991fd.pdf[LTC2991] Octal I2C Voltage, Current, and Temperature Monitor
+|voltage, current and temperature
+|* I2C interface
+ * up to eight inputs per IC
+|* CON: expensive
+ * CON: requires complex software to interface
+|$11.06, mil-spec, https://www.digikey.com/product-detail/en/LTC2991IMS%23PBF/LTC2991IMS%23PBF-ND/2734961[Digi-Key]
+
+|===
+
+=== Current
+
 .Sensors Considered
 [cols="1,1,1,3a,3a,1", options="header"]
 |===
@@ -53,6 +78,20 @@ bottom, with the BBB mounted on top, upside-down.
 |* PRO: inexpensive
  * CON: requires ADC
 |$2.15, https://www.digikey.com/product-detail/en/INA139NA%2F250/INA139NA%2F250CT-ND/379721[Digi-Key]
+
+|===
+
+=== Temperature
+
+.Sensors Considered
+[cols="1,1,1,3a,3a,1", options="header"]
+|===
+|Mfr/Vendor
+|Model/Part #
+|Type
+|Features
+|Pros & Cons
+|Price
 
 |Microchip
 |http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010749[TC74] Tiny Serial Digital Thermal Sensor
@@ -82,15 +121,6 @@ bottom, with the BBB mounted on top, upside-down.
  * Supply Voltage of 1.4 V to 3.6 V
 |* PRO: inexpensive
 |$2.53, https://www.digikey.com/product-detail/en/TMP102AIDRLT/296-22055-1-ND/1649890[Digi-Key]
-
-|Linear Technologies
-|http://cds.linear.com/docs/en/datasheet/2991fd.pdf[LTC2991] Octal I2C Voltage, Current, and Temperature Monitor
-|voltage, current and temperature
-|* I2C interface
- * up to eight inputs per IC
-|* CON: expensive
- * CON: requires complex software to interface
-|$11.06, mil-spec, https://www.digikey.com/product-detail/en/LTC2991IMS%23PBF/LTC2991IMS%23PBF-ND/2734961[Digi-Key]
 
 |===
 

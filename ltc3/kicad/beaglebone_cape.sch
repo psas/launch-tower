@@ -41,7 +41,7 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 5 6
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "3 apr 2015"
+Date "4 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -204,7 +204,7 @@ F 3 "" H 7800 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1950 5150 0    60   ~ 0
-Cape EEPROM\nIC2 addr 0x54
+Cape EEPROM\nI2C addr 0x54
 Text Notes 7300 4950 0    60   ~ 0
 Voltage & Temp Sensor\nI2C addr 0x90
 $Comp
