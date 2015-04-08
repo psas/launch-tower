@@ -1,4 +1,4 @@
-update=Wed 01 Apr 2015 04:18:41 PM PDT
+update=Tue 07 Apr 2015 07:31:20 PM PDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -89,3 +89,4 @@ LibName32=DIP_switches
 LibName33=LTC299x
 LibName34=memory_devices
 LibName35=switches
+LibName36=Toshiba

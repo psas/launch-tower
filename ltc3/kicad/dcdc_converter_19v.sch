@@ -34,14 +34,15 @@ LIBS:DIP_switches
 LIBS:LTC299x
 LIBS:memory_devices
 LIBS:switches
+LIBS:Toshiba
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 27 0
 EELAYER END
-$Descr USLetter 11000 8500
+$Descr B 17000 11000
 encoding utf-8
 Sheet 4 6
 Title "LTC3 12V-to-19V DC/DC Converter"
-Date "4 apr 2015"
+Date "8 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
