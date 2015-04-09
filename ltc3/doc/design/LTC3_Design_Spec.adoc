@@ -245,7 +245,7 @@ connector.  Current is limited by a 2 A polyfuse (PTC).
 
 === Triggers
 Triggering is supplied through two-terminal TODO-CONNECTOR_TYPE
-connectors, each controlled independently by the computer.  Toshiba
+connectors, each controlled independently by the computer.
 Photorelays, driven via GPIO through a MOSFET, are used to switch the
 5 VDC rail to each connector.  Current is limited by a 500 mA polyfuse
 (PTC).
