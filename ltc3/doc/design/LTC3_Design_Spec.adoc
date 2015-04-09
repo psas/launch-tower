@@ -232,26 +232,28 @@ not easy.  Even the gold-plated Vicor is out of stock at Digi-Key.
 * Internal Ethernet switch.
 
 
-== External Triggers
+== External Device Support
 
-=== Relays
+LTC3 provides power and trigger support for four external devices
+(e.g., cameras).
 
-.External Trigger Relays Considered
-[cols="1,1,3a,1", options="header"]
-|===
-|Mfr/Vendor
-|Model/Part #
-|Features
-|Price
+=== Power
+Power (12 V nominal) is be supplied through two-terminal Anderson
+Powerpole connectors, each controlled independently by the computer.
+Photorelays, driven via GPIO through a MOSFET, are used to switch the
+power supply to each connector.  Current is limited by a 2 A polyfuse
+(PTC).
 
-|Omron
-|https://www.components.omron.com/components/web/PDFLIB.nsf/0/A140CFCA6C49AD6685257201007DD4E2/$file/G8HN_0607.pdf[G8HN] Micro ISO Automotive Relay
-|* max. switching voltage: 16 V
- * max. switching current: 60 A inrush, 20 A steady (NC pole)
- * min. switching current: 1 A (too high?)
-|$5.58 (https://www.digikey.com/product-detail/en/G8HN-1C2T-R%20DC12/Z2247-ND/765512[Digi-Key])
+=== Triggers
+Triggering is supplied through two-terminal TODO-CONNECTOR_TYPE
+connectors, each controlled independently by the computer.  Toshiba
+Photorelays, driven via GPIO through a MOSFET, are used to switch the
+power supply to each connector.  Current is limited by a 500 mA
+polyfuse (PTC).
 
-|===
+An internal (on-board) selector (toggle or jumper) enables the
+connector's high-side terminal to be switched to either 5 VDC or
+ground.  (The low side is permanently connected to ground.)
 
 
 == Physical
