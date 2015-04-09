@@ -22,15 +22,16 @@ incorrect, or the document needs to be updated!
 
 == Computer
 
-The heart of the Launch Tower Computer III will be a BeagleBone Black
-(BBB) single-board computer.
+The heart of the Launch Tower Computer III is a BeagleBone Black (BBB)
+single-board computer.
 
-The BBB will interface with the main board via a pair of 46-pin
-headers.  The main board will appear to the BBB as a standard
-http://beagleboard.org/cape["cape"].  The main board will be on the
-bottom, with the BBB mounted on top, upside-down.
+The BBB interfaces with the main board via a pair of 46-pin headers.
+The main board appears to the BBB as a standard
+http://beagleboard.org/cape["cape"].  The main board is on the bottom,
+with the BBB mounted on top, upside-down.
 
-* Cape EEPROM
+=== Cape EEPROM Contents
+TODO
 
 
 == Sensors
@@ -144,7 +145,7 @@ bottom, with the BBB mounted on top, upside-down.
 
 === 12-to-5 V DC-DC Converter
 
-5 VDC power will be provided by a Cincon EC4BU-12S05 DC-DC converter.
+5 VDC power is provided by a Cincon EC4BU-12S05 DC-DC converter.
 It was selected over others for its balance of voltage accuracy,
 operating temperature range (full output to 85°C), and price.
 
@@ -267,6 +268,6 @@ be no more than 20°C.
 
 === External Connectors
 
-IDEA: Powerpole connectors will be mounted to the enclosure with
+IDEA: Powerpole connectors are mounted to the enclosure with
 http://www.portableuniversalpower.com/anderson-autogrip/[Anderson
 AutoGrips].  They're robust and inexpensive.
