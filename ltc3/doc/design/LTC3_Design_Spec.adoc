@@ -238,22 +238,22 @@ LTC3 provides power and trigger support for four external devices
 (e.g., cameras).
 
 === Power
-Power (12 V nominal) is be supplied through two-terminal Anderson
-Powerpole connectors, each controlled independently by the computer.
-Photorelays, driven via GPIO through a MOSFET, are used to switch the
-power supply to each connector.  Current is limited by a 2 A polyfuse
-(PTC).
+Power is supplied through two-terminal Anderson Powerpole connectors,
+each controlled independently by the computer.  Photorelays, driven
+via GPIO through a MOSFET, are used to switch the 12 VDC rail to each
+connector.  Current is limited by a 2 A polyfuse (PTC).
 
 === Triggers
 Triggering is supplied through two-terminal TODO-CONNECTOR_TYPE
 connectors, each controlled independently by the computer.  Toshiba
 Photorelays, driven via GPIO through a MOSFET, are used to switch the
-power supply to each connector.  Current is limited by a 500 mA
-polyfuse (PTC).
+5 VDC rail to each connector.  Current is limited by a 500 mA polyfuse
+(PTC).
 
 An internal (on-board) selector (toggle or jumper) enables the
-connector's high-side terminal to be switched to either 5 VDC or
-ground.  (The low side is permanently connected to ground.)
+connector's high-side terminal to be switched to either the 5 VDC rail
+or ground, whichever suits the device being triggered.  (The low side
+is permanently connected to ground.)
 
 
 == Physical
