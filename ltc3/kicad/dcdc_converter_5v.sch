@@ -40,9 +40,9 @@ EELAYER 27 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title "LTC3 12V-to-5V DC/DC Converter"
-Date "8 apr 2015"
+Date "18 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

@@ -40,9 +40,9 @@ EELAYER 27 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "8 apr 2015"
+Date "18 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -175,23 +175,23 @@ F 3 "~" H 13700 1750 30  0000 C CNN
 	1    13700 1750
 	1    0    0    -1  
 $EndComp
-Text Label 6200 3000 0    60   ~ 0
+Text Label 6400 3000 0    60   ~ 0
 I2C2_SCL
-Text Label 6200 3100 0    60   ~ 0
+Text Label 6400 3100 0    60   ~ 0
 I2C2_SDA
-Text Label 6200 1200 0    60   ~ 0
+Text Label 6400 1200 0    60   ~ 0
 GND
-Text Label 6200 1400 0    60   ~ 0
+Text Label 6400 1400 0    60   ~ 0
 DC_3.3V
-Text Label 6200 1600 0    60   ~ 0
+Text Label 6400 1600 0    60   ~ 0
 VDD_5V
-Text Label 6200 1800 0    60   ~ 0
+Text Label 6400 1800 0    60   ~ 0
 SYS_5V
-Text Label 8150 3100 0    60   ~ 0
+Text Label 8350 3100 0    60   ~ 0
 GND
 Text Label 1400 1200 0    60   ~ 0
 GND
-Text HLabel 6200 1600 0    60   Input ~ 0
+Text HLabel 6400 1600 0    60   Input ~ 0
 VCC_5V
 $Comp
 L LTC2991 U4
@@ -309,48 +309,48 @@ Wire Wire Line
 	13700 1450 13700 1500
 Connection ~ 13500 1450
 Wire Wire Line
-	6700 3000 6200 3000
+	6900 3000 6400 3000
 Wire Wire Line
-	6700 3100 6200 3100
+	6900 3100 6400 3100
 Wire Wire Line
-	6200 1200 6700 1200
+	6400 1200 6900 1200
 Wire Wire Line
-	6700 1300 6600 1300
+	6900 1300 6800 1300
 Wire Wire Line
-	6600 1300 6600 1200
-Connection ~ 6600 1200
+	6800 1300 6800 1200
+Connection ~ 6800 1200
 Wire Wire Line
-	6200 1400 6700 1400
+	6400 1400 6900 1400
 Wire Wire Line
-	6700 1500 6600 1500
+	6900 1500 6800 1500
 Wire Wire Line
-	6600 1500 6600 1400
-Connection ~ 6600 1400
+	6800 1500 6800 1400
+Connection ~ 6800 1400
 Wire Wire Line
-	6200 1600 6700 1600
+	6400 1600 6900 1600
 Wire Wire Line
-	6700 1700 6600 1700
+	6900 1700 6800 1700
 Wire Wire Line
-	6600 1700 6600 1600
-Connection ~ 6600 1600
+	6800 1700 6800 1600
+Connection ~ 6800 1600
 Wire Wire Line
-	6200 1800 6700 1800
+	6400 1800 6900 1800
 Wire Wire Line
-	6700 1900 6600 1900
+	6900 1900 6800 1900
 Wire Wire Line
-	6600 1900 6600 1800
-Connection ~ 6600 1800
+	6800 1900 6800 1800
+Connection ~ 6800 1800
 Wire Wire Line
-	7800 3200 7900 3200
+	8000 3200 8100 3200
 Wire Wire Line
-	7900 3100 7900 3400
-Connection ~ 7900 3100
+	8100 3100 8100 3400
+Connection ~ 8100 3100
 Wire Wire Line
-	7900 3300 7800 3300
-Connection ~ 7900 3200
+	8100 3300 8000 3300
+Connection ~ 8100 3200
 Wire Wire Line
-	7900 3400 7800 3400
-Connection ~ 7900 3300
+	8100 3400 8000 3400
+Connection ~ 8100 3300
 Wire Wire Line
 	1400 1200 1900 1200
 Wire Wire Line
@@ -400,7 +400,7 @@ Wire Wire Line
 Connection ~ 3850 7150
 Connection ~ 4100 7250
 Wire Wire Line
-	7800 3100 8300 3100
+	8000 3100 8500 3100
 $Comp
 L GND #PWR1
 U 1 1 5505EAAD
@@ -415,12 +415,12 @@ $EndComp
 Wire Wire Line
 	1400 1350 1400 1200
 Wire Wire Line
-	6700 2800 6200 2800
+	6900 2800 6400 2800
 Wire Wire Line
-	6700 2900 6200 2900
-Text Label 6200 2800 0    60   ~ 0
+	6900 2900 6400 2900
+Text Label 6400 2800 0    60   ~ 0
 I2C1_SCL
-Text Label 6200 2900 0    60   ~ 0
+Text Label 6400 2900 0    60   ~ 0
 I2C1_SDA
 Wire Wire Line
 	3500 6950 3650 6950

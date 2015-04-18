@@ -40,9 +40,9 @@ EELAYER 27 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 2 6
+Sheet 2 7
 Title "LTC3 Power Inputs (Solar, Lab)"
-Date "8 apr 2015"
+Date "18 apr 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -52,10 +52,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 4600 2600 2    60   Output ~ 0
 VCC_12V
-Text HLabel 2650 2500 0    60   Input ~ 0
-SOLAR_12V
-Text HLabel 2650 2750 0    60   Input ~ 0
-LAB_12V
 Text Notes 4250 2650 2    60   ~ 0
 TODO: Magic happens here!
 Wire Notes Line
