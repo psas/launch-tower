@@ -249,4 +249,6 @@ Wire Bus Line
 Wire Wire Line
 	5100 7350 6000 7350
 Connection ~ 5100 5200
+Text Notes 12400 1100 0    80   ~ 0
+TODO:\n1) Do we need a common ground pin on each sub-sheet?
 $EndSCHEMATC
