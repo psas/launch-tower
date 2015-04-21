@@ -1,6 +1,6 @@
 = Portland State Aerospace Society Launch Tower Computer III Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 24 March 2015: DRAFT
+v0.1, 14 April 2015: DRAFT
 
 :imagesdir: ./images
 
@@ -145,80 +145,33 @@ TODO
 
 === 12-to-5 V DC-DC Converter
 
-5 VDC power is provided by a Cincon EC4BU-12S05 DC-DC converter.
+5 VDC power is provided by a TDK-Lambda CC10-1205SF-E DC-DC converter.
 It was selected over others for its balance of voltage accuracy,
-operating temperature range (full output to 85°C), and price.
+operating temperature range (full output to 85°C), price, and
+availability.
 
-
-.12-to-5 V DC-DC Converters Considered
-[cols="1,1,3a,1", options="header"]
-|===
-|Mfr/Vendor
-|Model/Part #
-|Features
-|Price
-
-|TDK-Lambda
-|http://www.mouser.com/ds/2/400/cc-e-524996.pdf[CC10-1205SF-E]
-| * output: 5 V, 2 A
-  * Vout tolerance: ±3%
+  * output: 5 V, 2 A
+  * line regulation: 20 mV
+  * load regulation: 40 mV
   * max. operating temp: 81°C
   * PCB mounted (through-hole)
-|$26.26, Mouser
-
-|Cincon
-|http://www.mouser.com/ds/2/75/EC4BU-190623.pdf[EC4BU-12S05]
-| * output: 5 V, 2 A
-  * line regulation: ±1.5%
-  * max. operating temp: 85°C
-  * PCB mounted (through-hole)
-|$26.46, Mouser
-
-|PowerStream
-|http://www.powerstream.com/dc-dcz0503.htm[PST-DCZ0503]
-| * output: 5 V, 3 A
-  * load regulation: ±1.0%
-  * max. operating temp: 75°C
-  * Screw terminal connections
-|$47.60, direct
-
-|Vicor
-|http://cdn.vicorpower.com/documents/datasheets/ds_vi-j00.pdf[VI-J00-EZ]
-| * output: 5.0 VDC; 25 W
-  * load regulation: ±0.5%
-  * max. operating temp: 100°C
-  * remote sense and current limit
-  * optional integrated heat sink
-  * chassis or board mount packages
-|$137.00, direct; $153.70, https://www.digikey.com/product-detail/en/VI-J00-CZ/VI-J00-CZ-ND/2970554[Digi-Key]
-
-|===
+  * http://www.mouser.com/ds/2/400/cc-e-524996.pdf[data sheet]
+  * $26.26 from http://www.mouser.com/ProductDetail/TDK-Lambda/CC10-1205SF-E[Mouser]
 
 
 === 12-to-19 V DC-DC Converter
 
 Finding a converter than can produce 19 VDC (or even come close) is
-not easy.  Even the gold-plated Vicor is out of stock at Digi-Key.
+not easy.  Even the
+http://www.digikey.com/product-detail/en/VI-20N-EX/VI-20N-EX-ND/2967401[gold-plated
+Vicor] is out of stock at Digi-Key.
 
-.12-to-19 V DC-DC Converters Considered
-[cols="1,1,3a,1", options="header"]
-|===
-|Mfr/Vendor
-|Model/Part #
-|Features
-|Price
+For now, we're going to explore the possibility of using a cheap boost
+converter from China: "Waterproof 76W DC-DC Converter DC 12V to19V 4A
+Boost Step-up Car Power Module".
 
-|Vicor
-|http://cdn.vicorpower.com/documents/datasheets/ds_vi-200.pdf[VI-20N-EX]
-| * output: 18.5 VDC; 75.0 W
-  * load regulation: ±0.5%
-  * max. operating temp: 85°C
-  * remote sense and current limit
-  * optional integrated heat sink
-  * chassis or board mount packages
-|$179.00, direct; $140.65, http://www.digikey.com/product-detail/en/VI-20N-EX/VI-20N-EX-ND/2967401[Digi-Key]
-
-|===
+   * 12 V in, 19 V @ 4 A out
+   * $13 (shipped) via http://www.ebay.com/itm/Waterproof-76W-DC-DC-Converter-DC-12V-to19V-4A-Boost-Step-up-Car-Power-Module-/271772377430[eBay].
 
 
 == Ignition Subsystem
@@ -240,21 +193,25 @@ LTC3 provides power and trigger support for four external devices
 
 === Power
 Power is supplied through two-terminal Anderson Powerpole connectors,
-each controlled independently by the computer.  Photorelays, driven
-via GPIO through a MOSFET, are used to switch the 12 VDC rail to each
-connector.  Current is limited by a 2 A polyfuse (PTC).
+available from the exterior of the LTC enclosure.  Current to each
+connector is limited by a 2 A PPTC (PolyFuse).
+
+Each power connector is controlled independently by the computer.
+Photorelays, driven via GPIO through a MOSFET, are used to switch the
+12 VDC rail to "Eurostyle" connectors mounted to the mainboard.
+Common, 16-gauge stranded copper wire carries current from the
+on-board connectors to the exterior-facing Powerpoles.
 
 === Triggers
 Triggering is supplied through two-terminal TODO-CONNECTOR_TYPE
-connectors, each controlled independently by the computer.
-Photorelays, driven via GPIO through a MOSFET, are used to switch the
-5 VDC rail to each connector.  Current is limited by a 500 mA polyfuse
-(PTC).
+connectors, available from the exterior of the LTC enclosure.  Current
+to each connector is limited by a 500mA A PPTC (PolyFuse).
 
-An internal (on-board) selector (toggle or jumper) enables the
-connector's high-side terminal to be switched to either the 5 VDC rail
-or ground, whichever suits the device being triggered.  (The low side
-is permanently connected to ground.)
+Each trigger connector is controlled independently by the computer.
+Photorelays, driven via GPIO through a MOSFET, are used to switch
+either ground, or the 5 VDC rail, to "Eurostyle" connectors mounted to
+the mainboard.  An on-board three-pin header is jumpered accordingly
+to select the signal, whichever suits the device being triggered.
 
 
 == Physical
