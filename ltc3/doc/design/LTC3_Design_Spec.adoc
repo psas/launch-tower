@@ -155,7 +155,9 @@ availability.
   * load regulation: 40 mV
   * max. operating temp: 81°C
   * PCB mounted (through-hole)
-  * http://www.mouser.com/ds/2/400/cc-e-524996.pdf[data sheet]
+  * http://us.tdk-lambda.com/ftp/appnotes/cc-e_datasheet.pdf[data sheet]
+  * http://us.tdk-lambda.com/ftp/specs/CC10-xF-E_spc_en.pdf[product specifications]
+  * http://us.tdk-lambda.com/lp/technical/cc-series.htm[other technical documentation]
   * $26.26 from http://www.mouser.com/ProductDetail/TDK-Lambda/CC10-1205SF-E[Mouser]
 
 
