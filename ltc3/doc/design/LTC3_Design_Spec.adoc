@@ -127,53 +127,54 @@ TODO
 
 
 
-== Power Sources
-
-* 12V nominal input from an external wall-mount power supply
-
-* 17V (open circuit) PV power input
-
-** MPPT?
-
-* Internal LiPo power pack (10,14.4,16.8)V @ ??? AHr
-
-** Battery charger from PV? Shore power?
-
-
-
 == Power
 
-=== 12-to-5 V DC-DC Converter
+=== Battery
 
-5 VDC power is provided by a TDK-Lambda CC10-1205SF-E DC-DC converter.
-It was selected over others for its balance of voltage accuracy,
-operating temperature range (full output to 85°C), price, and
-availability.
+The heart of the LTC3 power circuitry is a 28.8 V, 8s1p LiPo battery
+pack.  The 28.8 V nominal voltage enables the use of buck converters
+on 5V and 19V power rails.  (Configurable buck converters are cheap
+and plentiful, and have higher efficiencies than the boost
+converters.)  The 8s1p configuration enables us to charge-balance
+individual cells.
 
-  * output: 5 V, 2 A
-  * line regulation: 20 mV
-  * load regulation: 40 mV
-  * max. operating temp: 81°C
-  * PCB mounted (through-hole)
-  * http://us.tdk-lambda.com/ftp/appnotes/cc-e_datasheet.pdf[data sheet]
-  * http://us.tdk-lambda.com/ftp/specs/CC10-xF-E_spc_en.pdf[product specifications]
-  * http://us.tdk-lambda.com/lp/technical/cc-series.htm[other technical documentation]
-  * $26.26 from http://www.mouser.com/ProductDetail/TDK-Lambda/CC10-1205SF-E[Mouser]
+The downside of this approach is the need for a custom charging
+circuit, as most off-the-shelf chargers are designed for 12V nominal
+MPPT and 4s cell configurations.
+
+TODO
+* Based on assumptions: 90% efficiency, calc. 96W of power (a
+  conservative estimate), 4 hours pure battery, we need a capacity of
+  13.2Ah at 28.8V nominal.
+* An 8s2p final configuration of 6.7 Ah cells would get
+  us into our 4 hours.
 
 
-=== 12-to-19 V DC-DC Converter
+=== Battery Charge Controller
 
-Finding a converter than can produce 19 VDC (or even come close) is
-not easy.  Even the
-http://www.digikey.com/product-detail/en/VI-20N-EX/VI-20N-EX-ND/2967401[gold-plated
-Vicor] is out of stock at Digi-Key.
+LTC3 uses the Linear Technologies LT8490, a switching buck/boost
+regulator that integrates a charger and solar MPPT.  It is robust and
+inexpensive.  Implementation of circuits based on the LT8490 are
+somewhat complicated, but are a big win in terms of cost and system
+flexibility.  The LT8490 can be powered with a wide range of input
+voltages.  A single connctor can be used for either the solar panels
+or 12V bench power supplies.
 
-For now, we're going to explore the possibility of using a cheap boost
-converter from China: "Waterproof 76W DC-DC Converter DC 12V to19V 4A
-Boost Step-up Car Power Module".
 
-   * 12 V in, 19 V @ 4 A out
-   * $13 (shipped) via http://www.ebay.com/itm/Waterproof-76W-DC-DC-Converter-DC-12V-to19V-4A-Boost-Step-up-Car-Power-Module-/271772377430[eBay].
+=== Battery Protection
+
+LiPo cell protection is provided by a Texas Instruments bq77PL900.
+The bq77PL900 is a cell protector and charge balancer that is
+inexpensive and relatively simple to use.
+
+
+=== 5 VDC and 12 VDC Power Rails
+
+DC power rails are supplied by separate Texas Instruments PTN78020
+switching regulator ICs.  The PTN78020 is a wide-input, wide-output,
+adjustable 6 A regulator.  A PTN78020W is used for the 5 VDC rail; a
+PTN78020H is used for the 19 VDC rail.
+
 
 
 == Ignition Subsystem
