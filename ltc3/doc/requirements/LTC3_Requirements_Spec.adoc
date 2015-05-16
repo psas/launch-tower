@@ -139,7 +139,6 @@ The LTC will receive power from the following external sources:
 
 The LTC must include a bank of internal LiPo cells ("main" batteries):
 
-* Voltage must be 10.0/14.4/16.8 VDC (min., nominal, max.).
 * Capacity must be sufficient to provide power to both internal and
   external loads (approx. 4 AH).
 * Batteries must be charged by available external power.
