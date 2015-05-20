@@ -1,6 +1,6 @@
-update=Sat 18 Apr 2015 01:25:13 AM PDT
+update=Sat 16 May 2015 02:18:46 PM PDT
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -43,6 +43,8 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=/home/pm/Stash/Projects/KiCad_Libraries/components;/home/pm/Stash/Projects/KiCad_Libraries/components/third_party
@@ -50,7 +52,7 @@ NetFmtName=
 RptD_X=0
 RptD_Y=100
 RptLab=1
-LabSize=60
+LabSize=100
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -88,5 +90,4 @@ LibName33=LTC299x
 LibName34=memory_devices
 LibName35=switches
 LibName36=Toshiba
-[general]
-version=1
+LibName37=LTC3_components

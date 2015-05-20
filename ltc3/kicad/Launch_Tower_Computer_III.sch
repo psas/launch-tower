@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -35,14 +34,15 @@ LIBS:LTC299x
 LIBS:memory_devices
 LIBS:switches
 LIBS:Toshiba
+LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 7
 Title "Launch Tower Computer III (LTC3)"
-Date "18 apr 2015"
+Date "16 may 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -55,7 +55,7 @@ S 1000 1100 1500 1000
 U 551C8EE6
 F0 "Power In" 60
 F1 "power_in.sch" 50
-F2 "VCC_12V" O R 2500 1250 60 
+F2 "VCC_BATT" O R 2500 1250 60 
 $EndSheet
 $Sheet
 S 3500 1100 1500 1000
@@ -63,7 +63,8 @@ U 550535FB
 F0 "DC-DC Converter, 5V" 60
 F1 "dcdc_converter_5v.sch" 50
 F2 "VCC_5V" O R 5000 1250 60 
-F3 "VCC_12V" I L 3500 1250 60 
+F3 "VCC_BATT" I L 3500 1250 60 
+F4 "VCC_5V_INHIB" I L 3500 1450 60 
 $EndSheet
 $Sheet
 S 6000 1100 1500 1000
@@ -71,7 +72,8 @@ U 55053600
 F0 "DC-DC Converter, 19V" 60
 F1 "dcdc_converter_19v.sch" 50
 F2 "VCC_19V" O R 7500 1250 60 
-F3 "VCC_12V" I L 6000 1250 60 
+F3 "VCC_BATT" I L 6000 1250 60 
+F4 "VCC_19V_INHIB" I L 6000 1450 60 
 $EndSheet
 Wire Wire Line
 	2600 1250 2600 900 

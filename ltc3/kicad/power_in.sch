@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -35,14 +34,15 @@ LIBS:LTC299x
 LIBS:memory_devices
 LIBS:switches
 LIBS:Toshiba
+LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 2 7
 Title "LTC3 Power Inputs (Solar, Lab)"
-Date "18 apr 2015"
+Date "16 may 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -50,16 +50,58 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4600 2600 2    60   Output ~ 0
-VCC_12V
-Text Notes 4250 2650 2    60   ~ 0
-TODO: Magic happens here!
+Text HLabel 9850 4250 2    60   Output ~ 0
+VCC_BATT
+$Comp
+L CONN_2 P?
+U 1 1 5557CEAC
+P 1650 2750
+F 0 "P?" V 1600 2750 40  0000 C CNN
+F 1 "PV_IN" V 1700 2750 40  0000 C CNN
+F 2 "" H 1650 2750 60  0000 C CNN
+F 3 "" H 1650 2750 60  0000 C CNN
+	1    1650 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_2 P?
+U 1 1 5557CEBB
+P 1650 3300
+F 0 "P?" V 1600 3300 40  0000 C CNN
+F 1 "LAB_IN" V 1700 3300 40  0000 C CNN
+F 2 "" H 1650 3300 60  0000 C CNN
+F 3 "" H 1650 3300 60  0000 C CNN
+	1    1650 3300
+	-1   0    0    1   
+$EndComp
 Wire Notes Line
-	2900 2400 4350 2400
+	4250 1450 5600 1450
 Wire Notes Line
-	4350 2400 4350 2800
+	5600 1450 5600 2700
 Wire Notes Line
-	4350 2800 2900 2800
+	5600 2700 4250 2700
 Wire Notes Line
-	2900 2800 2900 2400
+	4250 2700 4250 1450
+Text Notes 4600 1750 0    100  ~ 0
+LT8490
+Wire Notes Line
+	4250 3650 5600 3650
+Wire Notes Line
+	5600 3650 5600 4900
+Wire Notes Line
+	5600 4900 4250 4900
+Wire Notes Line
+	4250 4900 4250 3650
+Text Notes 4500 3950 0    100  ~ 0
+bq77PL900
+Wire Notes Line
+	7150 3650 8500 3650
+Wire Notes Line
+	8500 3650 8500 4900
+Wire Notes Line
+	8500 4900 7150 4900
+Wire Notes Line
+	7150 4900 7150 3650
+Text Notes 7300 3950 0    100  ~ 0
+LiPo Batteries
 $EndSCHEMATC
