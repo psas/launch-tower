@@ -10,6 +10,7 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
+LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -28,21 +29,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:headers
-LIBS:DIP_switches
-LIBS:LTC299x
-LIBS:memory_devices
-LIBS:switches
-LIBS:Toshiba
 LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
-EELAYER 25 0
+EELAYER 27 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 2 7
 Title "LTC3 Power Inputs (Solar, Lab)"
-Date "16 may 2015"
+Date "23 may 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -75,33 +70,34 @@ F 3 "" H 1650 3300 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
-	4250 1450 5600 1450
+	4000 5850 5350 5850
 Wire Notes Line
-	5600 1450 5600 2700
+	5350 5850 5350 7100
 Wire Notes Line
-	5600 2700 4250 2700
+	5350 7100 4000 7100
 Wire Notes Line
-	4250 2700 4250 1450
-Text Notes 4600 1750 0    100  ~ 0
-LT8490
-Wire Notes Line
-	4250 3650 5600 3650
-Wire Notes Line
-	5600 3650 5600 4900
-Wire Notes Line
-	5600 4900 4250 4900
-Wire Notes Line
-	4250 4900 4250 3650
-Text Notes 4500 3950 0    100  ~ 0
+	4000 7100 4000 5850
+Text Notes 4250 6150 0    100  ~ 0
 bq77PL900
 Wire Notes Line
-	7150 3650 8500 3650
+	7850 5100 9200 5100
 Wire Notes Line
-	8500 3650 8500 4900
+	9200 5100 9200 6350
 Wire Notes Line
-	8500 4900 7150 4900
+	9200 6350 7850 6350
 Wire Notes Line
-	7150 4900 7150 3650
-Text Notes 7300 3950 0    100  ~ 0
+	7850 6350 7850 5100
+Text Notes 8000 5400 0    100  ~ 0
 LiPo Batteries
+$Comp
+L LT8490 U?
+U 1 1 5560E702
+P 5750 2650
+F 0 "U?" H 5750 2550 60  0000 C CNN
+F 1 "LT8490" H 5750 2700 60  0000 C CNN
+F 2 "~" H 5800 2750 60  0000 C CNN
+F 3 "" H 5800 2750 60  0000 C CNN
+	1    5750 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
