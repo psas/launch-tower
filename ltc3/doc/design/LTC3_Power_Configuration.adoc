@@ -1,0 +1,62 @@
+Can we put some regulated DC shore power into the LT8490?
+Does the LT8490 need to be reconfigured in order to take different nominal input voltages?
+	-pg. 14 - VINR needs to be grounded when the chip is getting direct DC input. (pg. 14)
+	When panels are used, it needs to be hooked up to a resistor network to measure panel voltage.
+	This is implemented on pg. 35 - protection diodes are used to insulate VDC and VPanel, and a transistor
+	shorts VINR when VDC is turned on.
+	-We can ensure that no one uses the Lab and Panel supplies at the same time by just having a physical sliding cover.
+	-DC current limiting for lab power
+
+What configuration options does the LT8490 have? How should they be configured?
+	-Vmax selection - Based on the larger of panel Voc Max and DC max, we calculate an impedence network (pg. 14).
+	Minimum ckt input voltage is based on the selected Vmax; the lab power input and solar input both must exceed this level 
+	for efficient charging. (pg. 15).
+	-Low-power mode - pg. 15
+	-Simultaneous charging + discharging (in-situ; pg. 16) 
+		+load connected directly across the battery terminals
+		+disable charging time limits (CHARGECFG2 pin) 
+		+the battery may draw below safe levels if it is charging and discharging simultaneously; build in protections?
+	-Stage 2 charging threshold (pg. 17-18) - typically above nominal Vbatt; for LiPo cells this is usually 4.2V for 3.6V cell
+		+Stage 3 is usually disabled for LiPo; the Stage 2 threshold is the most important limit for LiPo charging
+	
+-IMON_OUT, IMON_OUT capacitance (pg. 19, 20) - higher values reduce inductor current overshoot; lower values reduce ripple 
+	and give better ADC measurements. Need to separate pole at IMON_OUT from pole at Vc pin. Suggested value: 4.7 to 22nF
+	-Input current limiting (pg. 19) should be panel max + 20%, but not dramatically higher than rated input
+	-CHARGECFG1 options: (pg.20)
+		+Temperature-compensated voltage limits
+		+Enable/disable stage 3 (not typically used for LiPo)
+		+For LiPo: Non-temperature-compensated, stage 3 disabled = grounded
+	-CHARGECFG2 options: (pg. 22)
+		+Enable/disable charge time limits: time limits not recommended for LiPo
+		+Width of valid temp ranges (ratio > or < 0.5)
+		+For LiPo: Narrow valid temp range, no time limits = grounded
+	-Status/Fault LED configuration (pg. 26)
+		+Use a resistor to limit STATUS current
+		+FAULT self-limits on its own
+		+Configure BB to interpret status/fault signals (pg. 25)
+		+For our config: use resistor network as in Fig. 18
+	-Switching configuration (pg. 29)
+		+MODE pin above 2.3V = discontinuous conduction mode (DCM)
+		+MODE below 0.4V = automatic CCM/DCM mode switching, automatic EXTVcc disconnect
+		+For our config: tie MODE low - we typically want CCM
+	-Low power mode (pg. 30)
+		+Disabling: Rnlp can be connected between to FBIR.
+		+For our config: no reason to disable low-power mode
+	-Feedback resistor disconnect (pg. 31)
+		+For our config: Feedback resistor disconnect is probably unnecessary for our application
+		+We want voltage sensing even when batteries are not charging
+		+Circuit as in fig. 26
+	-EXTVcc disconnect mode (pg. 32)
+		+For our config: EXTVcc disconnect is probably unnecessary
+		+EXTVcc power draw is very low relative to our batteries
+	-Remote batt V sensing (pg 32)
+		+For our config: Possibly necessary because reduces hot-swap inrush currents
+		+intended for low-voltage batteries charging at high currents
+	-Hot plugging (pg. 35)
+		+We can either use the remote batt V sensing setup or use a staggered connector type
+
+
+-Inductor selection: see LT8705 datasheet for consideration (pg. 23)
+
+-Board Layout checklist: see LT8705 datasheet (pg. 35)
+	
