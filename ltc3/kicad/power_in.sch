@@ -37,7 +37,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 2 7
 Title "LTC3 Power Inputs (Solar, Lab)"
-Date "23 may 2015"
+Date "30 may 2015"
 Rev "1"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -70,16 +70,6 @@ F 3 "" H 1650 3300 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Notes Line
-	4000 5850 5350 5850
-Wire Notes Line
-	5350 5850 5350 7100
-Wire Notes Line
-	5350 7100 4000 7100
-Wire Notes Line
-	4000 7100 4000 5850
-Text Notes 4250 6150 0    100  ~ 0
-bq77PL900
-Wire Notes Line
 	7850 5100 9200 5100
 Wire Notes Line
 	9200 5100 9200 6350
@@ -98,6 +88,17 @@ F 1 "LT8490" H 5750 2700 60  0000 C CNN
 F 2 "~" H 5800 2750 60  0000 C CNN
 F 3 "" H 5800 2750 60  0000 C CNN
 	1    5750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L BQ77PL900 U?
+U 1 1 556A16F5
+P 4550 5850
+F 0 "U?" H 4550 5800 60  0000 C CNN
+F 1 "BQ77PL900" H 4550 5900 60  0000 C CNN
+F 2 "" H 4550 5850 60  0000 C CNN
+F 3 "" H 4550 5850 60  0000 C CNN
+	1    4550 5850
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
