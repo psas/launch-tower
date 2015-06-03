@@ -50,11 +50,11 @@ What configuration options does the LT8490 have? How should they be configured?
 		+For our config: EXTVcc disconnect is probably unnecessary
 		+EXTVcc power draw is very low relative to our batteries
 	-Remote batt V sensing (pg 32)
-		+For our config: Possibly necessary because reduces hot-swap inrush currents
 		+intended for low-voltage batteries charging at high currents
+		+For our config: Not necessary.
 	-Hot plugging (pg. 35)
 		+We can either use the remote batt V sensing setup or use a staggered connector type
-
+		+Word of god: don't worry about it for our application
 
 -Inductor selection: see LT8705 datasheet for consideration (pg. 23)
 
