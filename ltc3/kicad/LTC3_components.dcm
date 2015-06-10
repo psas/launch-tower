@@ -1,6 +1,10 @@
-EESchema-DOCLIB  Version 2.0  Date: Sat 30 May 2015 12:28:20 PM PDT
+EESchema-DOCLIB  Version 2.0
 #
 $CMP LT8490
+D Linear Technologies
+$ENDCMP
+#
+$CMP LT8490_Remix
 D Linear Technologies
 $ENDCMP
 #
