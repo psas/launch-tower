@@ -10,7 +10,6 @@ LIBS:cmos4000
 LIBS:adc-dac
 LIBS:memory
 LIBS:xilinx
-LIBS:special
 LIBS:microcontrollers
 LIBS:dsp
 LIBS:microchip
@@ -29,9 +28,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:headers
+LIBS:DIP_switches
+LIBS:LTC299x
+LIBS:memory_devices
+LIBS:switches
+LIBS:Toshiba
 LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
