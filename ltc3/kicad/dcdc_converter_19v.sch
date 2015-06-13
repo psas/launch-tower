@@ -35,6 +35,7 @@ LIBS:memory_devices
 LIBS:switches
 LIBS:Toshiba
 LIBS:LTC3_components
+LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
