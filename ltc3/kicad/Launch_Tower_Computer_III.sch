@@ -40,7 +40,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 7
+Sheet 1 6
 Title "Launch Tower Computer III (LTC3)"
 Date "30 may 2015"
 Rev "1"
@@ -60,20 +60,13 @@ $EndSheet
 $Sheet
 S 3500 1100 1500 1000
 U 550535FB
-F0 "DC-DC Converter, 5V" 60
-F1 "dcdc_converter_5v.sch" 50
+F0 "DC-DC Converters" 60
+F1 "dcdc_converter.sch" 50
 F2 "VCC_5V" O R 5000 1250 60 
 F3 "VCC_BATT" I L 3500 1250 60 
 F4 "VCC_5V_INHIB" I L 3500 1450 60 
-$EndSheet
-$Sheet
-S 6000 1100 1500 1000
-U 55053600
-F0 "DC-DC Converter, 19V" 60
-F1 "dcdc_converter_19v.sch" 50
-F2 "VCC_19V" O R 7500 1250 60 
-F3 "VCC_BATT" I L 6000 1250 60 
-F4 "VCC_19V_INHIB" I L 6000 1450 60 
+F5 "VCC_19V" O R 5000 1450 60 
+F6 "VCC_19V_INHIB" I L 3500 1650 60 
 $EndSheet
 Wire Wire Line
 	2600 1250 2600 900 
@@ -81,8 +74,6 @@ Wire Wire Line
 	2600 900  5800 900 
 Wire Wire Line
 	5800 900  5800 5350
-Wire Wire Line
-	5800 1250 6000 1250
 Connection ~ 2600 1250
 Wire Wire Line
 	5000 1250 5100 1250
@@ -216,7 +207,6 @@ Text Label 5850 8000 2    40   ~ 0
 GPIO_EXT_TRIG_4
 Wire Wire Line
 	5800 5350 6000 5350
-Connection ~ 5800 1250
 $Sheet
 S 6000 7200 1500 1500
 U 553268FD
@@ -253,4 +243,6 @@ Wire Wire Line
 Connection ~ 5100 5200
 Text Notes 12400 1100 0    80   ~ 0
 TODO:\n1) Do we need a common ground pin on each sub-sheet?
+Text Notes 7800 5950 0    60   ~ 0
+NB: Requirements state external device power to be 12 VDC.\nSolar cell and batteries now operate at 28.8 VDC nominal.\nDo we need a third DC-DC converter at 12 VDC?
 $EndSCHEMATC

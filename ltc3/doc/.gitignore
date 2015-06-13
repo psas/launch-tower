@@ -1,6 +1,7 @@
 *.html
 *.pdf
 *.xml
+*.swp
 
 !datasheets/**/*.pdf
 !third_party/**/*.pdf

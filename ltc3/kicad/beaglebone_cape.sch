@@ -40,7 +40,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 7
+Sheet 5 6
 Title "LTC3 BeagleBone Black Cape Interface"
 Date "30 may 2015"
 Rev "1"
