@@ -28,13 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:headers
-LIBS:DIP_switches
-LIBS:LTC299x
-LIBS:memory_devices
-LIBS:switches
-LIBS:Toshiba
-LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END

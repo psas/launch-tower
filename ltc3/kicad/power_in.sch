@@ -28,13 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:headers
-LIBS:DIP_switches
-LIBS:LTC299x
-LIBS:memory_devices
-LIBS:switches
-LIBS:Toshiba
-LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -52,28 +45,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 9850 4250 2    60   Output ~ 0
 VCC_BATT
-$Comp
-L CONN_2 P1
-U 1 1 5557CEAC
-P 1650 2750
-F 0 "P1" V 1600 2750 40  0000 C CNN
-F 1 "PV_IN" V 1700 2750 40  0000 C CNN
-F 2 "" H 1650 2750 60  0000 C CNN
-F 3 "" H 1650 2750 60  0000 C CNN
-	1    1650 2750
-	-1   0    0    1   
-$EndComp
-$Comp
-L CONN_2 P2
-U 1 1 5557CEBB
-P 1650 3300
-F 0 "P2" V 1600 3300 40  0000 C CNN
-F 1 "LAB_IN" V 1700 3300 40  0000 C CNN
-F 2 "" H 1650 3300 60  0000 C CNN
-F 3 "" H 1650 3300 60  0000 C CNN
-	1    1650 3300
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	7850 5100 9200 5100
 Wire Notes Line
@@ -105,5 +76,27 @@ F 2 "" H 4550 5850 60  0000 C CNN
 F 3 "" H 4550 5850 60  0000 C CNN
 	1    4550 5850
 	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 5583855E
+P 2200 2750
+F 0 "P?" H 2200 2900 50  0000 C CNN
+F 1 "PV_IN" V 2300 2750 50  0000 C CNN
+F 2 "" H 2200 2750 60  0000 C CNN
+F 3 "" H 2200 2750 60  0000 C CNN
+	1    2200 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 55838585
+P 2200 3400
+F 0 "P?" H 2200 3550 50  0000 C CNN
+F 1 "LAB_IN" V 2300 3400 50  0000 C CNN
+F 2 "" H 2200 3400 60  0000 C CNN
+F 3 "" H 2200 3400 60  0000 C CNN
+	1    2200 3400
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC

@@ -36,6 +36,10 @@ TODO
 
 == Sensors
 
+LTC3 contains sensors to monitor the voltage on each power rail (12
+VDC,
+5 VDC, 28.8 VDC
+
 === Voltage
 
 .Sensors Considered

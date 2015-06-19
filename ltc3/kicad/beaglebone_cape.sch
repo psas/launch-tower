@@ -28,19 +28,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:headers
-LIBS:DIP_switches
-LIBS:LTC299x
-LIBS:memory_devices
-LIBS:switches
-LIBS:Toshiba
-LIBS:LTC3_components
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title "LTC3 BeagleBone Black Cape Interface"
 Date "30 may 2015"
 Rev "1"
