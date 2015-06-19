@@ -1,4 +1,4 @@
-update=Thu 18 Jun 2015 07:31:25 PM PDT
+update=Thu 18 Jun 2015 09:03:38 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -57,7 +57,7 @@ SpiceUseNetNumbers=0
 LabSize=60
 [eeschema]
 version=1
-LibDir=lib/sym
+LibDir=libs/symbols
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -88,3 +88,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=libs/symbols/LTC3
