@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:LTC3
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
