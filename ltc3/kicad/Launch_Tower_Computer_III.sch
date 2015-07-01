@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Launch Tower Computer III (LTC3)"
 Date "2015-06-30"
 Rev "1"
