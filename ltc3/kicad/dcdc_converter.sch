@@ -152,7 +152,7 @@ $EndComp
 Text HLabel 4450 3300 0    60   Input ~ 0
 VCC_5V_INHIB
 Text HLabel 8150 4800 2    60   Output ~ 0
-VCC_12V
+BB_VSENSE_12V+
 Text HLabel 3950 4800 0    60   Input ~ 0
 VCC_BATT
 $Comp
@@ -259,7 +259,7 @@ $EndComp
 Text HLabel 4450 6300 0    60   Input ~ 0
 VCC_12V_INHIB
 Text HLabel 8150 7800 2    60   Output ~ 0
-VCC_19V
+BB_VSENSE_19V+
 Text HLabel 3950 7800 0    60   Input ~ 0
 VCC_BATT
 $Comp
@@ -442,15 +442,15 @@ $EndComp
 Text Notes 10500 6550 0    100  ~ 0
 TODO:\n1) Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
 Text HLabel 8100 3300 2    60   Input ~ 0
-VCC_5V_SENSE
+REG_VSENSE_5V
 Text HLabel 8150 6300 2    60   Input ~ 0
-VCC_12V_SENSE
+REG_VSENSE_12V
 Text HLabel 8150 9300 2    60   Input ~ 0
-VCC_19V_SENSE
+REG_VSENSE_19V
 Text HLabel 8150 1800 2    60   Output ~ 0
-V_SENSE_5V+
+BB_VSENSE_5V+
 Text HLabel 8950 1950 0    60   Input ~ 0
-V_SENSE_5V-
+BB_VSENSE_5V-
 Wire Wire Line
 	4950 2200 4800 2200
 Wire Wire Line
@@ -599,4 +599,16 @@ Wire Wire Line
 Connection ~ 3650 8650
 Wire Wire Line
 	8950 1950 9200 1950
+Text HLabel 9250 4950 2    60   Output ~ 0
+VCC_12V
+Text HLabel 9000 4950 0    60   Input ~ 0
+BB_VSENSE_12V-
+Wire Wire Line
+	9000 4950 9250 4950
+Text HLabel 9250 7950 2    60   Output ~ 0
+VCC_19V
+Text HLabel 9000 7950 0    60   Input ~ 0
+BB_VSENSE_19V-
+Wire Wire Line
+	9000 7950 9250 7950
 $EndSCHEMATC

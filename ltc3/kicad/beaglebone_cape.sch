@@ -374,21 +374,21 @@ F 4 "1W, 1%" V 5550 6100 60  0000 C CNN "Note"
 	1    0    0    -1  
 $EndComp
 Text HLabel 5450 5900 0    60   Input ~ 0
-V_SENSE_BATT+
+BB_VSENSE_BATT+
 Text HLabel 5450 6300 0    60   Output ~ 0
-V_SENSE_BATT-
+BB_VSENSE_BATT-
 Text HLabel 5450 6600 0    60   Input ~ 0
-V_SENSE_5V+
+BB_VSENSE_5V+
 Text HLabel 5450 7000 0    60   Output ~ 0
-V_SENSE_5V-
+BB_VSENSE_5V-
 Text HLabel 5450 7300 0    60   Input ~ 0
-V_SENSE_12V+
+BB_VSENSE_12V+
 Text HLabel 5450 7700 0    60   Output ~ 0
-V_SENSE_12V-
+BB_VSENSE_12V-
 Text HLabel 5450 8000 0    60   Input ~ 0
-V_SENSE_19V+
+BB_VSENSE_19V+
 Text HLabel 5450 8400 0    60   Output ~ 0
-V_SENSE_19V-
+BB_VSENSE_19V-
 Wire Wire Line
 	3250 2100 3750 2100
 Wire Wire Line
