@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title "LTC3 12V-to-5V DC/DC Converter"
 Date "30 may 2015"
 Rev "1"
@@ -44,7 +44,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 8150 1800 2    60   Output ~ 0
+Text HLabel 9200 1950 2    60   Output ~ 0
 VCC_5V
 Text HLabel 3950 1800 0    60   Input ~ 0
 VCC_BATT
@@ -81,22 +81,6 @@ F 3 "" H 7200 2350 60  0000 C CNN
 	1    7200 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 2200 4800 2200
-Wire Wire Line
-	4800 2200 4800 2350
-Wire Wire Line
-	7050 2200 7200 2200
-Wire Wire Line
-	7200 2200 7200 2350
-Wire Wire Line
-	7050 1800 7550 1800
-Wire Wire Line
-	7550 1800 8150 1800
-Wire Wire Line
-	3950 1800 4300 1800
-Wire Wire Line
-	4300 1800 4950 1800
 $Comp
 L CP1 C2
 U 1 1 5557F6DE
@@ -119,11 +103,6 @@ F 3 "" H 7550 2550 60  0000 C CNN
 	1    7550 2550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 2050 7550 1800
-Connection ~ 7550 1800
-Wire Wire Line
-	7550 2350 7550 2550
 $Comp
 L C C1
 U 1 1 5557F70C
@@ -147,11 +126,6 @@ F 3 "" H 4300 2500 60  0000 C CNN
 	1    4300 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 2500 4300 2350
-Wire Wire Line
-	4300 2050 4300 1800
-Connection ~ 4300 1800
 $Comp
 L R R1
 U 1 1 555D0B08
@@ -175,20 +149,8 @@ F 3 "" H 6000 3300 60  0000 C CNN
 	1    6000 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 3300 6000 3200
-Wire Wire Line
-	6000 2900 6000 2800
 Text HLabel 4450 3300 0    60   Input ~ 0
 VCC_5V_INHIB
-Wire Wire Line
-	5700 2800 5700 3300
-Wire Wire Line
-	5700 3300 4450 3300
-Wire Wire Line
-	6300 2800 6300 3300
-Wire Wire Line
-	6300 3300 8100 3300
 Text HLabel 8150 4800 2    60   Output ~ 0
 VCC_12V
 Text HLabel 3950 4800 0    60   Input ~ 0
@@ -226,24 +188,6 @@ F 3 "" H 7200 5350 60  0000 C CNN
 	1    7200 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5200 4800 5200
-Wire Wire Line
-	4800 5200 4800 5350
-Wire Wire Line
-	7050 5200 7200 5200
-Wire Wire Line
-	7200 5200 7200 5350
-Wire Wire Line
-	7050 4800 7550 4800
-Wire Wire Line
-	7550 4800 8050 4800
-Wire Wire Line
-	8050 4800 8150 4800
-Wire Wire Line
-	3950 4800 4300 4800
-Wire Wire Line
-	4300 4800 4950 4800
 $Comp
 L CP1 C?
 U 1 1 55945CF8
@@ -266,11 +210,6 @@ F 3 "" H 7550 5550 60  0000 C CNN
 	1    7550 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 5050 7550 4800
-Connection ~ 7550 4800
-Wire Wire Line
-	7550 5350 7550 5550
 $Comp
 L C C?
 U 1 1 55945D07
@@ -294,15 +233,6 @@ F 3 "" H 4300 5800 60  0000 C CNN
 	1    4300 5800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 5800 4300 5650
-Wire Wire Line
-	4300 5650 4300 5550
-Wire Wire Line
-	4300 4800 4300 5150
-Wire Wire Line
-	4300 5150 4300 5250
-Connection ~ 4300 4800
 $Comp
 L R R?
 U 1 1 55945D17
@@ -326,20 +256,8 @@ F 3 "" H 6000 6300 60  0000 C CNN
 	1    6000 6300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 6300 6000 6200
-Wire Wire Line
-	6000 5900 6000 5800
 Text HLabel 4450 6300 0    60   Input ~ 0
 VCC_12V_INHIB
-Wire Wire Line
-	5700 5800 5700 6300
-Wire Wire Line
-	5700 6300 4450 6300
-Wire Wire Line
-	6300 5800 6300 6300
-Wire Wire Line
-	6300 6300 8150 6300
 Text HLabel 8150 7800 2    60   Output ~ 0
 VCC_19V
 Text HLabel 3950 7800 0    60   Input ~ 0
@@ -377,24 +295,6 @@ F 3 "" H 7200 8350 60  0000 C CNN
 	1    7200 8350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 8200 4800 8200
-Wire Wire Line
-	4800 8200 4800 8350
-Wire Wire Line
-	7050 8200 7200 8200
-Wire Wire Line
-	7200 8200 7200 8350
-Wire Wire Line
-	7050 7800 7550 7800
-Wire Wire Line
-	7550 7800 8050 7800
-Wire Wire Line
-	8050 7800 8150 7800
-Wire Wire Line
-	3950 7800 4300 7800
-Wire Wire Line
-	4300 7800 4950 7800
 $Comp
 L CP1 C?
 U 1 1 55946867
@@ -417,12 +317,6 @@ F 3 "" H 7550 8550 60  0000 C CNN
 	1    7550 8550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7550 8050 7550 7800
-Connection ~ 7550 7800
-Wire Wire Line
-	7550 8350 7550 8550
-Connection ~ 4300 7800
 $Comp
 L R R?
 U 1 1 55946886
@@ -446,20 +340,8 @@ F 3 "" H 6000 9300 60  0000 C CNN
 	1    6000 9300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 9300 6000 9200
-Wire Wire Line
-	6000 8900 6000 8800
 Text HLabel 4450 9300 0    60   Input ~ 0
 VCC_19V_INHIB
-Wire Wire Line
-	5700 8800 5700 9300
-Wire Wire Line
-	5700 9300 4450 9300
-Wire Wire Line
-	6300 8800 6300 9300
-Wire Wire Line
-	6300 9300 8150 9300
 Text Notes 10450 5600 0    100  ~ 0
 NB:\n1. Voltage sense traces should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
 $Comp
@@ -498,36 +380,6 @@ F 4 "ceramic, X[57]R" V 4150 5400 50  0001 C CNN "Note"
 	1    4300 5400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 5150 4000 5250
-Wire Wire Line
-	3350 5150 3650 5150
-Wire Wire Line
-	3650 5150 4000 5150
-Wire Wire Line
-	4000 5150 4300 5150
-Connection ~ 4300 5150
-Wire Wire Line
-	3650 5250 3650 5150
-Connection ~ 4000 5150
-Wire Wire Line
-	3350 5250 3350 5150
-Connection ~ 3650 5150
-Wire Wire Line
-	4000 5550 4000 5650
-Wire Wire Line
-	3350 5650 3650 5650
-Wire Wire Line
-	3650 5650 4000 5650
-Wire Wire Line
-	4000 5650 4300 5650
-Connection ~ 4300 5650
-Wire Wire Line
-	3650 5550 3650 5650
-Connection ~ 4000 5650
-Wire Wire Line
-	3350 5550 3350 5650
-Connection ~ 3650 5650
 $Comp
 L C C?
 U 1 1 5594B45E
@@ -551,14 +403,6 @@ F 3 "" H 4300 8800 60  0000 C CNN
 	1    4300 8800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4300 8800 4300 8650
-Wire Wire Line
-	4300 8650 4300 8550
-Wire Wire Line
-	4300 7800 4300 8150
-Wire Wire Line
-	4300 8150 4300 8250
 $Comp
 L C C?
 U 1 1 5594B46E
@@ -595,36 +439,6 @@ F 4 "ceramic, X[57]R" V 4150 8400 50  0001 C CNN "Note"
 	1    4300 8400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 8150 4000 8250
-Wire Wire Line
-	3350 8150 3650 8150
-Wire Wire Line
-	3650 8150 4000 8150
-Wire Wire Line
-	4000 8150 4300 8150
-Connection ~ 4300 8150
-Wire Wire Line
-	3650 8250 3650 8150
-Connection ~ 4000 8150
-Wire Wire Line
-	3350 8250 3350 8150
-Connection ~ 3650 8150
-Wire Wire Line
-	4000 8550 4000 8650
-Wire Wire Line
-	3350 8650 3650 8650
-Wire Wire Line
-	3650 8650 4000 8650
-Wire Wire Line
-	4000 8650 4300 8650
-Connection ~ 4300 8650
-Wire Wire Line
-	3650 8550 3650 8650
-Connection ~ 4000 8650
-Wire Wire Line
-	3350 8550 3350 8650
-Connection ~ 3650 8650
 Text Notes 10500 6550 0    100  ~ 0
 TODO:\n1) Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
 Text HLabel 8100 3300 2    60   Input ~ 0
@@ -633,4 +447,156 @@ Text HLabel 8150 6300 2    60   Input ~ 0
 VCC_12V_SENSE
 Text HLabel 8150 9300 2    60   Input ~ 0
 VCC_19V_SENSE
+Text HLabel 8150 1800 2    60   Output ~ 0
+V_SENSE_5V+
+Text HLabel 8950 1950 0    60   Input ~ 0
+V_SENSE_5V-
+Wire Wire Line
+	4950 2200 4800 2200
+Wire Wire Line
+	4800 2200 4800 2350
+Wire Wire Line
+	7050 2200 7200 2200
+Wire Wire Line
+	7200 2200 7200 2350
+Wire Wire Line
+	7050 1800 8150 1800
+Wire Wire Line
+	3950 1800 4950 1800
+Wire Wire Line
+	7550 2050 7550 1800
+Connection ~ 7550 1800
+Wire Wire Line
+	7550 2350 7550 2550
+Wire Wire Line
+	4300 2500 4300 2350
+Wire Wire Line
+	4300 2050 4300 1800
+Connection ~ 4300 1800
+Wire Wire Line
+	6000 3300 6000 3200
+Wire Wire Line
+	6000 2900 6000 2800
+Wire Wire Line
+	5700 2800 5700 3300
+Wire Wire Line
+	5700 3300 4450 3300
+Wire Wire Line
+	6300 2800 6300 3300
+Wire Wire Line
+	6300 3300 8100 3300
+Wire Wire Line
+	4950 5200 4800 5200
+Wire Wire Line
+	4800 5200 4800 5350
+Wire Wire Line
+	7050 5200 7200 5200
+Wire Wire Line
+	7200 5200 7200 5350
+Wire Wire Line
+	7050 4800 8150 4800
+Wire Wire Line
+	3950 4800 4950 4800
+Wire Wire Line
+	7550 5050 7550 4800
+Connection ~ 7550 4800
+Wire Wire Line
+	7550 5350 7550 5550
+Wire Wire Line
+	4300 5550 4300 5800
+Wire Wire Line
+	4300 4800 4300 5250
+Connection ~ 4300 4800
+Wire Wire Line
+	6000 6300 6000 6200
+Wire Wire Line
+	6000 5900 6000 5800
+Wire Wire Line
+	5700 5800 5700 6300
+Wire Wire Line
+	5700 6300 4450 6300
+Wire Wire Line
+	6300 5800 6300 6300
+Wire Wire Line
+	6300 6300 8150 6300
+Wire Wire Line
+	4950 8200 4800 8200
+Wire Wire Line
+	4800 8200 4800 8350
+Wire Wire Line
+	7050 8200 7200 8200
+Wire Wire Line
+	7200 8200 7200 8350
+Wire Wire Line
+	7050 7800 8150 7800
+Wire Wire Line
+	3950 7800 4950 7800
+Wire Wire Line
+	7550 8050 7550 7800
+Connection ~ 7550 7800
+Wire Wire Line
+	7550 8350 7550 8550
+Connection ~ 4300 7800
+Wire Wire Line
+	6000 9300 6000 9200
+Wire Wire Line
+	6000 8900 6000 8800
+Wire Wire Line
+	5700 8800 5700 9300
+Wire Wire Line
+	5700 9300 4450 9300
+Wire Wire Line
+	6300 8800 6300 9300
+Wire Wire Line
+	6300 9300 8150 9300
+Wire Wire Line
+	4000 5150 4000 5250
+Wire Wire Line
+	3350 5150 4300 5150
+Connection ~ 4300 5150
+Wire Wire Line
+	3650 5250 3650 5150
+Connection ~ 4000 5150
+Wire Wire Line
+	3350 5250 3350 5150
+Connection ~ 3650 5150
+Wire Wire Line
+	4000 5650 4000 5550
+Wire Wire Line
+	3350 5650 4300 5650
+Connection ~ 4300 5650
+Wire Wire Line
+	3650 5550 3650 5650
+Connection ~ 4000 5650
+Wire Wire Line
+	3350 5550 3350 5650
+Connection ~ 3650 5650
+Wire Wire Line
+	4300 8550 4300 8800
+Wire Wire Line
+	4300 7800 4300 8250
+Wire Wire Line
+	4000 8150 4000 8250
+Wire Wire Line
+	3350 8150 4300 8150
+Connection ~ 4300 8150
+Wire Wire Line
+	3650 8250 3650 8150
+Connection ~ 4000 8150
+Wire Wire Line
+	3350 8250 3350 8150
+Connection ~ 3650 8150
+Wire Wire Line
+	4000 8650 4000 8550
+Wire Wire Line
+	3350 8650 4300 8650
+Connection ~ 4300 8650
+Wire Wire Line
+	3650 8550 3650 8650
+Connection ~ 4000 8650
+Wire Wire Line
+	3350 8550 3350 8650
+Connection ~ 3650 8650
+Wire Wire Line
+	8950 1950 9200 1950
 $EndSCHEMATC
