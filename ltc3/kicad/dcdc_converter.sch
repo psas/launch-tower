@@ -44,8 +44,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 9200 1950 2    60   Output ~ 0
-VCC_5V
 Text HLabel 3950 1800 0    60   Input ~ 0
 VCC_BATT
 $Comp
@@ -151,8 +149,6 @@ F 3 "" H 6000 3300 60  0000 C CNN
 $EndComp
 Text HLabel 4450 3300 0    60   Input ~ 0
 VCC_5V_INHIB
-Text HLabel 8150 4800 2    60   Output ~ 0
-BB_VSENSE_12V+
 Text HLabel 3950 4800 0    60   Input ~ 0
 VCC_BATT
 $Comp
@@ -258,8 +254,6 @@ F 3 "" H 6000 6300 60  0000 C CNN
 $EndComp
 Text HLabel 4450 6300 0    60   Input ~ 0
 VCC_12V_INHIB
-Text HLabel 8150 7800 2    60   Output ~ 0
-BB_VSENSE_19V+
 Text HLabel 3950 7800 0    60   Input ~ 0
 VCC_BATT
 $Comp
@@ -343,7 +337,7 @@ $EndComp
 Text HLabel 4450 9300 0    60   Input ~ 0
 VCC_19V_INHIB
 Text Notes 10450 5600 0    100  ~ 0
-NB:\n1. Voltage sense traces should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
+NB:\n1. Current sense resistors should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
 $Comp
 L C C?
 U 1 1 55949753
@@ -439,18 +433,8 @@ F 4 "ceramic, X[57]R" V 4150 8400 50  0001 C CNN "Note"
 	1    4300 8400
 	1    0    0    -1  
 $EndComp
-Text Notes 10500 6550 0    100  ~ 0
+Text Notes 10450 6250 0    100  ~ 0
 TODO:\n1) Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
-Text HLabel 8100 3300 2    60   Input ~ 0
-REG_VSENSE_5V
-Text HLabel 8150 6300 2    60   Input ~ 0
-REG_VSENSE_12V
-Text HLabel 8150 9300 2    60   Input ~ 0
-REG_VSENSE_19V
-Text HLabel 8150 1800 2    60   Output ~ 0
-BB_VSENSE_5V+
-Text HLabel 8950 1950 0    60   Input ~ 0
-BB_VSENSE_5V-
 Wire Wire Line
 	4950 2200 4800 2200
 Wire Wire Line
@@ -460,9 +444,9 @@ Wire Wire Line
 Wire Wire Line
 	7200 2200 7200 2350
 Wire Wire Line
-	7050 1800 8150 1800
+	3950 1800 4300 1800
 Wire Wire Line
-	3950 1800 4950 1800
+	4300 1800 4950 1800
 Wire Wire Line
 	7550 2050 7550 1800
 Connection ~ 7550 1800
@@ -484,7 +468,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 2800 6300 3300
 Wire Wire Line
-	6300 3300 8100 3300
+	6300 3300 8550 3300
 Wire Wire Line
 	4950 5200 4800 5200
 Wire Wire Line
@@ -494,18 +478,22 @@ Wire Wire Line
 Wire Wire Line
 	7200 5200 7200 5350
 Wire Wire Line
-	7050 4800 8150 4800
+	3950 4800 4300 4800
 Wire Wire Line
-	3950 4800 4950 4800
+	4300 4800 4950 4800
 Wire Wire Line
 	7550 5050 7550 4800
 Connection ~ 7550 4800
 Wire Wire Line
 	7550 5350 7550 5550
 Wire Wire Line
-	4300 5550 4300 5800
+	4300 5550 4300 5650
 Wire Wire Line
-	4300 4800 4300 5250
+	4300 5650 4300 5800
+Wire Wire Line
+	4300 4800 4300 5150
+Wire Wire Line
+	4300 5150 4300 5250
 Connection ~ 4300 4800
 Wire Wire Line
 	6000 6300 6000 6200
@@ -518,7 +506,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 5800 6300 6300
 Wire Wire Line
-	6300 6300 8150 6300
+	6300 6300 8550 6300
 Wire Wire Line
 	4950 8200 4800 8200
 Wire Wire Line
@@ -528,9 +516,9 @@ Wire Wire Line
 Wire Wire Line
 	7200 8200 7200 8350
 Wire Wire Line
-	7050 7800 8150 7800
+	3950 7800 4300 7800
 Wire Wire Line
-	3950 7800 4950 7800
+	4300 7800 4950 7800
 Wire Wire Line
 	7550 8050 7550 7800
 Connection ~ 7550 7800
@@ -548,11 +536,15 @@ Wire Wire Line
 Wire Wire Line
 	6300 8800 6300 9300
 Wire Wire Line
-	6300 9300 8150 9300
+	6300 9300 8550 9300
 Wire Wire Line
 	4000 5150 4000 5250
 Wire Wire Line
-	3350 5150 4300 5150
+	3350 5150 3650 5150
+Wire Wire Line
+	3650 5150 4000 5150
+Wire Wire Line
+	4000 5150 4300 5150
 Connection ~ 4300 5150
 Wire Wire Line
 	3650 5250 3650 5150
@@ -563,7 +555,11 @@ Connection ~ 3650 5150
 Wire Wire Line
 	4000 5650 4000 5550
 Wire Wire Line
-	3350 5650 4300 5650
+	3350 5650 3650 5650
+Wire Wire Line
+	3650 5650 4000 5650
+Wire Wire Line
+	4000 5650 4300 5650
 Connection ~ 4300 5650
 Wire Wire Line
 	3650 5550 3650 5650
@@ -572,13 +568,21 @@ Wire Wire Line
 	3350 5550 3350 5650
 Connection ~ 3650 5650
 Wire Wire Line
-	4300 8550 4300 8800
+	4300 8550 4300 8650
 Wire Wire Line
-	4300 7800 4300 8250
+	4300 8650 4300 8800
+Wire Wire Line
+	4300 7800 4300 8150
+Wire Wire Line
+	4300 8150 4300 8250
 Wire Wire Line
 	4000 8150 4000 8250
 Wire Wire Line
-	3350 8150 4300 8150
+	3350 8150 3650 8150
+Wire Wire Line
+	3650 8150 4000 8150
+Wire Wire Line
+	4000 8150 4300 8150
 Connection ~ 4300 8150
 Wire Wire Line
 	3650 8250 3650 8150
@@ -589,7 +593,11 @@ Connection ~ 3650 8150
 Wire Wire Line
 	4000 8650 4000 8550
 Wire Wire Line
-	3350 8650 4300 8650
+	3350 8650 3650 8650
+Wire Wire Line
+	3650 8650 4000 8650
+Wire Wire Line
+	4000 8650 4300 8650
 Connection ~ 4300 8650
 Wire Wire Line
 	3650 8550 3650 8650
@@ -597,18 +605,129 @@ Connection ~ 4000 8650
 Wire Wire Line
 	3350 8550 3350 8650
 Connection ~ 3650 8650
-Wire Wire Line
-	8950 1950 9200 1950
-Text HLabel 9250 4950 2    60   Output ~ 0
+Text HLabel 8800 4800 2    60   Output ~ 0
 VCC_12V
-Text HLabel 9000 4950 0    60   Input ~ 0
+Text HLabel 8800 4950 2    60   Output ~ 0
+BB_VSENSE_12V+
+Text HLabel 8800 5100 2    60   Output ~ 0
 BB_VSENSE_12V-
 Wire Wire Line
-	9000 4950 9250 4950
-Text HLabel 9250 7950 2    60   Output ~ 0
+	7050 4800 7550 4800
+Wire Wire Line
+	7550 4800 8050 4800
+Wire Wire Line
+	8050 4800 8150 4800
+$Comp
+L R R?
+U 1 1 55B2C245
+P 8300 4800
+F 0 "R?" V 8380 4800 50  0000 C CNN
+F 1 "R" V 8300 4800 50  0000 C CNN
+F 2 "" V 8230 4800 30  0000 C CNN
+F 3 "" H 8300 4800 30  0000 C CNN
+F 4 "1W, 1%" V 8200 4800 60  0000 C CNN "Note"
+	1    8300 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 4800 8550 4800
+Wire Wire Line
+	8550 4800 8800 4800
+Wire Wire Line
+	8550 6300 8550 5100
+Wire Wire Line
+	8550 5100 8550 4800
+Connection ~ 8550 4800
+Wire Wire Line
+	8800 4950 8050 4950
+Wire Wire Line
+	8050 4950 8050 4800
+Connection ~ 8050 4800
+Wire Wire Line
+	8800 5100 8550 5100
+Connection ~ 8550 5100
+Wire Wire Line
+	7050 1800 7550 1800
+Connection ~ 8550 2100
+Wire Wire Line
+	8800 2100 8550 2100
+Connection ~ 8050 1800
+Wire Wire Line
+	8050 1950 8050 1800
+Wire Wire Line
+	8800 1950 8050 1950
+Connection ~ 8550 1800
+Wire Wire Line
+	8550 2100 8550 1800
+Wire Wire Line
+	8550 3300 8550 2100
+Wire Wire Line
+	8550 1800 8800 1800
+Wire Wire Line
+	8450 1800 8550 1800
+$Comp
+L R R?
+U 1 1 55B297AA
+P 8300 1800
+F 0 "R?" V 8380 1800 50  0000 C CNN
+F 1 "R" V 8300 1800 50  0000 C CNN
+F 2 "" V 8230 1800 30  0000 C CNN
+F 3 "" H 8300 1800 30  0000 C CNN
+F 4 "1W, 1%" V 8200 1800 60  0000 C CNN "Note"
+	1    8300 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8050 1800 8150 1800
+Wire Wire Line
+	7550 1800 8050 1800
+Text HLabel 8800 2100 2    60   Output ~ 0
+BB_VSENSE_5V-
+Text HLabel 8800 1950 2    60   Output ~ 0
+BB_VSENSE_5V+
+Text HLabel 8800 1800 2    60   Output ~ 0
+VCC_5V
+Text HLabel 8800 7800 2    60   Output ~ 0
 VCC_19V
-Text HLabel 9000 7950 0    60   Input ~ 0
+Text HLabel 8800 7950 2    60   Output ~ 0
+BB_VSENSE_19V+
+Text HLabel 8800 8100 2    60   Output ~ 0
 BB_VSENSE_19V-
 Wire Wire Line
-	9000 7950 9250 7950
+	7050 7800 7550 7800
+Wire Wire Line
+	7550 7800 8050 7800
+Wire Wire Line
+	8050 7800 8150 7800
+$Comp
+L R R?
+U 1 1 55B2D265
+P 8300 7800
+F 0 "R?" V 8380 7800 50  0000 C CNN
+F 1 "R" V 8300 7800 50  0000 C CNN
+F 2 "" V 8230 7800 30  0000 C CNN
+F 3 "" H 8300 7800 30  0000 C CNN
+F 4 "1W, 1%" V 8200 7800 60  0000 C CNN "Note"
+	1    8300 7800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8450 7800 8550 7800
+Wire Wire Line
+	8550 7800 8800 7800
+Wire Wire Line
+	8550 9300 8550 8100
+Wire Wire Line
+	8550 8100 8550 7800
+Connection ~ 8550 7800
+Wire Wire Line
+	8800 7950 8050 7950
+Wire Wire Line
+	8050 7950 8050 7800
+Connection ~ 8050 7800
+Wire Wire Line
+	8800 8100 8550 8100
+Connection ~ 8550 8100
+Text Notes 10450 7350 0    100  ~ 0
+R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
 $EndSCHEMATC

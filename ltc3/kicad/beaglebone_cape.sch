@@ -359,7 +359,7 @@ F 3 "" H 12750 2900 60  0000 C CNN
 	1    12750 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 5650 9150 0    60   ~ 0
+Text Notes 10300 6850 0    100  ~ 0
 TODO:\n* Three-terminal connector for PWM-controlled chassis fan?
 $Comp
 L R R?
@@ -375,19 +375,19 @@ F 4 "1W, 1%" V 5550 6100 60  0000 C CNN "Note"
 $EndComp
 Text HLabel 5450 5900 0    60   Input ~ 0
 BB_VSENSE_BATT+
-Text HLabel 5450 6300 0    60   Output ~ 0
+Text HLabel 5450 6300 0    60   Input ~ 0
 BB_VSENSE_BATT-
-Text HLabel 5450 6600 0    60   Input ~ 0
+Text HLabel 6250 7000 0    60   Input ~ 0
 BB_VSENSE_5V+
-Text HLabel 5450 7000 0    60   Output ~ 0
+Text HLabel 6150 7100 0    60   Input ~ 0
 BB_VSENSE_5V-
-Text HLabel 5450 7300 0    60   Input ~ 0
+Text HLabel 6150 7200 0    60   Input ~ 0
 BB_VSENSE_12V+
-Text HLabel 5450 7700 0    60   Output ~ 0
+Text HLabel 6250 7300 0    60   Input ~ 0
 BB_VSENSE_12V-
-Text HLabel 5450 8000 0    60   Input ~ 0
+Text HLabel 6350 7400 0    60   Input ~ 0
 BB_VSENSE_19V+
-Text HLabel 5450 8400 0    60   Output ~ 0
+Text HLabel 6450 7500 0    60   Input ~ 0
 BB_VSENSE_19V-
 Wire Wire Line
 	3250 2100 3750 2100
@@ -550,39 +550,9 @@ Wire Wire Line
 Wire Wire Line
 	5650 6250 5650 6300
 Wire Wire Line
-	5450 6600 6250 6600
-Wire Wire Line
-	5450 7000 6150 7000
-Wire Wire Line
-	5650 6650 5650 6600
-Wire Wire Line
-	5650 6950 5650 7000
-Wire Wire Line
-	5450 7300 6150 7300
-Wire Wire Line
-	5450 7700 6250 7700
-Wire Wire Line
-	5650 7350 5650 7300
-Wire Wire Line
-	5650 7650 5650 7700
-Wire Wire Line
-	5450 8000 6350 8000
-Wire Wire Line
-	5450 8400 6450 8400
-Wire Wire Line
-	5650 8050 5650 8000
-Wire Wire Line
-	5650 8350 5650 8400
-Wire Wire Line
-	6150 7000 6150 7100
-Wire Wire Line
 	6150 7100 6900 7100
-Connection ~ 5650 7000
-Wire Wire Line
-	6250 6600 6250 7000
 Wire Wire Line
 	6250 7000 6900 7000
-Connection ~ 5650 6600
 Wire Wire Line
 	6900 6900 6350 6900
 Wire Wire Line
@@ -594,61 +564,13 @@ Wire Wire Line
 	6450 6800 6450 5900
 Connection ~ 5650 5900
 Wire Wire Line
-	6150 7300 6150 7200
-Wire Wire Line
 	6150 7200 6900 7200
-Connection ~ 5650 7300
-Wire Wire Line
-	6250 7700 6250 7300
 Wire Wire Line
 	6250 7300 6900 7300
-Connection ~ 5650 7700
-Wire Wire Line
-	6350 8000 6350 7400
 Wire Wire Line
 	6350 7400 6900 7400
-Connection ~ 5650 8000
-Wire Wire Line
-	6450 8400 6450 7500
 Wire Wire Line
 	6450 7500 6900 7500
-Connection ~ 5650 8400
-Text Notes 3400 6500 0    60   ~ 0
-R = 1/Imax**2\n----------\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
-$Comp
-L R R?
-U 1 1 55AF5773
-P 5650 6800
-F 0 "R?" V 5730 6800 50  0000 C CNN
-F 1 "R" V 5650 6800 50  0000 C CNN
-F 2 "" V 5580 6800 30  0000 C CNN
-F 3 "" H 5650 6800 30  0000 C CNN
-F 4 "1W, 1%" V 5550 6800 60  0000 C CNN "Note"
-	1    5650 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 55AF5A4B
-P 5650 7500
-F 0 "R?" V 5730 7500 50  0000 C CNN
-F 1 "R" V 5650 7500 50  0000 C CNN
-F 2 "" V 5580 7500 30  0000 C CNN
-F 3 "" H 5650 7500 30  0000 C CNN
-F 4 "1W, 1%" V 5550 7500 60  0000 C CNN "Note"
-	1    5650 7500
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R?
-U 1 1 55AF5ABD
-P 5650 8200
-F 0 "R?" V 5730 8200 50  0000 C CNN
-F 1 "R" V 5650 8200 50  0000 C CNN
-F 2 "" V 5580 8200 30  0000 C CNN
-F 3 "" H 5650 8200 30  0000 C CNN
-F 4 "1W, 1%" V 5550 8200 60  0000 C CNN "Note"
-	1    5650 8200
-	1    0    0    -1  
-$EndComp
+Text Notes 4550 5650 0    100  ~ 0
+R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
 $EndSCHEMATC
