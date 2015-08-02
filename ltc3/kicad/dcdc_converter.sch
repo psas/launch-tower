@@ -337,7 +337,7 @@ $EndComp
 Text HLabel 4450 9300 0    60   Input ~ 0
 VCC_19V_INHIB
 Text Notes 10450 5600 0    100  ~ 0
-NB:\n1. Current sense resistors should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
+NB:\n1. V_sense should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
 $Comp
 L C C?
 U 1 1 55949753
@@ -433,8 +433,8 @@ F 4 "ceramic, X[57]R" V 4150 8400 50  0001 C CNN "Note"
 	1    4300 8400
 	1    0    0    -1  
 $EndComp
-Text Notes 10450 6250 0    100  ~ 0
-TODO:\n1) Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
+Text Notes 10450 6400 0    100  ~ 0
+TODO:\n* Should shunt resistors should be 4-terminal devices?\n* Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
 Wire Wire Line
 	4950 2200 4800 2200
 Wire Wire Line
