@@ -35,9 +35,9 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 7
-Title "Launch Tower Computer III (LTC3)"
-Date "2015-06-30"
-Rev "1"
+Title "Launch Tower Computer 3 (LTC3)"
+Date "2015-08-01"
+Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
 Comment2 ""

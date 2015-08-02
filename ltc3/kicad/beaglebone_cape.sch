@@ -36,8 +36,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 7 7
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "30 may 2015"
-Rev "1"
+Date "2015-08-01"
+Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
 Comment2 ""
@@ -371,10 +371,8 @@ Text HLabel 9750 6800 0    60   Input ~ 0
 BB_VSENSE_19V+
 Text HLabel 9750 6900 0    60   Input ~ 0
 BB_VSENSE_19V-
-Text Notes 1100 6200 0    100  ~ 0
-R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
-Text Notes 900  10000 0    100  ~ 0
-From the Requirements doc...\nThe LTC must provide sensors\nto support the following:\n\n* Voltage on each power rail\n\n* Current consumption\n** PV panels\n** Main battery\n** Rocket shore power\n\n* Temperature\n** Main board\n** Main battery pack\n** Enclosure interior\n\n* Rocket-ready status\n\n* Umbilical connection state\n\n* Ignition fuse state\n
+Text Notes 1300 9750 0    100  ~ 0
+TODO:\n* Rocket-ready status\n* Umbilical connection state\n* Ignition fuse state
 $Comp
 L LTC2991 U?
 U 1 1 55BA770A

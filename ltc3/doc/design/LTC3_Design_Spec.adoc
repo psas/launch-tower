@@ -1,4 +1,4 @@
-= Portland State Aerospace Society Launch Tower Computer III Design Specification
+= Portland State Aerospace Society Launch Tower Computer 3 Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
 v0.1, 14 April 2015: DRAFT
 
@@ -6,52 +6,17 @@ v0.1, 14 April 2015: DRAFT
 
 
 NB: This document is most totally a work in progress.  In fact, you
-shouldn't even read the following words unless you're planning on
-editing them.  Move along, people...
+probably shouldn't even bother to read the following words unless
+you're planning on editing them.  Move along, people...
 
 
 
 == Summary
 
 This document is the source of authority for all questions related to
-the design and implementation of the LTC III.  If the design of the
-LTC doesn't conform to this document, then either the design is
-incorrect, or the document needs to be updated!
-
-
-
-== Computer
-
-The heart of the Launch Tower Computer III is a BeagleBone Black (BBB)
-single-board computer.
-
-The BBB interfaces with the main board via a pair of 46-pin headers.
-The main board appears to the BBB as a standard
-http://beagleboard.org/cape["cape"].  The main board is on the bottom,
-with the BBB mounted on top, upside-down.
-
-=== Cape EEPROM Contents
-TODO
-
-
-
-== Sensors
-
-LTC3 contains sensors to monitor the voltage and current sourced from
-the photovoltaic panels; sourced from the main battery; and sunk on
-the 5 VDC, 12 VDC, and 19 VDC rails.
-
-Sensing of voltage, current and temperature alike is accomplished with
-a pair of http://cds.linear.com/docs/en/datasheet/2991fd.pdf[Linear
-Technologies LTC2991] *Octal I2C Voltage, Current, and Temperature
-Monitor* ICs.  One IC is dedicated to the LTC3's power sources,
-another other to its sinks.  The LTC2991 ICs interface with the
-BeagleBone via an I2C bus.
-
-The temperature sensor integral to each LTC2991 will be used to
-monitor the LTC3 main board.  An MMBT3904 NPN BJT connected to the
-first LTC2991 (same IC used to monitor the power sources' voltage and
-current) will be used to monitor the temperature of the main battery.
+the design and implementation of the third PSAS Launch Tower Computer
+(LTC3).  If the design of LTC3 doesn't conform to this document, then
+either the design is incorrect, or the document needs to be updated!
 
 
 
@@ -109,6 +74,40 @@ PTN78020H is used for the 19 VDC rail.
 * The ignition signal is controlled by two relays in series
 ** One on the ignition board controlled by RocketReady (from the FC)
 ** One on the relay board controlled by the LTC
+
+
+
+== Computer
+
+The heart of LTC3 is a BeagleBone Black (BBB) single-board computer.
+
+The BBB interfaces with the main board via a pair of 46-pin headers.
+The main board appears to the BBB as a standard
+http://beagleboard.org/cape["cape"].  The main board is on the bottom,
+with the BBB mounted on top, upside-down.
+
+=== Cape EEPROM Contents
+TODO
+
+
+
+== Sensors
+
+LTC3 contains sensors to monitor the voltage and current sourced from
+the photovoltaic panels; sourced from the main battery; and sunk on
+the 5 VDC, 12 VDC, and 19 VDC rails.
+
+Sensing of voltage, current and temperature alike is accomplished with
+a pair of http://cds.linear.com/docs/en/datasheet/2991fd.pdf[Linear
+Technologies LTC2991] _Octal I2C Voltage, Current, and Temperature
+Monitor_ ICs.  One IC is dedicated to the LTC3's power sources, the
+other to its sinks.  The ICs interface with the BeagleBone via an I2C
+bus.
+
+The temperature sensor integral to each LTC2991 will be used to
+monitor the LTC3 main board.  An MMBT3904 NPN BJT connected to the
+first LTC2991 (same IC used to monitor the power sources' voltage and
+current) will be used to monitor the temperature of the main battery.
 
 
 

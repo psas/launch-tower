@@ -35,9 +35,9 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 2 7
-Title "LTC3 Power Inputs (Solar, Lab)"
-Date "30 may 2015"
-Rev "1"
+Title "LTC3 Power Sources (Solar, Lab, Battery)"
+Date "2015-08-01"
+Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
 Comment2 ""
