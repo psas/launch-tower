@@ -32,13 +32,13 @@ LIBS:LTC3
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
-Sheet 1 7
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 5 7
+Title "LTC3 Ignition Control Board"
+Date "2015-08-01"
+Rev "A"
+Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
 Comment2 ""
 Comment3 ""
