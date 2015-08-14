@@ -1,0 +1,3 @@
+-Eight-cell configuration: CNF2 and CNF0 shorted, CNF1 connected to VLOG through a 10kOhm resistor
+-ZEDE to GND - normal operation for detection delay
+ 
