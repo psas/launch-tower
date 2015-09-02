@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:LTC3
+LIBS:BeagleBone_Black
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -444,9 +445,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 2200 7200 2350
 Wire Wire Line
-	3950 1800 4300 1800
-Wire Wire Line
-	4300 1800 4950 1800
+	3950 1800 4950 1800
 Wire Wire Line
 	7550 2050 7550 1800
 Connection ~ 7550 1800
@@ -468,7 +467,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 2800 6300 3300
 Wire Wire Line
-	6300 3300 8550 3300
+	8550 3300 6300 3300
 Wire Wire Line
 	4950 5200 4800 5200
 Wire Wire Line
@@ -478,22 +477,16 @@ Wire Wire Line
 Wire Wire Line
 	7200 5200 7200 5350
 Wire Wire Line
-	3950 4800 4300 4800
-Wire Wire Line
-	4300 4800 4950 4800
+	3950 4800 4950 4800
 Wire Wire Line
 	7550 5050 7550 4800
 Connection ~ 7550 4800
 Wire Wire Line
 	7550 5350 7550 5550
 Wire Wire Line
-	4300 5550 4300 5650
+	4300 5550 4300 5800
 Wire Wire Line
-	4300 5650 4300 5800
-Wire Wire Line
-	4300 4800 4300 5150
-Wire Wire Line
-	4300 5150 4300 5250
+	4300 4800 4300 5250
 Connection ~ 4300 4800
 Wire Wire Line
 	6000 6300 6000 6200
@@ -506,7 +499,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 5800 6300 6300
 Wire Wire Line
-	6300 6300 8550 6300
+	8550 6300 6300 6300
 Wire Wire Line
 	4950 8200 4800 8200
 Wire Wire Line
@@ -516,9 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 8200 7200 8350
 Wire Wire Line
-	3950 7800 4300 7800
-Wire Wire Line
-	4300 7800 4950 7800
+	3950 7800 4950 7800
 Wire Wire Line
 	7550 8050 7550 7800
 Connection ~ 7550 7800
@@ -536,15 +527,11 @@ Wire Wire Line
 Wire Wire Line
 	6300 8800 6300 9300
 Wire Wire Line
-	6300 9300 8550 9300
+	8550 9300 6300 9300
 Wire Wire Line
 	4000 5150 4000 5250
 Wire Wire Line
-	3350 5150 3650 5150
-Wire Wire Line
-	3650 5150 4000 5150
-Wire Wire Line
-	4000 5150 4300 5150
+	3350 5150 4300 5150
 Connection ~ 4300 5150
 Wire Wire Line
 	3650 5250 3650 5150
@@ -555,11 +542,7 @@ Connection ~ 3650 5150
 Wire Wire Line
 	4000 5650 4000 5550
 Wire Wire Line
-	3350 5650 3650 5650
-Wire Wire Line
-	3650 5650 4000 5650
-Wire Wire Line
-	4000 5650 4300 5650
+	3350 5650 4300 5650
 Connection ~ 4300 5650
 Wire Wire Line
 	3650 5550 3650 5650
@@ -568,21 +551,13 @@ Wire Wire Line
 	3350 5550 3350 5650
 Connection ~ 3650 5650
 Wire Wire Line
-	4300 8550 4300 8650
+	4300 8550 4300 8800
 Wire Wire Line
-	4300 8650 4300 8800
-Wire Wire Line
-	4300 7800 4300 8150
-Wire Wire Line
-	4300 8150 4300 8250
+	4300 7800 4300 8250
 Wire Wire Line
 	4000 8150 4000 8250
 Wire Wire Line
-	3350 8150 3650 8150
-Wire Wire Line
-	3650 8150 4000 8150
-Wire Wire Line
-	4000 8150 4300 8150
+	3350 8150 4300 8150
 Connection ~ 4300 8150
 Wire Wire Line
 	3650 8250 3650 8150
@@ -593,11 +568,7 @@ Connection ~ 3650 8150
 Wire Wire Line
 	4000 8650 4000 8550
 Wire Wire Line
-	3350 8650 3650 8650
-Wire Wire Line
-	3650 8650 4000 8650
-Wire Wire Line
-	4000 8650 4300 8650
+	3350 8650 4300 8650
 Connection ~ 4300 8650
 Wire Wire Line
 	3650 8550 3650 8650
@@ -612,11 +583,7 @@ BB_VSENSE_12V+
 Text HLabel 8800 5100 2    60   Output ~ 0
 BB_VSENSE_12V-
 Wire Wire Line
-	7050 4800 7550 4800
-Wire Wire Line
-	7550 4800 8050 4800
-Wire Wire Line
-	8050 4800 8150 4800
+	7050 4800 8150 4800
 $Comp
 L R R?
 U 1 1 55B2C245
@@ -630,13 +597,9 @@ F 4 "1W, 1%" V 8200 4800 60  0000 C CNN "Note"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8450 4800 8550 4800
+	8450 4800 8800 4800
 Wire Wire Line
-	8550 4800 8800 4800
-Wire Wire Line
-	8550 6300 8550 5100
-Wire Wire Line
-	8550 5100 8550 4800
+	8550 4800 8550 6300
 Connection ~ 8550 4800
 Wire Wire Line
 	8800 4950 8050 4950
@@ -647,24 +610,20 @@ Wire Wire Line
 	8800 5100 8550 5100
 Connection ~ 8550 5100
 Wire Wire Line
-	7050 1800 7550 1800
+	7050 1800 8150 1800
 Connection ~ 8550 2100
 Wire Wire Line
 	8800 2100 8550 2100
 Connection ~ 8050 1800
 Wire Wire Line
-	8050 1950 8050 1800
+	8050 1800 8050 1950
 Wire Wire Line
-	8800 1950 8050 1950
+	8050 1950 8800 1950
 Connection ~ 8550 1800
 Wire Wire Line
-	8550 2100 8550 1800
+	8550 1800 8550 3300
 Wire Wire Line
-	8550 3300 8550 2100
-Wire Wire Line
-	8550 1800 8800 1800
-Wire Wire Line
-	8450 1800 8550 1800
+	8450 1800 8800 1800
 $Comp
 L R R?
 U 1 1 55B297AA
@@ -677,10 +636,6 @@ F 4 "1W, 1%" V 8200 1800 60  0000 C CNN "Note"
 	1    8300 1800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8050 1800 8150 1800
-Wire Wire Line
-	7550 1800 8050 1800
 Text HLabel 8800 2100 2    60   Output ~ 0
 BB_VSENSE_5V-
 Text HLabel 8800 1950 2    60   Output ~ 0
@@ -694,11 +649,7 @@ BB_VSENSE_19V+
 Text HLabel 8800 8100 2    60   Output ~ 0
 BB_VSENSE_19V-
 Wire Wire Line
-	7050 7800 7550 7800
-Wire Wire Line
-	7550 7800 8050 7800
-Wire Wire Line
-	8050 7800 8150 7800
+	7050 7800 8150 7800
 $Comp
 L R R?
 U 1 1 55B2D265
@@ -712,13 +663,9 @@ F 4 "1W, 1%" V 8200 7800 60  0000 C CNN "Note"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8450 7800 8550 7800
+	8450 7800 8800 7800
 Wire Wire Line
-	8550 7800 8800 7800
-Wire Wire Line
-	8550 9300 8550 8100
-Wire Wire Line
-	8550 8100 8550 7800
+	8550 7800 8550 9300
 Connection ~ 8550 7800
 Wire Wire Line
 	8800 7950 8050 7950

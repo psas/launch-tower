@@ -1,4 +1,4 @@
-update=Sat 01 Aug 2015 11:57:32 PM PDT
+update=Tue 01 Sep 2015 11:18:15 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -45,6 +45,16 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=libs/symbols
@@ -79,13 +89,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=libs/symbols/LTC3
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName31=libs/symbols/BeagleBone_Black

@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:LTC3
+LIBS:BeagleBone_Black
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
