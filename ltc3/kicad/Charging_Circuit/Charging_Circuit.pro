@@ -1,6 +1,6 @@
-update=Tuesday, June 09, 2015 07:52:39 PM
+update=Thursday, July 02, 2015 07:18:42 PM
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -62,4 +62,4 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=Launch_Tower_Computer_III-cache
-LibName32=LTC3_components
+LibName32=/Users/andyrusinek/PSASLTC/ltc3/kicad/Launch_Tower_Computer_III-cache

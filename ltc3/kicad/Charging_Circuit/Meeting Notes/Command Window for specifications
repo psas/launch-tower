@@ -1,0 +1,105 @@
+	-->
+
+---------------------------------------------------------------------------
+
+Welcome to Andy's Awesome program!  I hope you enjoy your time here!
+
+---------------------------------------------------------------------------
+
+What is maximum voltage that the solar panel will give?: 21.7
+
+What is the stage 2 constant voltage you want for the batteries?: 33.6
+
+What is the maximum input current from the solar panel?: 2.4
+
+What is the maximum charging current?: 11.4
+
+What is the maximum trickle current value?: 3
+
+What would you like Rfbout2 to be? (choose between 4.99k - 49.9k ohms): 7000
+
+What would ou like the switching frequency to be?:  250000
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+
+Based on the specifications, the exact values you want should be:
+
+Rfbin1 = 94725.966280
+
+Rfbin2 = 7731.641101
+
+Rdaci1 = 3318.425570
+
+Rdaci2 = 16592.127852
+
+Cdaci = 3.013477E-07
+
+Rfbout1 = 203920.989595
+
+Rfbout2 = 7000.000000
+
+Rdac01 = 7899.283126
+
+Rdac02 = 39496.415628
+
+Cdac0 = 2.531875E-07
+
+Rsense1 = 0.021042
+
+Rsense2 = 0.004360
+
+Rimonout = 92362.173038
+
+Riow = 32975.744156
+
+Rior = 3010.000000
+
+---------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Based on the specifications, here are the closest real resistor values you can use:
+
+Rfbin1REAL = 95300
+
+Rfbin2REAL = 7680
+
+Rdaci1REAL = 3320
+
+Rdaci2REAL = 16500
+
+CdaciREAL= 3.3E-07
+
+Rfbout1REAL = 200000
+
+Rfbout2REAL = 7150
+
+Rdac01REAL = 8050
+
+Rdac02REAL = 40200
+
+Cdac0REAL = 2.7E-07
+
+Rsense1REAL = 0.021
+
+Rsense2REAL = 0.00432
+
+RimonoutREAL = 93100
+
+RiowREAL = 33200
+
+RiorREAL = 3010
+
+---------------------------------------------------------------------------------------------------------
+
+Choose an inductor greater than 3.11562e-06 H
+
+---------------------------------------------------------------------------------------------------------
+
+-->
