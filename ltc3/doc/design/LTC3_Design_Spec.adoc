@@ -1,133 +1,38 @@
-= Portland State Aerospace Society Launch Tower Computer III Design Specification
+= Portland State Aerospace Society Launch Tower Computer 3 Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 14 April 2015: DRAFT
+v0.1, 25 August 2015: DRAFT
 
 :imagesdir: ./images
 
 
 NB: This document is most totally a work in progress.  In fact, you
-shouldn't even read the following words unless you're planning on
-editing them.  Move along, people...
+probably shouldn't even bother to read the following words unless
+you're planning on editing them.  Move along, people...
 
 
 
 == Summary
 
 This document is the source of authority for all questions related to
-the design and implementation of the LTC III.  If the design of the
-LTC doesn't conform to this document, then either the design is
-incorrect, or the document needs to be updated!
-
-
-
-== Computer
-
-The heart of the Launch Tower Computer III is a BeagleBone Black (BBB)
-single-board computer.
-
-The BBB interfaces with the main board via a pair of 46-pin headers.
-The main board appears to the BBB as a standard
-http://beagleboard.org/cape["cape"].  The main board is on the bottom,
-with the BBB mounted on top, upside-down.
-
-=== Cape EEPROM Contents
-TODO
-
-
-== Sensors
-
-=== Voltage
-
-.Sensors Considered
-[cols="1,1,1,3a,3a,1", options="header"]
-|===
-|Mfr/Vendor
-|Model/Part #
-|Type
-|Features
-|Pros & Cons
-|Price
-
-|Linear Technologies
-|http://cds.linear.com/docs/en/datasheet/2991fd.pdf[LTC2991] Octal I2C Voltage, Current, and Temperature Monitor
-|voltage, current and temperature
-|* I2C interface
- * up to eight inputs per IC
-|* CON: expensive
- * CON: requires complex software to interface
-|$11.06, mil-spec, https://www.digikey.com/product-detail/en/LTC2991IMS%23PBF/LTC2991IMS%23PBF-ND/2734961[Digi-Key]
-
-|===
-
-=== Current
-
-.Sensors Considered
-[cols="1,1,1,3a,3a,1", options="header"]
-|===
-|Mfr/Vendor
-|Model/Part #
-|Type
-|Features
-|Pros & Cons
-|Price
-
-|Texas Instruments
-|http://www.ti.com/lit/ds/symlink/ina139.pdf[INA139] High-Side Measurement Current Shunt Monitor
-|current
-|* analog output
- * one input per IC
-|* PRO: inexpensive
- * CON: requires ADC
-|$2.15, https://www.digikey.com/product-detail/en/INA139NA%2F250/INA139NA%2F250CT-ND/379721[Digi-Key]
-
-|===
-
-=== Temperature
-
-.Sensors Considered
-[cols="1,1,1,3a,3a,1", options="header"]
-|===
-|Mfr/Vendor
-|Model/Part #
-|Type
-|Features
-|Pros & Cons
-|Price
-
-|Microchip
-|http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010749[TC74] Tiny Serial Digital Thermal Sensor
-|temperature
-|* I2C interface
- * ±3 °C Accuracy from 0 °C to +125 °C
- * Supply Voltage of 2.7 V to 5.5 V
-|* PRO: inexpensive
-|$1.04, https://www.digikey.com/product-detail/en/TC74A5-5.0VCTTR/TC74A5-5.0VCTCT-ND/459179[Digi-Key]
-
-|Microchip
-|http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en556182[MCP9808] Digital Temperature Sensor
-|temperature
-|* I2C interface
- * ±0.5 °C (maximum) from -20 °C to +100 °C
- * Supply Voltage of 2.7 V to 5.5 V
- * User-selectable measurement resolution
- * User-selectable temperature limits (via "alert" pin)
-|* PRO: inexpensive
-|$1.36, https://www.digikey.com/product-detail/en/MCP9808-E%2FMS/MCP9808-E%2FMS-ND/2802083[Digi-Key]
-
-|Texas Instruments
-|http://www.ti.com/lit/ds/symlink/tmp102.pdf[TMP102] Low-Power Digital Temperature Sensor w/ Two-Wire Serial Interface
-|temperature
-|* I2C interface
- * ±0.5 °C without need for calibration
- * Supply Voltage of 1.4 V to 3.6 V
-|* PRO: inexpensive
-|$2.53, https://www.digikey.com/product-detail/en/TMP102AIDRLT/296-22055-1-ND/1649890[Digi-Key]
-
-|===
+the design and implementation of the third PSAS Launch Tower Computer
+(LTC3).  If the design of LTC3 doesn't conform to this document, then
+either the design is incorrect, or the document needs to be updated!
 
 
 
 == Power
+
+=== Sources
+
+Power for LTC3 will be sourced from a bench power supply while in the
+lab, and photovoltaic panels while in the field.
+
+Minimum input voltage is determined by the DC-DC converter supplying
+the 19 VDC rail, which requires an overhead of 4 VDC.  At minimum, a
+24 VDC supply capable of sourcing at least TODO xx amps is required.
+footnote:[Refer to Texas Instruments PTN78020[WH\] datasheet, Aug.
+2011, page 10, "Input Voltage Considerations"]
+
 
 === Battery
 
@@ -142,15 +47,15 @@ The downside of this approach is the need for a custom charging
 circuit, as most off-the-shelf chargers are designed for 12V nominal
 MPPT and 4s cell configurations.
 
-TODO
+==== TODO
+
 * Based on assumptions: 90% efficiency, calc. 96W of power (a
   conservative estimate), 4 hours pure battery, we need a capacity of
   13.2Ah at 28.8V nominal.
 * An 8s2p final configuration of 6.7 Ah cells would get
   us into our 4 hours.
 
-
-=== Battery Charge Controller
+==== Charge Controller
 
 LTC3 uses the Linear Technologies LT8490, a switching buck/boost
 regulator that integrates a charger and solar MPPT.  It is robust and
@@ -160,27 +65,65 @@ flexibility.  The LT8490 can be powered with a wide range of input
 voltages.  A single connctor can be used for either the solar panels
 or 12V bench power supplies.
 
-
-=== Battery Protection
+==== Protection
 
 LiPo cell protection is provided by a Texas Instruments bq77PL900.
 The bq77PL900 is a cell protector and charge balancer that is
 inexpensive and relatively simple to use.
 
 
-=== 5 VDC and 12 VDC Power Rails
+=== DC Rails
+
+LTC3 provides three DC power rails: 5 VDC for the Beaglebone and cape;
+12 VDC for the Ethernet switch and external device support; and 19 VDC
+for rocket shore power.
 
 DC power rails are supplied by separate Texas Instruments PTN78020
 switching regulator ICs.  The PTN78020 is a wide-input, wide-output,
-adjustable 6 A regulator.  A PTN78020W is used for the 5 VDC rail; a
-PTN78020H is used for the 19 VDC rail.
+adjustable 6 A regulator.  A PTN78020W converter is used for the 5 VDC
+rail; PTN78020H converters are used for the 12 VDC and 19 VDC rails.
 
+TODO: add table of DC rails details (voltage, max current, etc.)
 
 
 == Ignition Subsystem
 * The ignition signal is controlled by two relays in series
 ** One on the ignition board controlled by RocketReady (from the FC)
 ** One on the relay board controlled by the LTC
+
+
+
+== Computer
+
+The heart of LTC3 is a BeagleBone Black (BBB) single-board computer.
+
+The BBB interfaces with the main board via a pair of 46-pin headers.
+The main board appears to the BBB as a standard
+http://beagleboard.org/cape["cape"].  The main board is on the bottom,
+with the BBB mounted on top, upside-down.
+
+=== Cape EEPROM Contents
+TODO
+
+
+
+== Sensors
+
+LTC3 contains sensors to monitor the voltage and current sourced from
+the photovoltaic panels; sourced from the main battery; and sunk on
+the 5 VDC, 12 VDC, and 19 VDC rails.
+
+Sensing of voltage, current and temperature alike is accomplished with
+a pair of http://cds.linear.com/docs/en/datasheet/2991fd.pdf[Linear
+Technologies LTC2991] _Octal I2C Voltage, Current, and Temperature
+Monitor_ ICs.  One IC is dedicated to the LTC3's power sources, the
+other to its sinks.  The ICs interface with the BeagleBone via an I2C
+bus.
+
+The temperature sensor integral to each LTC2991 will be used to
+monitor the LTC3 main board.  An MMBT3904 NPN BJT connected to the
+first LTC2991 (same IC used to monitor the power sources' voltage and
+current) will be used to monitor the temperature of the main battery.
 
 
 
@@ -198,6 +141,9 @@ LTC3 provides power and trigger support for four external devices
 Power is supplied through two-terminal Anderson Powerpole connectors,
 available from the exterior of the LTC enclosure.  Current to each
 connector is limited by a 2 A PPTC (PolyFuse).
+
+TODO: 2 A x 4 external devices exceeds the TI DC-DC converter's max
+rating.
 
 Each power connector is controlled independently by the computer.
 Photorelays, driven via GPIO through a MOSFET, are used to switch the
