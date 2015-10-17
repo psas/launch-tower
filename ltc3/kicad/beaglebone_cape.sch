@@ -36,6 +36,7 @@ LIBS:PTN78020n
 LIBS:EEPROMs
 LIBS:TLP
 LIBS:bq77PL900
+LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
@@ -317,7 +318,7 @@ BB_VSENSE_19V+
 Text HLabel 9500 7000 0    60   Input ~ 0
 BB_VSENSE_19V-
 Text Notes 1000 10100 0    125  ~ 0
-TODO:\n* Re-draw BB header symbols\n* Rocket-ready status\n* Umbilical connection state\n* Ignition fuse state
+TODO:\n* Rocket-ready status\n* Umbilical connection state\n* Ignition fuse state
 Text Notes 5100 7850 0    100  ~ 0
 Power Sources\nI²C addr 0x90
 $Comp
