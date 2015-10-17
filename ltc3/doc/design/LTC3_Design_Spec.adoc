@@ -24,11 +24,12 @@ either the design is incorrect, or the document needs to be updated!
 
 === Sources
 
-Photovoltaic panels; lab power.  TODO
+Power for LTC3 will be sourced from a bench power supply while in the
+lab, and photovoltaic panels while in the field.
 
 Minimum input voltage is determined by the DC-DC converter supplying
-the 19 VDC rail, which requires an overhead of 4 VDC.  A 24 VDC supply
-capable of sourcing at least TODO: xx amps will suffice.
+the 19 VDC rail, which requires an overhead of 4 VDC.  At minimum, a
+24 VDC supply capable of sourcing at least TODO xx amps is required.
 footnote:[Refer to Texas Instruments PTN78020[WH\] datasheet, Aug.
 2011, page 10, "Input Voltage Considerations"]
 
@@ -46,7 +47,8 @@ The downside of this approach is the need for a custom charging
 circuit, as most off-the-shelf chargers are designed for 12V nominal
 MPPT and 4s cell configurations.
 
-TODO
+==== TODO
+
 * Based on assumptions: 90% efficiency, calc. 96W of power (a
   conservative estimate), 4 hours pure battery, we need a capacity of
   13.2Ah at 28.8V nominal.
@@ -81,6 +83,7 @@ switching regulator ICs.  The PTN78020 is a wide-input, wide-output,
 adjustable 6 A regulator.  A PTN78020W converter is used for the 5 VDC
 rail; PTN78020H converters are used for the 12 VDC and 19 VDC rails.
 
+TODO: add table of DC rails details (voltage, max current, etc.)
 
 
 == Ignition Subsystem
