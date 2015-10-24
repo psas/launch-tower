@@ -1,6 +1,6 @@
 = Portland State Aerospace Society Launch Tower Computer 3 Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 25 August 2015: DRAFT
+v0.1, 24 October 2015: DRAFT
 
 :imagesdir: ./images
 
@@ -29,7 +29,7 @@ lab, and photovoltaic panels while in the field.
 
 Minimum input voltage is determined by the DC-DC converter supplying
 the 19 VDC rail, which requires an overhead of 4 VDC.  At minimum, a
-24 VDC supply capable of sourcing at least TODO xx amps is required.
+24 VDC supply capable of sourcing at least TODO 10 amps is required.
 footnote:[Refer to Texas Instruments PTN78020[WH\] datasheet, Aug.
 2011, page 10, "Input Voltage Considerations"]
 
@@ -74,16 +74,30 @@ inexpensive and relatively simple to use.
 
 === DC Rails
 
-LTC3 provides three DC power rails: 5 VDC for the Beaglebone and cape;
-12 VDC for the Ethernet switch and external device support; and 19 VDC
-for rocket shore power.
+LTC3 provides three DC power rails:
+
+* 5 VDC for the Beaglebone and cape
+* 12 VDC for the Ethernet switch and external device support
+* 19 VDC for rocket shore power
 
 DC power rails are supplied by separate Texas Instruments PTN78020
 switching regulator ICs.  The PTN78020 is a wide-input, wide-output,
 adjustable 6 A regulator.  A PTN78020W converter is used for the 5 VDC
 rail; PTN78020H converters are used for the 12 VDC and 19 VDC rails.
 
-TODO: add table of DC rails details (voltage, max current, etc.)
+Based on the temperature derating curves in the PTN78020 datasheet
+(rev. Aug. 2011), our worst case scenario is 4.0A load on the 12V DC
+rail.  Fig. 21 in the datasheet indicates that the maximum ambient
+temperature for such a load is approximately 55 °C.
+
+.LTC3 DC Power Rails
+[width="25%",frame="topbot",options="header"]
+|=======================================
+| Vout | Imin | Ityp | Imax | technology 
+| 5.0  | ?    | ?    | 2.0  | PTN78020W
+| 12.0 | ?    | ?    | 5.0  | PTN78020H
+| 19.0 | ?    | ?    | 4.0  | PTN78020H
+|=======================================
 
 
 == Ignition Subsystem
