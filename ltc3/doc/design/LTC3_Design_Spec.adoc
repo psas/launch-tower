@@ -1,6 +1,6 @@
 = Portland State Aerospace Society Launch Tower Computer 3 Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 25 August 2015: DRAFT
+v0.1, 24 October 2015: DRAFT
 
 :imagesdir: ./images
 
@@ -92,12 +92,12 @@ temperature for such a load is approximately 55 °C.
 
 .LTC3 DC Power Rails
 [width="25%",frame="topbot",options="header"]
-|=========================
-| Vout | Imax | technology 
-| 5.0  | 2.0  | PTN78020W
-| 12.0 | 5.0  | PTN78020H
-| 19.0 | 4.0  | PTN78020H
-|=========================
+|=======================================
+| Vout | Imin | Ityp | Imax | technology 
+| 5.0  | ?    | ?    | 2.0  | PTN78020W
+| 12.0 | ?    | ?    | 5.0  | PTN78020H
+| 19.0 | ?    | ?    | 4.0  | PTN78020H
+|=======================================
 
 
 == Ignition Subsystem
