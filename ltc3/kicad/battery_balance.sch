@@ -1,0 +1,281 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BeagleBone_Black
+LIBS:LT8490
+LIBS:LTC299x
+LIBS:PMV45EN
+LIBS:PTN78020n
+LIBS:EEPROMs
+LIBS:TLP
+LIBS:bq77PL900
+LIBS:Launch_Tower_Computer_III-cache
+EELAYER 25 0
+EELAYER END
+$Descr B 17000 11000
+encoding utf-8
+Sheet 9 9
+Title "Battery Balance"
+Date "2015-10-24"
+Rev "A"
+Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L BQ77PL900 U?
+U 1 1 562DD532
+P 9600 5050
+F 0 "U?" H 9600 5000 60  0000 C CNN
+F 1 "BQ77PL900" H 9600 5100 60  0000 C CNN
+F 2 "" H 9600 5050 60  0000 C CNN
+F 3 "" H 9600 5050 60  0000 C CNN
+	1    9600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E1745
+P 4900 3450
+F 0 "BT?" H 5000 3500 50  0000 L CNN
+F 1 "Battery" H 5000 3400 50  0000 L CNN
+F 2 "" V 4900 3490 60  0000 C CNN
+F 3 "" V 4900 3490 60  0000 C CNN
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E17E0
+P 4900 3900
+F 0 "BT?" H 5000 3950 50  0000 L CNN
+F 1 "Battery" H 5000 3850 50  0000 L CNN
+F 2 "" V 4900 3940 60  0000 C CNN
+F 3 "" V 4900 3940 60  0000 C CNN
+	1    4900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E1877
+P 4900 4350
+F 0 "BT?" H 5000 4400 50  0000 L CNN
+F 1 "Battery" H 5000 4300 50  0000 L CNN
+F 2 "" V 4900 4390 60  0000 C CNN
+F 3 "" V 4900 4390 60  0000 C CNN
+	1    4900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E187D
+P 4900 4800
+F 0 "BT?" H 5000 4850 50  0000 L CNN
+F 1 "Battery" H 5000 4750 50  0000 L CNN
+F 2 "" V 4900 4840 60  0000 C CNN
+F 3 "" V 4900 4840 60  0000 C CNN
+	1    4900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E1CCA
+P 4900 5250
+F 0 "BT?" H 5000 5300 50  0000 L CNN
+F 1 "Battery" H 5000 5200 50  0000 L CNN
+F 2 "" V 4900 5290 60  0000 C CNN
+F 3 "" V 4900 5290 60  0000 C CNN
+	1    4900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E1CD0
+P 4900 5700
+F 0 "BT?" H 5000 5750 50  0000 L CNN
+F 1 "Battery" H 5000 5650 50  0000 L CNN
+F 2 "" V 4900 5740 60  0000 C CNN
+F 3 "" V 4900 5740 60  0000 C CNN
+	1    4900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E1CD6
+P 4900 6150
+F 0 "BT?" H 5000 6200 50  0000 L CNN
+F 1 "Battery" H 5000 6100 50  0000 L CNN
+F 2 "" V 4900 6190 60  0000 C CNN
+F 3 "" V 4900 6190 60  0000 C CNN
+	1    4900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E1CDC
+P 4900 6600
+F 0 "BT?" H 5000 6650 50  0000 L CNN
+F 1 "Battery" H 5000 6550 50  0000 L CNN
+F 2 "" V 4900 6640 60  0000 C CNN
+F 3 "" V 4900 6640 60  0000 C CNN
+	1    4900 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3600 4900 3750
+Wire Wire Line
+	4900 4050 4900 4200
+Wire Wire Line
+	4900 4500 4900 4650
+Wire Wire Line
+	4900 4950 4900 5100
+Wire Wire Line
+	4900 5400 4900 5550
+Wire Wire Line
+	4900 5850 4900 6000
+Wire Wire Line
+	4900 6300 4900 6450
+$Comp
+L Battery BT?
+U 1 1 562E2EAB
+P 3900 3450
+F 0 "BT?" H 4000 3500 50  0000 L CNN
+F 1 "Battery" H 4000 3400 50  0000 L CNN
+F 2 "" V 3900 3490 60  0000 C CNN
+F 3 "" V 3900 3490 60  0000 C CNN
+	1    3900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2EB1
+P 3900 3900
+F 0 "BT?" H 4000 3950 50  0000 L CNN
+F 1 "Battery" H 4000 3850 50  0000 L CNN
+F 2 "" V 3900 3940 60  0000 C CNN
+F 3 "" V 3900 3940 60  0000 C CNN
+	1    3900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2EB7
+P 3900 4350
+F 0 "BT?" H 4000 4400 50  0000 L CNN
+F 1 "Battery" H 4000 4300 50  0000 L CNN
+F 2 "" V 3900 4390 60  0000 C CNN
+F 3 "" V 3900 4390 60  0000 C CNN
+	1    3900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2EBD
+P 3900 4800
+F 0 "BT?" H 4000 4850 50  0000 L CNN
+F 1 "Battery" H 4000 4750 50  0000 L CNN
+F 2 "" V 3900 4840 60  0000 C CNN
+F 3 "" V 3900 4840 60  0000 C CNN
+	1    3900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2EC3
+P 3900 5250
+F 0 "BT?" H 4000 5300 50  0000 L CNN
+F 1 "Battery" H 4000 5200 50  0000 L CNN
+F 2 "" V 3900 5290 60  0000 C CNN
+F 3 "" V 3900 5290 60  0000 C CNN
+	1    3900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2EC9
+P 3900 5700
+F 0 "BT?" H 4000 5750 50  0000 L CNN
+F 1 "Battery" H 4000 5650 50  0000 L CNN
+F 2 "" V 3900 5740 60  0000 C CNN
+F 3 "" V 3900 5740 60  0000 C CNN
+	1    3900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2ECF
+P 3900 6150
+F 0 "BT?" H 4000 6200 50  0000 L CNN
+F 1 "Battery" H 4000 6100 50  0000 L CNN
+F 2 "" V 3900 6190 60  0000 C CNN
+F 3 "" V 3900 6190 60  0000 C CNN
+	1    3900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 562E2ED5
+P 3900 6600
+F 0 "BT?" H 4000 6650 50  0000 L CNN
+F 1 "Battery" H 4000 6550 50  0000 L CNN
+F 2 "" V 3900 6640 60  0000 C CNN
+F 3 "" V 3900 6640 60  0000 C CNN
+	1    3900 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3600 3900 3750
+Wire Wire Line
+	3900 4050 3900 4200
+Wire Wire Line
+	3900 4500 3900 4650
+Wire Wire Line
+	3900 4950 3900 5100
+Wire Wire Line
+	3900 5400 3900 5550
+Wire Wire Line
+	3900 5850 3900 6000
+Wire Wire Line
+	3900 6300 3900 6450
+Wire Wire Line
+	3900 3300 3900 3150
+Wire Wire Line
+	3900 3150 4900 3150
+Wire Wire Line
+	4900 3150 4900 3300
+Wire Wire Line
+	3900 6750 3900 6900
+Wire Wire Line
+	3900 6900 4900 6900
+Wire Wire Line
+	4900 6900 4900 6750
+$EndSCHEMATC

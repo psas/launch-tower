@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2015-10-17"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -211,7 +211,11 @@ Wire Wire Line
 Wire Wire Line
 	12750 2700 12600 2700
 Wire Wire Line
-	7250 2050 9250 2050
+	7250 2050 7400 2050
+Wire Wire Line
+	7400 2050 7850 2050
+Wire Wire Line
+	7850 2050 9250 2050
 Wire Wire Line
 	10900 4650 10750 4650
 Wire Wire Line
@@ -229,17 +233,41 @@ Wire Wire Line
 Wire Wire Line
 	10750 5700 11050 5700
 Wire Bus Line
-	11000 3100 11000 4850
+	11000 3100 11000 4550
+Wire Bus Line
+	11000 4550 11000 4650
+Wire Bus Line
+	11000 4650 11000 4750
+Wire Bus Line
+	11000 4750 11000 4850
 Wire Bus Line
 	9000 3100 11000 3100
 Wire Bus Line
-	9000 2550 9000 3100
+	9000 2550 9000 2650
 Wire Bus Line
-	12500 2500 12500 5200
+	9000 2650 9000 2750
+Wire Bus Line
+	9000 2750 9000 2850
+Wire Bus Line
+	9000 2850 9000 3100
+Wire Bus Line
+	12500 2500 12500 2600
+Wire Bus Line
+	12500 2600 12500 2700
+Wire Bus Line
+	12500 2700 12500 2800
+Wire Bus Line
+	12500 2800 12500 5200
 Wire Bus Line
 	12500 5200 11150 5200
 Wire Bus Line
-	11150 5200 11150 5600
+	11150 5200 11150 5300
+Wire Bus Line
+	11150 5300 11150 5400
+Wire Bus Line
+	11150 5400 11150 5500
+Wire Bus Line
+	11150 5500 11150 5600
 Wire Wire Line
 	7250 2250 7600 2250
 Wire Wire Line
@@ -257,13 +285,21 @@ Wire Wire Line
 Wire Wire Line
 	8750 5950 8200 5950
 Wire Bus Line
-	7500 3350 7500 5650
+	7500 3350 7500 3450
 Wire Bus Line
-	8100 5650 8100 5850
+	7500 3450 7500 5650
 Wire Bus Line
-	7600 2850 7600 5400
+	8100 5650 8100 5750
 Wire Bus Line
-	7700 2350 7700 5150
+	8100 5750 8100 5850
+Wire Bus Line
+	7600 2850 7600 2950
+Wire Bus Line
+	7600 2950 7600 5400
+Wire Bus Line
+	7700 2350 7700 2450
+Wire Bus Line
+	7700 2450 7700 5150
 Wire Wire Line
 	7850 4550 7850 2050
 Connection ~ 7850 2050
@@ -278,7 +314,9 @@ Wire Wire Line
 Wire Wire Line
 	8750 5700 8300 5700
 Wire Bus Line
-	8200 5400 8200 5600
+	8200 5400 8200 5500
+Wire Bus Line
+	8200 5500 8200 5600
 Entry Wire Line
 	8300 5250 8400 5350
 Entry Wire Line
@@ -286,7 +324,9 @@ Entry Wire Line
 Wire Wire Line
 	8750 5350 8400 5350
 Wire Bus Line
-	8300 5150 8300 5350
+	8300 5150 8300 5250
+Wire Bus Line
+	8300 5250 8300 5350
 Wire Wire Line
 	8400 5450 8750 5450
 Entry Wire Line
@@ -294,7 +334,9 @@ Entry Wire Line
 Entry Wire Line
 	8400 5100 8500 5200
 Wire Bus Line
-	8400 4900 8400 5100
+	8400 4900 8400 5000
+Wire Bus Line
+	8400 5000 8400 5100
 Wire Wire Line
 	8500 5100 8750 5100
 Wire Wire Line
@@ -304,7 +346,9 @@ Entry Wire Line
 Entry Wire Line
 	8500 4850 8600 4950
 Wire Bus Line
-	8500 4650 8500 4850
+	8500 4650 8500 4750
+Wire Bus Line
+	8500 4750 8500 4850
 Wire Wire Line
 	8600 4850 8750 4850
 Wire Wire Line
@@ -334,9 +378,13 @@ Wire Wire Line
 Wire Wire Line
 	3750 2350 4000 2350
 Wire Bus Line
-	4100 2350 4100 4650
+	4100 2350 4100 2450
 Wire Bus Line
-	4000 2600 4000 4900
+	4100 2450 4100 4650
+Wire Bus Line
+	4000 2600 4000 2700
+Wire Bus Line
+	4000 2700 4000 4900
 Wire Bus Line
 	4000 4900 8400 4900
 Wire Bus Line
@@ -417,9 +465,15 @@ Wire Wire Line
 Wire Wire Line
 	3900 2800 3750 2800
 $Sheet
-S 1150 4200 2400 1900
+S 1150 4500 2000 1500
 U 56238165
 F0 "Battery Management" 60
 F1 "battery_mgmt.sch" 60
+$EndSheet
+$Sheet
+S 1150 6500 2000 1500
+U 562DD32F
+F0 "Battery Balance" 60
+F1 "battery_balance.sch" 60
 $EndSheet
 $EndSCHEMATC

@@ -92,6 +92,25 @@ X CHG 49 1025 1150 300 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Battery
+#
+DEF Battery BT 0 0 N Y 1 F N
+F0 "BT" 100 50 50 H V L CNN
+F1 "Battery" 100 -50 50 H V L CNN
+F2 "" 0 40 60 V V C CNN
+F3 "" 0 40 60 V V C CNN
+DRAW
+S -90 -7 90 -17 0 1 0 F
+S -90 50 90 40 0 1 0 F
+S -62 -30 58 -50 0 1 0 F
+S -62 27 58 7 0 1 0 F
+P 2 0 1 10  20 95  60 95 N
+P 2 0 1 10  40 115  40 75 N
+X ~ 1 0 150 100 D 50 50 1 1 P
+X ~ 2 0 -150 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # BeagleBone_Black_Expansion_Header
 #
 DEF BeagleBone_Black_Expansion_Header C 0 40 Y Y 2 L N
