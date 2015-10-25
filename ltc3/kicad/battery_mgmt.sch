@@ -1646,4 +1646,6 @@ Wire Wire Line
 	7550 1850 7550 1750
 Connection ~ 8500 2350
 Connection ~ 8500 2450
+Text Notes 1400 9500 0    100  ~ 0
+TODO:\n* Add feedback resistor disconnect circuit (datasheet fig. 27).
 $EndSCHEMATC
