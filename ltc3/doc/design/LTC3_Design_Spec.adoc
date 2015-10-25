@@ -36,11 +36,11 @@ footnote:[Refer to Texas Instruments PTN78020[WH\] datasheet, Aug.
 
 === Battery
 
-The heart of the LTC3 power circuitry is a 28.8 V, 8s1p LiPo battery
+The heart of the LTC3 power circuitry is a 28.8 V, 8s2p LiPo battery
 pack.  The 28.8 V nominal voltage enables the use of buck converters
 on 5V and 19V power rails.  (Configurable buck converters are cheap
 and plentiful, and have higher efficiencies than the boost
-converters.)  The 8s1p configuration enables us to charge-balance
+converters.)  The 8s2p configuration enables us to charge-balance
 individual cells.
 
 The downside of this approach is the need for a custom charging
