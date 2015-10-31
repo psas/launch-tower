@@ -43,21 +43,45 @@
         <task id="19" name="develop device tree overlay" note="" work="28800" start="20151017T000000Z" end="20151024T140000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
       </task>
     </task>
-    <task id="20" name="Mechanical" note="" work="39600" start="20151017T000000Z" end="20151024T140000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <task id="21" name="select enclosure" note="" work="28800" start="20151017T000000Z" end="20151024T140000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-      <task id="22" name="select mounting hardware" note="" work="10800" start="20151017T000000Z" end="20151017T150000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="20" name="Misc" note="" work="43200" start="20151017T000000Z" end="20151017T150000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="21" name="select battery" note="" work="10800" start="20151017T000000Z" end="20151017T150000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="22" name="purchase battery" note="" work="10800" start="20151017T000000Z" end="20151017T150000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="23" name="select Ethernet switch" note="" work="10800" start="20151017T000000Z" end="20151017T150000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="24" name="purchase Ethernet switch" note="" work="10800" start="20151017T000000Z" end="20151017T150000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
     </task>
-    <task id="23" name="Board Layout" note="" work="288000" start="20151017T000000Z" end="20160116T140000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-    <task id="24" name="Assembly and Test" note="" work="489600" start="20151024T140000Z" end="20160126T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="25" name="Mechanical" note="" work="50400" start="20151017T150000Z" end="20151103T140000Z" work-start="20151020T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="26" name="create 3-D model" note="" work="10800" start="20151017T150000Z" end="20151020T150000Z" work-start="20151020T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="23" type="FS"/>
+          <predecessor id="1" predecessor-id="21" type="FS"/>
+        </predecessors>
+        <task id="27" name="find ME student to create model" note="Send e-mail to psas-team list." work="10800" start="20151017T150000Z" end="20151020T150000Z" work-start="20151020T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      </task>
+      <task id="28" name="select enclosure" note="" work="28800" start="20151020T150000Z" end="20151031T140000Z" work-start="20151024T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="26" type="FS"/>
+        </predecessors>
+      </task>
+      <task id="29" name="select mounting hardware" note="" work="10800" start="20151031T140000Z" end="20151103T140000Z" work-start="20151031T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="28" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="30" name="Board Layout" note="" work="288000" start="20151017T000000Z" end="20160116T140000Z" work-start="20151017T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    <task id="31" name="Assembly and Test" note="" work="489600" start="20151024T140000Z" end="20160126T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <predecessors>
         <predecessor id="1" predecessor-id="1" type="FS"/>
       </predecessors>
-      <task id="25" name="Alpha" note="" work="489600" start="20151024T140000Z" end="20160126T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-        <task id="26" name="order parts" note="" work="144000" start="20151024T140000Z" end="20151208T150000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="27" name="order PCB from fab" note="" work="288000" start="20151024T140000Z" end="20160126T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="28" name="assemble board" note="" work="28800" start="20151024T140000Z" end="20151103T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
-        <task id="29" name="test board" note="" work="28800" start="20151024T140000Z" end="20151103T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="32" name="Alpha" note="" work="489600" start="20151024T140000Z" end="20160126T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="33" name="order parts" note="" work="144000" start="20151024T140000Z" end="20151208T150000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="34" name="order PCB from fab" note="" work="288000" start="20151024T140000Z" end="20160126T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="35" name="assemble board" note="" work="28800" start="20151024T140000Z" end="20151103T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+        <task id="36" name="test board" note="" work="28800" start="20151024T140000Z" end="20151103T130000Z" work-start="20151024T140000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
       </task>
+    </task>
+    <task id="37" name="Design Review 2" note="" work="0" start="20151121T000000Z" end="20151121T000000Z" work-start="20151121T120000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20151121T000000Z"/>
     </task>
   </tasks>
   <resource-groups/>
@@ -68,6 +92,7 @@
     <resource id="4" name="Austin Joseph" short-name="AJ" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
+    <allocation task-id="27" resource-id="1" units="100"/>
     <allocation task-id="2" resource-id="1" units="100"/>
     <allocation task-id="10" resource-id="1" units="100"/>
     <allocation task-id="12" resource-id="1" units="100"/>
