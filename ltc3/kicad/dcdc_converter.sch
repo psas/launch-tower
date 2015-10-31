@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 6 7
+Sheet 6 9
 Title "LTC3 DC-DC Converters"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

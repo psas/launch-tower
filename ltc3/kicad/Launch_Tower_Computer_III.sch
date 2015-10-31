@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 7
+Sheet 1 9
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -416,4 +416,16 @@ Wire Wire Line
 	3900 6450 3900 2800
 Wire Wire Line
 	3900 2800 3750 2800
+$Sheet
+S 1150 4500 2000 1500
+U 56238165
+F0 "Battery Management" 60
+F1 "battery_mgmt.sch" 60
+$EndSheet
+$Sheet
+S 1150 6500 2000 1500
+U 562DD32F
+F0 "Battery Balance" 60
+F1 "battery_balance.sch" 60
+$EndSheet
 $EndSCHEMATC
