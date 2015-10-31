@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 7
+Sheet 4 9
 Title "LTC3 External Device Power"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -52,7 +52,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 1400 1400 0    80   ~ 0
-TODO: Determine values for bleeder resistor\nand filter capacitor on each output connector.
+TODO:\n1. Determine values for bleeder resistor\nand filter capacitor on each output connector.\n2. Pick new PolyFuses, 0.5-1.0A max.
 $Comp
 L R R701
 U 1 1 557E02A5

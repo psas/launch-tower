@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 7 7
+Sheet 7 9
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -599,7 +599,7 @@ Wire Wire Line
 Connection ~ 12100 6300
 Text Notes 6900 5650 0    125  ~ 0
 Voltage, Current & Temp Sensors
-Text Notes 6900 8650 0    100  ~ 0
+Text Notes 3600 8700 0    100  ~ 0
 Signals ending in + indicate the high side of\nthe respective shunt resistor; signals ending\nin - indicate the low side.
 Wire Notes Line
 	3450 5750 13450 5750
@@ -776,4 +776,6 @@ F 3 "" H 14250 1850 50  0001 C CNN
 	1    14250 2150
 	1    0    0    -1  
 $EndComp
+Text Notes 7650 8700 0    100  ~ 0
+NB: Consider placing ICs at opposite ends\nof the board so that their internal temp\nsensors provide a thermal gradient of the\nLTC3 internals.
 $EndSCHEMATC

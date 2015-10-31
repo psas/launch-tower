@@ -41,9 +41,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 7
+Sheet 3 9
 Title "LTC3 External Device Triggers"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -155,7 +155,7 @@ F 3 "~" H 4850 2950 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1400 1400 0    80   ~ 0
-TODO: Determine values for bleeder resistor\nand filter capacitor on each output connector.
+TODO:\n1. Determine values for bleeder resistor\nand filter capacitor on each output connector.\n2. Pick new PolyFuses, 100-200mA max.
 $Comp
 L CONN_01X02 P601
 U 1 1 557D435E
