@@ -42,7 +42,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 9
+Sheet 3 8
 Title "LTC3 External Device Triggers"
 Date "2015-10-24"
 Rev "A"

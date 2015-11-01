@@ -42,7 +42,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 9
+Sheet 1 8
 Title "Launch Tower Computer 3 (LTC3)"
 Date "2015-10-24"
 Rev "A"
@@ -52,19 +52,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 1750 1900 2000 1600
-U 551C8EE6
-F0 "Power Sources" 60
-F1 "power_sources.sch" 50
-F2 "VCC_BATT" O R 3750 2050 60 
-F3 "BB_VSENSE_BATT-" O R 3750 2500 60 
-F4 "BB_VSENSE_BATT+" O R 3750 2600 60 
-F5 "BB_VSENSE_PV-" O R 3750 2250 60 
-F6 "BB_VSENSE_PV+" O R 3750 2350 60 
-F7 "BB_TEMP_BATT+" O R 3750 2800 60 
-F8 "BB_TEMP_BATT-" O R 3750 2900 60 
-$EndSheet
 Entry Wire Line
 	10900 4650 11000 4550
 Entry Wire Line
@@ -130,7 +117,7 @@ GPIO_EXT_TRIG_3
 Text Label 12600 2700 2    40   ~ 0
 GPIO_EXT_TRIG_4
 $Sheet
-S 12750 1900 1500 1000
+S 12750 1900 2500 1600
 U 553268FD
 F0 "External Device Triggers" 50
 F1 "external_triggers.sch" 50
@@ -141,7 +128,7 @@ F5 "GPIO_EXT_TRIG_3" I L 12750 2600 60
 F6 "GPIO_EXT_TRIG_4" I L 12750 2700 60 
 $EndSheet
 $Sheet
-S 9250 1900 1500 1000
+S 9250 1900 2500 1600
 U 551C79BE
 F0 "External Device Power" 60
 F1 "external_power.sch" 50
@@ -155,7 +142,7 @@ $EndSheet
 Text Notes 950  9900 0    100  ~ 0
 TODO:\n1) Do we need a common ground pin\non each sub-sheet?
 $Sheet
-S 8750 7400 2000 1250
+S 13000 6700 2500 1600
 U 5598112B
 F0 "Ignition Control" 60
 F1 "ignition_control.sch" 60
@@ -230,11 +217,9 @@ Wire Wire Line
 Wire Wire Line
 	10750 5700 11050 5700
 Wire Bus Line
-	11000 3100 11000 4850
+	11000 4150 11000 4850
 Wire Bus Line
-	9000 3100 11000 3100
-Wire Bus Line
-	9000 2550 9000 3100
+	9000 2550 9000 4150
 Wire Bus Line
 	12500 2500 12500 5200
 Wire Bus Line
@@ -418,15 +403,17 @@ Wire Wire Line
 Wire Wire Line
 	3900 2800 3750 2800
 $Sheet
-S 1150 4500 2000 1500
+S 1000 1700 2500 1600
 U 56238165
 F0 "Battery Management" 60
 F1 "battery_mgmt.sch" 60
 $EndSheet
 $Sheet
-S 1150 6500 2000 1500
+S 1000 4350 2500 1600
 U 562DD32F
 F0 "Battery Balance" 60
 F1 "battery_balance.sch" 60
 $EndSheet
+Wire Bus Line
+	9000 4150 11000 4150
 $EndSCHEMATC

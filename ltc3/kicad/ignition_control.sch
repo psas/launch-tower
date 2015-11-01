@@ -42,7 +42,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 9
+Sheet 5 8
 Title "LTC3 Ignition Control Board"
 Date "2015-10-24"
 Rev "A"

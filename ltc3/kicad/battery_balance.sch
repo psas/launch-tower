@@ -42,7 +42,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 9 9
+Sheet 9 8
 Title "Battery Balance"
 Date "2015-10-24"
 Rev "A"
@@ -349,4 +349,50 @@ Text Label 9750 4850 2    60   ~ 0
 VC7
 Text Label 9750 4950 2    60   ~ 0
 VC8
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 563576C0
+P 2350 9000
+F 0 "Q?" H 2650 9050 50  0000 R CNN
+F 1 "MMBT3904" H 2950 8950 50  0000 R CNN
+F 2 "" H 2550 9100 29  0000 C CNN
+F 3 "" H 2350 9000 60  0000 C CNN
+	1    2350 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 563576C7
+P 2000 9300
+F 0 "C?" H 2025 9400 50  0000 L CNN
+F 1 "470p" H 2025 9200 50  0000 L CNN
+F 2 "" H 2038 9150 30  0000 C CNN
+F 3 "" H 2000 9300 60  0000 C CNN
+	1    2000 9300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 8650 2000 9150
+Wire Wire Line
+	1850 9000 2150 9000
+Wire Wire Line
+	2000 8650 2450 8650
+Wire Wire Line
+	2450 8650 2450 8800
+Connection ~ 2000 9000
+Wire Wire Line
+	2450 9200 2450 9600
+Wire Wire Line
+	2450 9600 2000 9600
+Wire Wire Line
+	2000 9600 2000 9450
+Text HLabel 1850 9000 0    60   Output ~ 0
+BB_TEMP_BATT+
+Wire Wire Line
+	2600 9350 2450 9350
+Connection ~ 2450 9350
+Text HLabel 2600 9350 2    60   Output ~ 0
+BB_TEMP_BATT-
+Text Notes 2950 9800 2    60   ~ 0
+Temperature Sensor, Main Battery
 $EndSCHEMATC

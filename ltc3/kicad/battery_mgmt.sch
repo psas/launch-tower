@@ -42,8 +42,8 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 8 9
-Title "Battery Charging"
+Sheet 8 8
+Title "Power In, Battery Management"
 Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
@@ -1172,7 +1172,7 @@ F 3 "" H 8200 5800 60  0000 C CNN
 	1    8250 5650
 	1    0    0    -1  
 $EndComp
-Text Notes 1400 9500 0    100  ~ 0
+Text Notes 2900 10250 0    100  ~ 0
 TODO:\n* Add feedback resistor disconnect circuit (datasheet fig. 27).
 Text Label 15350 8200 0    60   ~ 0
 MODE
@@ -1822,4 +1822,81 @@ Connection ~ 6350 2300
 Connection ~ 6350 2550
 Text Label 5850 2550 2    60   ~ 0
 CSP
+$Comp
+L CONN_01X02 P?
+U 1 1 56357D56
+P 850 9850
+F 0 "P?" H 850 10000 50  0000 C CNN
+F 1 "LAB_IN" V 950 9850 50  0000 C CNN
+F 2 "" H 850 9850 60  0000 C CNN
+F 3 "" H 850 9850 60  0000 C CNN
+	1    850  9850
+	-1   0    0    1   
+$EndComp
+Connection ~ 2050 9000
+Wire Wire Line
+	2050 9000 2050 9550
+Wire Wire Line
+	1950 9000 2300 9000
+Wire Wire Line
+	1300 9000 1650 9000
+Text HLabel 2300 9300 2    60   Output ~ 0
+BB_VSENSE_PV-
+Text HLabel 2300 9200 2    60   Output ~ 0
+BB_VSENSE_PV+
+$Comp
+L R4T R?
+U 1 1 5635AA23
+P 1800 9000
+F 0 "R?" V 1750 8850 50  0000 C CNN
+F 1 "R4T" V 1800 9000 50  0000 C CNN
+F 2 "" V 1730 9000 30  0000 C CNN
+F 3 "" H 1800 9000 30  0000 C CNN
+F 4 "1W 1%" V 1700 9100 60  0000 C CNN "Note"
+	1    1800 9000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2300 9200 1750 9200
+Wire Wire Line
+	1750 9200 1750 9100
+Wire Wire Line
+	1850 9100 1850 9300
+Wire Wire Line
+	1850 9300 2300 9300
+Text HLabel 15400 700  2    60   Output ~ 0
+VCC_BATT
+Connection ~ 15150 700 
+Wire Wire Line
+	15150 700  15150 1250
+Wire Wire Line
+	15050 700  15400 700 
+Wire Wire Line
+	14400 700  14750 700 
+Text HLabel 15400 1000 2    60   Output ~ 0
+BB_VSENSE_BATT-
+Text HLabel 15400 900  2    60   Output ~ 0
+BB_VSENSE_BATT+
+Text Notes 14750 2250 0    100  ~ 0
+R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
+$Comp
+L R4T R?
+U 1 1 5635B0F2
+P 14900 700
+F 0 "R?" V 14850 550 50  0000 C CNN
+F 1 "R4T" V 14900 700 50  0000 C CNN
+F 2 "" V 14830 700 30  0000 C CNN
+F 3 "" H 14900 700 30  0000 C CNN
+F 4 "1W 1%" V 14800 800 60  0000 C CNN "Note"
+	1    14900 700 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	15400 900  14850 900 
+Wire Wire Line
+	14850 900  14850 800 
+Wire Wire Line
+	15400 1000 14950 1000
+Wire Wire Line
+	14950 1000 14950 800 
 $EndSCHEMATC
