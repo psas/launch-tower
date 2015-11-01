@@ -36,6 +36,7 @@ LIBS:PTN78020n
 LIBS:EEPROMs
 LIBS:TLP
 LIBS:bq77PL900
+LIBS:current_shunt
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -52,7 +53,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 1400 1400 0    80   ~ 0
-TODO: Determine values for bleeder resistor\nand filter capacitor on each output connector.
+TODO:\n1. Determine values for bleeder resistor\nand filter capacitor on each output connector.\n2. Pick new PolyFuses, 0.5-1.0A max.
 $Comp
 L R R701
 U 1 1 557E02A5

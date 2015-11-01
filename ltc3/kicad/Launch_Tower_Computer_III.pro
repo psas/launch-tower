@@ -1,4 +1,4 @@
-update=Sat 17 Oct 2015 07:59:57 PM PDT
+update=Sat 31 Oct 2015 04:01:38 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -96,3 +96,4 @@ LibName34=libs/symbols/PTN78020n
 LibName35=libs/symbols/EEPROMs
 LibName36=libs/symbols/TLP
 LibName37=libs/symbols/bq77PL900
+LibName38=libs/symbols/current_shunt
