@@ -42,7 +42,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 9 8
+Sheet 8 8
 Title "Battery Balance"
 Date "2015-10-24"
 Rev "A"
