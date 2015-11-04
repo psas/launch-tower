@@ -28,15 +28,23 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LTC3
+LIBS:BeagleBone_Black
+LIBS:LT8490
+LIBS:LTC299x
+LIBS:PMV45EN
+LIBS:PTN78020n
+LIBS:EEPROMs
+LIBS:TLP
+LIBS:bq77PL900
+LIBS:current_shunt
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title "LTC3 Ignition Control Board"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

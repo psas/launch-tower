@@ -1,4 +1,4 @@
-update=Tue 01 Sep 2015 11:18:15 PM PDT
+update=Sat 31 Oct 2015 04:01:38 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -88,5 +88,12 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=libs/symbols/LTC3
-LibName31=libs/symbols/BeagleBone_Black
+LibName30=libs/symbols/BeagleBone_Black
+LibName31=libs/symbols/LT8490
+LibName32=libs/symbols/LTC299x
+LibName33=libs/symbols/PMV45EN
+LibName34=libs/symbols/PTN78020n
+LibName35=libs/symbols/EEPROMs
+LibName36=libs/symbols/TLP
+LibName37=libs/symbols/bq77PL900
+LibName38=libs/symbols/current_shunt

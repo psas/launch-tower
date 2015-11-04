@@ -28,16 +28,23 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LTC3
 LIBS:BeagleBone_Black
+LIBS:LT8490
+LIBS:LTC299x
+LIBS:PMV45EN
+LIBS:PTN78020n
+LIBS:EEPROMs
+LIBS:TLP
+LIBS:bq77PL900
+LIBS:current_shunt
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -118,32 +125,10 @@ Text Label 7300 2050 2    60   ~ 0
 SYS_5V
 Text HLabel 6900 1950 0    60   Input ~ 0
 VCC_5V
-$Comp
-L LTC2991 U6
-U 1 1 5505DFCE
-P 10500 6850
-F 0 "U6" H 10500 6750 50  0000 C CNN
-F 1 "LTC2991" H 10500 6950 50  0000 C CNN
-F 2 "" H 10500 6850 50  0001 C CNN
-F 3 "" H 10500 6850 50  0001 C CNN
-	1    10500 6850
-	1    0    0    -1  
-$EndComp
 Text Notes 13800 3550 0    60   ~ 0
 Cape EEPROM\nI2C addr 0x54
 Text Notes 10050 7850 0    100  ~ 0
 DC Rails\nI2C addr 0x91
-$Comp
-L 24C256 U8
-U 1 1 5505E066
-P 14250 2150
-F 0 "U8" H 14250 2100 50  0000 C CNN
-F 1 "CAT24C256" H 14250 2200 50  0000 C CNN
-F 2 "~" H 14250 2450 50  0001 C CNN
-F 3 "~" H 14250 1850 50  0001 C CNN
-	1    14250 2150
-	1    0    0    -1  
-$EndComp
 $Comp
 L VDD #PWR12
 U 1 1 5505E4DB
@@ -334,18 +319,7 @@ BB_VSENSE_19V+
 Text HLabel 9500 7000 0    60   Input ~ 0
 BB_VSENSE_19V-
 Text Notes 1000 10100 0    125  ~ 0
-TODO:\n* Re-draw BB header symbols\n* Rocket-ready status\n* Umbilical connection state\n* Ignition fuse state
-$Comp
-L LTC2991 U?
-U 1 1 55BA770A
-P 5550 6850
-F 0 "U?" H 5550 6750 50  0000 C CNN
-F 1 "LTC2991" H 5550 6950 50  0000 C CNN
-F 2 "" H 5550 6850 50  0001 C CNN
-F 3 "" H 5550 6850 50  0001 C CNN
-	1    5550 6850
-	1    0    0    -1  
-$EndComp
+TODO:\n* Rocket-ready status\n* Umbilical connection state\n* Ignition fuse state
 Text Notes 5100 7850 0    100  ~ 0
 Power Sources\nI²C addr 0x90
 $Comp
@@ -626,7 +600,7 @@ Wire Wire Line
 Connection ~ 12100 6300
 Text Notes 6900 5650 0    125  ~ 0
 Voltage, Current & Temp Sensors
-Text Notes 6900 8650 0    100  ~ 0
+Text Notes 3600 8700 0    100  ~ 0
 Signals ending in + indicate the high side of\nthe respective shunt resistor; signals ending\nin - indicate the low side.
 Wire Notes Line
 	3450 5750 13450 5750
@@ -770,4 +744,39 @@ Text Label 9450 2050 0    60   ~ 0
 SYS_5V
 Wire Wire Line
 	9450 2050 9300 2050
+$Comp
+L LTC2991 U?
+U 1 1 560CE15D
+P 5550 6850
+F 0 "U?" H 5550 6750 50  0000 C CNN
+F 1 "LTC2991" H 5550 6950 50  0000 C CNN
+F 2 "" H 5550 6850 50  0001 C CNN
+F 3 "" H 5550 6850 50  0001 C CNN
+	1    5550 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LTC2991 U?
+U 1 1 560CE1B6
+P 10500 6850
+F 0 "U?" H 10500 6750 50  0000 C CNN
+F 1 "LTC2991" H 10500 6950 50  0000 C CNN
+F 2 "" H 10500 6850 50  0001 C CNN
+F 3 "" H 10500 6850 50  0001 C CNN
+	1    10500 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 24C256 U?
+U 1 1 560CBFF6
+P 14250 2150
+F 0 "U?" H 14250 2100 50  0000 C CNN
+F 1 "24C256" H 14250 2200 50  0000 C CNN
+F 2 "" H 14250 2450 50  0001 C CNN
+F 3 "" H 14250 1850 50  0001 C CNN
+	1    14250 2150
+	1    0    0    -1  
+$EndComp
+Text Notes 7650 8700 0    100  ~ 0
+NB: Consider placing ICs at opposite ends\nof the board so that their internal temp\nsensors provide a thermal gradient of the\nLTC3 internals.
 $EndSCHEMATC

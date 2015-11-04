@@ -28,16 +28,23 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LTC3
 LIBS:BeagleBone_Black
+LIBS:LT8490
+LIBS:LTC299x
+LIBS:PMV45EN
+LIBS:PTN78020n
+LIBS:EEPROMs
+LIBS:TLP
+LIBS:bq77PL900
+LIBS:current_shunt
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 6 7
+Sheet 6 8
 Title "LTC3 DC-DC Converters"
-Date "2015-08-01"
+Date "2015-10-24"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -47,17 +54,6 @@ Comment4 ""
 $EndDescr
 Text HLabel 3950 1800 0    60   Input ~ 0
 VCC_BATT
-$Comp
-L PTN78020W U3
-U 1 1 5557F694
-P 6000 2000
-F 0 "U3" H 6000 2300 80  0000 C CNN
-F 1 "PTN78020W" H 6000 2150 80  0000 C CNN
-F 2 "~" H 6000 2050 60  0000 C CNN
-F 3 "~" H 6000 2050 60  0000 C CNN
-	1    6000 2000
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR1
 U 1 1 5557F6A3
@@ -153,17 +149,6 @@ VCC_5V_INHIB
 Text HLabel 3950 4800 0    60   Input ~ 0
 VCC_BATT
 $Comp
-L PTN78020H U?
-U 1 1 55945CDD
-P 6000 5000
-F 0 "U?" H 6000 5300 80  0000 C CNN
-F 1 "PTN78020H" H 6000 5150 80  0000 C CNN
-F 2 "~" H 6000 5050 60  0000 C CNN
-F 3 "~" H 6000 5050 60  0000 C CNN
-	1    6000 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR?
 U 1 1 55945CE3
 P 4800 5350
@@ -257,17 +242,6 @@ Text HLabel 4450 6300 0    60   Input ~ 0
 VCC_12V_INHIB
 Text HLabel 3950 7800 0    60   Input ~ 0
 VCC_BATT
-$Comp
-L PTN78020H U?
-U 1 1 5594684F
-P 6000 8000
-F 0 "U?" H 6000 8300 80  0000 C CNN
-F 1 "PTN78020H" H 6000 8150 80  0000 C CNN
-F 2 "~" H 6000 8050 60  0000 C CNN
-F 3 "~" H 6000 8050 60  0000 C CNN
-	1    6000 8000
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR?
 U 1 1 55946855
@@ -435,7 +409,72 @@ F 4 "ceramic, X[57]R" V 4150 8400 50  0001 C CNN "Note"
 	1    0    0    -1  
 $EndComp
 Text Notes 10450 6400 0    100  ~ 0
-TODO:\n* Should shunt resistors should be 4-terminal devices?\n* Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
+TODO:\n* Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
+Text HLabel 8800 4800 2    60   Output ~ 0
+VCC_12V
+Text HLabel 8800 5000 2    60   Output ~ 0
+BB_VSENSE_12V+
+Text HLabel 8800 5100 2    60   Output ~ 0
+BB_VSENSE_12V-
+Text HLabel 8800 2100 2    60   Output ~ 0
+BB_VSENSE_5V-
+Text HLabel 8800 2000 2    60   Output ~ 0
+BB_VSENSE_5V+
+Text HLabel 8800 1800 2    60   Output ~ 0
+VCC_5V
+Text HLabel 8800 7800 2    60   Output ~ 0
+VCC_19V
+Text HLabel 8800 8000 2    60   Output ~ 0
+BB_VSENSE_19V+
+Text HLabel 8800 8100 2    60   Output ~ 0
+BB_VSENSE_19V-
+Text Notes 10450 7350 0    100  ~ 0
+R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
+$Comp
+L PTN78020W U?
+U 1 1 560CCDB6
+P 6000 2000
+F 0 "U?" H 6000 2300 80  0000 C CNN
+F 1 "PTN78020W" H 6000 2150 80  0000 C CNN
+F 2 "" H 6000 2050 60  0000 C CNN
+F 3 "" H 6000 2050 60  0000 C CNN
+	1    6000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PTN78020H U?
+U 1 1 560CD122
+P 6000 8000
+F 0 "U?" H 6000 8300 80  0000 C CNN
+F 1 "PTN78020H" H 6000 8150 80  0000 C CNN
+F 2 "" H 6000 8050 60  0000 C CNN
+F 3 "" H 6000 8050 60  0000 C CNN
+	1    6000 8000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PTN78020H U?
+U 1 1 560CD17B
+P 6000 5000
+F 0 "U?" H 6000 5300 80  0000 C CNN
+F 1 "PTN78020H" H 6000 5150 80  0000 C CNN
+F 2 "" H 6000 5050 60  0000 C CNN
+F 3 "" H 6000 5050 60  0000 C CNN
+	1    6000 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R4T R?
+U 1 1 563558F1
+P 8300 1800
+F 0 "R?" V 8250 1650 50  0000 C CNN
+F 1 "R4T" V 8300 1800 50  0000 C CNN
+F 2 "" V 8230 1800 30  0000 C CNN
+F 3 "" H 8300 1800 30  0000 C CNN
+F 4 "1W 1%" V 8200 1900 60  0000 C CNN "Note"
+	1    8300 1800
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	4950 2200 4800 2200
 Wire Wire Line
@@ -467,7 +506,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 2800 6300 3300
 Wire Wire Line
-	8550 3300 6300 3300
+	6300 3300 8550 3300
 Wire Wire Line
 	4950 5200 4800 5200
 Wire Wire Line
@@ -499,7 +538,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 5800 6300 6300
 Wire Wire Line
-	8550 6300 6300 6300
+	6300 6300 8550 6300
 Wire Wire Line
 	4950 8200 4800 8200
 Wire Wire Line
@@ -527,7 +566,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 8800 6300 9300
 Wire Wire Line
-	8550 9300 6300 9300
+	6300 9300 8550 9300
 Wire Wire Line
 	4000 5150 4000 5250
 Wire Wire Line
@@ -576,105 +615,73 @@ Connection ~ 4000 8650
 Wire Wire Line
 	3350 8550 3350 8650
 Connection ~ 3650 8650
-Text HLabel 8800 4800 2    60   Output ~ 0
-VCC_12V
-Text HLabel 8800 4950 2    60   Output ~ 0
-BB_VSENSE_12V+
-Text HLabel 8800 5100 2    60   Output ~ 0
-BB_VSENSE_12V-
 Wire Wire Line
 	7050 4800 8150 4800
-$Comp
-L R R?
-U 1 1 55B2C245
-P 8300 4800
-F 0 "R?" V 8380 4800 50  0000 C CNN
-F 1 "R" V 8300 4800 50  0000 C CNN
-F 2 "" V 8230 4800 30  0000 C CNN
-F 3 "" H 8300 4800 30  0000 C CNN
-F 4 "1W, 1%" V 8200 4800 60  0000 C CNN "Note"
-	1    8300 4800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8450 4800 8800 4800
 Wire Wire Line
-	8550 4800 8550 6300
+	8550 6300 8550 4800
 Connection ~ 8550 4800
 Wire Wire Line
-	8800 4950 8050 4950
-Wire Wire Line
-	8050 4950 8050 4800
-Connection ~ 8050 4800
-Wire Wire Line
-	8800 5100 8550 5100
-Connection ~ 8550 5100
-Wire Wire Line
 	7050 1800 8150 1800
-Connection ~ 8550 2100
-Wire Wire Line
-	8800 2100 8550 2100
-Connection ~ 8050 1800
-Wire Wire Line
-	8050 1800 8050 1950
-Wire Wire Line
-	8050 1950 8800 1950
 Connection ~ 8550 1800
 Wire Wire Line
-	8550 1800 8550 3300
+	8550 3300 8550 1800
 Wire Wire Line
 	8450 1800 8800 1800
-$Comp
-L R R?
-U 1 1 55B297AA
-P 8300 1800
-F 0 "R?" V 8380 1800 50  0000 C CNN
-F 1 "R" V 8300 1800 50  0000 C CNN
-F 2 "" V 8230 1800 30  0000 C CNN
-F 3 "" H 8300 1800 30  0000 C CNN
-F 4 "1W, 1%" V 8200 1800 60  0000 C CNN "Note"
-	1    8300 1800
-	0    1    1    0   
-$EndComp
-Text HLabel 8800 2100 2    60   Output ~ 0
-BB_VSENSE_5V-
-Text HLabel 8800 1950 2    60   Output ~ 0
-BB_VSENSE_5V+
-Text HLabel 8800 1800 2    60   Output ~ 0
-VCC_5V
-Text HLabel 8800 7800 2    60   Output ~ 0
-VCC_19V
-Text HLabel 8800 7950 2    60   Output ~ 0
-BB_VSENSE_19V+
-Text HLabel 8800 8100 2    60   Output ~ 0
-BB_VSENSE_19V-
 Wire Wire Line
 	7050 7800 8150 7800
+Wire Wire Line
+	8450 7800 8800 7800
+Wire Wire Line
+	8550 9300 8550 7800
+Connection ~ 8550 7800
+Wire Wire Line
+	8250 1900 8250 2000
+Wire Wire Line
+	8250 2000 8800 2000
+Wire Wire Line
+	8800 2100 8350 2100
+Wire Wire Line
+	8350 2100 8350 1900
 $Comp
-L R R?
-U 1 1 55B2D265
+L R4T R?
+U 1 1 563597A8
+P 8300 4800
+F 0 "R?" V 8250 4650 50  0000 C CNN
+F 1 "R4T" V 8300 4800 50  0000 C CNN
+F 2 "" V 8230 4800 30  0000 C CNN
+F 3 "" H 8300 4800 30  0000 C CNN
+F 4 "1W 1%" V 8200 4900 60  0000 C CNN "Note"
+	1    8300 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R4T R?
+U 1 1 56359B18
 P 8300 7800
-F 0 "R?" V 8380 7800 50  0000 C CNN
-F 1 "R" V 8300 7800 50  0000 C CNN
+F 0 "R?" V 8250 7650 50  0000 C CNN
+F 1 "R4T" V 8300 7800 50  0000 C CNN
 F 2 "" V 8230 7800 30  0000 C CNN
 F 3 "" H 8300 7800 30  0000 C CNN
-F 4 "1W, 1%" V 8200 7800 60  0000 C CNN "Note"
+F 4 "1W 1%" V 8200 7900 60  0000 C CNN "Note"
 	1    8300 7800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8450 7800 8800 7800
+	8800 5000 8250 5000
 Wire Wire Line
-	8550 7800 8550 9300
-Connection ~ 8550 7800
+	8250 5000 8250 4900
 Wire Wire Line
-	8800 7950 8050 7950
+	8350 4900 8350 5100
 Wire Wire Line
-	8050 7950 8050 7800
-Connection ~ 8050 7800
+	8350 5100 8800 5100
 Wire Wire Line
-	8800 8100 8550 8100
-Connection ~ 8550 8100
-Text Notes 10450 7350 0    100  ~ 0
-R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
+	8250 7900 8250 8000
+Wire Wire Line
+	8250 8000 8800 8000
+Wire Wire Line
+	8350 7900 8350 8100
+Wire Wire Line
+	8350 8100 8800 8100
 $EndSCHEMATC
