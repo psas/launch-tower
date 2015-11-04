@@ -397,4 +397,6 @@ Text HLabel 2600 9350 2    60   Output ~ 0
 BB_TEMP_BATT-
 Text Notes 2950 9800 2    60   ~ 0
 Temperature Sensor, Main Battery
+Text HLabel 1950 1750 0    60   Input ~ 0
+VCC_BATT
 $EndSCHEMATC
