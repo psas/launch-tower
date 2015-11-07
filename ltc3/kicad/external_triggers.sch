@@ -44,7 +44,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 8
 Title "LTC3 External Device Triggers"
-Date "2015-10-24"
+Date "2015-11-07"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
