@@ -44,7 +44,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 8 8
 Title "Battery Balance"
-Date "2015-10-24"
+Date "2015-11-07"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -399,4 +399,8 @@ Text Notes 2950 9800 2    60   ~ 0
 Temperature Sensor, Main Battery
 Text HLabel 1950 1750 0    60   Input ~ 0
 VCC_BATT
+Text HLabel 13100 1600 3    60   Output ~ 0
+BB_VSENSE_BATT-
+Text HLabel 13000 1600 3    60   Output ~ 0
+BB_VSENSE_BATT+
 $EndSCHEMATC
