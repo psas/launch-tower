@@ -336,9 +336,10 @@ L R R215
 U 1 1 56238A9A
 P 6750 6650
 F 0 "R215" V 6850 6650 50  0000 C CNN
-F 1 "110k" V 6650 6650 50  0000 C CNN
+F 1 "110k" V 6750 6650 50  0000 C CNN
 F 2 "" V 6680 6650 30  0000 C CNN
 F 3 "" H 6750 6650 30  0000 C CNN
+F 4 "1%" V 6650 6650 50  0000 C CNN "Note"
 	1    6750 6650
 	1    0    0    -1  
 $EndComp
@@ -347,9 +348,10 @@ L R R219
 U 1 1 56238A9B
 P 6750 7150
 F 0 "R219" V 6830 7150 50  0000 C CNN
-F 1 "35.7k" V 6650 7150 50  0000 C CNN
+F 1 "35k7" V 6750 7150 50  0000 C CNN
 F 2 "" V 6680 7150 30  0000 C CNN
 F 3 "" H 6750 7150 30  0000 C CNN
+F 4 "1%" V 6650 7150 50  0000 C CNN "Note"
 	1    6750 7150
 	1    0    0    -1  
 $EndComp
@@ -2190,4 +2192,18 @@ Text Notes 4200 9000 0    50   ~ 0
 CDACI
 Text Notes 4550 9650 0    60   Italic 0
 202kHz switch
+Text Notes 4200 7800 0    60   ~ 12
+Input Feedback p.14
+Text Notes 2550 3900 0    60   ~ 12
+p. 15
+Text Notes 13500 6550 0    60   ~ 12
+Output Feedback (p. 17)
+Text Notes 5750 1300 0    60   ~ 12
+Current Sense (p. 20)
+Text Notes 12350 1300 0    60   ~ 12
+Current Sense (p. 20)
+Text Notes 6550 7300 1    60   ~ 12
+Shutdown (p. 27)
+Text Notes 13800 8550 1    60   ~ 12
+Temp Sense (p. 21)
 $EndSCHEMATC
