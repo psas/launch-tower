@@ -402,7 +402,7 @@ BB_TEMP_BATT-
 Text Notes 2950 9800 2    60   ~ 0
 Temperature Sensor, Main Battery
 Text HLabel 1950 1750 0    60   Input ~ 0
-VCC_BATT
+VBATT
 Text HLabel 13100 1600 3    60   Output ~ 0
 BB_VSENSE_BATT-
 Text HLabel 13000 1600 3    60   Output ~ 0

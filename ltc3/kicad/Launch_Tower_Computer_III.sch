@@ -123,7 +123,7 @@ GPIO_EXT_TRIG_4
 $Sheet
 S 1000 1700 2500 1600
 U 56238165
-F0 "Battery Management" 60
+F0 "Power In & Battery Charge Management" 60
 F1 "battery_mgmt.sch" 60
 F2 "BB_VSENSE_PV-" O R 3500 2250 60 
 F3 "BB_VSENSE_PV+" O R 3500 2350 60 
@@ -134,11 +134,11 @@ $EndSheet
 $Sheet
 S 1000 4350 2500 1600
 U 562DD32F
-F0 "Battery Balance" 60
+F0 "Battery, Balance & Protection" 60
 F1 "battery_balance.sch" 60
 F2 "BB_TEMP_BATT+" O R 3500 5600 60 
 F3 "BB_TEMP_BATT-" O R 3500 5700 60 
-F4 "VCC_BATT" I L 1000 4600 60 
+F4 "VBATT" I L 1000 4600 60 
 $EndSheet
 $Sheet
 S 5250 1900 2000 1600
@@ -437,6 +437,4 @@ Wire Wire Line
 Wire Wire Line
 	900  4600 1000 4600
 Connection ~ 3950 2050
-Text Notes 3650 2000 0    60   ~ 0
-FIXME: This is probably wrong.
 $EndSCHEMATC
