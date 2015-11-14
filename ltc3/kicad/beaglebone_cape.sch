@@ -37,6 +37,10 @@ LIBS:EEPROMs
 LIBS:TLP
 LIBS:bq77PL900
 LIBS:current_shunt
+LIBS:741g08
+LIBS:4n35
+LIBS:SNx52x0
+LIBS:switches
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END

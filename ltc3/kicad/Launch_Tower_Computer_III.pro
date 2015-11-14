@@ -1,4 +1,4 @@
-update=Sat 31 Oct 2015 04:01:38 PM PDT
+update=Sat 14 Nov 2015 02:07:31 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -97,3 +97,7 @@ LibName35=libs/symbols/EEPROMs
 LibName36=libs/symbols/TLP
 LibName37=libs/symbols/bq77PL900
 LibName38=libs/symbols/current_shunt
+LibName39=libs/symbols/741g08
+LibName40=libs/symbols/4n35
+LibName41=libs/symbols/SNx52x0
+LibName42=libs/symbols/switches
