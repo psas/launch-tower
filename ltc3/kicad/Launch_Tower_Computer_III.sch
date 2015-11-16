@@ -48,7 +48,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2015-11-07"
+Date "2015-11-16"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -188,12 +188,16 @@ F22 "VCC_12V_INHIB" O L 8750 6200 60
 F23 "VCC_19V_INHIB" O L 8750 6300 60 
 F24 "BB_TEMP_BATT+" I L 8750 6450 60 
 F25 "BB_TEMP_BATT-" I L 8750 6550 60 
+F26 "ROCKET-READY" I L 8750 6750 60 
 $EndSheet
 $Sheet
-S 13000 6700 2500 1600
+S 5250 7250 2500 1600
 U 5598112B
-F0 "Ignition Control" 60
-F1 "ignition_control.sch" 60
+F0 "Rocket Interface" 60
+F1 "rocket_interface.sch" 60
+F2 "VCC_5V" I L 5250 7400 60 
+F3 "VCC_19V" I L 5250 7550 60 
+F4 "ROCKET-READY" O R 7750 7400 60 
 $EndSheet
 $Sheet
 S 9250 1900 2500 1600
@@ -218,7 +222,7 @@ F4 "GPIO_EXT_TRIG_2" I L 12750 2500 60
 F5 "GPIO_EXT_TRIG_3" I L 12750 2600 60 
 F6 "GPIO_EXT_TRIG_4" I L 12750 2700 60 
 $EndSheet
-Text Notes 950  9900 0    100  ~ 0
+Text Notes 12300 9150 0    100  ~ 0
 TODO:\n1) Do we need a common ground pin\non each sub-sheet?
 Entry Wire Line
 	7600 2250 7700 2350
@@ -329,7 +333,7 @@ Wire Bus Line
 Wire Bus Line
 	7700 2350 7700 5150
 Wire Wire Line
-	7850 4550 7850 2050
+	7850 2050 7850 7000
 Connection ~ 7850 2050
 Wire Wire Line
 	3500 2050 5250 2050
@@ -437,4 +441,27 @@ Wire Wire Line
 Wire Wire Line
 	900  4600 1000 4600
 Connection ~ 3950 2050
+Wire Wire Line
+	7850 7000 5150 7000
+Wire Wire Line
+	5150 7000 5150 7400
+Wire Wire Line
+	5150 7400 5250 7400
+Connection ~ 7850 4550
+Wire Wire Line
+	7300 3050 7400 3050
+Wire Wire Line
+	7400 3050 7400 6900
+Wire Wire Line
+	7400 6900 5050 6900
+Wire Wire Line
+	5050 6900 5050 7550
+Wire Wire Line
+	5050 7550 5250 7550
+Wire Wire Line
+	7750 7400 8600 7400
+Wire Wire Line
+	8600 7400 8600 6750
+Wire Wire Line
+	8600 6750 8750 6750
 $EndSCHEMATC

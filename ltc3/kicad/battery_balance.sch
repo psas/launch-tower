@@ -48,7 +48,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 8
 Title "Battery Balance"
-Date "2015-11-07"
+Date "2015-11-16"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
