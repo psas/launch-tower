@@ -223,7 +223,7 @@ F5 "GPIO_EXT_TRIG_3" I L 12750 2600 60
 F6 "GPIO_EXT_TRIG_4" I L 12750 2700 60 
 $EndSheet
 Text Notes 12300 9150 0    100  ~ 0
-TODO:\n1) Do we need a common ground pin\non each sub-sheet?
+TODO:\n1) Do we need a common ground pin\non each sub-sheet?\n2) Prettify this page!
 Entry Wire Line
 	7600 2250 7700 2350
 Entry Wire Line
