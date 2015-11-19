@@ -333,8 +333,6 @@ F 3 "" H 3550 8950 60  0000 C CNN
 	1    3550 8950
 	1    0    0    -1  
 $EndComp
-Text Notes 1800 9250 0    60   ~ 0
-FIXME: "NP" values?
 $Comp
 L GND #PWR?
 U 1 1 5647B7B0
@@ -435,17 +433,6 @@ F 1 "741G08" H 9700 2500 60  0000 C CNN
 F 2 "" H 9950 2750 60  0000 C CNN
 F 3 "" H 9950 2750 60  0000 C CNN
 	1    9950 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5648B405
-P 9950 3300
-F 0 "#PWR?" H 9950 3050 50  0001 C CNN
-F 1 "GND" H 9950 3150 50  0000 C CNN
-F 2 "" H 9950 3300 60  0000 C CNN
-F 3 "" H 9950 3300 60  0000 C CNN
-	1    9950 3300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -617,17 +604,6 @@ F 3 "" H 6350 1950 60  0000 C CNN
 $EndComp
 $Comp
 L VCC #PWR?
-U 1 1 56487DF9
-P 9950 2200
-F 0 "#PWR?" H 9950 2050 50  0001 C CNN
-F 1 "VCC" H 9950 2350 50  0000 C CNN
-F 2 "" H 9950 2200 60  0000 C CNN
-F 3 "" H 9950 2200 60  0000 C CNN
-	1    9950 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L VCC #PWR?
 U 1 1 56488625
 P 14700 2150
 F 0 "#PWR?" H 14700 2000 50  0001 C CNN
@@ -682,7 +658,7 @@ F 3 "" H 8650 8250 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 12250 9150 0    100  ~ 0
-TODO:\n* Select appropriate component values.\n\nQUESTIONS:\n* Keep the "test" jumpers?\n* Do we need to integrate a charger for the ignition\n  battery?\n* Where's the launch/ignition signal?\n* What's the purpose of the TVS on the\n  input signals?  It clamps at 7V, more than enough\n  to look like a genuine high input.
+TODO:\n* Select appropriate component values.\n\nQUESTIONS:\n* Keep the "test" jumpers?\n* Do we need to integrate a charger for the ignition\n  battery?\n* Where's the launch/ignition signal?\n* What's the purpose of the TVS on the\n  input signals?  It clamps at 7V, more than enough\n  to look like a genuine high input.\n* What's the purpose of the extra resistor and cap.\n  in the delay stage?  Post-assembly adjustment?
 Text HLabel 1900 3950 0    60   Input ~ 0
 VCC_19V
 Text HLabel 14900 6200 2    60   Output ~ 0
@@ -808,10 +784,6 @@ Wire Wire Line
 Connection ~ 8200 8950
 Wire Wire Line
 	8200 8300 8200 8550
-Wire Wire Line
-	9950 2200 9950 2350
-Wire Wire Line
-	9950 3300 9950 3150
 Connection ~ 8200 8300
 Wire Wire Line
 	6350 1950 6350 2100
