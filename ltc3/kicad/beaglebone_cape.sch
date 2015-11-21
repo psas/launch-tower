@@ -48,7 +48,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 5 8
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2015-11-16"
+Date "2015-11-20"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
