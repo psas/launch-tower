@@ -41,6 +41,7 @@ LIBS:741g08
 LIBS:4n35
 LIBS:SNx52x0
 LIBS:switches
+LIBS:CD74HC14
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -1046,14 +1047,14 @@ F 3 "" H 9950 7350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 550  10450 0    100  ~ 0
-TODO:\n* Add DC supply detection circuit (datasheet p. 35).\n* Add feedback resistor disconnect circuit (datasheet fig. 27).
+TODO:\n* Add feedback resistor disconnect circuit (datasheet fig. 27).
 Text Label 5600 6900 0    60   ~ 0
 MODE
 Text Label 8100 6450 2    60   ~ 0
 GATE_VCC
 Text Label 5600 6450 0    60   ~ 0
 GATE_VCC
-Text Label 3350 1600 2    60   ~ 0
+Text Label 3550 1600 2    60   ~ 0
 VIN
 Text Label 6600 1800 2    60   ~ 0
 CSPIN
@@ -2127,4 +2128,14 @@ Wire Wire Line
 	1900 1900 1900 2000
 Wire Wire Line
 	1900 1900 1750 1900
+Wire Notes Line
+	1350 1450 3300 1450
+Wire Notes Line
+	3300 1450 3300 3250
+Wire Notes Line
+	3300 3250 1350 3250
+Wire Notes Line
+	1350 3250 1350 1450
+Text Notes 1350 3350 0    60   ~ 0
+DC Input Detection (p.35)
 $EndSCHEMATC
