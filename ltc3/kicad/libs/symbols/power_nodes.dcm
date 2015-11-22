@@ -1,0 +1,12 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VBATT
+D Battery Positive Node
+K POWER, PWR
+$ENDCMP
+#
+$CMP +19V
+K POWER, PWR
+$ENDCMP
+#
+#End Doc Library

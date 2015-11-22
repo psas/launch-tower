@@ -42,12 +42,13 @@ LIBS:4n35
 LIBS:SNx52x0
 LIBS:switches
 LIBS:CD74HC14
+LIBS:power_nodes
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 7
+Sheet 3 7
 Title "LTC3 BeagleBone Black Cape Interface"
 Date "2015-11-20"
 Rev "A"
@@ -128,23 +129,10 @@ Text Label 7000 1950 0    60   ~ 0
 VDD_5V
 Text Label 7300 2050 2    60   ~ 0
 SYS_5V
-Text HLabel 6900 1950 0    60   Input ~ 0
-VCC_5V
 Text Notes 14200 3300 0    60   ~ 0
 Cape EEPROM\nI2C addr 0x54
 Text Notes 7300 9300 0    100  ~ 0
 DC Rails\nI2C addr 0x91
-$Comp
-L VDD #PWR514
-U 1 1 5505E4DB
-P 8650 7600
-F 0 "#PWR514" H 8650 7700 30  0001 C CNN
-F 1 "VDD" H 8650 7750 30  0000 C CNN
-F 2 "" H 8650 7600 60  0000 C CNN
-F 3 "" H 8650 7600 60  0000 C CNN
-	1    8650 7600
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR517
 U 1 1 5505E52D
@@ -257,50 +245,6 @@ F 3 "" H 13750 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR503
-U 1 1 557CCEC0
-P 13600 1150
-F 0 "#PWR503" H 13600 1000 50  0001 C CNN
-F 1 "VDD" H 13600 1300 50  0000 C CNN
-F 2 "" H 13600 1150 60  0000 C CNN
-F 3 "" H 13600 1150 60  0000 C CNN
-	1    13600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L VDD #PWR505
-U 1 1 557CCF10
-P 15800 1150
-F 0 "#PWR505" H 15800 1000 50  0001 C CNN
-F 1 "VDD" H 15800 1300 50  0000 C CNN
-F 2 "" H 15800 1150 60  0000 C CNN
-F 3 "" H 15800 1150 60  0000 C CNN
-	1    15800 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L VDD #PWR504
-U 1 1 557CCFD9
-P 14650 1150
-F 0 "#PWR504" H 14650 1000 50  0001 C CNN
-F 1 "VDD" H 14650 1300 50  0000 C CNN
-F 2 "" H 14650 1150 60  0000 C CNN
-F 3 "" H 14650 1150 60  0000 C CNN
-	1    14650 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L VDD #PWR502
-U 1 1 557CE58D
-P 13150 1150
-F 0 "#PWR502" H 13150 1000 50  0001 C CNN
-F 1 "VDD" H 13150 1300 50  0000 C CNN
-F 2 "" H 13150 1150 60  0000 C CNN
-F 3 "" H 13150 1150 60  0000 C CNN
-	1    13150 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L GND #PWR508
 U 1 1 557CE60A
 P 13150 2650
@@ -327,17 +271,6 @@ Text Notes 12300 9150 0    100  ~ 0
 TODO:\n* Pick GPIO for rocket-ready signal.\n* Buffer btw rocket-ready signal and BB,\n  ign. board, etc?\n* Umbilical connection state\n* Ignition fuse state
 Text Notes 2350 9300 0    100  ~ 0
 Power Sources\nI²C addr 0x90
-$Comp
-L VDD #PWR515
-U 1 1 55BA7711
-P 3700 7800
-F 0 "#PWR515" H 3700 7900 30  0001 C CNN
-F 1 "VDD" H 3700 7950 30  0000 C CNN
-F 2 "" H 3700 7800 60  0000 C CNN
-F 3 "" H 3700 7800 60  0000 C CNN
-	1    3700 7800
-	1    0    0    -1  
-$EndComp
 $Comp
 L GND #PWR516
 U 1 1 55BA7717
@@ -395,11 +328,11 @@ F 3 "~" H 8850 8000 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 14950 6250 2    60   Output ~ 0
-VCC_5V_INHIB
+5V_INHIB
 Text HLabel 14950 6350 2    60   Output ~ 0
-VCC_12V_INHIB
+12V_INHIB
 Text HLabel 14950 6450 2    60   Output ~ 0
-VCC_19V_INHIB
+19V_INHIB
 Text HLabel 1750 8550 0    60   Input ~ 0
 BB_TEMP_BATT+
 Text HLabel 1750 8650 0    60   Input ~ 0
@@ -436,7 +369,7 @@ Wire Wire Line
 	9100 8350 9100 8450
 Connection ~ 9350 8450
 Wire Wire Line
-	9350 8350 9350 8450
+	9350 8450 9350 8350
 Connection ~ 8650 7750
 Connection ~ 8850 7750
 Wire Wire Line
@@ -521,9 +454,9 @@ Wire Wire Line
 Connection ~ 15600 1750
 Connection ~ 15800 1300
 Wire Wire Line
-	16000 1300 15800 1300
+	15800 1300 16000 1300
 Wire Wire Line
-	16000 1650 16000 1300
+	16000 1300 16000 1650
 Connection ~ 15800 1200
 Wire Wire Line
 	15600 1200 15800 1200
@@ -706,11 +639,9 @@ Wire Wire Line
 	9300 3850 9800 3850
 Connection ~ 9800 3950
 Wire Wire Line
-	6900 1950 7400 1950
-Text HLabel 9800 1950 2    60   Input ~ 0
-VCC_5V
+	6650 1950 7400 1950
 Wire Wire Line
-	9800 1950 9300 1950
+	10050 1950 9300 1950
 Text Label 9450 1950 0    60   ~ 0
 VDD_5V
 Text Label 9450 1850 0    60   ~ 0
@@ -786,4 +717,96 @@ Text Notes 4900 10150 0    100  ~ 0
 NB: Consider placing ICs at opposite ends\nof the board so that their internal temp\nsensors provide a thermal gradient of the\nLTC3 internals.
 Text HLabel 14650 5750 0    60   Input ~ 0
 ROCKET-READY
+$Comp
+L +5V #PWR?
+U 1 1 565530F5
+P 10050 1450
+F 0 "#PWR?" H 10050 1300 50  0001 C CNN
+F 1 "+5V" H 10050 1590 50  0000 C CNN
+F 2 "" H 10050 1450 60  0000 C CNN
+F 3 "" H 10050 1450 60  0000 C CNN
+	1    10050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 1950 10050 1450
+$Comp
+L +5V #PWR?
+U 1 1 565538D1
+P 6650 1450
+F 0 "#PWR?" H 6650 1300 50  0001 C CNN
+F 1 "+5V" H 6650 1590 50  0000 C CNN
+F 2 "" H 6650 1450 60  0000 C CNN
+F 3 "" H 6650 1450 60  0000 C CNN
+	1    6650 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 1450 6650 1950
+$Comp
+L +5V #PWR?
+U 1 1 56555506
+P 13150 1150
+F 0 "#PWR?" H 13150 1000 50  0001 C CNN
+F 1 "+5V" H 13150 1290 50  0000 C CNN
+F 2 "" H 13150 1150 60  0000 C CNN
+F 3 "" H 13150 1150 60  0000 C CNN
+	1    13150 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56555577
+P 13600 1150
+F 0 "#PWR?" H 13600 1000 50  0001 C CNN
+F 1 "+5V" H 13600 1290 50  0000 C CNN
+F 2 "" H 13600 1150 60  0000 C CNN
+F 3 "" H 13600 1150 60  0000 C CNN
+	1    13600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 565555AF
+P 14650 1150
+F 0 "#PWR?" H 14650 1000 50  0001 C CNN
+F 1 "+5V" H 14650 1290 50  0000 C CNN
+F 2 "" H 14650 1150 60  0000 C CNN
+F 3 "" H 14650 1150 60  0000 C CNN
+	1    14650 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 565555E7
+P 15800 1150
+F 0 "#PWR?" H 15800 1000 50  0001 C CNN
+F 1 "+5V" H 15800 1290 50  0000 C CNN
+F 2 "" H 15800 1150 60  0000 C CNN
+F 3 "" H 15800 1150 60  0000 C CNN
+	1    15800 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 5655582A
+P 3700 7800
+F 0 "#PWR?" H 3700 7650 50  0001 C CNN
+F 1 "+5V" H 3700 7940 50  0000 C CNN
+F 2 "" H 3700 7800 60  0000 C CNN
+F 3 "" H 3700 7800 60  0000 C CNN
+	1    3700 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56555E03
+P 8650 7600
+F 0 "#PWR?" H 8650 7450 50  0001 C CNN
+F 1 "+5V" H 8650 7740 50  0000 C CNN
+F 2 "" H 8650 7600 60  0000 C CNN
+F 3 "" H 8650 7600 60  0000 C CNN
+	1    8650 7600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

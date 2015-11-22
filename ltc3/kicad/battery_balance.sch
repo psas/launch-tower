@@ -42,12 +42,13 @@ LIBS:4n35
 LIBS:SNx52x0
 LIBS:switches
 LIBS:CD74HC14
+LIBS:power_nodes
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 7
+Sheet 7 7
 Title "Battery Balance"
 Date "2015-11-20"
 Rev "A"
@@ -98,8 +99,6 @@ Text HLabel 2600 9350 2    50   Output ~ 0
 BB_TEMP_BATT-
 Text Notes 2950 9800 2    60   ~ 0
 Temperature Sensor, Main Battery
-Text HLabel 1100 1050 0    50   Input ~ 0
-VBATT
 Text HLabel 15900 850  3    50   Output ~ 0
 BB_VSENSE_BATT-
 Text HLabel 15800 850  3    50   Output ~ 0

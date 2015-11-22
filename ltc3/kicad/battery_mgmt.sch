@@ -42,6 +42,7 @@ LIBS:4n35
 LIBS:SNx52x0
 LIBS:switches
 LIBS:CD74HC14
+LIBS:power_nodes
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -1223,8 +1224,6 @@ F 4 "1W 1%" V 6550 1650 60  0000 C CNN "Note"
 	1    6650 1600
 	0    1    1    0   
 $EndComp
-Text HLabel 15750 1600 2    60   Output ~ 0
-VBATT
 $Comp
 L R4T R204
 U 1 1 5635B0F2
@@ -2138,4 +2137,17 @@ Wire Notes Line
 	1350 3250 1350 1450
 Text Notes 1350 3350 0    60   ~ 0
 DC Input Detection (p.35)
+$Comp
+L VBATT #PWR?
+U 1 1 56575CBA
+P 15750 1100
+F 0 "#PWR?" H 15750 950 50  0001 C CNN
+F 1 "VBATT" H 15750 1250 50  0000 C CNN
+F 2 "" H 15750 1100 60  0000 C CNN
+F 3 "" H 15750 1100 60  0000 C CNN
+	1    15750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15750 1600 15750 1100
 $EndSCHEMATC

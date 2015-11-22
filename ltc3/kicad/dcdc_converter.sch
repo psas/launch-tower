@@ -42,12 +42,13 @@ LIBS:4n35
 LIBS:SNx52x0
 LIBS:switches
 LIBS:CD74HC14
+LIBS:power_nodes
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 7
+Sheet 6 7
 Title "LTC3 DC-DC Converters"
 Date "2015-11-20"
 Rev "A"
@@ -57,8 +58,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 3950 1800 0    60   Input ~ 0
-VBATT
 $Comp
 L GND #PWR401
 U 1 1 5557F6A3
@@ -150,9 +149,7 @@ F 3 "" H 6000 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 3300 0    60   Input ~ 0
-VCC_5V_INHIB
-Text HLabel 3950 4800 0    60   Input ~ 0
-VBATT
+5V_INHIB
 $Comp
 L GND #PWR406
 U 1 1 55945CE3
@@ -244,9 +241,7 @@ F 3 "" H 6000 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 6300 0    60   Input ~ 0
-VCC_12V_INHIB
-Text HLabel 3950 7800 0    60   Input ~ 0
-VBATT
+12V_INHIB
 $Comp
 L GND #PWR411
 U 1 1 55946855
@@ -315,8 +310,8 @@ F 3 "" H 6000 9300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 9300 0    60   Input ~ 0
-VCC_19V_INHIB
-Text Notes 10450 5600 0    100  ~ 0
+19V_INHIB
+Text Notes 11300 2400 0    100  ~ 0
 NB:\n1. V_sense should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
 $Comp
 L C C406
@@ -413,10 +408,8 @@ F 4 "ceramic, X[57]R" V 4150 8400 50  0001 C CNN "Note"
 	1    4300 8400
 	1    0    0    -1  
 $EndComp
-Text Notes 10450 6400 0    100  ~ 0
-TODO:\n* Capacitor values are minimums.  Consider increasing these.\nConsult datasheet for more info.
-Text HLabel 8800 4800 2    60   Output ~ 0
-VCC_12V
+Text Notes 12250 9200 0    100  ~ 0
+TODO:\n* Capacitor values are minimums.  Consider\n  increasing these.  Consult datasheet for more info.
 Text HLabel 8800 5000 2    60   Output ~ 0
 BB_VSENSE_12V+
 Text HLabel 8800 5100 2    60   Output ~ 0
@@ -425,15 +418,11 @@ Text HLabel 8800 2100 2    60   Output ~ 0
 BB_VSENSE_5V-
 Text HLabel 8800 2000 2    60   Output ~ 0
 BB_VSENSE_5V+
-Text HLabel 8800 1800 2    60   Output ~ 0
-VCC_5V
-Text HLabel 8800 7800 2    60   Output ~ 0
-VCC_19V
 Text HLabel 8800 8000 2    60   Output ~ 0
 BB_VSENSE_19V+
 Text HLabel 8800 8100 2    60   Output ~ 0
 BB_VSENSE_19V-
-Text Notes 10450 7350 0    100  ~ 0
+Text Notes 11300 3400 0    100  ~ 0
 R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
 $Comp
 L PTN78020W U401
@@ -479,6 +468,41 @@ F 3 "" H 8300 1800 30  0000 C CNN
 F 4 "1W 1%" V 8200 1900 60  0000 C CNN "Note"
 	1    8300 1800
 	0    1    1    0   
+$EndComp
+$Comp
+L R4T R403
+U 1 1 563597A8
+P 8300 4800
+F 0 "R403" V 8250 4650 50  0000 C CNN
+F 1 "R4T" V 8300 4800 50  0000 C CNN
+F 2 "" V 8230 4800 30  0000 C CNN
+F 3 "" H 8300 4800 30  0000 C CNN
+F 4 "1W 1%" V 8200 4900 60  0000 C CNN "Note"
+	1    8300 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L R4T R405
+U 1 1 56359B18
+P 8300 7800
+F 0 "R405" V 8250 7650 50  0000 C CNN
+F 1 "R4T" V 8300 7800 50  0000 C CNN
+F 2 "" V 8230 7800 30  0000 C CNN
+F 3 "" H 8300 7800 30  0000 C CNN
+F 4 "1W 1%" V 8200 7900 60  0000 C CNN "Note"
+	1    8300 7800
+	0    1    1    0   
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56538996
+P 8800 1550
+F 0 "#PWR?" H 8800 1400 50  0001 C CNN
+F 1 "+5V" H 8800 1690 50  0000 C CNN
+F 2 "" H 8800 1550 60  0000 C CNN
+F 3 "" H 8800 1550 60  0000 C CNN
+	1    8800 1550
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4950 2200 4800 2200
@@ -649,30 +673,6 @@ Wire Wire Line
 	8800 2100 8350 2100
 Wire Wire Line
 	8350 2100 8350 1900
-$Comp
-L R4T R403
-U 1 1 563597A8
-P 8300 4800
-F 0 "R403" V 8250 4650 50  0000 C CNN
-F 1 "R4T" V 8300 4800 50  0000 C CNN
-F 2 "" V 8230 4800 30  0000 C CNN
-F 3 "" H 8300 4800 30  0000 C CNN
-F 4 "1W 1%" V 8200 4900 60  0000 C CNN "Note"
-	1    8300 4800
-	0    1    1    0   
-$EndComp
-$Comp
-L R4T R405
-U 1 1 56359B18
-P 8300 7800
-F 0 "R405" V 8250 7650 50  0000 C CNN
-F 1 "R4T" V 8300 7800 50  0000 C CNN
-F 2 "" V 8230 7800 30  0000 C CNN
-F 3 "" H 8300 7800 30  0000 C CNN
-F 4 "1W 1%" V 8200 7900 60  0000 C CNN "Note"
-	1    8300 7800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8800 5000 8250 5000
 Wire Wire Line
@@ -689,4 +689,71 @@ Wire Wire Line
 	8350 7900 8350 8100
 Wire Wire Line
 	8350 8100 8800 8100
+Wire Wire Line
+	8800 1800 8800 1550
+Wire Wire Line
+	3950 1550 3950 1800
+$Comp
+L VBATT #PWR?
+U 1 1 565394B2
+P 3950 1550
+F 0 "#PWR?" H 3950 1400 50  0001 C CNN
+F 1 "VBATT" H 3950 1700 50  0000 C CNN
+F 2 "" H 3950 1550 60  0000 C CNN
+F 3 "" H 3950 1550 60  0000 C CNN
+	1    3950 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VBATT #PWR?
+U 1 1 5653A057
+P 3950 4550
+F 0 "#PWR?" H 3950 4400 50  0001 C CNN
+F 1 "VBATT" H 3950 4700 50  0000 C CNN
+F 2 "" H 3950 4550 60  0000 C CNN
+F 3 "" H 3950 4550 60  0000 C CNN
+	1    3950 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4550 3950 4800
+$Comp
+L +12V #PWR?
+U 1 1 5653A6FD
+P 8800 4550
+F 0 "#PWR?" H 8800 4400 50  0001 C CNN
+F 1 "+12V" H 8800 4690 50  0000 C CNN
+F 2 "" H 8800 4550 60  0000 C CNN
+F 3 "" H 8800 4550 60  0000 C CNN
+	1    8800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4800 8800 4550
+$Comp
+L VBATT #PWR?
+U 1 1 5653ADB9
+P 3950 7550
+F 0 "#PWR?" H 3950 7400 50  0001 C CNN
+F 1 "VBATT" H 3950 7700 50  0000 C CNN
+F 2 "" H 3950 7550 60  0000 C CNN
+F 3 "" H 3950 7550 60  0000 C CNN
+	1    3950 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 7550 3950 7800
+$Comp
+L +19V #PWR?
+U 1 1 5653B5C8
+P 8800 7550
+F 0 "#PWR?" H 8800 7400 50  0001 C CNN
+F 1 "+19V" H 8800 7690 50  0000 C CNN
+F 2 "" H 8800 7550 60  0000 C CNN
+F 3 "" H 8800 7550 60  0000 C CNN
+	1    8800 7550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 7800 8800 7550
 $EndSCHEMATC
