@@ -173,7 +173,7 @@ $EndSheet
 $Sheet
 S 9650 1400 2500 1600
 U 551C79BE
-F0 "External Device Support" 60
+F0 "External Device Power & Triggers" 60
 F1 "external_devices.sch" 50
 F2 "GPIO_EXT_PWR_1" I L 9650 1950 60 
 F3 "GPIO_EXT_PWR_2" I L 9650 2050 60 

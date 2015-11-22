@@ -1,4 +1,4 @@
-update=Sat 21 Nov 2015 10:10:44 PM PST
+update=Sat 21 Nov 2015 10:40:06 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -45,16 +45,6 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=50
 [eeschema]
 version=1
 LibDir=libs/symbols
@@ -104,3 +94,13 @@ LibName42=libs/symbols/switches
 LibName43=libs/symbols/CD74HC14
 LibName44=libs/symbols/power_nodes
 LibName45=libs/symbols/relay_1c
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=50

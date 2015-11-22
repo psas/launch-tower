@@ -259,7 +259,7 @@ F 3 "" H 3200 9350 60  0000 C CNN
 	1    3200 9350
 	1    0    0    -1  
 $EndComp
-Text Notes 1350 10050 0    100  Italic 0
+Text Notes 1350 10050 0    100  ~ 0
 Delay (5s)
 $Comp
 L CONN_01X02 P403
@@ -508,7 +508,7 @@ F 3 "" H 14450 6350 60  0000 C CNN
 $EndComp
 Text Label 1900 2550 2    60   ~ 0
 ROCKET-READY
-Text Notes 4500 10050 0    100  Italic 0
+Text Notes 4500 10050 0    100  ~ 0
 Ignition/Battery Control
 $Comp
 L GND #PWR406
@@ -521,7 +521,7 @@ F 3 "" H 6000 2900 60  0000 C CNN
 	1    6000 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 1000 5150 0    100  Italic 0
+Text Notes 1000 5150 0    100  ~ 0
 Input Logic
 Text Notes 2100 2450 2    60   Italic 0
 +5V

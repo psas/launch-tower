@@ -2125,7 +2125,7 @@ Wire Wire Line
 Connection ~ 2950 1600
 Connection ~ 1200 2000
 Wire Wire Line
-	1900 1900 1900 2000
+	1900 1600 1900 2000
 Wire Wire Line
 	1900 1900 1750 1900
 Wire Notes Line
@@ -2137,7 +2137,7 @@ Wire Notes Line
 Wire Notes Line
 	1350 3250 1350 1450
 Text Notes 1350 3350 0    60   ~ 0
-DC Input Detection (p.34)
+Supply Detection (p.34)
 $Comp
 L VBATT #PWR201
 U 1 1 56575CBA
@@ -2151,4 +2151,6 @@ F 3 "" H 15750 1100 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	15750 1600 15750 1100
+Connection ~ 1900 1600
+Connection ~ 1900 1900
 $EndSCHEMATC
