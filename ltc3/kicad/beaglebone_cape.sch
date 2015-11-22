@@ -182,21 +182,21 @@ GPIO_8
 Text Label 2350 3350 2    60   ~ 0
 GPIO_9
 Text HLabel 1900 3450 0    60   Output ~ 0
-GPIO_EXT_TRIG_1
+EXT_TRIG_EN_1
 Text HLabel 1900 3350 0    60   Output ~ 0
-GPIO_EXT_TRIG_2
+EXT_TRIG_EN_2
 Text HLabel 1900 3250 0    60   Output ~ 0
-GPIO_EXT_TRIG_3
+EXT_TRIG_EN_3
 Text HLabel 4800 3250 2    60   Output ~ 0
-GPIO_EXT_TRIG_4
+EXT_TRIG_EN_4
 Text HLabel 14950 5750 2    60   Output ~ 0
-GPIO_EXT_PWR_1
+EXT_PWR_EN_1
 Text HLabel 14950 5850 2    60   Output ~ 0
-GPIO_EXT_PWR_2
+EXT_PWR_EN_2
 Text HLabel 14950 5950 2    60   Output ~ 0
-GPIO_EXT_PWR_3
+EXT_PWR_EN_3
 Text HLabel 14950 6050 2    60   Output ~ 0
-GPIO_EXT_PWR_4
+EXT_PWR_EN_4
 Text Notes 15300 5600 2    60   ~ 0
 TODO: connect these labels\nto BBB GPIO pins.
 $Comp
@@ -715,7 +715,7 @@ $EndComp
 Text Notes 4900 9900 0    100  ~ 0
 NB: Consider placing ICs at opposite ends\nof the board so that their internal temp\nsensors provide a thermal gradient of the\nLTC3 internals.
 Text HLabel 14650 5750 0    60   Input ~ 0
-ROCKET-READY
+ROCKET_READY
 $Comp
 L +5V #PWR307
 U 1 1 565530F5
