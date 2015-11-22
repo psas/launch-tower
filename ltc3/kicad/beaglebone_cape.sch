@@ -59,9 +59,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 15400 1900 0    50   ~ 0
+Text Label 15800 1900 0    50   ~ 0
 I2C2_SCL
-Text Label 15400 2050 0    50   ~ 0
+Text Label 15800 2050 0    50   ~ 0
 I2C2_SDA
 $Comp
 L C C301
@@ -96,28 +96,6 @@ F 3 "~" H 15600 1500 30  0000 C CNN
 	1    15600 1500
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R303
-U 1 1 55052CA3
-P 15800 1650
-F 0 "R303" V 15880 1650 40  0000 C CNN
-F 1 "5.6k" V 15807 1651 40  0000 C CNN
-F 2 "~" V 15730 1650 30  0000 C CNN
-F 3 "~" H 15800 1650 30  0000 C CNN
-	1    15800 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R304
-U 1 1 55052CB2
-P 16000 1800
-F 0 "R304" V 16080 1800 40  0000 C CNN
-F 1 "5.6k" V 16007 1801 40  0000 C CNN
-F 2 "~" V 15930 1800 30  0000 C CNN
-F 3 "~" H 16000 1800 30  0000 C CNN
-	1    16000 1800
-	1    0    0    -1  
-$EndComp
 Text Label 6900 2650 0    60   ~ 0
 I2C2_SCL
 Text Label 9800 2650 2    60   ~ 0
@@ -130,49 +108,6 @@ Text Label 7300 2050 2    60   ~ 0
 SYS_5V
 Text Notes 12850 3250 0    100  ~ 0
 Cape EEPROM
-Text Notes 7300 9050 0    100  ~ 0
-DC Rails\nI2C addr 0x91
-$Comp
-L GND #PWR319
-U 1 1 5505E52D
-P 8650 8550
-F 0 "#PWR319" H 8650 8550 30  0001 C CNN
-F 1 "GND" H 8650 8480 30  0001 C CNN
-F 2 "" H 8650 8550 60  0000 C CNN
-F 3 "" H 8650 8550 60  0000 C CNN
-	1    8650 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R308
-U 1 1 5505E60F
-P 9100 7950
-F 0 "R308" V 9180 7950 40  0000 C CNN
-F 1 "5.6k" V 9107 7951 40  0000 C CNN
-F 2 "~" V 9030 7950 30  0000 C CNN
-F 3 "~" H 9100 7950 30  0000 C CNN
-	1    9100 7950
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R309
-U 1 1 5505E61E
-P 9350 7950
-F 0 "R309" V 9430 7950 40  0000 C CNN
-F 1 "5.6k" V 9357 7951 40  0000 C CNN
-F 2 "~" V 9280 7950 30  0000 C CNN
-F 3 "~" H 9350 7950 30  0000 C CNN
-	1    9350 7950
-	1    0    0    -1  
-$EndComp
-Text Label 9650 8300 0    60   ~ 0
-I2C2_SDA
-Text Label 9650 8200 0    60   ~ 0
-I2C2_SCL
-Text Label 6900 2550 0    60   ~ 0
-I2C1_SCL
-Text Label 9800 2550 2    60   ~ 0
-I2C1_SDA
 Text Label 2350 3250 2    60   ~ 0
 GPIO_10
 Text Label 4700 3250 2    60   ~ 0
@@ -189,15 +124,15 @@ Text HLabel 1900 3250 0    60   Output ~ 0
 EXT_TRIG_EN_3
 Text HLabel 4800 3250 2    60   Output ~ 0
 EXT_TRIG_EN_4
-Text HLabel 14950 5750 2    60   Output ~ 0
+Text HLabel 5600 4950 2    60   Output ~ 0
 EXT_PWR_EN_1
-Text HLabel 14950 5850 2    60   Output ~ 0
+Text HLabel 5600 5050 2    60   Output ~ 0
 EXT_PWR_EN_2
-Text HLabel 14950 5950 2    60   Output ~ 0
+Text HLabel 5600 5150 2    60   Output ~ 0
 EXT_PWR_EN_3
-Text HLabel 14950 6050 2    60   Output ~ 0
+Text HLabel 5600 5250 2    60   Output ~ 0
 EXT_PWR_EN_4
-Text Notes 15300 5600 2    60   ~ 0
+Text Notes 5950 4800 2    60   ~ 0
 TODO: connect these labels\nto BBB GPIO pins.
 $Comp
 L GND #PWR312
@@ -254,18 +189,6 @@ F 3 "" H 13150 2650 60  0000 C CNN
 	1    13150 2650
 	1    0    0    -1  
 $EndComp
-Text HLabel 6750 7700 0    60   Input ~ 0
-BB_VSENSE_5V+
-Text HLabel 6750 7800 0    60   Input ~ 0
-BB_VSENSE_5V-
-Text HLabel 6750 7900 0    60   Input ~ 0
-BB_VSENSE_12V+
-Text HLabel 6750 8000 0    60   Input ~ 0
-BB_VSENSE_12V-
-Text HLabel 6750 8100 0    60   Input ~ 0
-BB_VSENSE_19V+
-Text HLabel 6750 8200 0    60   Input ~ 0
-BB_VSENSE_19V-
 Text Notes 12300 9150 0    100  ~ 0
 TODO:\n* Pick GPIO for rocket-ready signal.\n* Buffer btw rocket-ready signal and BB,\n  ign. board, etc?\n* Umbilical connection state\n* Ignition fuse state
 Text Notes 2350 9050 0    100  ~ 0
@@ -315,22 +238,11 @@ Text HLabel 1800 7700 0    60   Input ~ 0
 BB_VSENSE_PV+
 Text HLabel 1800 7800 0    60   Input ~ 0
 BB_VSENSE_PV-
-$Comp
-L R R305
-U 1 1 55BDCE98
-P 8850 7750
-F 0 "R305" V 8930 7750 40  0000 C CNN
-F 1 "5.6k" V 8857 7751 40  0000 C CNN
-F 2 "~" V 8780 7750 30  0000 C CNN
-F 3 "~" H 8850 7750 30  0000 C CNN
-	1    8850 7750
-	1    0    0    -1  
-$EndComp
-Text HLabel 14950 6250 2    60   Output ~ 0
+Text HLabel 5600 5450 2    60   Output ~ 0
 5V_EN
-Text HLabel 14950 6350 2    60   Output ~ 0
+Text HLabel 5600 5550 2    60   Output ~ 0
 12V_EN
-Text HLabel 14950 6450 2    60   Output ~ 0
+Text HLabel 5600 5650 2    60   Output ~ 0
 19V_EN
 Text HLabel 1750 8300 0    60   Input ~ 0
 BB_TEMP_BATT+
@@ -347,49 +259,23 @@ F 3 "" H 5100 8000 60  0000 C CNN
 	1    5100 8000
 	1    0    0    -1  
 $EndComp
-$Comp
-L C C304
-U 1 1 55C1B7C8
-P 10300 8000
-F 0 "C304" H 10325 8100 50  0000 L CNN
-F 1 "0.1μ" H 10325 7900 50  0000 L CNN
-F 2 "" H 10338 7850 30  0000 C CNN
-F 3 "" H 10300 8000 60  0000 C CNN
-	1    10300 8000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2050 8300 1750 8300
 Wire Wire Line
 	1750 8400 2050 8400
 Wire Wire Line
-	3700 7800 3700 8500
+	3700 7800 3700 7900
 Wire Wire Line
-	9100 8100 9100 8200
-Connection ~ 9350 8200
+	3700 7900 3700 8000
 Wire Wire Line
-	9350 8200 9350 8100
-Connection ~ 8650 7500
-Connection ~ 8850 7500
+	3700 8000 3700 8400
 Wire Wire Line
-	8850 7600 8850 7500
-Connection ~ 8650 7900
-Connection ~ 8650 8400
-Wire Wire Line
-	8650 7350 8650 7700
-Wire Wire Line
-	8650 7700 8500 7700
-Wire Wire Line
-	8500 8400 10300 8400
-Wire Wire Line
-	8650 7800 8650 8550
+	3700 8400 3700 8500
 Connection ~ 3700 8400
 Wire Wire Line
-	3550 8400 5100 8400
+	3550 8400 3700 8400
 Wire Wire Line
-	8850 8000 8500 8000
-Wire Wire Line
-	8850 7900 8850 8000
+	3700 8400 5100 8400
 Wire Wire Line
 	2050 7800 1800 7800
 Wire Wire Line
@@ -398,18 +284,6 @@ Wire Wire Line
 	1800 8000 2050 8000
 Wire Wire Line
 	1800 7900 2050 7900
-Wire Wire Line
-	7000 8200 6750 8200
-Wire Wire Line
-	6750 8100 7000 8100
-Wire Wire Line
-	7000 8000 6750 8000
-Wire Wire Line
-	6750 7900 7000 7900
-Wire Wire Line
-	7000 7800 6750 7800
-Wire Wire Line
-	6750 7700 7000 7700
 Connection ~ 3700 7900
 Connection ~ 3700 8000
 Connection ~ 3900 7700
@@ -430,14 +304,24 @@ Wire Wire Line
 Wire Wire Line
 	3550 7900 3700 7900
 Wire Wire Line
-	3550 7700 5100 7700
+	3550 7700 3700 7700
+Wire Wire Line
+	3700 7700 3900 7700
+Wire Wire Line
+	3900 7700 4150 7700
+Wire Wire Line
+	4150 7700 5100 7700
 Connection ~ 4150 8300
 Wire Wire Line
 	3700 8000 3550 8000
 Wire Wire Line
-	3550 8200 4450 8200
+	3550 8200 3900 8200
 Wire Wire Line
-	3550 8300 4450 8300
+	3900 8200 4450 8200
+Wire Wire Line
+	3550 8300 4150 8300
+Wire Wire Line
+	4150 8300 4450 8300
 Wire Notes Line
 	12850 3050 12850 750 
 Wire Notes Line
@@ -451,28 +335,16 @@ Wire Wire Line
 Wire Wire Line
 	13150 1150 13150 1750
 Connection ~ 15600 1750
-Connection ~ 15800 1300
 Wire Wire Line
-	15800 1300 16000 1300
+	15600 1350 15600 1150
 Wire Wire Line
-	16000 1300 16000 1650
-Connection ~ 15800 1200
-Wire Wire Line
-	15600 1200 15800 1200
-Wire Wire Line
-	15600 1350 15600 1200
-Wire Wire Line
-	15800 1150 15800 1500
-Wire Wire Line
-	16000 2050 16000 1950
-Wire Wire Line
-	15400 2050 16000 2050
-Wire Wire Line
-	15800 1900 15800 1800
+	15400 2050 15800 2050
 Wire Wire Line
 	15400 1900 15800 1900
 Wire Wire Line
-	15600 1650 15600 2300
+	15600 1650 15600 1750
+Wire Wire Line
+	15600 1750 15600 2300
 Wire Wire Line
 	15400 1750 15600 1750
 Wire Wire Line
@@ -491,34 +363,13 @@ Connection ~ 13750 1900
 Wire Wire Line
 	13900 1900 13750 1900
 Wire Wire Line
-	13750 1750 13750 2650
+	13750 1750 13750 1900
+Wire Wire Line
+	13750 1900 13750 2650
 Wire Wire Line
 	13900 1750 13750 1750
-Connection ~ 9100 7500
 Wire Wire Line
-	9350 7500 9350 7800
-Wire Wire Line
-	9100 7500 9100 7800
-Connection ~ 9100 8200
-Wire Wire Line
-	7400 2650 6900 2650
-Wire Wire Line
-	9800 2650 9300 2650
-Wire Wire Line
-	8500 7800 8650 7800
-Wire Wire Line
-	8500 7900 8650 7900
-Wire Wire Line
-	8650 7500 10300 7500
-Connection ~ 9350 8300
-Wire Wire Line
-	7400 2550 6900 2550
-Wire Wire Line
-	9800 2550 9300 2550
-Wire Wire Line
-	8500 8200 9650 8200
-Wire Wire Line
-	8500 8300 9650 8300
+	9300 2650 10050 2650
 Wire Wire Line
 	4300 3250 4800 3250
 Wire Wire Line
@@ -530,15 +381,8 @@ Wire Wire Line
 Connection ~ 4150 7700
 Wire Wire Line
 	5100 8400 5100 8150
-Wire Wire Line
-	10300 8400 10300 8150
-Wire Wire Line
-	10300 7500 10300 7850
-Connection ~ 9350 7500
 Text Notes 700  10250 0    100  ~ 0
 Voltage, Current & Temp Sensors
-Text Notes 850  9900 0    100  ~ 0
-Signals ending in + indicate the high side of\nthe respective shunt resistor; signals ending\nin - indicate the low side.
 Wire Notes Line
 	700  6950 10700 6950
 Wire Notes Line
@@ -613,7 +457,9 @@ F 3 "" H 6900 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 3850 6900 4050
+	6900 3850 6900 3950
+Wire Wire Line
+	6900 3950 6900 4050
 Wire Wire Line
 	6900 3950 7400 3950
 Wire Wire Line
@@ -631,7 +477,9 @@ F 3 "" H 9800 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9800 3850 9800 4050
+	9800 3850 9800 3950
+Wire Wire Line
+	9800 3950 9800 4050
 Wire Wire Line
 	9800 3950 9300 3950
 Wire Wire Line
@@ -665,7 +513,9 @@ Wire Wire Line
 Wire Wire Line
 	7150 1750 7150 1000
 Wire Wire Line
-	7150 1000 9550 1000
+	7150 1000 8350 1000
+Wire Wire Line
+	8350 1000 9550 1000
 Wire Wire Line
 	8350 1000 8350 1100
 Wire Wire Line
@@ -691,17 +541,6 @@ F 3 "" H 2800 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LTC2991 U303
-U 1 1 560CE1B6
-P 7750 8050
-F 0 "U303" H 7750 7950 50  0000 C CNN
-F 1 "LTC2991" H 7750 8150 50  0000 C CNN
-F 2 "" H 7750 8050 50  0001 C CNN
-F 3 "" H 7750 8050 50  0001 C CNN
-	1    7750 8050
-	1    0    0    -1  
-$EndComp
-$Comp
 L 24C256 U301
 U 1 1 560CBFF6
 P 14650 1900
@@ -714,7 +553,7 @@ F 3 "" H 14650 1600 50  0001 C CNN
 $EndComp
 Text Notes 4900 9900 0    100  ~ 0
 NB: Consider placing ICs at opposite ends\nof the board so that their internal temp\nsensors provide a thermal gradient of the\nLTC3 internals.
-Text HLabel 14650 5750 0    60   Input ~ 0
+Text HLabel 5300 4950 0    60   Input ~ 0
 ROCKET_READY
 $Comp
 L +5V #PWR307
@@ -728,7 +567,9 @@ F 3 "" H 10050 1450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 1950 10050 1450
+	10050 1450 10050 1950
+Wire Wire Line
+	10050 1950 10050 2200
 $Comp
 L +5V #PWR306
 U 1 1 565538D1
@@ -742,6 +583,8 @@ F 3 "" H 6650 1450 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	6650 1450 6650 1950
+Wire Wire Line
+	6650 1950 6650 2200
 $Comp
 L +5V #PWR302
 U 1 1 56555506
@@ -778,12 +621,12 @@ $EndComp
 $Comp
 L +5V #PWR305
 U 1 1 565555E7
-P 15800 1150
-F 0 "#PWR305" H 15800 1000 50  0001 C CNN
-F 1 "+5V" H 15800 1290 50  0000 C CNN
-F 2 "" H 15800 1150 60  0000 C CNN
-F 3 "" H 15800 1150 60  0000 C CNN
-	1    15800 1150
+P 15600 1150
+F 0 "#PWR305" H 15600 1000 50  0001 C CNN
+F 1 "+5V" H 15600 1290 50  0000 C CNN
+F 2 "" H 15600 1150 60  0000 C CNN
+F 3 "" H 15600 1150 60  0000 C CNN
+	1    15600 1150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -797,17 +640,36 @@ F 3 "" H 3700 7550 60  0000 C CNN
 	1    3700 7550
 	1    0    0    -1  
 $EndComp
-$Comp
-L +5V #PWR316
-U 1 1 56555E03
-P 8650 7350
-F 0 "#PWR316" H 8650 7200 50  0001 C CNN
-F 1 "+5V" H 8650 7490 50  0000 C CNN
-F 2 "" H 8650 7350 60  0000 C CNN
-F 3 "" H 8650 7350 60  0000 C CNN
-	1    8650 7350
-	1    0    0    -1  
-$EndComp
 Text Notes 13700 1400 0    60   ~ 0
 I2C addr 0x54
+$Comp
+L R R?
+U 1 1 5658AA1A
+P 10050 2350
+F 0 "R?" V 10130 2350 40  0000 C CNN
+F 1 "5.6k" V 10057 2351 40  0000 C CNN
+F 2 "~" V 9980 2350 30  0000 C CNN
+F 3 "~" H 10050 2350 30  0000 C CNN
+	1    10050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5658AFE1
+P 6650 2350
+F 0 "R?" V 6730 2350 40  0000 C CNN
+F 1 "5.6k" V 6657 2351 40  0000 C CNN
+F 2 "~" V 6580 2350 30  0000 C CNN
+F 3 "~" H 6650 2350 30  0000 C CNN
+	1    6650 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 1950
+Wire Wire Line
+	6650 2500 6650 2650
+Wire Wire Line
+	6650 2650 7400 2650
+Connection ~ 10050 1950
+Wire Wire Line
+	10050 2650 10050 2500
 $EndSCHEMATC
