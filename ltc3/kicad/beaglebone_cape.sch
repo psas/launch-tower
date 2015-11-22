@@ -327,11 +327,11 @@ F 3 "~" H 8850 7750 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 14950 6250 2    60   Output ~ 0
-5V_INHIB
+5V_EN
 Text HLabel 14950 6350 2    60   Output ~ 0
-12V_INHIB
+12V_EN
 Text HLabel 14950 6450 2    60   Output ~ 0
-19V_INHIB
+19V_EN
 Text HLabel 1750 8300 0    60   Input ~ 0
 BB_TEMP_BATT+
 Text HLabel 1750 8400 0    60   Input ~ 0

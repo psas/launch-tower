@@ -150,7 +150,7 @@ F 3 "" H 6000 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 3300 0    60   Input ~ 0
-5V_INHIB
+5V_EN
 $Comp
 L GND #PWR610
 U 1 1 55945CE3
@@ -242,7 +242,7 @@ F 3 "" H 6000 6300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 6300 0    60   Input ~ 0
-12V_INHIB
+12V_EN
 $Comp
 L GND #PWR617
 U 1 1 55946855
@@ -311,7 +311,7 @@ F 3 "" H 6000 9300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 4450 9300 0    60   Input ~ 0
-19V_INHIB
+19V_EN
 Text Notes 11300 2400 0    100  ~ 0
 NB:\n1. V_sense should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins as possible.\n3. Ceramic (Cin) capacitors should be located within 0.5 in\n of the input pins.\n4. We may need heat sinks on the converters.  The datasheet\nindicates a range of 2W to 5W of power dissipation given our\nspecs.\n5. Pay attention to the datasheet's recommendations regarding\ncapacitor selection.
 $Comp
