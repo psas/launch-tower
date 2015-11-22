@@ -47,7 +47,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 8
+Sheet 4 7
 Title "LTC3 DC-DC Converters"
 Date "2015-11-20"
 Rev "A"

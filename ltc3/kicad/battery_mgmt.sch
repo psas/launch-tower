@@ -47,7 +47,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 2 8
+Sheet 2 7
 Title "Power In, Battery Management"
 Date "2015-11-20"
 Rev "A"

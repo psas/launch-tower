@@ -47,7 +47,7 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title "Launch Tower Computer 3 (LTC3)"
 Date "2015-11-20"
 Rev "A"
@@ -82,13 +82,13 @@ Entry Wire Line
 Entry Wire Line
 	9400 2350 9500 2250
 Entry Wire Line
-	12900 2000 13000 1900
+	9200 2600 9300 2500
 Entry Wire Line
-	12900 2100 13000 2000
+	9200 2700 9300 2600
 Entry Wire Line
-	12900 2200 13000 2100
+	9200 2800 9300 2700
 Entry Wire Line
-	12900 2300 13000 2200
+	9200 2900 9300 2800
 Text Label 11300 4150 0    40   ~ 0
 GPIO_EXT_PWR_1
 Text Label 11300 4250 0    40   ~ 0
@@ -113,13 +113,13 @@ Text Label 9500 2150 2    40   ~ 0
 GPIO_EXT_PWR_3
 Text Label 9500 2250 2    40   ~ 0
 GPIO_EXT_PWR_4
-Text Label 13000 1900 2    40   ~ 0
+Text Label 9300 2500 2    40   ~ 0
 GPIO_EXT_TRIG_1
-Text Label 13000 2000 2    40   ~ 0
+Text Label 9300 2600 2    40   ~ 0
 GPIO_EXT_TRIG_2
-Text Label 13000 2100 2    40   ~ 0
+Text Label 9300 2700 2    40   ~ 0
 GPIO_EXT_TRIG_3
-Text Label 13000 2200 2    40   ~ 0
+Text Label 9300 2800 2    40   ~ 0
 GPIO_EXT_TRIG_4
 $Sheet
 S 1400 1400 2500 1600
@@ -190,25 +190,18 @@ $EndSheet
 $Sheet
 S 9650 1400 2500 1600
 U 551C79BE
-F0 "External Device Power" 60
-F1 "external_power.sch" 50
+F0 "External Device Support" 60
+F1 "external_devices.sch" 50
 F2 "VCC_12V" I L 9650 1650 60 
 F3 "VCC_5V" I L 9650 1550 60 
 F4 "GPIO_EXT_PWR_1" I L 9650 1950 60 
 F5 "GPIO_EXT_PWR_2" I L 9650 2050 60 
 F6 "GPIO_EXT_PWR_4" I L 9650 2250 60 
 F7 "GPIO_EXT_PWR_3" I L 9650 2150 60 
-$EndSheet
-$Sheet
-S 13150 1400 2500 1600
-U 553268FD
-F0 "External Device Triggers" 50
-F1 "external_triggers.sch" 50
-F2 "GPIO_EXT_TRIG_1" I L 13150 1900 60 
-F3 "VCC_5V" I L 13150 1550 60 
-F4 "GPIO_EXT_TRIG_2" I L 13150 2000 60 
-F5 "GPIO_EXT_TRIG_3" I L 13150 2100 60 
-F6 "GPIO_EXT_TRIG_4" I L 13150 2200 60 
+F8 "GPIO_EXT_TRIG_1" I L 9650 2500 50 
+F9 "GPIO_EXT_TRIG_2" I L 9650 2600 50 
+F10 "GPIO_EXT_TRIG_3" I L 9650 2700 50 
+F11 "GPIO_EXT_TRIG_4" I L 9650 2800 50 
 $EndSheet
 Text Notes 12300 9200 0    100  ~ 0
 QUESTIONS:\n* Do we need a common ground pin\n  on each sub-sheet?\n\nTODO:\n* Fix "bus" wires (need labels).\n* Prettify this page!
@@ -280,13 +273,13 @@ Wire Wire Line
 Wire Wire Line
 	9650 2250 9500 2250
 Wire Wire Line
-	13150 1900 13000 1900
+	9650 2500 9300 2500
 Wire Wire Line
-	13150 2000 13000 2000
+	9650 2600 9300 2600
 Wire Wire Line
-	13150 2100 13000 2100
+	9650 2700 9300 2700
 Wire Wire Line
-	13150 2200 13000 2200
+	9650 2800 9300 2800
 Wire Wire Line
 	7650 1550 9650 1550
 Wire Wire Line
@@ -309,10 +302,6 @@ Wire Bus Line
 	11400 3650 11400 4350
 Wire Bus Line
 	9400 2050 9400 3650
-Wire Bus Line
-	12900 2000 12900 4700
-Wire Bus Line
-	12900 4700 11550 4700
 Wire Bus Line
 	11550 4700 11550 5100
 Wire Wire Line
@@ -393,15 +382,6 @@ Wire Wire Line
 Wire Wire Line
 	8350 1650 9650 1650
 Wire Wire Line
-	7800 1550 7800 1150
-Wire Wire Line
-	7800 1150 12900 1150
-Wire Wire Line
-	12900 1150 12900 1550
-Wire Wire Line
-	12900 1550 13150 1550
-Connection ~ 7800 1550
-Wire Wire Line
 	9150 5600 4900 5600
 Wire Wire Line
 	4900 1750 5150 1750
@@ -471,4 +451,6 @@ Wire Wire Line
 	3900 1550 5150 1550
 Wire Wire Line
 	4900 5600 4900 1750
+Wire Bus Line
+	9200 2600 9200 2900
 $EndSCHEMATC
