@@ -43,6 +43,7 @@ LIBS:SNx52x0
 LIBS:switches
 LIBS:CD74HC14
 LIBS:power_nodes
+LIBS:relay_1c
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -165,7 +166,7 @@ $EndSheet
 $Sheet
 S 5650 6750 2500 1600
 U 5598112B
-F0 "Rocket Interface" 60
+F0 "Rocket Umbilical & Ignition Control" 60
 F1 "rocket_interface.sch" 60
 F2 "ROCKET-READY" O R 8150 6900 60 
 $EndSheet
@@ -184,7 +185,7 @@ F8 "GPIO_EXT_TRIG_3" I L 9650 2700 50
 F9 "GPIO_EXT_TRIG_4" I L 9650 2800 50 
 $EndSheet
 Text Notes 12300 9200 0    100  ~ 0
-QUESTIONS:\n* Do we need a common ground pin\n  on each sub-sheet?\n\nTODO:\n* Fix "bus" wires (need labels).\n* Prettify this page!
+TODO:\n* Fix "bus" wires (need labels).\n* Prettify this page!
 Entry Wire Line
 	8000 1750 8100 1850
 Entry Wire Line

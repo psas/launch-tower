@@ -1,4 +1,4 @@
-update=Sat 21 Nov 2015 09:38:45 PM PST
+update=Sat 21 Nov 2015 10:10:44 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -103,3 +103,4 @@ LibName41=libs/symbols/SNx52x0
 LibName42=libs/symbols/switches
 LibName43=libs/symbols/CD74HC14
 LibName44=libs/symbols/power_nodes
+LibName45=libs/symbols/relay_1c
