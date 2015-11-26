@@ -51,7 +51,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 7
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2015-11-20"
+Date "2015-11-25"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -114,6 +114,33 @@ F0 "Power In & Battery Charge Management" 60
 F1 "battery_mgmt.sch" 60
 F2 "I2C_CLOCK" B R 3900 1500 50 
 F3 "I2C_DATA" B R 3900 1400 50 
+$EndSheet
+$Sheet
+S 5400 1050 2500 1600
+U 562DD32F
+F0 "Battery, Balance & Protection" 60
+F1 "battery_balance.sch" 60
+F2 "BB_TEMP_BATT+" O R 7900 2300 60 
+F3 "BB_TEMP_BATT-" O R 7900 2400 60 
+F4 "BB_VSENSE_BATT-" O R 7900 2000 60 
+F5 "BB_VSENSE_BATT+" O R 7900 2100 60 
+F6 "BQ_EEPROM" T R 7900 1400 60 
+F7 "BQ_XALERT" T R 7900 1300 60 
+F8 "BQ_SDATA" T R 7900 1500 60 
+F9 "BQ_SCLK" T R 7900 1600 60 
+$EndSheet
+Wire Bus Line
+	6850 8800 6850 9100
+$Sheet
+S 9400 1050 2500 1600
+U 550535FB
+F0 "DC-DC Converters" 60
+F1 "dcdc_converter.sch" 50
+F2 "5V_EN" I L 9400 1400 60 
+F3 "19V_EN" I L 9400 1600 60 
+F4 "12V_EN" I L 9400 1500 60 
+F5 "I2C_CLOCK" B R 11900 1500 60 
+F6 "I2C_DATA" B R 11900 1400 60 
 $EndSheet
 $Sheet
 S 7350 4150 2000 2500
@@ -220,31 +247,4 @@ Wire Wire Line
 	7200 4700 7350 4700
 Wire Bus Line
 	6650 9350 6650 9650
-$Sheet
-S 5400 1050 2500 1600
-U 562DD32F
-F0 "Battery, Balance & Protection" 60
-F1 "battery_balance.sch" 60
-F2 "BB_TEMP_BATT+" O R 7900 2300 60 
-F3 "BB_TEMP_BATT-" O R 7900 2400 60 
-F4 "BB_VSENSE_BATT-" O R 7900 2000 60 
-F5 "BB_VSENSE_BATT+" O R 7900 2100 60 
-F6 "BQ_EEPROM" T R 7900 1400 60 
-F7 "BQ_XALERT" T R 7900 1300 60 
-F8 "BQ_SDATA" T R 7900 1500 60 
-F9 "BQ_SCLK" T R 7900 1600 60 
-$EndSheet
-Wire Bus Line
-	6850 8800 6850 9100
-$Sheet
-S 9400 1050 2500 1600
-U 550535FB
-F0 "DC-DC Converters" 60
-F1 "dcdc_converter.sch" 50
-F2 "5V_EN" I L 9400 1400 60 
-F3 "19V_EN" I L 9400 1600 60 
-F4 "12V_EN" I L 9400 1500 60 
-F5 "I2C_CLOCK" B R 11900 1500 60 
-F6 "I2C_DATA" B R 11900 1400 60 
-$EndSheet
 $EndSCHEMATC
