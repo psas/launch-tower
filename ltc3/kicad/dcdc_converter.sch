@@ -411,8 +411,8 @@ F 4 "ceramic, X[57]R" V 2100 8400 50  0001 C CNN "Note"
 $EndComp
 Text Notes 12250 9200 0    100  ~ 0
 TODO:\n* Capacitor values are minimums.  Consider\n  increasing these.  Consult datasheet for more info.
-Text Notes 12200 8550 0    100  ~ 0
-R_sense = 1/Imax**2\n1 A = 1 ohm\n3 A = 0.1 ohm\n5 A = 0.04 ohms\n10 A = 0.01 ohms
+Text Notes 12200 4500 0    100  ~ 0
+Current Sense Resistors\nfull-scale voltage = 0.300 V\nR_sense_max = 0.300/Imax\n1 A = 300mΩ\n3 A = 100mΩ\n5 A = 60mΩ\n10 A = 30mΩ
 $Comp
 L PTN78020W U601
 U 1 1 560CCDB6
@@ -451,7 +451,7 @@ L R4T R601
 U 1 1 563558F1
 P 6250 1800
 F 0 "R601" V 6200 1650 50  0000 C CNN
-F 1 "R4T" V 6250 1800 50  0000 C CNN
+F 1 "0.1" V 6250 1800 50  0000 C CNN
 F 2 "" V 6180 1800 30  0000 C CNN
 F 3 "" H 6250 1800 30  0000 C CNN
 F 4 "1W 1%" V 6150 1900 60  0000 C CNN "Note"
@@ -463,7 +463,7 @@ L R4T R603
 U 1 1 563597A8
 P 6250 4800
 F 0 "R603" V 6200 4650 50  0000 C CNN
-F 1 "R4T" V 6250 4800 50  0000 C CNN
+F 1 "60m" V 6250 4800 50  0000 C CNN
 F 2 "" V 6180 4800 30  0000 C CNN
 F 3 "" H 6250 4800 30  0000 C CNN
 F 4 "1W 1%" V 6150 4900 60  0000 C CNN "Note"
@@ -475,7 +475,7 @@ L R4T R605
 U 1 1 56359B18
 P 6250 7800
 F 0 "R605" V 6200 7650 50  0000 C CNN
-F 1 "R4T" V 6250 7800 50  0000 C CNN
+F 1 "60m" V 6250 7800 50  0000 C CNN
 F 2 "" V 6180 7800 30  0000 C CNN
 F 3 "" H 6250 7800 30  0000 C CNN
 F 4 "1W 1%" V 6150 7900 60  0000 C CNN "Note"
@@ -839,7 +839,7 @@ I2C_CLOCK
 Text HLabel 14450 2600 2    50   BiDi ~ 0
 I2C_DATA
 Text Notes 14350 1950 0    50   Italic 0
-I2C addr 0x91
+I2C addr 0x92
 Wire Wire Line
 	12350 2200 7250 2200
 Wire Wire Line
