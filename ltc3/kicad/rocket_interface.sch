@@ -1,4 +1,20 @@
 EESchema Schematic File Version 2
+LIBS:BeagleBone_Black
+LIBS:LT8490
+LIBS:LTC299x
+LIBS:PMV45EN
+LIBS:PTN78020n
+LIBS:EEPROMs
+LIBS:TLP
+LIBS:bq77PL900
+LIBS:current_shunt
+LIBS:741g08
+LIBS:4n35
+LIBS:SNx52x0
+LIBS:switches
+LIBS:CD74HC14
+LIBS:power_nodes
+LIBS:relay_1c
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,28 +44,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:BeagleBone_Black
-LIBS:LT8490
-LIBS:LTC299x
-LIBS:PMV45EN
-LIBS:PTN78020n
-LIBS:EEPROMs
-LIBS:TLP
-LIBS:bq77PL900
-LIBS:current_shunt
-LIBS:741g08
-LIBS:4n35
-LIBS:SNx52x0
-LIBS:switches
-LIBS:CD74HC14
-LIBS:power_nodes
-LIBS:relay_1c
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 4 7
+Sheet 6 7
 Title "LTC3 Rocket Umbilical & Ignition Control"
 Date "2015-11-25"
 Rev "A"

@@ -1,4 +1,4 @@
-EESchema-DOCLIB  Version 2.0  Date: Sun 15 Mar 2015 12:28:52 PM PDT
+EESchema-DOCLIB  Version 2.0
 #
 $CMP LTC2990
 D LTC2990 quad I2C voltage, current, and temperature monitor

@@ -1,4 +1,20 @@
 EESchema Schematic File Version 2
+LIBS:BeagleBone_Black
+LIBS:LT8490
+LIBS:LTC299x
+LIBS:PMV45EN
+LIBS:PTN78020n
+LIBS:EEPROMs
+LIBS:TLP
+LIBS:bq77PL900
+LIBS:current_shunt
+LIBS:741g08
+LIBS:4n35
+LIBS:SNx52x0
+LIBS:switches
+LIBS:CD74HC14
+LIBS:power_nodes
+LIBS:relay_1c
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,28 +44,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:BeagleBone_Black
-LIBS:LT8490
-LIBS:LTC299x
-LIBS:PMV45EN
-LIBS:PTN78020n
-LIBS:EEPROMs
-LIBS:TLP
-LIBS:bq77PL900
-LIBS:current_shunt
-LIBS:741g08
-LIBS:4n35
-LIBS:SNx52x0
-LIBS:switches
-LIBS:CD74HC14
-LIBS:power_nodes
-LIBS:relay_1c
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 7
+Sheet 5 7
 Title "LTC3 BeagleBone Black Cape Interface"
 Date "2015-11-25"
 Rev "A"
@@ -96,15 +96,15 @@ F 3 "~" H 3700 8300 30  0000 C CNN
 	1    3700 8300
 	1    0    0    -1  
 $EndComp
-Text Label 9600 3400 0    60   ~ 0
+Text Label 9350 3400 2    50   ~ 0
 I2C2_SCL
-Text Label 12500 3400 2    60   ~ 0
+Text Label 12750 3400 0    50   ~ 0
 I2C2_SDA
-Text Label 10000 2600 2    60   ~ 0
+Text Label 10000 2600 2    50   ~ 0
 DC_3.3V
-Text Label 9700 2700 0    60   ~ 0
+Text Label 9700 2700 0    50   ~ 0
 VDD_5V
-Text Label 10000 2800 2    60   ~ 0
+Text Label 10000 2800 2    50   ~ 0
 SYS_5V
 Text Notes 950  10050 0    100  ~ 0
 Cape EEPROM
@@ -217,9 +217,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 8700 3900 8700
 Wire Wire Line
-	3700 8450 3700 8550
-Wire Wire Line
-	3700 8550 3700 9100
+	3700 8450 3700 9100
 Wire Wire Line
 	3500 8550 3700 8550
 Wire Wire Line
@@ -238,9 +236,7 @@ Connection ~ 1850 8700
 Wire Wire Line
 	2000 8700 1850 8700
 Wire Wire Line
-	1850 8550 1850 8700
-Wire Wire Line
-	1850 8700 1850 9450
+	1850 8550 1850 9450
 Wire Wire Line
 	2000 8550 1850 8550
 Wire Wire Line
@@ -317,9 +313,7 @@ F 3 "" H 9600 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 4600 9600 4700
-Wire Wire Line
-	9600 4700 9600 4800
+	9600 4600 9600 4800
 Wire Wire Line
 	9600 4700 10100 4700
 Wire Wire Line
@@ -337,9 +331,7 @@ F 3 "" H 12500 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12500 4600 12500 4700
-Wire Wire Line
-	12500 4700 12500 4800
+	12500 4600 12500 4800
 Wire Wire Line
 	12500 4700 12000 4700
 Wire Wire Line
@@ -349,9 +341,9 @@ Wire Wire Line
 	9350 2700 10100 2700
 Wire Wire Line
 	12750 2700 12000 2700
-Text Label 12150 2700 0    60   ~ 0
+Text Label 12150 2700 0    50   ~ 0
 VDD_5V
-Text Label 12150 2600 0    60   ~ 0
+Text Label 12150 2600 0    50   ~ 0
 DC_3.3V
 Wire Wire Line
 	12150 2600 12000 2600
@@ -373,9 +365,7 @@ Wire Wire Line
 Wire Wire Line
 	9850 2500 9850 1750
 Wire Wire Line
-	9850 1750 11050 1750
-Wire Wire Line
-	11050 1750 12250 1750
+	9850 1750 12250 1750
 Wire Wire Line
 	11050 1750 11050 1850
 Wire Wire Line
@@ -385,7 +375,7 @@ Wire Wire Line
 Connection ~ 11050 1750
 Wire Wire Line
 	10000 2800 10100 2800
-Text Label 12150 2800 0    60   ~ 0
+Text Label 12150 2800 0    50   ~ 0
 SYS_5V
 Wire Wire Line
 	12150 2800 12000 2800
@@ -414,9 +404,7 @@ F 3 "" H 12750 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12750 2200 12750 2700
-Wire Wire Line
-	12750 2700 12750 2950
+	12750 2200 12750 2950
 $Comp
 L +5V #PWR502
 U 1 1 565538D1
@@ -429,9 +417,7 @@ F 3 "" H 9350 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9350 2200 9350 2700
-Wire Wire Line
-	9350 2700 9350 2950
+	9350 2200 9350 2950
 $Comp
 L +5V #PWR508
 U 1 1 56555506
@@ -476,7 +462,7 @@ F 3 "" H 3700 7950 60  0000 C CNN
 	1    3700 7950
 	1    0    0    -1  
 $EndComp
-Text Notes 1800 8200 0    60   ~ 0
+Text Notes 1000 9800 0    50   Italic 0
 I2C addr 0x54
 $Comp
 L R R502
@@ -518,4 +504,12 @@ Wire Notes Line
 	2800 5800 2800 1400
 Text Notes 2800 6000 0    100  ~ 0
 BeagleBone Expansion Headers
+Text HLabel 9950 3300 0    50   BiDi ~ 0
+I2C_CLOCK
+Wire Wire Line
+	9950 3300 10100 3300
+Wire Wire Line
+	12000 3300 12150 3300
+Text HLabel 12150 3300 2    50   BiDi ~ 0
+I2C_DATA
 $EndSCHEMATC
