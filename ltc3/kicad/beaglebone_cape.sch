@@ -514,4 +514,8 @@ Wire Wire Line
 	12000 3300 12150 3300
 Text HLabel 12150 3300 2    50   BiDi ~ 0
 I2C_DATA
+Text HLabel 14850 7450 0    60   Input ~ 0
+BQ_XALERT
+Text HLabel 15150 8000 2    60   Output ~ 0
+BQ_EEPROM
 $EndSCHEMATC
