@@ -53,7 +53,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 7 7
 Title "LTC3 External Power & Triggers"
-Date "2015-11-25"
+Date "2015-12-15"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
