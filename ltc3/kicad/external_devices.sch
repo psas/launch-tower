@@ -44,6 +44,8 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:SUM110P08-11
+LIBS:NDS9407
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
