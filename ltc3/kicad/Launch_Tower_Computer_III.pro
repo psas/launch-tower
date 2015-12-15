@@ -1,4 +1,4 @@
-update=Thu 26 Nov 2015 07:24:26 PM PST
+update=Sat 12 Dec 2015 04:47:48 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -104,3 +104,5 @@ LibName42=opto
 LibName43=atmel
 LibName44=contrib
 LibName45=valves
+LibName46=libs/symbols/SUM110P08-11
+LibName47=libs/symbols/NDS9407
