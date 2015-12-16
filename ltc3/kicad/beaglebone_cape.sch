@@ -126,15 +126,15 @@ Text HLabel 4100 4000 0    60   Output ~ 0
 EXT_TRIG_EN_3
 Text HLabel 7000 4000 2    60   Output ~ 0
 EXT_TRIG_EN_4
-Text HLabel 15150 7150 2    60   Output ~ 0
+Text HLabel 8500 6500 2    60   Output ~ 0
 EXT_PWR_EN_1
-Text HLabel 15150 7250 2    60   Output ~ 0
+Text HLabel 8500 6600 2    60   Output ~ 0
 EXT_PWR_EN_2
-Text HLabel 15150 7350 2    60   Output ~ 0
+Text HLabel 8500 6700 2    60   Output ~ 0
 EXT_PWR_EN_3
-Text HLabel 15150 7450 2    60   Output ~ 0
+Text HLabel 8500 6800 2    60   Output ~ 0
 EXT_PWR_EN_4
-Text Notes 15500 7000 2    60   ~ 0
+Text Notes 8850 6350 2    60   ~ 0
 TODO: connect these labels\nto BBB GPIO pins.
 $Comp
 L GND #PWR514
@@ -193,11 +193,11 @@ F 3 "" H 1250 9450 60  0000 C CNN
 $EndComp
 Text Notes 12300 9150 0    100  ~ 0
 TODO:\n* Pick GPIO for rocket-ready signal.\n* Buffer btw rocket-ready signal and BB,\n  ign. board, etc?\n* Umbilical connection state\n* Ignition fuse state
-Text HLabel 15150 7650 2    60   Output ~ 0
+Text HLabel 8500 7000 2    60   Output ~ 0
 5V_EN
-Text HLabel 15150 7750 2    60   Output ~ 0
+Text HLabel 8500 7100 2    60   Output ~ 0
 12V_EN
-Text HLabel 15150 7850 2    60   Output ~ 0
+Text HLabel 8500 7200 2    60   Output ~ 0
 19V_EN
 Wire Notes Line
 	950  9850 950  7550
@@ -392,7 +392,7 @@ F 3 "" H 2750 8400 50  0001 C CNN
 	1    2750 8700
 	1    0    0    -1  
 $EndComp
-Text HLabel 14850 7150 0    60   Input ~ 0
+Text HLabel 8200 6500 0    60   Input ~ 0
 ROCKET_READY
 $Comp
 L +5V #PWR503
@@ -514,8 +514,10 @@ Wire Wire Line
 	12000 3300 12150 3300
 Text HLabel 12150 3300 2    50   BiDi ~ 0
 I2C_DATA
-Text HLabel 14850 7450 0    60   Input ~ 0
+Text HLabel 8200 6800 0    60   Input ~ 0
 BQ_XALERT
-Text HLabel 15150 8000 2    60   Output ~ 0
+Text HLabel 8500 7350 2    60   Output ~ 0
 BQ_EEPROM
+Text HLabel 8500 7500 2    60   Output ~ 0
+ROCKET_IGNITE
 $EndSCHEMATC
