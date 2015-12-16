@@ -1,11 +1,16 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP VBATT
-D Battery Positive Node
+$CMP +19V
 K POWER, PWR
 $ENDCMP
 #
-$CMP +19V
+$CMP GND_IGN
+D Ignition Ground
+K POWER, PWR
+$ENDCMP
+#
+$CMP VBATT
+D Battery Positive Node
 K POWER, PWR
 $ENDCMP
 #
