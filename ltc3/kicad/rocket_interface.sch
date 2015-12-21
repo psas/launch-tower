@@ -62,17 +62,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L GND #PWR626
-U 1 1 55CD6EA7
-P 3200 9450
-F 0 "#PWR626" H 3200 9200 50  0001 C CNN
-F 1 "GND" H 3200 9300 50  0000 C CNN
-F 2 "" H 3200 9450 60  0000 C CNN
-F 3 "" H 3200 9450 60  0000 C CNN
-	1    3200 9450
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R608
 U 1 1 55CD7872
 P 14150 3150
@@ -334,7 +323,7 @@ L R R602
 U 1 1 56490E40
 P 3550 2050
 F 0 "R602" V 3630 2050 50  0000 C CNN
-F 1 "60" V 3550 2050 50  0000 C CNN
+F 1 "120" V 3550 2050 50  0000 C CNN
 F 2 "" V 3480 2050 30  0000 C CNN
 F 3 "" H 3550 2050 30  0000 C CNN
 	1    3550 2050
@@ -429,7 +418,7 @@ F 3 "" H 15400 2600 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5800 10300 0    100  ~ 0
-TODO:\n* Select appropriate component values.\n* Finish rocket umbilical connector.\n  * Verify Enet jack "adapter" wiring.\n  * Add umbilical connect sense lines circuitry.
+TODO:\n* Select appropriate component values.\n* Finish rocket umbilical connector.\n  * Verify Enet jack "adapter" wiring.\n  * Add umbilical connect sense lines circuitry.\nQUESTIONS:\n  *Will 5v from schmidt fry BBB GPIO?
 Text HLabel 2050 6850 2    60   Output ~ 0
 ROCKET_READY
 Text Notes 11550 5050 0    100  ~ 0
@@ -485,12 +474,12 @@ $EndComp
 $Comp
 L CD74HC14 U602
 U 6 1 5651300D
-P 3800 9050
-F 0 "U602" H 3950 9150 40  0000 C CNN
-F 1 "CD74HC14" H 4000 8950 40  0000 C CNN
-F 2 "" H 3800 9050 60  0000 C CNN
-F 3 "" H 3800 9050 60  0000 C CNN
-	6    3800 9050
+P 7900 2150
+F 0 "U602" H 8050 2250 40  0000 C CNN
+F 1 "CD74HC14" H 8100 2050 40  0000 C CNN
+F 2 "" H 7900 2150 60  0000 C CNN
+F 3 "" H 7900 2150 60  0000 C CNN
+	6    7900 2150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -561,8 +550,6 @@ F 3 "" H 12050 1250 60  0000 C CNN
 $EndComp
 Text Notes 950  10200 0    60   ~ 0
 VCC for \nCD74HC14
-Text Notes 2950 10100 0    60   ~ 0
-Spare Schmitt Inverter
 $Comp
 L RELAY_1C K601
 U 1 1 5658C6AE
@@ -575,7 +562,7 @@ F 3 "" H 13200 1800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2250 1950 0    61   ~ 0
-+3.3V
++5V
 $Comp
 L +5V #PWR624
 U 1 1 566F1F5B
@@ -803,12 +790,6 @@ F 3 "" H 14800 7850 60  0000 C CNN
 $EndComp
 Connection ~ 12050 1500
 Wire Notes Line
-	2950 8650 2950 9950
-Wire Notes Line
-	4450 8650 4450 9550
-Wire Notes Line
-	2950 8650 4450 8650
-Wire Notes Line
 	1650 9950 1650 8650
 Wire Notes Line
 	2600 9950 1650 9950
@@ -925,10 +906,6 @@ Wire Wire Line
 Wire Wire Line
 	14000 3150 13750 3150
 Wire Wire Line
-	3200 9050 3350 9050
-Wire Wire Line
-	3200 9050 3200 9450
-Wire Wire Line
 	12450 1100 12450 1550
 Wire Wire Line
 	12450 1550 12600 1550
@@ -936,8 +913,6 @@ Wire Wire Line
 	12050 2250 15500 2250
 Wire Wire Line
 	3700 2050 4500 2050
-Wire Wire Line
-	6750 2150 7350 2150
 Wire Wire Line
 	7350 2150 7350 2800
 Wire Wire Line
@@ -996,10 +971,6 @@ Wire Notes Line
 	1350 9950 1350 8650
 Wire Notes Line
 	950  9950 1350 9950
-Wire Notes Line
-	2950 9950 4450 9950
-Wire Notes Line
-	4450 9950 4450 9500
 Connection ~ 14950 2650
 Wire Wire Line
 	14950 2650 14950 2900
@@ -1179,4 +1150,114 @@ Wire Wire Line
 Wire Wire Line
 	1850 6100 1850 6850
 Connection ~ 1850 6850
+Connection ~ 7350 2150
+Text Label 8450 1400 0    49   ~ 0
+BBB_GPIO
+Wire Wire Line
+	7450 2150 6750 2150
+$Comp
+L R R?
+U 1 1 5677AB91
+P 8450 1750
+F 0 "R?" V 8530 1750 50  0000 C CNN
+F 1 "10k" V 8450 1750 50  0000 C CNN
+F 2 "" V 8380 1750 30  0000 C CNN
+F 3 "" H 8450 1750 30  0000 C CNN
+	1    8450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 2150 8450 2150
+Wire Wire Line
+	14000 6750 13800 6750
+$Comp
+L LED D?
+U 1 1 5677CD95
+P 14500 6250
+F 0 "D?" H 14500 6350 50  0000 C CNN
+F 1 "LED" H 14500 6150 50  0000 C CNN
+F 2 "" H 14500 6250 60  0000 C CNN
+F 3 "" H 14500 6250 60  0000 C CNN
+	1    14500 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 5677D299
+P 14000 6500
+F 0 "R?" V 14080 6500 50  0000 C CNN
+F 1 "10k" V 14000 6500 50  0000 C CNN
+F 2 "" V 13930 6500 30  0000 C CNN
+F 3 "" H 14000 6500 30  0000 C CNN
+	1    14000 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 6750 14000 6650
+Wire Wire Line
+	14700 6250 15000 6250
+Wire Wire Line
+	15000 6250 15000 6400
+$Comp
+L GND #PWR?
+U 1 1 5677DA1A
+P 15000 6400
+F 0 "#PWR?" H 15000 6150 50  0001 C CNN
+F 1 "GND" H 15000 6250 50  0000 C CNN
+F 2 "" H 15000 6400 60  0000 C CNN
+F 3 "" H 15000 6400 60  0000 C CNN
+	1    15000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 6350 14000 6250
+Wire Wire Line
+	14000 6250 14300 6250
+Wire Wire Line
+	13800 1450 13800 1250
+Wire Wire Line
+	13800 1250 13900 1250
+$Comp
+L R R?
+U 1 1 5677DF1E
+P 14050 1250
+F 0 "R?" V 14130 1250 50  0000 C CNN
+F 1 "10k" V 14050 1250 50  0000 C CNN
+F 2 "" V 13980 1250 30  0000 C CNN
+F 3 "" H 14050 1250 30  0000 C CNN
+	1    14050 1250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14200 1250 14300 1250
+$Comp
+L LED D?
+U 1 1 5677E12C
+P 14500 1250
+F 0 "D?" H 14500 1350 50  0000 C CNN
+F 1 "LED" H 14500 1150 50  0000 C CNN
+F 2 "" H 14500 1250 60  0000 C CNN
+F 3 "" H 14500 1250 60  0000 C CNN
+	1    14500 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14700 1250 14800 1250
+Wire Wire Line
+	14800 1250 14800 1400
+$Comp
+L GND #PWR?
+U 1 1 5677EE4B
+P 14800 1400
+F 0 "#PWR?" H 14800 1150 50  0001 C CNN
+F 1 "GND" H 14800 1250 50  0000 C CNN
+F 2 "" H 14800 1400 60  0000 C CNN
+F 3 "" H 14800 1400 60  0000 C CNN
+	1    14800 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2150 8450 1900
+Wire Wire Line
+	8450 1600 8450 1400
 $EndSCHEMATC
