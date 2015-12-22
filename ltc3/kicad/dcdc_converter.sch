@@ -243,7 +243,7 @@ F 3 "" H 4450 6300 60  0000 C CNN
 	1    4450 6300
 	1    0    0    -1  
 $EndComp
-Text HLabel 2900 6300 0    60   Input ~ 0
+Text HLabel 2900 6000 0    60   Input ~ 0
 12V_EN
 $Comp
 L GND #PWR419
@@ -312,7 +312,7 @@ F 3 "" H 4450 9300 60  0000 C CNN
 	1    4450 9300
 	1    0    0    -1  
 $EndComp
-Text HLabel 2900 9300 0    60   Input ~ 0
+Text HLabel 2900 9000 0    60   Input ~ 0
 19V_EN
 Text Notes 12250 7650 0    100  ~ 0
 NB:\n1. V_sense should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins\n   as possible.\n3. Ceramic (Cin) capacitors should be located\n   within 0.5 in of the input pins.\n4. We may need heat sinks on the converters.\n   The datasheet indicates a range of 2W to 5W\n   of power dissipation given our specs.\n5. Pay attention to the datasheet's recommendations\n   regarding capacitor selection.
@@ -665,10 +665,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 5900 4450 5800
 Wire Wire Line
-	4150 5800 4150 6300
-Wire Wire Line
-	4150 6300 2900 6300
-Wire Wire Line
 	4750 5800 4750 6300
 Wire Wire Line
 	4750 6300 7000 6300
@@ -692,10 +688,6 @@ Wire Wire Line
 	4450 9300 4450 9200
 Wire Wire Line
 	4450 8900 4450 8800
-Wire Wire Line
-	4150 8800 4150 9300
-Wire Wire Line
-	4150 9300 2900 9300
 Wire Wire Line
 	4750 8800 4750 9300
 Wire Wire Line
@@ -880,4 +872,62 @@ Connection ~ 13600 3200
 Wire Wire Line
 	14500 1500 14500 1650
 Connection ~ 14500 2100
+Wire Wire Line
+	4150 8800 4150 9000
+Wire Wire Line
+	4150 9000 2900 9000
+Wire Wire Line
+	3250 9000 3250 9100
+Connection ~ 3250 9000
+$Comp
+L R R?
+U 1 1 56793A2F
+P 3250 9250
+F 0 "R?" V 3330 9250 50  0000 C CNN
+F 1 "R" V 3250 9250 50  0000 C CNN
+F 2 "" V 3180 9250 30  0000 C CNN
+F 3 "" H 3250 9250 30  0000 C CNN
+	1    3250 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56793A7C
+P 3250 9400
+F 0 "#PWR?" H 3250 9150 50  0001 C CNN
+F 1 "GND" H 3250 9250 50  0000 C CNN
+F 2 "" H 3250 9400 60  0000 C CNN
+F 3 "" H 3250 9400 60  0000 C CNN
+	1    3250 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5800 4150 6000
+Wire Wire Line
+	4150 6000 2900 6000
+Wire Wire Line
+	3200 6000 3200 6100
+Connection ~ 3200 6000
+$Comp
+L R R?
+U 1 1 56794D1E
+P 3200 6250
+F 0 "R?" V 3280 6250 50  0000 C CNN
+F 1 "R" V 3200 6250 50  0000 C CNN
+F 2 "" V 3130 6250 30  0000 C CNN
+F 3 "" H 3200 6250 30  0000 C CNN
+	1    3200 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56794D77
+P 3200 6400
+F 0 "#PWR?" H 3200 6150 50  0001 C CNN
+F 1 "GND" H 3200 6250 50  0000 C CNN
+F 2 "" H 3200 6400 60  0000 C CNN
+F 3 "" H 3200 6400 60  0000 C CNN
+	1    3200 6400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

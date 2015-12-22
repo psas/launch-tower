@@ -333,4 +333,14 @@ Wire Wire Line
 	15500 6850 15500 8450
 Wire Wire Line
 	15500 8450 9150 8450
+Wire Notes Line
+	800  6600 800  9450
+Wire Notes Line
+	800  9450 4500 9450
+Wire Notes Line
+	4500 9450 4500 6600
+Wire Notes Line
+	4500 6600 800  6600
+Text Notes 950  7250 0    99   ~ 20
+Notes:\n   LTC3 is a single board represented on \nmultiple sheets.
 $EndSCHEMATC

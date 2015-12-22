@@ -1141,7 +1141,7 @@ Wire Notes Line
 Wire Notes Line
 	9000 4850 9000 800 
 Wire Wire Line
-	3550 2750 3900 2750
+	3900 2750 3550 2750
 Wire Wire Line
 	7350 3700 7350 3000
 Wire Wire Line
