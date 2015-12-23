@@ -53,7 +53,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 7
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2015-12-15"
+Date "2015-12-23"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -319,7 +319,7 @@ Wire Wire Line
 	12800 2050 12650 2050
 Wire Bus Line
 	12550 2150 12550 4750
-Text Notes 850  10250 0    100  ~ 0
+Text Notes 800  9000 0    100  ~ 0
 TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!
 Wire Wire Line
 	9400 6800 9150 6800
@@ -333,14 +333,6 @@ Wire Wire Line
 	15500 6850 15500 8450
 Wire Wire Line
 	15500 8450 9150 8450
-Wire Notes Line
-	800  6600 800  9450
-Wire Notes Line
-	800  9450 4500 9450
-Wire Notes Line
-	4500 9450 4500 6600
-Wire Notes Line
-	4500 6600 800  6600
-Text Notes 950  7250 0    99   ~ 20
-Notes:\n   LTC3 is a single board represented on \nmultiple sheets.
+Text Notes 800  10200 0    100  ~ 0
+Notes:\n * LTC3 is a single board represented on \n   multiple sheets.
 $EndSCHEMATC
