@@ -1251,8 +1251,8 @@ F 3 "" H 14250 2200 60  0000 C CNN
 	1    14250 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 8050 1200 0    100  ~ 0
-QUESTIONS:\n* Use larger (C-size) sheet for this schematic?\n* Safe to use one current-sense resistor\n  for both the LT8490 and the LTC2991?
+Text Notes 7700 1350 0    100  ~ 20
+QUESTIONS:\n* Safe to use one current-sense resistor\n  for both the LT8490 and the LTC2991?\n    * Maybe.  Check datasheets for input impedances.\n      Add zero-ohm resistor btw. 2991 and shunt.\n* What happens w/out a battery connected?
 Text Label 6950 5150 1    60   ~ 0
 BG1
 Text Label 6800 5150 1    60   ~ 0
@@ -1436,7 +1436,7 @@ F 1 "D_Schottky" H 1600 1500 50  0000 C CNN
 F 2 "" H 1600 1600 60  0000 C CNN
 F 3 "" H 1600 1600 60  0000 C CNN
 	1    1600 1600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L D_Schottky D202
@@ -1447,7 +1447,7 @@ F 1 "D_Schottky" H 1600 1800 50  0000 C CNN
 F 2 "" H 1600 1900 60  0000 C CNN
 F 3 "" H 1600 1900 60  0000 C CNN
 	1    1600 1900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L GND #PWR202
