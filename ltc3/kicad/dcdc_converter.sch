@@ -48,13 +48,13 @@ LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:LM74610
 LIBS:Launch_Tower_Computer_III-cache
-EELAYER 25 0
+EELAYER 27 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 4 7
 Title "LTC3 DC-DC Converters"
-Date "2015-12-23"
+Date "9 jan 2016"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
