@@ -53,7 +53,7 @@ EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 3 7
-Title "Battery Balance"
+Title "Battery Protection & Charge Balancing"
 Date "9 jan 2016"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
@@ -1705,6 +1705,6 @@ F 3 "" H 2700 7400 30  0000 C CNN
 	1    2700 7400
 	1    0    0    -1  
 $EndComp
-Text Notes 5900 7850 0    60   ~ 0
-BATTERY PROTECTION &\nCHARGE BALANCING
+Text Notes 4750 7750 0    80   Italic 0
+LiIon Battery\nProtector
 $EndSCHEMATC

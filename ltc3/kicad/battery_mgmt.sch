@@ -2688,4 +2688,6 @@ Wire Wire Line
 Wire Wire Line
 	-1800 5500 -1050 5500
 Connection ~ -1050 5500
+Text Notes 6500 6450 0    80   Italic 0
+Battery Charge Controller\n       w/ MPPT
 $EndSCHEMATC
