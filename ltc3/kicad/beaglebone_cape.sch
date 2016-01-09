@@ -54,7 +54,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 5 7
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2015-12-15"
+Date "9 jan 2016"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -70,6 +70,8 @@ $Comp
 L C C502
 U 1 1 55052668
 P 1250 8700
+AR Path="/55052668" Ref="C502"  Part="1" 
+AR Path="/55051BA8/55052668" Ref="C502"  Part="1" 
 F 0 "C502" H 1250 8800 40  0000 L CNN
 F 1 "0.1μ" H 1256 8615 40  0000 L CNN
 F 2 "~" H 1288 8550 30  0000 C CNN
