@@ -14,4 +14,9 @@ D Battery Positive Node
 K POWER, PWR
 $ENDCMP
 #
+$CMP VIN
+D Input Power Positive Node
+K POWER, PWR
+$ENDCMP
+#
 #End Doc Library
