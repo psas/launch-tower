@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP LM74610-Q1
-D Zero IQ Reverse Polarity Protection Smart Diode Controller
-K Ideal Smart Diode Controller
-F http://www.ti.com/lit/ds/symlink/lm74610-q1.pdf
-$ENDCMP
-#
-#End Doc Library
