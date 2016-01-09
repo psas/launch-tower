@@ -54,7 +54,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 2 7
 Title "Power In, Battery Management"
-Date "9 jan 2016"
+Date "2016-01-09"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -1098,8 +1098,6 @@ F 3 "" H 7800 1850 60  0000 C CNN
 $EndComp
 Text Label 8400 2850 2    60   ~ 0
 BG1
-Text Label 5200 4250 3    60   ~ 0
-BOOST1
 Text Label 5200 3650 1    60   ~ 0
 SW1
 $Comp
@@ -1126,8 +1124,6 @@ F 3 "" H 6150 3900 60  0000 C CNN
 	1    6150 3900
 	0    -1   1    0   
 $EndComp
-Text Label 5850 4250 3    60   ~ 0
-BOOST2
 Text Label 5850 3650 1    60   ~ 0
 SW2
 $Comp
@@ -1319,10 +1315,6 @@ Text Label 9050 6050 0    60   ~ 0
 CSNOUT
 Text Label 9050 5750 0    60   ~ 0
 EXTV_CC
-Text Label 8000 5150 1    60   ~ 0
-BOOST2
-Text Label 6650 5150 1    60   ~ 0
-BOOST1
 Text Label 7250 5150 1    60   ~ 0
 CSN
 Text Label 7100 5150 1    60   ~ 0
@@ -2390,7 +2382,7 @@ Wire Wire Line
 	5850 3750 5850 3650
 Connection ~ 5850 4150
 Wire Wire Line
-	5850 4050 5850 4250
+	5850 4050 5850 4600
 Wire Wire Line
 	6150 4150 5850 4150
 Wire Wire Line
@@ -2401,7 +2393,7 @@ Wire Wire Line
 	5200 3750 5200 3650
 Connection ~ 5200 4150
 Wire Wire Line
-	5200 4050 5200 4250
+	5200 4050 5200 4700
 Wire Wire Line
 	4900 4150 5200 4150
 Connection ~ 7550 1600
@@ -2679,4 +2671,12 @@ Wire Wire Line
 Wire Wire Line
 	7850 9200 8400 9200
 Connection ~ 3450 1600
+Wire Wire Line
+	6650 5150 6650 4700
+Wire Wire Line
+	6650 4700 5200 4700
+Wire Wire Line
+	8000 5150 8000 4600
+Wire Wire Line
+	8000 4600 5850 4600
 $EndSCHEMATC
