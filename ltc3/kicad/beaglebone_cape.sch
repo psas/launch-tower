@@ -115,16 +115,14 @@ Text HLabel 2000 4850 0    60   Output ~ 0
 EXT_TRIG_EN_3
 Text HLabel 4900 4850 2    60   Output ~ 0
 EXT_TRIG_EN_4
-Text HLabel 5750 2800 2    60   Output ~ 0
+Text HLabel 4900 4750 2    60   Output ~ 0
 EXT_PWR_EN_1
-Text HLabel 5750 2900 2    60   Output ~ 0
+Text HLabel 4900 4650 2    60   Output ~ 0
 EXT_PWR_EN_2
-Text HLabel 5750 3000 2    60   Output ~ 0
+Text HLabel 4900 4550 2    60   Output ~ 0
 EXT_PWR_EN_3
-Text HLabel 5750 3100 2    60   Output ~ 0
+Text HLabel 4900 4450 2    60   Output ~ 0
 EXT_PWR_EN_4
-Text Notes 6100 2650 2    60   ~ 0
-TODO: connect these labels\nto BBB GPIO pins.
 $Comp
 L GND #PWR514
 U 1 1 557C941A
@@ -181,10 +179,10 @@ F 3 "" H 12650 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1100 10000 0    100  ~ 0
-TODO:\n* Pick GPIO for rocket-ready signal.\n* Buffer btw rocket-ready signal and BB,\n  ign. board, etc?\n* Umbilical connection state\n* Ignition fuse state
-Text HLabel 5750 3400 2    60   Output ~ 0
+TODO:\n* Buffer btw rocket-ready signal and BB,\n  ign. board, etc?\n* Umbilical connection state\n* Ignition fuse state
+Text HLabel 7300 4450 0    60   Output ~ 0
 12V_EN
-Text HLabel 5750 3500 2    60   Output ~ 0
+Text HLabel 7300 4650 0    60   Output ~ 0
 19V_EN
 Wire Notes Line
 	12300 4750 12300 2350
@@ -206,9 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	14900 3550 15500 3550
 Wire Wire Line
-	15100 3300 15100 3400
-Wire Wire Line
-	15100 3400 15100 3950
+	15100 3300 15100 3950
 Wire Wire Line
 	14900 3400 15100 3400
 Wire Wire Line
@@ -227,9 +223,7 @@ Connection ~ 13250 3550
 Wire Wire Line
 	13400 3550 13250 3550
 Wire Wire Line
-	13250 3400 13250 3550
-Wire Wire Line
-	13250 3550 13250 4300
+	13250 3400 13250 4300
 Wire Wire Line
 	13400 3400 13250 3400
 Wire Wire Line
@@ -306,9 +300,7 @@ F 3 "" H 7750 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 5450 7750 5550
-Wire Wire Line
-	7750 5550 7750 5650
+	7750 5450 7750 5650
 Wire Wire Line
 	7750 5550 8000 5550
 Wire Wire Line
@@ -326,9 +318,7 @@ F 3 "" H 10150 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 5450 10150 5550
-Wire Wire Line
-	10150 5550 10150 5650
+	10150 5450 10150 5650
 Wire Wire Line
 	10150 5550 9900 5550
 Wire Wire Line
@@ -354,9 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 3350 7750 2600
 Wire Wire Line
-	7750 2600 8950 2600
-Wire Wire Line
-	8950 2600 10150 2600
+	7750 2600 10150 2600
 Wire Wire Line
 	8950 2600 8950 2700
 Wire Wire Line
@@ -375,7 +363,7 @@ F 3 "" H 14150 3250 50  0001 C CNN
 	1    14150 3550
 	1    0    0    -1  
 $EndComp
-Text HLabel 5450 2800 0    60   Input ~ 0
+Text HLabel 2000 4550 0    60   Input ~ 0
 ROCKET_READY
 $Comp
 L +5V #PWR503
@@ -389,9 +377,7 @@ F 3 "" H 10400 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 3050 10400 3550
-Wire Wire Line
-	10400 3550 10400 3800
+	10400 3050 10400 3800
 $Comp
 L +5V #PWR502
 U 1 1 565538D1
@@ -404,9 +390,7 @@ F 3 "" H 7500 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3050 7500 3550
-Wire Wire Line
-	7500 3550 7500 3800
+	7500 3050 7500 3800
 $Comp
 L +5V #PWR508
 U 1 1 56555506
@@ -477,16 +461,12 @@ F 3 "~" H 7500 3950 30  0000 C CNN
 $EndComp
 Connection ~ 7500 3550
 Wire Wire Line
-	7500 4100 7500 4250
-Wire Wire Line
-	7500 4250 7500 6300
+	7500 4100 7500 6300
 Wire Wire Line
 	7500 4250 8000 4250
 Connection ~ 10400 3550
 Wire Wire Line
-	10400 4100 10400 4250
-Wire Wire Line
-	10400 4250 10400 5100
+	10400 4100 10400 5100
 Wire Notes Line
 	950  2350 11300 2350
 Wire Notes Line
@@ -503,11 +483,11 @@ Wire Wire Line
 	9900 4150 10650 4150
 Text HLabel 10650 4150 2    50   BiDi ~ 0
 I2C_DATA
-Text HLabel 5450 2950 0    60   Input ~ 0
+Text HLabel 1950 4450 0    60   Input ~ 0
 BQ_XALERT
-Text HLabel 5750 3650 2    60   Output ~ 0
+Text HLabel 4900 4350 2    60   Output ~ 0
 BQ_EEPROM
-Text HLabel 5750 3800 2    60   Output ~ 0
+Text HLabel 10850 6550 2    60   Output ~ 0
 ROCKET_IGNITE
 Wire Wire Line
 	15500 3550 15500 5200
@@ -525,4 +505,42 @@ Wire Wire Line
 Wire Wire Line
 	12300 5200 12300 6300
 Connection ~ 7500 4250
+Wire Wire Line
+	8000 4050 7600 4050
+Wire Wire Line
+	7600 4050 7600 6550
+Wire Wire Line
+	7600 6550 10850 6550
+Wire Wire Line
+	4400 4550 4900 4550
+Wire Wire Line
+	4400 4350 4900 4350
+Wire Wire Line
+	4400 4650 4900 4650
+Wire Wire Line
+	4400 4750 4900 4750
+Wire Wire Line
+	4400 4450 4900 4450
+Text Label 4450 4350 0    60   ~ 0
+GPIO2_23
+Text Label 4450 4450 0    60   ~ 0
+GPIO2_22
+Text Label 4450 4550 0    60   ~ 0
+GPIO1_0
+Text Label 4450 4650 0    60   ~ 0
+GPIO1_4
+Text Label 4450 4750 0    60   ~ 0
+GPIO1_30
+Text Label 10750 6550 2    60   ~ 0
+GPIO1_16
+Wire Wire Line
+	2500 4550 2000 4550
+Wire Wire Line
+	2500 4450 1950 4450
+Wire Wire Line
+	7300 4450 8000 4450
+Wire Wire Line
+	8000 4650 7300 4650
+Text Notes 1050 8900 0    100  ~ 0
+NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
 $EndSCHEMATC
