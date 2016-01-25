@@ -1307,4 +1307,27 @@ Text Notes 13600 4050 0    60   ~ 0
 RRR CONNECTION\nHERE
 Text Notes 8000 1250 0    60   ~ 0
 RRR CONNECTION\nHERE
+Text Notes 6650 6000 0    100  ~ 0
+V+
+Text Notes 7100 6600 0    100  ~ 0
+GND
+Text Notes 6200 6300 2    100  ~ 0
+TX
+Text Notes 6200 6600 2    100  ~ 0
+Rx
+$Comp
+L LEMO5 K?
+U 1 1 56A427F1
+P 6650 6450
+F 0 "K?" H 6850 6750 70  0000 C CNN
+F 1 "LEMO5" H 6950 6150 70  0000 C CNN
+F 2 "" H 6650 6450 60  0000 C CNN
+F 3 "" H 6650 6450 60  0000 C CNN
+	1    6650 6450
+	-1   0    0    1   
+$EndComp
+Text Notes 7100 6300 0    100  ~ 0
+RR
+Text Notes 6000 7100 0    100  ~ 0
+Reference from LTC2
 $EndSCHEMATC
