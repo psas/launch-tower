@@ -320,8 +320,8 @@ Wire Wire Line
 	12800 2050 12650 2050
 Wire Bus Line
 	12550 2150 12550 4750
-Text Notes 800  9000 0    100  ~ 0
-TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!
+Text Notes 800  9000 0    100  ~ 20
+TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!\n* Create style legend.
 Wire Wire Line
 	9400 6800 9150 6800
 Wire Wire Line
