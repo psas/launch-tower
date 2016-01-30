@@ -23,6 +23,29 @@ DC-DC Converters
    E.g., Schmitt trigger, transistor, etc.
 
 
+Rocket Interface / Ignition Schematic
+=====================================
+1. How many conductor pairs in rocket Ethernet connection?
+2. Replace individual, somewhat confusing LEDs with A) a "bar chart"
+   sequence of LEDs that indicate increasing levels of un-safe-ness as
+   each stage in the ignition circuit becomes active, and B) separate
+   signal-status LEDs?
+   
+   Bar chart, e.g., how close to the away box connector is the
+   ignition battery power?
+   a. ignition battery present
+   b. ignition power to ROCKET_IGNITE relay
+   d. ignition power to arming switch (ROCKET_IGNITE active)
+   e. ignition power to shorting bar
+   f. ignition power to away box connector (BAKERCON 1!! RUN AWAY!!)
+
+   LEDs indicating signal status:
+   a. ROCKET_READY active
+   b. shore power (19 VDC rail) active
+   c. ROCKET_IGNITE active
+   d. rocket umbilical connected
+
+
 External Devices
 ================
 1. Replace PolyFuse/PPTC devices with resettable breakers?  E.g.,

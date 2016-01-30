@@ -54,7 +54,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 7
 Title "Battery Protection & Charge Balancing"
-Date "2016-01-16"
+Date "2016-01-30"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

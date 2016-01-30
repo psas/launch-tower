@@ -54,7 +54,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 6 7
 Title "LTC3 Rocket Umbilical & Ignition Control"
-Date "2016-01-16"
+Date "2016-01-30"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -430,8 +430,8 @@ F 3 "" H 15400 2600 50  0000 L CNN
 $EndComp
 Text Notes 5800 10300 0    80   ~ 16
 TODO:\n* Select appropriate component values.\n* Finish rocket umbilical connector.\n  * Verify Enet jack "adapter" wiring.\n  * Add umbilical connect sense lines circuitry.\n* Label various LEDs.\nQUESTIONS:\n  *Will 5v from schmidt fry BBB GPIO?
-Text HLabel 2050 6850 2    60   Output ~ 0
-ROCKET_READY
+Text HLabel 8200 1400 0    60   Output ~ 0
+/ROCKET_READY
 Text Notes 11550 5050 0    100  ~ 0
 Ignition Battery Switch
 $Comp
@@ -606,7 +606,7 @@ F 0 "P602" H 15500 7150 50  0000 C CNN
 F 1 "CONN_01x02" V 15700 7000 50  0000 C CNN
 F 2 "" H 15600 7000 60  0000 C CNN
 F 3 "" H 15600 7000 60  0000 C CNN
-F 4 "To Rocket Igniter" V 15800 7000 60  0000 C CNN "Note"
+F 4 "To Away Box" V 15800 7000 60  0000 C CNN "Note"
 	1    15600 7000
 	1    0    0    -1  
 $EndComp
@@ -676,7 +676,7 @@ F 3 "" H 12550 7100 60  0000 C CNN
 	1    12550 6950
 	1    0    0    -1  
 $EndComp
-Text Notes 10500 7750 0    60   Italic 0
+Text Notes 10500 7800 0    60   Italic 0
 3.3V
 $Comp
 L GND #PWR623
@@ -741,8 +741,6 @@ F 3 "" H 15250 1350 60  0000 C CNN
 	1    15250 1350
 	1    0    0    -1  
 $EndComp
-Text Label 11800 5400 0    60   ~ 0
-IGNITION
 $Comp
 L GND_IGN #PWR620
 U 1 1 5672ACF5
@@ -836,8 +834,6 @@ F 3 "" H 4900 6050 60  0000 C CNN
 $EndComp
 Text Notes 3550 5600 0    60   ~ 0
 Rocket-to-BeagleBone Ethernet
-Text Label 8450 1400 0    49   ~ 0
-BBB_GPIO
 $Comp
 L R R603
 U 1 1 5677AB91
@@ -907,12 +903,12 @@ $EndComp
 $Comp
 L GND #PWR603
 U 1 1 5677EE4B
-P 14800 1400
-F 0 "#PWR603" H 14800 1150 50  0001 C CNN
-F 1 "GND" H 14800 1250 50  0000 C CNN
-F 2 "" H 14800 1400 60  0000 C CNN
-F 3 "" H 14800 1400 60  0000 C CNN
-	1    14800 1400
+P 14850 1400
+F 0 "#PWR603" H 14850 1150 50  0001 C CNN
+F 1 "GND" H 14850 1250 50  0000 C CNN
+F 2 "" H 14850 1400 60  0000 C CNN
+F 3 "" H 14850 1400 60  0000 C CNN
+	1    14850 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -941,9 +937,9 @@ Wire Wire Line
 Wire Wire Line
 	8450 2150 8450 1900
 Wire Wire Line
-	14800 1250 14800 1400
+	14850 1250 14850 1400
 Wire Wire Line
-	14700 1250 14800 1250
+	14700 1250 14850 1250
 Wire Wire Line
 	14200 1250 14300 1250
 Wire Wire Line
@@ -971,7 +967,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 2150 7450 2150
 Connection ~ 7350 2150
-Connection ~ 1850 6850
 Wire Wire Line
 	1850 6100 1850 6850
 Wire Wire Line
@@ -1009,9 +1004,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 7450 1550 7450
 Wire Wire Line
-	1550 6850 1850 6850
-Wire Wire Line
-	1850 6850 2050 6850
+	1850 6850 1550 6850
 Wire Wire Line
 	1700 6750 1550 6750
 Wire Wire Line
@@ -1351,10 +1344,8 @@ F 3 "" H 13950 3500 30  0000 C CNN
 $EndComp
 Wire Wire Line
 	13950 3900 13950 3650
-Text Notes 13200 4100 0    60   ~ 12
-TODO: take Rocket-Ready\nrelay signal from here
-Text Notes 8000 1250 0    60   ~ 12
-TODO: Move ROCKET_READY\n(output, to BBB) signal here
+Text Notes 12700 3950 0    60   ~ 12
+TODO: take Rocket-Ready\nrelay signal from here.\nWHAT THIS MEAN???!?1
 Text Notes 6650 6000 0    100  ~ 0
 V+
 Text Notes 7100 6600 0    100  ~ 0
@@ -1380,4 +1371,18 @@ Text Notes 6000 7100 0    100  ~ 0
 Reference from LTC2
 Wire Wire Line
 	13950 3350 13950 3150
+Wire Wire Line
+	8450 1400 8200 1400
+Text Notes 1050 1250 0    80   ~ 0
+Ignition battery pack disconnected until\nflight computer has asserted ROCKET_READY\nand 19 VDC rail (shore power) has been shut off.
+Text Notes 14750 3850 0    60   Italic 0
+LED: ROCKET_READY\nactive
+Text Notes 14100 6200 0    60   Italic 0
+LED: ROCKET_READY active and\nROCKET_IGNITE inactive
+Text Notes 13450 1100 0    60   Italic 0
+LED: ign battery present and\nROCKET_READY inactive
+Text Notes 13450 750  0    60   ~ 12
+TODO: LED only useful if ROCKET_READY\nnot asserted. Connect directly to ign batt+?
+Text Notes 14500 6500 0    60   ~ 12
+TODO: LED connected\nappropriately?
 $EndSCHEMATC
