@@ -543,4 +543,8 @@ Wire Wire Line
 	8000 4650 7300 4650
 Text Notes 1050 8900 0    100  ~ 0
 NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
+Text Notes 10650 4100 0    60   ~ 12
+TODO: pull-ups on I2C1 bus?
+Text Notes 10650 4450 0    60   ~ 12
+TODO: explanatory note on use\nof various I2C busses
 $EndSCHEMATC
