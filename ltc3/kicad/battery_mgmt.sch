@@ -54,7 +54,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 2 7
 Title "Power In, Battery Management"
-Date "2016-01-16"
+Date "2016-01-30"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -650,28 +650,6 @@ F 1 "4.7µ" H 9725 7700 50  0000 L CNN
 F 2 "" H 9738 7650 30  0000 C CNN
 F 3 "" H 9700 7800 60  0000 C CNN
 	1    9700 7800
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R220
-U 1 1 56238AB6
-P 10100 7550
-F 0 "R220" V 10180 7550 50  0000 C CNN
-F 1 "11.5k" V 10000 7550 50  0000 C CNN
-F 2 "" V 10030 7550 30  0000 C CNN
-F 3 "" H 10100 7550 30  0000 C CNN
-	1    10100 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R224
-U 1 1 56238AB7
-P 10100 8050
-F 0 "R224" V 10180 8050 50  0000 C CNN
-F 1 "10k" V 10100 8050 50  0000 C CNN
-F 2 "" V 10030 8050 30  0000 C CNN
-F 3 "" H 10100 8050 30  0000 C CNN
-	1    10100 8050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1387,13 +1365,13 @@ F 3 "" H 1250 8600 60  0000 C CNN
 	1    1250 8600
 	1    0    0    -1  
 $EndComp
-Text Notes 10050 6600 0    60   ~ 0
+Text Notes 10050 6600 0    60   Italic 0
 RDAC01
-Text Notes 11600 6600 0    60   ~ 0
+Text Notes 11600 6600 0    60   Italic 0
 RDAC02
-Text Notes 12100 6400 0    60   ~ 0
+Text Notes 12100 6400 0    60   Italic 0
 RFBOUT1
-Text Notes 12100 7150 0    60   ~ 0
+Text Notes 12100 7150 0    60   Italic 0
 RFBOUT2
 Text Notes 2250 7800 1    50   Italic 0
 RFBIN1
@@ -1409,15 +1387,15 @@ Text Notes 3500 7950 1    60   Italic 0
 202kHz
 Text Notes 1950 8300 1    60   Italic 0
 Input Feedback (p.14)
-Text Notes 10750 6300 0    60   ~ 12
+Text Notes 10750 6300 0    60   Italic 0
 Output Feedback (p. 17)
-Text Notes 6250 850  0    60   ~ 12
-Current Sense (p. 20)
-Text Notes 12800 850  0    60   ~ 12
-Current Sense (p. 20)
+Text Notes 6250 850  0    60   Italic 0
+Input Current Sense (p. 20)
+Text Notes 12700 650  0    60   Italic 0
+Output Current Sense (p. 20)
 Text Notes 1100 8250 1    60   Italic 0
 Shutdown (p. 27)
-Text Notes 10550 8460 2    60   ~ 12
+Text Notes 10650 6950 2    60   Italic 0
 Temp Sense (p. 21)
 $Comp
 L GND #PWR202
@@ -2426,7 +2404,7 @@ Connection ~ 10700 8300
 Wire Wire Line
 	10100 8300 10700 8300
 Wire Wire Line
-	10100 8200 10100 8300
+	10100 8100 10100 8300
 Wire Wire Line
 	10700 8200 10700 8400
 Wire Wire Line
@@ -2551,7 +2529,7 @@ Wire Wire Line
 	9050 6950 10700 6950
 Connection ~ 10100 7100
 Wire Wire Line
-	10100 7700 10100 7900
+	10100 7700 10100 8000
 Wire Wire Line
 	10100 7100 10100 7400
 Wire Wire Line
@@ -2733,4 +2711,36 @@ Wire Wire Line
 Wire Wire Line
 	10900 5750 10900 1600
 Connection ~ 10900 1600
+Text Notes 9200 7300 0    60   Italic 0
+3.3V
+$Comp
+L CONN_01X02 P?
+U 1 1 56AD4AF7
+P 10300 8050
+F 0 "P?" H 10300 8200 50  0000 C CNN
+F 1 "S2BPHKS" V 10400 8050 50  0000 C CNN
+F 2 "" H 10300 8050 60  0000 C CNN
+F 3 "" H 10300 8050 60  0000 C CNN
+	1    10300 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R220
+U 1 1 56238AB6
+P 10100 7550
+F 0 "R220" V 10180 7550 50  0000 C CNN
+F 1 "11.5k" V 10000 7550 50  0000 C CNN
+F 2 "" V 10030 7550 30  0000 C CNN
+F 3 "" H 10100 7550 30  0000 C CNN
+	1    10100 7550
+	1    0    0    -1  
+$EndComp
+Text Notes 10500 8250 1    50   Italic 0
+thermistor
+Text Notes 8050 9650 0    60   ~ 12
+TODO: place 4-chan buffer between STATUS\nand FAULT signals, and LEDs and BB GPIOs.
+Text Notes 9850 8400 0    60   ~ 12
+TODO: no-place 10k resistor in\nparallel w/ thermistor connector
+Text Notes 8700 9250 0    60   ~ 12
+TODO: label pull-up\nresistors as no-place?
 $EndSCHEMATC

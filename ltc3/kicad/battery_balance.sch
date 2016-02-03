@@ -54,7 +54,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 7
 Title "Battery Protection & Charge Balancing"
-Date "2016-01-16"
+Date "2016-01-30"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -225,38 +225,38 @@ $EndComp
 $Comp
 L C C313
 U 1 1 5650649F
-P 1700 6700
+P 1550 6700
 AR Path="/5650649F" Ref="C313"  Part="1" 
 AR Path="/562DD32F/5650649F" Ref="C313"  Part="1" 
-F 0 "C313" H 1725 6800 50  0000 L CNN
-F 1 "2.2μ" H 1725 6600 50  0000 L CNN
-F 2 "" H 1738 6550 30  0000 C CNN
-F 3 "" H 1700 6700 60  0000 C CNN
-	1    1700 6700
+F 0 "C313" H 1575 6800 50  0000 L CNN
+F 1 "2.2μ" H 1575 6600 50  0000 L CNN
+F 2 "" H 1588 6550 30  0000 C CNN
+F 3 "" H 1550 6700 60  0000 C CNN
+	1    1550 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C314
 U 1 1 5650651A
-P 2100 6700
+P 1950 6700
 AR Path="/5650651A" Ref="C314"  Part="1" 
 AR Path="/562DD32F/5650651A" Ref="C314"  Part="1" 
-F 0 "C314" H 2125 6800 50  0000 L CNN
-F 1 "2.2μ" H 2125 6600 50  0000 L CNN
-F 2 "" H 2138 6550 30  0000 C CNN
-F 3 "" H 2100 6700 60  0000 C CNN
-	1    2100 6700
+F 0 "C314" H 1975 6800 50  0000 L CNN
+F 1 "2.2μ" H 1975 6600 50  0000 L CNN
+F 2 "" H 1988 6550 30  0000 C CNN
+F 3 "" H 1950 6700 60  0000 C CNN
+	1    1950 6700
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR309
 U 1 1 5650665C
-P 1700 7150
-F 0 "#PWR309" H 1700 6900 50  0001 C CNN
-F 1 "GND" H 1700 7000 50  0000 C CNN
-F 2 "" H 1700 7150 60  0000 C CNN
-F 3 "" H 1700 7150 60  0000 C CNN
-	1    1700 7150
+P 1550 7150
+F 0 "#PWR309" H 1550 6900 50  0001 C CNN
+F 1 "GND" H 1550 7000 50  0000 C CNN
+F 2 "" H 1550 7150 60  0000 C CNN
+F 3 "" H 1550 7150 60  0000 C CNN
+	1    1550 7150
 	1    0    0    -1  
 $EndComp
 Text HLabel 3800 7250 0    50   3State ~ 0
@@ -273,7 +273,7 @@ Text Notes 3700 6400 2    50   Italic 0
 +3.3VDC
 Text Label 4850 8650 2    50   ~ 0
 GND
-Text Notes 650  10300 0    100  ~ 0
+Text Notes 650  10300 0    100  ~ 20
 QUESTIONS:\n* Leave XRST (open drain) unconnected (p.35)?\n* Are caps on VOUT and IOUT necessary if both\noutputs are disabled (pp.30,33)?
 $Comp
 L R R309
@@ -654,14 +654,14 @@ $EndComp
 $Comp
 L C C316
 U 1 1 565F91E7
-P 2400 7400
+P 2100 7400
 AR Path="/565F91E7" Ref="C316"  Part="1" 
 AR Path="/562DD32F/565F91E7" Ref="C316"  Part="1" 
-F 0 "C316" H 2425 7500 50  0000 L CNN
-F 1 "10n" H 2425 7300 50  0000 L CNN
-F 2 "" H 2438 7250 30  0000 C CNN
-F 3 "" H 2400 7400 60  0000 C CNN
-	1    2400 7400
+F 0 "C316" H 2125 7500 50  0000 L CNN
+F 1 "10n" H 2125 7300 50  0000 L CNN
+F 2 "" H 2138 7250 30  0000 C CNN
+F 3 "" H 2100 7400 60  0000 C CNN
+	1    2100 7400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -689,12 +689,12 @@ $EndComp
 $Comp
 L GND #PWR311
 U 1 1 565FA5A2
-P 2400 7850
-F 0 "#PWR311" H 2400 7600 50  0001 C CNN
-F 1 "GND" H 2400 7700 50  0000 C CNN
-F 2 "" H 2400 7850 60  0000 C CNN
-F 3 "" H 2400 7850 60  0000 C CNN
-	1    2400 7850
+P 2100 7850
+F 0 "#PWR311" H 2100 7600 50  0001 C CNN
+F 1 "GND" H 2100 7700 50  0000 C CNN
+F 2 "" H 2100 7850 60  0000 C CNN
+F 3 "" H 2100 7850 60  0000 C CNN
+	1    2100 7850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1101,11 +1101,11 @@ Wire Wire Line
 	2400 5850 2950 5850
 Connection ~ 2400 5850
 Wire Wire Line
-	2100 6850 2100 7000
+	1950 6850 1950 7000
 Wire Wire Line
-	1700 6850 1700 7150
+	1550 6850 1550 7150
 Wire Wire Line
-	2100 7000 1700 7000
+	1950 7000 1550 7000
 Wire Wire Line
 	4850 8650 5150 8650
 Wire Wire Line
@@ -1336,18 +1336,18 @@ Wire Wire Line
 Wire Wire Line
 	3900 6300 3900 7450
 Wire Wire Line
-	1700 6300 4050 6300
+	1550 6300 4050 6300
 Wire Wire Line
-	1700 6550 1700 6300
+	1550 6550 1550 6300
 Connection ~ 3900 6300
 Wire Wire Line
-	4050 6400 2100 6400
+	4050 6400 1950 6400
 Wire Wire Line
-	2100 6400 2100 6550
+	1950 6400 1950 6550
 Wire Wire Line
 	3900 7450 4050 7450
 Connection ~ 3900 6800
-Connection ~ 1700 7000
+Connection ~ 1550 7000
 Wire Wire Line
 	3800 7550 4050 7550
 Wire Wire Line
@@ -1376,18 +1376,18 @@ Wire Wire Line
 Wire Wire Line
 	3800 7350 4050 7350
 Wire Wire Line
-	2400 7750 2950 7750
+	2100 7750 2950 7750
+Connection ~ 2100 7750
+Wire Wire Line
+	2400 7450 2400 7750
 Connection ~ 2400 7750
 Wire Wire Line
-	2700 7550 2700 7750
-Connection ~ 2700 7750
+	2100 7050 3100 7050
 Wire Wire Line
-	2400 7050 3100 7050
+	2100 7050 2100 7250
 Wire Wire Line
-	2400 7050 2400 7250
-Wire Wire Line
-	2700 7050 2700 7250
-Connection ~ 2700 7050
+	2400 7050 2400 7350
+Connection ~ 2400 7050
 Wire Wire Line
 	2950 6500 4050 6500
 Wire Wire Line
@@ -1395,7 +1395,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 6650 2950 6500
 Wire Wire Line
-	2400 7550 2400 7850
+	2100 7550 2100 7850
 Wire Wire Line
 	2950 7750 2950 7550
 Connection ~ 2950 7050
@@ -1694,17 +1694,29 @@ Wire Notes Line
 	14200 7150 14200 3300
 Text Notes 14200 7350 0    100  ~ 0
 Main Battery (off-board)
+Text Notes 4800 7650 0    80   Italic 0
+Li-Ion Cell\nBalance and\nProtection
+Text Notes 5200 1350 0    100  ~ 20
+TODO: Zero-volt charge\ncircuitry necessary?
 $Comp
-L R R317
-U 1 1 5678FE7E
-P 2700 7400
-F 0 "R317" V 2780 7400 50  0000 C CNN
-F 1 "0" V 2700 7400 50  0000 C CNN
-F 2 "" V 2630 7400 30  0000 C CNN
-F 3 "" H 2700 7400 30  0000 C CNN
-	1    2700 7400
+L CONN_01X02 P?
+U 1 1 56AD9DCA
+P 2600 7400
+F 0 "P?" H 2600 7550 50  0000 C CNN
+F 1 "S2BPHKS" V 2700 7400 50  0000 C CNN
+F 2 "" H 2600 7400 60  0000 C CNN
+F 3 "" H 2600 7400 60  0000 C CNN
+	1    2600 7400
 	1    0    0    -1  
 $EndComp
-Text Notes 4750 7750 0    80   Italic 0
-LiIon Battery\nProtector
+Text Notes 2800 7600 1    50   Italic 0
+thermistor
+Text Notes 15600 3750 0    60   ~ 12
+TODO: replace w/\nsingle-cell symbol
+Text Notes 14400 3250 0    60   ~ 12
+TODO: note pack min/max voltages
+Text Notes 1850 7800 0    60   ~ 12
+TODO: no-place 10k resistor in\nparallel w/ thermistor connector
+Text Notes 3300 7450 0    60   ~ 12
+TODO: EEPROM input requires\nhigh-voltage buffer
 $EndSCHEMATC
