@@ -47,14 +47,13 @@ LIBS:valves
 LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 5 7
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2016-01-30"
+Date "2016-02-06"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -179,7 +178,7 @@ F 3 "" H 12650 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 1100 10000 0    100  ~ 0
-TODO:\n* Buffer btw rocket-ready signal and BB,\n  ign. board, etc?\n* Umbilical connection state\n* Ignition fuse state
+TODO:\n* Umbilical connection state\n* Ignition fuse state\n* Table of I2C bus address assignments
 Text HLabel 7300 4450 0    60   Output ~ 0
 12V_EN
 Text HLabel 7300 4650 0    60   Output ~ 0
@@ -547,4 +546,10 @@ Text Notes 10650 4100 0    60   ~ 12
 TODO: pull-ups on I2C1 bus?
 Text Notes 10650 4450 0    60   ~ 12
 TODO: explanatory note on use\nof various I2C busses
+Text Notes 15250 3500 0    80   ~ 16
+TODO: I2C2 label
+Text Notes 6300 5400 0    80   ~ 16
+TODO: 41#? 42@?
+Text Notes 5900 5000 0    80   ~ 16
+TODO: pull-ups on I2C1 lines?\nNo-place pull-ups.
 $EndSCHEMATC

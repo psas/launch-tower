@@ -47,14 +47,13 @@ LIBS:valves
 LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 3 7
-Title "Battery Protection & Charge Balancing"
-Date "2016-01-30"
+Title "Battery Management"
+Date "2016-02-06"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -1715,8 +1714,22 @@ Text Notes 15600 3750 0    60   ~ 12
 TODO: replace w/\nsingle-cell symbol
 Text Notes 14400 3250 0    60   ~ 12
 TODO: note pack min/max voltages
-Text Notes 1850 7800 0    60   ~ 12
-TODO: no-place 10k resistor in\nparallel w/ thermistor connector
 Text Notes 3300 7450 0    60   ~ 12
 TODO: EEPROM input requires\nhigh-voltage buffer
+Text Notes 7100 2550 0    80   ~ 16
+TODO: D&R necessary?
+Text Notes 3150 7200 3    80   ~ 16
+TODO: R318 necessary?
+Text Notes 600  9500 0    80   ~ 16
+TODO:\n* connect BQ_EEPROM to 0.100" pin headers (2x1, w/ gnd)\n* connect XRST (and other NCs) to test points
+Text Notes 8900 2550 0    80   ~ 16
+TODO: inv replacing shunt w/\nVout and Iout from bq
+Text Notes 1750 1150 0    80   ~ 16
+TODO: connect to real source of current
+Text Notes 10100 5000 0    80   ~ 16
+TODO: add fuse here... 10A?
+Text Notes 1750 2550 0    80   ~ 16
+TODO: D&R necessary?
+Text Notes 10200 6600 0    80   ~ 16
+TODO: lines indicating connection to battery
 $EndSCHEMATC

@@ -47,14 +47,13 @@ LIBS:valves
 LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 7 7
 Title "LTC3 External Power & Triggers"
-Date "2016-01-30"
+Date "2016-02-06"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -1636,4 +1635,12 @@ Wire Notes Line
 	1700 8450 1700 5400
 Text Notes 1700 8650 0    100  ~ 0
 External Device Triggers
+Text Notes 3850 1800 0    80   ~ 16
+TODO: replace PPTCs w/ fuses
+Text Notes 3850 1500 0    80   ~ 16
+TODO: consolidate opto-isolators to one pn
+Text Notes 2800 8100 0    80   ~ 16
+TODO: remove R and C
+Text Notes 3950 950  0    80   ~ 16
+TODO: add manual push-button triggers on al outputs
 $EndSCHEMATC

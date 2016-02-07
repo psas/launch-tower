@@ -47,14 +47,13 @@ LIBS:valves
 LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 4 7
 Title "LTC3 DC-DC Converters"
-Date "2016-01-30"
+Date "2016-02-06"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -404,7 +403,7 @@ F 4 "ceramic, X[57]R" V 2600 8350 50  0001 C CNN "Note"
 	1    0    0    -1  
 $EndComp
 Text Notes 12300 9150 0    100  ~ 0
-TODO:\n* Values for converter enable pull-down resistors.\n  Don't exceed the BB's low source max.!\n* Capacitor values are minimums.  Consider\n  increasing these.  Consult datasheet for more info.
+TODO:\n* jumpers on all INHIBIT pins\n* Values for converter enable pull-down resistors.\n  Don't exceed the BB's low source max.!\n* Capacitor values are minimums.  Consider\n  increasing these.  Consult datasheet for more info.
 Text Notes 12700 5000 0    100  ~ 0
 Current Sense Resistors\nfull-scale voltage = 0.300 V\nR_sense_max = 0.300/Imax\n1 A = 300mΩ\n3 A = 100mΩ\n5 A = 60mΩ\n10 A = 30mΩ
 $Comp
@@ -1007,6 +1006,4 @@ Wire Wire Line
 	4450 6000 4450 5750
 Wire Wire Line
 	4450 3050 4450 2800
-Text Notes 4250 2950 0    60   ~ 12
-TODO: leave floating,\nor pull up?
 $EndSCHEMATC

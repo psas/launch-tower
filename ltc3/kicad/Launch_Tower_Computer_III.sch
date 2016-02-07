@@ -47,14 +47,13 @@ LIBS:valves
 LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 7
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2016-01-30"
+Date "2016-02-06"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -113,7 +112,7 @@ GPIO_EXT_TRIG_4
 $Sheet
 S 1400 1500 2500 1600
 U 56238165
-F0 "Power In & Battery Charge Management" 60
+F0 "Power In, Battery Charge & PV MPPT" 60
 F1 "battery_mgmt.sch" 60
 F2 "I2C_CLOCK" B L 1400 1750 60 
 F3 "I2C_DATA" B L 1400 1850 60 
@@ -121,7 +120,7 @@ $EndSheet
 $Sheet
 S 5400 1500 2500 1600
 U 562DD32F
-F0 "Battery, Balance & Protection" 60
+F0 "Battery Management" 60
 F1 "battery_balance.sch" 60
 F2 "BQ_EEPROM" B L 5400 2200 60 
 F3 "BQ_XALERT" B L 5400 2100 60 
@@ -321,7 +320,7 @@ Wire Wire Line
 Wire Bus Line
 	12550 2150 12550 4750
 Text Notes 800  9000 0    100  ~ 20
-TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!\n* Create style legend.
+TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!\n* Create style legend.\n* Consistent style:\n  * No "embedded" multipliers in R vals.\n* Add test points where appropriate.\n  * Esp. around SMD packages, parts w/ no\n     exposed leads, etc.\n  * through-hole 2x1 pin header (1 to signal, other to gnd)
 Wire Wire Line
 	9400 6800 9150 6800
 Wire Wire Line
