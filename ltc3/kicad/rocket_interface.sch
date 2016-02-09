@@ -47,6 +47,7 @@ LIBS:valves
 LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
+LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
@@ -429,7 +430,7 @@ F 3 "" H 15400 2600 50  0000 L CNN
 $EndComp
 Text Notes 5800 10300 0    80   ~ 16
 TODO:\n* Select appropriate component values.\n* Finish rocket umbilical connector.\n  * Verify Enet jack "adapter" wiring.\n  * Add umbilical connect sense lines circuitry.\n* Label various LEDs.\n* Divide all signals sent to BBB down to 3.3V\nQUESTIONS:\n  *Will 5v from schmidt fry BBB GPIO? Yes.
-Text HLabel 8200 1400 0    60   Output ~ 0
+Text HLabel 8200 1800 0    60   Output ~ 0
 /ROCKET_READY
 Text Notes 11550 5050 0    100  ~ 0
 Ignition Battery Switch
@@ -836,13 +837,13 @@ Rocket-to-BeagleBone Ethernet
 $Comp
 L R R603
 U 1 1 5677AB91
-P 8450 1750
-F 0 "R603" V 8530 1750 50  0000 C CNN
-F 1 "10k" V 8450 1750 50  0000 C CNN
-F 2 "" V 8380 1750 30  0000 C CNN
-F 3 "" H 8450 1750 30  0000 C CNN
-	1    8450 1750
-	1    0    0    -1  
+P 8600 2150
+F 0 "R603" V 8680 2150 50  0000 C CNN
+F 1 "10k" V 8600 2150 50  0000 C CNN
+F 2 "" V 8530 2150 30  0000 C CNN
+F 3 "" H 8600 2150 30  0000 C CNN
+	1    8600 2150
+	0    1    1    0   
 $EndComp
 $Comp
 L SPST_switch SW601
@@ -1005,10 +1006,6 @@ Wire Wire Line
 Connection ~ 14800 6950
 Wire Wire Line
 	14800 7100 14800 6950
-Wire Wire Line
-	8450 1600 8450 1400
-Wire Wire Line
-	8450 2150 8450 1900
 Wire Wire Line
 	8350 2150 8450 2150
 Wire Wire Line
@@ -1330,8 +1327,6 @@ Wire Wire Line
 Wire Wire Line
 	13950 3350 13950 3150
 Wire Wire Line
-	8450 1400 8200 1400
-Wire Wire Line
 	6450 7100 6450 7200
 Wire Wire Line
 	6800 7100 6800 7200
@@ -1415,4 +1410,34 @@ Wire Wire Line
 	4150 7050 4150 6700
 Wire Wire Line
 	4050 6950 4050 6700
+Wire Wire Line
+	8750 2150 8800 2150
+$Comp
+L R R?
+U 1 1 56B98CCE
+P 8800 2300
+F 0 "R?" V 8880 2300 50  0000 C CNN
+F 1 "30k" V 8800 2300 50  0000 C CNN
+F 2 "" V 8730 2300 30  0000 C CNN
+F 3 "" H 8800 2300 30  0000 C CNN
+	1    8800 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56B98E6E
+P 8800 2550
+F 0 "#PWR?" H 8800 2300 50  0001 C CNN
+F 1 "GND" H 8800 2400 50  0000 C CNN
+F 2 "" H 8800 2550 50  0000 C CNN
+F 3 "" H 8800 2550 50  0000 C CNN
+	1    8800 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2450 8800 2550
+Wire Wire Line
+	8800 2150 8800 1800
+Wire Wire Line
+	8800 1800 8200 1800
 $EndSCHEMATC
