@@ -9,6 +9,13 @@ Misc
    LTC.  Or between the BB and 5V rail (when BB is down, 12V and 19V
    rails are inhibited).
 
+   A: There should be a manual power switch, but it should go between
+   the power system and the rest of the system (shore power
+   connection, ignition, BBB).  There's not really a reason to
+   manually disconnect the rails or the battery pack. That said, the
+   batteries do need to be connectorized so we can take them out for
+   long term storage purposes.
+
 
 Battery Protection
 ==================
@@ -16,16 +23,25 @@ Battery Protection
    gauging (eliminating the need for the LTC2990 voltage/current sense
    IC)?
 
+   A: It's been about six months since we did our first market survey.
+   Take an hour to do a new check, but not more than an hour. Don't
+   worry about it that much.
+
 
 DC-DC Converters
 ================
 1. Buffer between BeagleBone GPIOs and convert INHIBIT inputs?
    E.g., Schmitt trigger, transistor, etc.
 
+   A: No need.
+
 
 Rocket Interface / Ignition Schematic
 =====================================
 1. How many conductor pairs in rocket Ethernet connection?
+
+   A: Four; the center-most conductors.
+
 2. Replace individual, somewhat confusing LEDs with A) a "bar chart"
    sequence of LEDs that indicate increasing levels of un-safe-ness as
    each stage in the ignition circuit becomes active, and B) separate
@@ -44,6 +60,9 @@ Rocket Interface / Ignition Schematic
    b. shore power (19 VDC rail) active
    c. ROCKET_IGNITE active
    d. rocket umbilical connected
+
+   A: Yes to both; we can remove the LEDs on the disconnected relay
+   outputs and our bar chart is a good idea.
 
 
 External Devices
