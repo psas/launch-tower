@@ -1,6 +1,23 @@
 EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
+# 1Cell_Battery
+#
+DEF 1Cell_Battery BT 0 0 N Y 1 F N
+F0 "BT" 100 50 50 H V L CNN
+F1 "1Cell_Battery" 100 -50 50 H V L CNN
+F2 "" 0 10 60 V V C CNN
+F3 "" 0 10 60 V V C CNN
+DRAW
+S -90 20 90 10 0 1 0 F
+S -62 -3 58 -23 0 1 0 F
+P 2 0 1 10  20 65  60 65 N
+P 2 0 1 10  40 85  40 45 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Battery
 #
 DEF Battery BT 0 0 N Y 1 F N

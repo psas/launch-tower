@@ -1,4 +1,4 @@
-update=Sat 06 Feb 2016 02:05:54 PM PST
+update=Tue 09 Feb 2016 11:02:28 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -97,6 +97,7 @@ LibName45=valves
 LibName46=libs/symbols/SUM110P08-11
 LibName47=libs/symbols/NDS9407
 LibName48=libs/symbols/PI2127
+LibName49=libs/symbols/battery_single_cell
 [schematic_editor]
 version=1
 PageLayoutDescrFile=

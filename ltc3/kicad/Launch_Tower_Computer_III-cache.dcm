@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SPV1040
-D 1Kb (128x8) Serial EEPROM with Unique Serial Number, TSSOP8
-K I2C Serial EEPROM Nonvolatile Memory
-F http://www.atmel.com/Images/Atmel-8815-SEEPROM-AT24CS01-02-Datasheet.pdf
-$ENDCMP
-#
-#End Doc Library
