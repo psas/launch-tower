@@ -957,6 +957,142 @@ F 3 "" H 14550 3650 60  0000 C CNN
 	1    14550 3650
 	-1   0    0    -1  
 $EndComp
+Text Notes 14200 7350 0    100  ~ 0
+Main Battery (off-board)
+Text Notes 4800 7650 0    80   Italic 0
+Li-Ion Cell\nBalance and\nProtection
+Text Notes 5200 1350 0    100  ~ 20
+TODO: Zero-volt charge\ncircuitry necessary?
+$Comp
+L CONN_01X02 P303
+U 1 1 56AD9DCA
+P 2600 7400
+F 0 "P303" H 2600 7550 50  0000 C CNN
+F 1 "S2BPHKS" V 2700 7400 50  0000 C CNN
+F 2 "" H 2600 7400 60  0000 C CNN
+F 3 "" H 2600 7400 60  0000 C CNN
+	1    2600 7400
+	1    0    0    -1  
+$EndComp
+Text Notes 2800 7600 1    50   Italic 0
+thermistor
+Text Notes 14400 3250 0    60   ~ 12
+TODO: note pack min/max voltages
+Text Notes 3300 7450 0    60   ~ 12
+TODO: EEPROM input requires\nhigh-voltage buffer
+Text Notes 7100 2550 0    80   ~ 16
+TODO: D&R necessary?
+Text Notes 3150 7200 3    80   ~ 16
+TODO: R318 necessary?
+Text Notes 600  9500 0    80   ~ 16
+TODO:\n* connect BQ_EEPROM to 0.100" pin headers (2x1, w/ gnd)\n* connect XRST (and other NCs) to test points
+Text Notes 8900 2550 0    80   ~ 16
+TODO: inv replacing shunt w/\nVout and Iout from bq
+Text Notes 1750 1150 0    80   ~ 16
+TODO: connect to real source of current
+Text Notes 1750 2550 0    80   ~ 16
+TODO: D&R necessary?
+Text Notes 10200 6600 0    80   ~ 16
+TODO: lines indicating connection to battery
+$Comp
+L 1Cell_Battery PHNTM302
+U 1 1 56B6A739
+P 15500 3900
+F 0 "PHNTM302" H 15618 3900 50  0000 L CNN
+F 1 "~" H 15618 3854 50  0000 L CNN
+F 2 "" V 15500 3910 60  0000 C CNN
+F 3 "" V 15500 3910 60  0000 C CNN
+	1    15500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM303
+U 1 1 56B6AEE5
+P 15500 4300
+F 0 "PHNTM303" H 15618 4300 50  0000 L CNN
+F 1 "~" H 15618 4254 50  0000 L CNN
+F 2 "" V 15500 4310 60  0000 C CNN
+F 3 "" V 15500 4310 60  0000 C CNN
+	1    15500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM305
+U 1 1 56B6B5DC
+P 15500 4700
+F 0 "PHNTM305" H 15618 4700 50  0000 L CNN
+F 1 "~" H 15618 4654 50  0000 L CNN
+F 2 "" V 15500 4710 60  0000 C CNN
+F 3 "" V 15500 4710 60  0000 C CNN
+	1    15500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM306
+U 1 1 56B6BF82
+P 15500 5100
+F 0 "PHNTM306" H 15618 5100 50  0000 L CNN
+F 1 "~" H 15618 5054 50  0000 L CNN
+F 2 "" V 15500 5110 60  0000 C CNN
+F 3 "" V 15500 5110 60  0000 C CNN
+	1    15500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM307
+U 1 1 56B6C66C
+P 15500 5500
+F 0 "PHNTM307" H 15618 5500 50  0000 L CNN
+F 1 "~" H 15618 5454 50  0000 L CNN
+F 2 "" V 15500 5510 60  0000 C CNN
+F 3 "" V 15500 5510 60  0000 C CNN
+	1    15500 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM308
+U 1 1 56B6C754
+P 15500 5900
+F 0 "PHNTM308" H 15618 5900 50  0000 L CNN
+F 1 "~" H 15618 5854 50  0000 L CNN
+F 2 "" V 15500 5910 60  0000 C CNN
+F 3 "" V 15500 5910 60  0000 C CNN
+	1    15500 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM309
+U 1 1 56B6CDE8
+P 15500 6300
+F 0 "PHNTM309" H 15618 6300 50  0000 L CNN
+F 1 "~" H 15618 6254 50  0000 L CNN
+F 2 "" V 15500 6310 60  0000 C CNN
+F 3 "" V 15500 6310 60  0000 C CNN
+	1    15500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1Cell_Battery PHNTM310
+U 1 1 56B6D4DE
+P 15500 6700
+F 0 "PHNTM310" H 15618 6700 50  0000 L CNN
+F 1 "~" H 15618 6654 50  0000 L CNN
+F 2 "" V 15500 6710 60  0000 C CNN
+F 3 "" V 15500 6710 60  0000 C CNN
+	1    15500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L FUSE F?
+U 1 1 56BFBDDD
+P 10000 4150
+F 0 "F?" H 10100 4200 50  0000 C CNN
+F 1 "10A" H 9900 4100 50  0000 C CNN
+F 2 "" H 10000 4150 60  0000 C CNN
+F 3 "" H 10000 4150 60  0000 C CNN
+	1    10000 4150
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	4850 8550 4850 8750
 Wire Wire Line
@@ -1395,10 +1531,6 @@ Wire Wire Line
 	3100 6600 3100 7050
 Wire Wire Line
 	10150 5750 10000 5750
-Wire Wire Line
-	10000 5750 10000 2650
-Wire Wire Line
-	10000 2650 8950 2650
 Connection ~ 6250 6700
 Connection ~ 6250 6600
 Wire Wire Line
@@ -1605,131 +1737,10 @@ Wire Notes Line
 	16150 7150 14200 7150
 Wire Notes Line
 	14200 7150 14200 3300
-Text Notes 14200 7350 0    100  ~ 0
-Main Battery (off-board)
-Text Notes 4800 7650 0    80   Italic 0
-Li-Ion Cell\nBalance and\nProtection
-Text Notes 5200 1350 0    100  ~ 20
-TODO: Zero-volt charge\ncircuitry necessary?
-$Comp
-L CONN_01X02 P303
-U 1 1 56AD9DCA
-P 2600 7400
-F 0 "P303" H 2600 7550 50  0000 C CNN
-F 1 "S2BPHKS" V 2700 7400 50  0000 C CNN
-F 2 "" H 2600 7400 60  0000 C CNN
-F 3 "" H 2600 7400 60  0000 C CNN
-	1    2600 7400
-	1    0    0    -1  
-$EndComp
-Text Notes 2800 7600 1    50   Italic 0
-thermistor
-Text Notes 14400 3250 0    60   ~ 12
-TODO: note pack min/max voltages
-Text Notes 3300 7450 0    60   ~ 12
-TODO: EEPROM input requires\nhigh-voltage buffer
-Text Notes 7100 2550 0    80   ~ 16
-TODO: D&R necessary?
-Text Notes 3150 7200 3    80   ~ 16
-TODO: R318 necessary?
-Text Notes 600  9500 0    80   ~ 16
-TODO:\n* connect BQ_EEPROM to 0.100" pin headers (2x1, w/ gnd)\n* connect XRST (and other NCs) to test points
-Text Notes 8900 2550 0    80   ~ 16
-TODO: inv replacing shunt w/\nVout and Iout from bq
-Text Notes 1750 1150 0    80   ~ 16
-TODO: connect to real source of current
-Text Notes 10100 5000 0    80   ~ 16
-TODO: add fuse here... 10A?
-Text Notes 1750 2550 0    80   ~ 16
-TODO: D&R necessary?
-Text Notes 10200 6600 0    80   ~ 16
-TODO: lines indicating connection to battery
-$Comp
-L 1Cell_Battery PHNTM302
-U 1 1 56B6A739
-P 15500 3900
-F 0 "PHNTM302" H 15618 3900 50  0000 L CNN
-F 1 "~" H 15618 3854 50  0000 L CNN
-F 2 "" V 15500 3910 60  0000 C CNN
-F 3 "" V 15500 3910 60  0000 C CNN
-	1    15500 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM303
-U 1 1 56B6AEE5
-P 15500 4300
-F 0 "PHNTM303" H 15618 4300 50  0000 L CNN
-F 1 "~" H 15618 4254 50  0000 L CNN
-F 2 "" V 15500 4310 60  0000 C CNN
-F 3 "" V 15500 4310 60  0000 C CNN
-	1    15500 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM305
-U 1 1 56B6B5DC
-P 15500 4700
-F 0 "PHNTM305" H 15618 4700 50  0000 L CNN
-F 1 "~" H 15618 4654 50  0000 L CNN
-F 2 "" V 15500 4710 60  0000 C CNN
-F 3 "" V 15500 4710 60  0000 C CNN
-	1    15500 4700
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM306
-U 1 1 56B6BF82
-P 15500 5100
-F 0 "PHNTM306" H 15618 5100 50  0000 L CNN
-F 1 "~" H 15618 5054 50  0000 L CNN
-F 2 "" V 15500 5110 60  0000 C CNN
-F 3 "" V 15500 5110 60  0000 C CNN
-	1    15500 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM307
-U 1 1 56B6C66C
-P 15500 5500
-F 0 "PHNTM307" H 15618 5500 50  0000 L CNN
-F 1 "~" H 15618 5454 50  0000 L CNN
-F 2 "" V 15500 5510 60  0000 C CNN
-F 3 "" V 15500 5510 60  0000 C CNN
-	1    15500 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM308
-U 1 1 56B6C754
-P 15500 5900
-F 0 "PHNTM308" H 15618 5900 50  0000 L CNN
-F 1 "~" H 15618 5854 50  0000 L CNN
-F 2 "" V 15500 5910 60  0000 C CNN
-F 3 "" V 15500 5910 60  0000 C CNN
-	1    15500 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM309
-U 1 1 56B6CDE8
-P 15500 6300
-F 0 "PHNTM309" H 15618 6300 50  0000 L CNN
-F 1 "~" H 15618 6254 50  0000 L CNN
-F 2 "" V 15500 6310 60  0000 C CNN
-F 3 "" V 15500 6310 60  0000 C CNN
-	1    15500 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 1Cell_Battery PHNTM310
-U 1 1 56B6D4DE
-P 15500 6700
-F 0 "PHNTM310" H 15618 6700 50  0000 L CNN
-F 1 "~" H 15618 6654 50  0000 L CNN
-F 2 "" V 15500 6710 60  0000 C CNN
-F 3 "" V 15500 6710 60  0000 C CNN
-	1    15500 6700
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	10000 2650 8950 2650
+Wire Wire Line
+	10000 3900 10000 2650
+Wire Wire Line
+	10000 5750 10000 4400
 $EndSCHEMATC
