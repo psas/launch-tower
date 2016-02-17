@@ -544,15 +544,15 @@ Wire Wire Line
 	8000 4650 7300 4650
 Text Notes 900  7300 0    100  ~ 0
 NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
-Text Notes 12700 6100 0    60   ~ 12
+Text Notes 12500 6550 0    60   ~ 12
 TODO: pull-ups on I2C1 bus?
 Text Notes 2850 7550 0    60   ~ 12
 TODO: explanatory note on use\nof various I2C busses
-Text Notes 12700 5850 0    80   ~ 16
-TODO: I2C2 label?\nWhy are we using i2c2?  We can have like \n128 devices on i2c1 I don't think it's worth \nthe effort to set up i2c2.  Why also is the i2c\nline tied to 5v?  This isn't necessary.
+Text Notes 12500 6300 0    80   ~ 16
+TODO: I2C2 label?\nWhy are we using i2c2?  We can have like \n128 devices on i2c1 I don't think it's worth \nthe effort to set up i2c2.  Why the i2c line \ntied to 5v?  The only valid address for \nEEPROM is 0x54-57 the BBB will only look\nThere for cape/device tree info.  We\nonly need one i2c line.
 Text Notes 5050 9650 0    80   ~ 16
 TODO: 41#? 42@?
-Text Notes 12700 6400 0    80   ~ 16
+Text Notes 12500 6850 0    80   ~ 16
 TODO: pull-ups on I2C1 lines?\nNo-place pull-ups.
 Wire Notes Line
 	5050 9600 6150 9600
