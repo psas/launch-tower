@@ -291,7 +291,7 @@ F 3 "" H 4450 9450 60  0000 C CNN
 	1    4450 9450
 	1    0    0    -1  
 $EndComp
-Text HLabel 3700 8900 0    60   Input ~ 0
+Text HLabel 3550 8850 0    60   Input ~ 0
 19V_EN
 Text Notes 12250 7650 0    100  ~ 0
 NB:\n1. V_sense should connect as close as possible\nto the largest load on the given power rail.\n2. Place Rset resistors as close to package pins\n   as possible.\n3. Ceramic (Cin) capacitors should be located\n   within 0.5 in of the input pins.\n4. We may need heat sinks on the converters.\n   The datasheet indicates a range of 2W to 5W\n   of power dissipation given our specs.\n5. Pay attention to the datasheet's recommendations\n   regarding capacitor selection.
@@ -603,6 +603,110 @@ F 3 "" H 13600 3300 60  0000 C CNN
 	1    13600 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R407
+U 1 1 56793A2F
+P 4150 9250
+F 0 "R407" V 4050 9250 50  0000 C CNN
+F 1 "10k" V 4150 9250 50  0000 C CNN
+F 2 "" V 4080 9250 30  0000 C CNN
+F 3 "" H 4150 9250 30  0000 C CNN
+	1    4150 9250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C402
+U 1 1 569BEE50
+P 2500 2150
+F 0 "C402" H 2525 2250 50  0000 L CNN
+F 1 "1μ" H 2525 2050 40  0000 L CNN
+F 2 "" H 2538 2000 30  0000 C CNN
+F 3 "" H 2500 2150 60  0000 C CNN
+	1    2500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C405
+U 1 1 569BFDC0
+P 6250 2200
+F 0 "C405" H 6275 2300 50  0000 L CNN
+F 1 "1μ" H 6275 2100 40  0000 L CNN
+F 2 "" H 6288 2050 30  0000 C CNN
+F 3 "" H 6250 2200 60  0000 C CNN
+	1    6250 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C413
+U 1 1 569C0DA7
+P 6300 8100
+F 0 "C413" H 6325 8200 50  0000 L CNN
+F 1 "1μ" H 6325 8000 40  0000 L CNN
+F 2 "" H 6338 7950 30  0000 C CNN
+F 3 "" H 6300 8100 60  0000 C CNN
+	1    6300 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C407
+U 1 1 569C1C22
+P 6250 5150
+F 0 "C407" H 6275 5250 50  0000 L CNN
+F 1 "1μ" H 6275 5050 40  0000 L CNN
+F 2 "" H 6288 5000 30  0000 C CNN
+F 3 "" H 6250 5150 60  0000 C CNN
+	1    6250 5150
+	1    0    0    -1  
+$EndComp
+Text Notes 4100 2900 0    61   ~ 0
+NC
+$Comp
+L R R405
+U 1 1 569C4776
+P 4450 6150
+F 0 "R405" V 4550 6150 50  0000 C CNN
+F 1 "2k91" V 4450 6150 50  0000 C CNN
+F 2 "" V 4380 6150 30  0000 C CNN
+F 3 "" H 4450 6150 30  0000 C CNN
+F 4 "1%, 50mW" V 4350 6150 50  0000 C CNN "Note"
+	1    4450 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR416
+U 1 1 569C477C
+P 4450 6450
+F 0 "#PWR416" H 4450 6200 50  0001 C CNN
+F 1 "GND" H 4450 6300 50  0000 C CNN
+F 2 "" H 4450 6450 60  0000 C CNN
+F 3 "" H 4450 6450 60  0000 C CNN
+	1    4450 6450
+	1    0    0    -1  
+$EndComp
+Text HLabel 3550 5850 0    60   Input ~ 0
+12V_EN
+$Comp
+L R R404
+U 1 1 569C4786
+P 4150 6250
+F 0 "R404" V 4050 6250 50  0000 C CNN
+F 1 "10k" V 4150 6250 50  0000 C CNN
+F 2 "" V 4080 6250 30  0000 C CNN
+F 3 "" H 4150 6250 30  0000 C CNN
+	1    4150 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L JUMPER3 JP?
+U 1 1 56C2916D
+P 4050 8850
+F 0 "JP?" H 4100 8750 50  0000 L CNN
+F 1 "JUMPER3" H 4050 8950 50  0000 C BNN
+F 2 "" H 4050 8850 50  0000 C CNN
+F 3 "" H 4050 8850 50  0000 C CNN
+	1    4050 8850
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
 	3400 2200 3250 2200
 Wire Wire Line
@@ -838,32 +942,8 @@ Wire Wire Line
 	14500 1500 14500 1650
 Connection ~ 14500 2100
 Wire Wire Line
-	4150 8750 4150 9000
-$Comp
-L R R407
-U 1 1 56793A2F
-P 4150 9150
-F 0 "R407" V 4050 9150 50  0000 C CNN
-F 1 "R" V 4150 9150 50  0000 C CNN
-F 2 "" V 4080 9150 30  0000 C CNN
-F 3 "" H 4150 9150 30  0000 C CNN
-	1    4150 9150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3000 1800 3000 2000
 Connection ~ 3000 1800
-$Comp
-L C C402
-U 1 1 569BEE50
-P 2500 2150
-F 0 "C402" H 2525 2250 50  0000 L CNN
-F 1 "1μ" H 2525 2050 40  0000 L CNN
-F 2 "" H 2538 2000 30  0000 C CNN
-F 3 "" H 2500 2150 60  0000 C CNN
-	1    2500 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2400 1800 3400 1800
 Wire Wire Line
@@ -872,17 +952,6 @@ Connection ~ 2500 1800
 Wire Wire Line
 	5500 1800 6600 1800
 Connection ~ 5850 1800
-$Comp
-L C C405
-U 1 1 569BFDC0
-P 6250 2200
-F 0 "C405" H 6275 2300 50  0000 L CNN
-F 1 "1μ" H 6275 2100 40  0000 L CNN
-F 2 "" H 6288 2050 30  0000 C CNN
-F 3 "" H 6250 2200 60  0000 C CNN
-	1    6250 2200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 2050 6250 1800
 Connection ~ 6250 1800
@@ -903,17 +972,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 7750 5850 7950
 Connection ~ 5850 7750
-$Comp
-L C C413
-U 1 1 569C0DA7
-P 6300 8100
-F 0 "C413" H 6325 8200 50  0000 L CNN
-F 1 "1μ" H 6325 8000 40  0000 L CNN
-F 2 "" H 6338 7950 30  0000 C CNN
-F 3 "" H 6300 8100 60  0000 C CNN
-	1    6300 8100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6300 7750 6300 7950
 Connection ~ 6300 7750
@@ -925,17 +983,6 @@ Connection ~ 5850 8400
 Wire Wire Line
 	5500 4750 6600 4750
 Connection ~ 5850 4750
-$Comp
-L C C407
-U 1 1 569C1C22
-P 6250 5150
-F 0 "C407" H 6275 5250 50  0000 L CNN
-F 1 "1μ" H 6275 5050 40  0000 L CNN
-F 2 "" H 6288 5000 30  0000 C CNN
-F 3 "" H 6250 5150 60  0000 C CNN
-	1    6250 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6250 5000 6250 4750
 Connection ~ 6250 4750
@@ -944,68 +991,87 @@ Wire Wire Line
 Wire Wire Line
 	6250 5350 5850 5350
 Connection ~ 5850 5350
-Text Notes 4100 2900 0    61   ~ 0
-NC
 Wire Wire Line
-	4150 9300 4150 9400
-Wire Wire Line
-	4150 9400 4450 9400
+	3700 9400 4450 9400
 Connection ~ 4450 9400
 Wire Wire Line
-	3700 8900 4150 8900
-Connection ~ 4150 8900
-Wire Wire Line
 	4450 9000 4450 8750
-$Comp
-L R R405
-U 1 1 569C4776
-P 4450 6150
-F 0 "R405" V 4550 6150 50  0000 C CNN
-F 1 "2k91" V 4450 6150 50  0000 C CNN
-F 2 "" V 4380 6150 30  0000 C CNN
-F 3 "" H 4450 6150 30  0000 C CNN
-F 4 "1%, 50mW" V 4350 6150 50  0000 C CNN "Note"
-	1    4450 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR416
-U 1 1 569C477C
-P 4450 6450
-F 0 "#PWR416" H 4450 6200 50  0001 C CNN
-F 1 "GND" H 4450 6300 50  0000 C CNN
-F 2 "" H 4450 6450 60  0000 C CNN
-F 3 "" H 4450 6450 60  0000 C CNN
-	1    4450 6450
-	1    0    0    -1  
-$EndComp
-Text HLabel 3700 5900 0    60   Input ~ 0
-12V_EN
 Wire Wire Line
 	4450 6300 4450 6450
 Wire Wire Line
-	4150 5750 4150 6000
-$Comp
-L R R404
-U 1 1 569C4786
-P 4150 6150
-F 0 "R404" V 4050 6150 50  0000 C CNN
-F 1 "R" V 4150 6150 50  0000 C CNN
-F 2 "" V 4080 6150 30  0000 C CNN
-F 3 "" H 4150 6150 30  0000 C CNN
-	1    4150 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 6300 4150 6400
-Wire Wire Line
-	4150 6400 4450 6400
+	3650 6400 4450 6400
 Connection ~ 4450 6400
-Wire Wire Line
-	3700 5900 4150 5900
-Connection ~ 4150 5900
 Wire Wire Line
 	4450 6000 4450 5750
 Wire Wire Line
 	4450 3050 4450 2800
+Wire Wire Line
+	4300 9100 4300 8850
+Wire Wire Line
+	3550 8850 3800 8850
+Wire Wire Line
+	3700 8850 3700 9100
+Connection ~ 3700 8850
+Wire Wire Line
+	4150 9100 4300 9100
+$Comp
+L R R?
+U 1 1 56C2A3F7
+P 3700 9250
+F 0 "R?" V 3780 9250 50  0000 C CNN
+F 1 "10k" V 3700 9250 50  0000 C CNN
+F 2 "" V 3630 9250 50  0000 C CNN
+F 3 "" H 3700 9250 50  0000 C CNN
+	1    3700 9250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4150 9400
+$Comp
+L JUMPER3 JP?
+U 1 1 56C2D819
+P 4050 5850
+F 0 "JP?" H 4100 5750 50  0000 L CNN
+F 1 "JUMPER3" H 4050 5950 50  0000 C BNN
+F 2 "" H 4050 5850 50  0000 C CNN
+F 3 "" H 4050 5850 50  0000 C CNN
+	1    4050 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 5850 4300 6050
+Wire Wire Line
+	4300 6050 4150 6050
+Wire Wire Line
+	4150 6050 4150 6100
+Wire Wire Line
+	3550 5850 3800 5850
+Connection ~ 3650 5850
+$Comp
+L R R?
+U 1 1 56C2DDB6
+P 3650 6200
+F 0 "R?" V 3550 6200 50  0000 C CNN
+F 1 "10k" V 3650 6200 50  0000 C CNN
+F 2 "" V 3580 6200 30  0000 C CNN
+F 3 "" H 3650 6200 30  0000 C CNN
+	1    3650 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5850 3650 6050
+Wire Wire Line
+	3650 6350 3650 6400
+Connection ~ 4150 6400
+Wire Notes Line
+	12400 8500 14600 8500
+Wire Notes Line
+	12450 8650 16200 8650
+Wire Notes Line
+	12450 8800 15550 8800
+Wire Notes Line
+	12450 8950 15700 8950
+Wire Notes Line
+	12450 9100 16400 9100
+Wire Notes Line
+	16400 9100 16400 9050
 $EndSCHEMATC

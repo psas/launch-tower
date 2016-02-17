@@ -542,16 +542,28 @@ Wire Wire Line
 	7300 4450 8000 4450
 Wire Wire Line
 	8000 4650 7300 4650
-Text Notes 1050 8900 0    100  ~ 0
+Text Notes 900  7300 0    100  ~ 0
 NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
-Text Notes 10650 4100 0    60   ~ 12
+Text Notes 12700 6100 0    60   ~ 12
 TODO: pull-ups on I2C1 bus?
-Text Notes 10650 4450 0    60   ~ 12
+Text Notes 2850 7550 0    60   ~ 12
 TODO: explanatory note on use\nof various I2C busses
-Text Notes 15250 3500 0    80   ~ 16
-TODO: I2C2 label
-Text Notes 6300 5400 0    80   ~ 16
+Text Notes 12700 5850 0    80   ~ 16
+TODO: I2C2 label?\nWhy are we using i2c2?  We can have like \n128 devices on i2c1 I don't think it's worth \nthe effort to set up i2c2.  Why also is the i2c\nline tied to 5v?  This isn't necessary.
+Text Notes 5050 9650 0    80   ~ 16
 TODO: 41#? 42@?
-Text Notes 5900 5000 0    80   ~ 16
+Text Notes 12700 6400 0    80   ~ 16
 TODO: pull-ups on I2C1 lines?\nNo-place pull-ups.
+Wire Notes Line
+	5050 9600 6150 9600
+Text Notes 5100 9750 0    50   ~ 0
+Pins 41,42 control two different gpio's each a la the # and @
+Text Notes 1000 7750 0    50   Italic 0
+I2C addr 0x10  BQ77PL900 (B/PM)\nI2C addr 0x54  EEPROM\nI2C addr 0x98 U203 LTC2990 (power in)\nI2C addr 0x9A U301 LTC2990 (B/PM)\nI2C addr 0x90 U402 LTC2991 (DC-DC)
+Wire Notes Line
+	2850 7400 4300 7400
+Wire Notes Line
+	2800 7500 3850 7500
+Wire Notes Line
+	1100 9900 4250 9900
 $EndSCHEMATC
