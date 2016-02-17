@@ -101,13 +101,13 @@ $EndComp
 Text Notes 12300 4900 0    80   ~ 0
 Cape EEPROM
 Text Label 2450 4850 2    60   ~ 0
-GPIO_10
+GPIO0_10
 Text Label 4800 4850 2    60   ~ 0
-GPIO_11
+GPIO0_11
 Text Label 2450 5050 2    60   ~ 0
-GPIO_8
+GPIO0_8
 Text Label 2450 4950 2    60   ~ 0
-GPIO_9
+GPIO0_9
 Text HLabel 2000 5050 0    60   Output ~ 0
 EXT_TRIG_EN_1
 Text HLabel 2000 4950 0    60   Output ~ 0
@@ -179,7 +179,7 @@ F 3 "" H 12650 4300 60  0000 C CNN
 	1    12650 4300
 	1    0    0    -1  
 $EndComp
-Text Notes 1100 10000 0    100  ~ 0
+Text Notes 5050 9200 0    100  ~ 0
 TODO:\n* Umbilical connection state\n* Ignition fuse state\n* Table of I2C bus address assignments
 Text HLabel 7300 4450 0    60   Output ~ 0
 12V_EN
@@ -228,7 +228,7 @@ Wire Wire Line
 Wire Wire Line
 	13400 3400 13250 3400
 Wire Wire Line
-	9900 4250 10400 4250
+	9900 4250 10650 4250
 Wire Wire Line
 	4400 4850 4900 4850
 Wire Wire Line
@@ -464,7 +464,7 @@ Connection ~ 7500 3550
 Wire Wire Line
 	7500 4100 7500 6300
 Wire Wire Line
-	7500 4250 8000 4250
+	7250 4250 8000 4250
 Connection ~ 10400 3550
 Wire Wire Line
 	10400 4100 10400 5100
@@ -478,11 +478,9 @@ Wire Notes Line
 	950  6100 950  2350
 Text Notes 950  6250 0    80   ~ 0
 BeagleBone Expansion Headers
-Text HLabel 7250 4150 0    50   BiDi ~ 0
+Text HLabel 7250 4250 0    50   BiDi ~ 0
 I2C_CLOCK
-Wire Wire Line
-	9900 4150 10650 4150
-Text HLabel 10650 4150 2    50   BiDi ~ 0
+Text HLabel 10650 4250 2    50   BiDi ~ 0
 I2C_DATA
 Text HLabel 1950 4450 0    60   Input ~ 0
 BQ_XALERT
@@ -494,8 +492,6 @@ Wire Wire Line
 	15500 3550 15500 5200
 Wire Wire Line
 	15400 3700 15400 5100
-Wire Wire Line
-	7250 4150 8000 4150
 Wire Wire Line
 	15400 5100 10400 5100
 Connection ~ 10400 4250
@@ -542,28 +538,78 @@ Wire Wire Line
 	7300 4450 8000 4450
 Wire Wire Line
 	8000 4650 7300 4650
-Text Notes 900  7300 0    100  ~ 0
+Text Notes 800  6850 0    50   ~ 0
 NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
-Text Notes 12500 6550 0    60   ~ 12
+Text Notes 8550 9650 0    60   ~ 12
 TODO: pull-ups on I2C1 bus?
-Text Notes 2850 7550 0    60   ~ 12
+Text Notes 5100 9450 0    60   ~ 12
 TODO: explanatory note on use\nof various I2C busses
-Text Notes 12500 6300 0    80   ~ 16
-TODO: I2C2 label?\nWhy are we using i2c2?  We can have like \n128 devices on i2c1 I don't think it's worth \nthe effort to set up i2c2.  Why the i2c line \ntied to 5v?  The only valid address for \nEEPROM is 0x54-57 the BBB will only look\nThere for cape/device tree info.  We\nonly need one i2c line.
+Text Notes 8550 9400 0    80   ~ 16
+TODO: I2C2 label?\n**Questions\nWhy are we using 2 i2c buses?\n***Potential Solution\nI simply moved assignments to i2c2.\n**Anectdote\nThe only valid address for \nEEPROM is 0x54-57 the BBB will only look\nThere for cape/device tree info.
 Text Notes 5050 9650 0    80   ~ 16
 TODO: 41#? 42@?
-Text Notes 12500 6850 0    80   ~ 16
+Text Notes 8550 9950 0    80   ~ 16
 TODO: pull-ups on I2C1 lines?\nNo-place pull-ups.
 Wire Notes Line
 	5050 9600 6150 9600
 Text Notes 5100 9750 0    50   ~ 0
 Pins 41,42 control two different gpio's each a la the # and @
-Text Notes 1000 7750 0    50   Italic 0
-I2C addr 0x10  BQ77PL900 (B/PM)\nI2C addr 0x54  EEPROM\nI2C addr 0x98 U203 LTC2990 (power in)\nI2C addr 0x9A U301 LTC2990 (B/PM)\nI2C addr 0x90 U402 LTC2991 (DC-DC)
+Text Notes 800  7600 0    50   Italic 0
+ADDR\n0x10\n0x54\n0x90\n0x98\n0x9A\n
 Wire Notes Line
-	2850 7400 4300 7400
+	5100 9300 6550 9300
 Wire Notes Line
-	2800 7500 3850 7500
+	5050 9400 6100 9400
 Wire Notes Line
-	1100 9900 4250 9900
+	5050 9100 8200 9100
+Wire Wire Line
+	2500 4650 2000 4650
+Wire Wire Line
+	2500 4750 2000 4750
+Text HLabel 2000 4650 0    60   Input ~ 0
+UMB_STATE
+Text HLabel 2000 4750 0    60   Input ~ 0
+IGN_RTL
+Text Label 2450 4750 2    60   ~ 0
+GPIO2_23
+Text Label 2450 4650 2    60   ~ 0
+GPIO2_22
+Wire Notes Line
+	4950 9000 6700 9000
+Wire Notes Line
+	5000 8850 7300 8850
+Text Notes 1050 7600 0    50   Italic 0
+Part\nU203\nU501\nU402\nU203\nU301
+Text Notes 1300 7600 0    50   Italic 0
+Type\nBQ77PL900\nEEPROM\nLTC2991\nLTC2990\nLTC2990
+Text Notes 1800 7600 0    50   Italic 0
+Location\nB/PM\nBBB\nDC-DC\nPower In\nB/PM
+Text Notes 800  7100 0    50   Italic 0
+i2c Devices
+Wire Notes Line
+	750  7000 2150 7000
+Wire Notes Line
+	2150 7000 2150 7650
+Wire Notes Line
+	2150 7650 750  7650
+Wire Notes Line
+	750  7650 750  7000
+Wire Notes Line
+	750  6900 750  6350
+Wire Notes Line
+	750  6350 2150 6350
+Wire Notes Line
+	2150 6350 2150 6900
+Wire Notes Line
+	2150 6900 750  6900
+Wire Notes Line
+	750  7750 2150 7750
+Wire Notes Line
+	750  7750 750  8150
+Text Notes 800  8100 0    50   ~ 0
+All i2c devices on LTC3 are \nslaves. The BBB is the only \nmaster so the LTC will not need \narbitration.
+Wire Notes Line
+	2150 7750 2150 8150
+Wire Notes Line
+	2150 8150 750  8150
 $EndSCHEMATC
