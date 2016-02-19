@@ -48,7 +48,6 @@ LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
 LIBS:battery_single_cell
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
