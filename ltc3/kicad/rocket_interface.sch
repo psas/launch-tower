@@ -419,9 +419,9 @@ F 3 "" H 15400 2600 50  0000 L CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5800 10300 0    80   ~ 16
-TODO:\n* Select appropriate component values.\n* Finish rocket umbilical connector.\n  * Verify Enet jack "adapter" wiring.\n  * Add umbilical connect sense lines circuitry.\n* Label various LEDs.\n* Divide all signals sent to BBB down to 3.3V\nQUESTIONS:\n  *Will 5v from schmidt fry BBB GPIO? Yes.
-Text HLabel 8200 1700 0    60   Output ~ 0
-/ROCKET_READY
+TODO:\n* Select appropriate component values.\n* Finish rocket umbilical connector.\n  * Verify Enet jack "adapter" wiring.\n  * Add umbilical connect sense lines circuitry.\n* Label various LEDs.\n* Divide all signals sent to BBB down to 3.3V
+Text HLabel 8200 1450 0    60   Output ~ 0
+/ROCKET_READY_3V3
 Text Notes 11550 5050 0    100  ~ 0
 Ignition Battery Switch
 $Comp
@@ -562,7 +562,7 @@ F 3 "" H 13200 1800 60  0000 C CNN
 	1    13200 1650
 	1    0    0    -1  
 $EndComp
-Text Notes 2250 1950 0    61   ~ 0
+Text Notes 2050 2050 0    61   Italic 0
 +5V
 $Comp
 L +5V #PWR626
@@ -667,19 +667,19 @@ F 3 "" H 12550 7100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 10500 7800 0    60   Italic 0
-3.3V
++3.3V
 $Comp
 L GND #PWR623
 U 1 1 56707A2B
-P 11400 8100
-F 0 "#PWR623" H 11400 7850 50  0001 C CNN
-F 1 "GND" H 11400 7950 50  0000 C CNN
-F 2 "" H 11400 8100 60  0000 C CNN
-F 3 "" H 11400 8100 60  0000 C CNN
-	1    11400 8100
+P 11400 8600
+F 0 "#PWR623" H 11400 8350 50  0001 C CNN
+F 1 "GND" H 11400 8450 50  0000 C CNN
+F 2 "" H 11400 8600 60  0000 C CNN
+F 3 "" H 11400 8600 60  0000 C CNN
+	1    11400 8600
 	1    0    0    -1  
 $EndComp
-Text Notes 9400 8950 0    100  ~ 0
+Text Notes 9400 9150 0    100  ~ 0
 Ignition Switch
 $Comp
 L GND #PWR615
@@ -829,7 +829,7 @@ L R R603
 U 1 1 5677AB91
 P 8600 2050
 F 0 "R603" V 8680 2050 50  0000 C CNN
-F 1 "10k" V 8600 2050 50  0000 C CNN
+F 1 "62k" V 8600 2050 50  0000 C CNN
 F 2 "" V 8530 2050 30  0000 C CNN
 F 3 "" H 8600 2050 30  0000 C CNN
 	1    8600 2050
@@ -852,14 +852,12 @@ L R R611
 U 1 1 5691AD3B
 P 13950 3500
 F 0 "R611" V 14030 3500 50  0000 C CNN
-F 1 "10k" V 13950 3500 50  0000 C CNN
+F 1 "62k" V 13950 3500 50  0000 C CNN
 F 2 "" V 13880 3500 30  0000 C CNN
 F 3 "" H 13950 3500 30  0000 C CNN
 	1    13950 3500
 	1    0    0    -1  
 $EndComp
-Text Notes 11900 3450 0    60   ~ 12
-TODO: ready-to-launch signal to BBB
 Text Notes 1050 1250 0    80   ~ 0
 Ignition battery pack disconnected until\nflight computer has asserted ROCKET_READY\nand 19 VDC rail (shore power) has been shut off.
 Text Notes 14250 3800 0    60   Italic 0
@@ -989,17 +987,109 @@ Text Notes 6100 8350 0    100  ~ 0
 BAKERCON Indicator
 Text Notes 6100 8850 0    60   ~ 0
 1: Ign batt connected\n2: RR asserted; power to ign relay\n3: Ign relay closed; power to arm switch\n4: Arm sw closed; power to shorting bar\n5: Shorting bar removed; power to ign connector
+Text Notes 1150 3250 0    60   ~ 0
+Shore Power Check
+$Comp
+L R R604
+U 1 1 56B98CCE
+P 8800 2300
+F 0 "R604" V 8880 2300 50  0000 C CNN
+F 1 "100k" V 8800 2300 50  0000 C CNN
+F 2 "" V 8730 2300 30  0000 C CNN
+F 3 "" H 8800 2300 30  0000 C CNN
+	1    8800 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR606
+U 1 1 56B98E6E
+P 8800 2550
+F 0 "#PWR606" H 8800 2300 50  0001 C CNN
+F 1 "GND" H 8800 2400 50  0000 C CNN
+F 2 "" H 8800 2550 50  0000 C CNN
+F 3 "" H 8800 2550 50  0000 C CNN
+	1    8800 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP3542 IC?
+U 1 1 56C6E7C7
+P 4750 2200
+F 0 "IC?" H 4750 2610 40  0000 C CNN
+F 1 "TLP3542" H 4750 2532 40  0000 C CNN
+F 2 "DIP6" H 4750 2463 30  0000 C CIN
+F 3 "" H 4750 2250 60  0000 C CNN
+	1    4750 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56C7420D
+P 10850 8250
+F 0 "R?" V 10930 8250 50  0000 C CNN
+F 1 "10k" V 10850 8250 50  0000 C CNN
+F 2 "" V 10780 8250 30  0000 C CNN
+F 3 "" H 10850 8250 30  0000 C CNN
+	1    10850 8250
+	1    0    0    -1  
+$EndComp
+Text Label 1150 6100 0    50   ~ 0
+ROCKET_READY_5V
+Text Label 2000 6950 0    50   ~ 0
+ROCKET_ETH_1
+Text Label 2000 7050 0    50   ~ 0
+ROCKET_ETH_2
+Text Label 2000 7150 0    50   ~ 0
+ROCKET_ETH_3
+Text Label 2000 7250 0    50   ~ 0
+ROCKET_ETH_4
+Text Notes 8600 1450 0    50   Italic 0
++3.1V
+$Comp
+L R R?
+U 1 1 56C80008
+P 13950 4000
+F 0 "R?" V 14030 4000 50  0000 C CNN
+F 1 "100k" V 13950 4000 50  0000 C CNN
+F 2 "" V 13880 4000 30  0000 C CNN
+F 3 "" H 13950 4000 30  0000 C CNN
+	1    13950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C81C92
+P 13950 4350
+F 0 "#PWR?" H 13950 4100 50  0001 C CNN
+F 1 "GND" H 13958 4176 50  0000 C CNN
+F 2 "" H 13950 4350 50  0000 C CNN
+F 3 "" H 13950 4350 50  0000 C CNN
+	1    13950 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 13550 3750 0    60   Output ~ 0
+READY_TO_LAUNCH
 Wire Wire Line
-	14550 6950 15400 6950
+	14550 6950 14700 6950
 Wire Wire Line
-	13900 6950 14150 6950
+	14700 6950 14800 6950
+Wire Wire Line
+	14800 6950 15400 6950
+Wire Wire Line
+	13900 6950 14050 6950
+Wire Wire Line
+	14050 6950 14150 6950
 Connection ~ 14800 6950
 Wire Wire Line
 	14800 7100 14800 6950
 Wire Wire Line
 	8350 2050 8450 2050
 Wire Wire Line
-	6750 2050 7450 2050
+	6750 2050 7000 2050
+Wire Wire Line
+	7000 2050 7350 2050
+Wire Wire Line
+	7350 2050 7450 2050
 Connection ~ 7350 2050
 Wire Wire Line
 	1850 6100 1850 6850
@@ -1038,14 +1128,18 @@ Wire Wire Line
 Wire Wire Line
 	700  2050 700  6100
 Wire Wire Line
-	6800 5400 16300 5400
+	6800 5400 11800 5400
+Wire Wire Line
+	11800 5400 16300 5400
 Wire Wire Line
 	14800 7850 14800 7700
 Wire Wire Line
 	13400 6950 13150 6950
 Connection ~ 11400 7400
 Wire Wire Line
-	11400 7250 11400 7550
+	11400 7250 11400 7400
+Wire Wire Line
+	11400 7400 11400 7550
 Wire Wire Line
 	11650 7400 11400 7400
 Wire Wire Line
@@ -1059,11 +1153,15 @@ Wire Wire Line
 Wire Wire Line
 	11400 6800 11650 6800
 Wire Wire Line
-	11400 6550 11400 6950
+	11400 6550 11400 6800
+Wire Wire Line
+	11400 6800 11400 6950
 Connection ~ 11400 6800
 Connection ~ 12050 2100
 Wire Wire Line
-	12050 1950 12050 2250
+	12050 1950 12050 2100
+Wire Wire Line
+	12050 2100 12050 2250
 Wire Wire Line
 	12300 2100 12050 2100
 Wire Wire Line
@@ -1077,7 +1175,9 @@ Wire Wire Line
 Wire Wire Line
 	12050 1500 12300 1500
 Wire Wire Line
-	12050 1250 12050 1650
+	12050 1250 12050 1500
+Wire Wire Line
+	12050 1500 12050 1650
 Wire Wire Line
 	15250 7050 15400 7050
 Wire Wire Line
@@ -1105,26 +1205,34 @@ Wire Wire Line
 Wire Notes Line
 	16000 5850 9400 5850
 Wire Notes Line
-	16000 8750 16000 5850
+	16000 8950 16000 5850
 Wire Notes Line
-	9400 8750 16000 8750
+	9400 8950 16000 8950
 Wire Notes Line
-	9400 5850 9400 8750
+	9400 5850 9400 8950
 Wire Wire Line
-	11400 7950 11400 8100
+	11400 7950 11400 8500
 Wire Wire Line
-	11100 7800 10400 7800
+	11400 8500 11400 8600
+Wire Wire Line
+	10400 7800 10850 7800
+Wire Wire Line
+	10850 7800 11100 7800
 Wire Wire Line
 	11800 6850 11950 6850
 Wire Wire Line
-	12600 2650 12600 3150
+	12600 2650 12600 2900
+Wire Wire Line
+	12600 2900 12600 3150
 Connection ~ 12600 2900
 Wire Wire Line
 	12600 2900 12350 2900
 Wire Wire Line
 	12600 2650 12850 2650
 Wire Wire Line
-	13750 2650 15200 2650
+	13750 2650 14950 2650
+Wire Wire Line
+	14950 2650 15200 2650
 Wire Wire Line
 	15250 1200 15400 1200
 Wire Wire Line
@@ -1138,7 +1246,9 @@ Wire Wire Line
 	2300 2050 2300 2750
 Connection ~ 2300 2050
 Wire Wire Line
-	6750 3700 7350 3700
+	6750 3700 6950 3700
+Wire Wire Line
+	6950 3700 7350 3700
 Wire Notes Line
 	950  8650 950  9950
 Wire Notes Line
@@ -1166,9 +1276,21 @@ Wire Notes Line
 Wire Notes Line
 	9100 4850 9100 800 
 Wire Wire Line
-	8850 2900 9650 2900
+	8850 2900 9250 2900
 Wire Wire Line
-	9950 2900 11450 2900
+	9250 2900 9550 2900
+Wire Wire Line
+	9550 2900 9650 2900
+Wire Wire Line
+	9950 2900 10050 2900
+Wire Wire Line
+	10050 2900 10400 2900
+Wire Wire Line
+	10400 2900 10800 2900
+Wire Wire Line
+	10800 2900 11150 2900
+Wire Wire Line
+	11150 2900 11450 2900
 Wire Notes Line
 	9000 800  950  800 
 Wire Notes Line
@@ -1194,7 +1316,9 @@ Wire Wire Line
 Wire Wire Line
 	12450 1100 12450 1550
 Wire Wire Line
-	13750 3150 14200 3150
+	13750 3150 13950 3150
+Wire Wire Line
+	13950 3150 14200 3150
 Wire Wire Line
 	1850 9150 1850 8900
 Wire Wire Line
@@ -1204,7 +1328,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 9450 2350 9700
 Wire Wire Line
-	10800 3450 10800 3700
+	10800 3450 10800 3550
+Wire Wire Line
+	10800 3550 10800 3700
 Wire Wire Line
 	11150 3450 11150 3550
 Wire Wire Line
@@ -1239,7 +1365,9 @@ Wire Wire Line
 Connection ~ 9250 2900
 Connection ~ 11150 2900
 Wire Wire Line
-	14950 3200 14950 3400
+	14950 3200 14950 3300
+Wire Wire Line
+	14950 3300 14950 3400
 Wire Wire Line
 	15500 2800 15500 3300
 Wire Wire Line
@@ -1250,7 +1378,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 1800 5600 2050
 Wire Wire Line
-	5100 2050 5850 2050
+	5100 2050 5600 2050
+Wire Wire Line
+	5600 2050 5850 2050
 Connection ~ 5600 2050
 Wire Wire Line
 	2300 3050 2300 2900
@@ -1259,7 +1389,9 @@ Wire Wire Line
 Wire Wire Line
 	3700 2900 3550 2900
 Wire Wire Line
-	2400 4150 2400 4350
+	2400 4150 2400 4250
+Wire Wire Line
+	2400 4250 2400 4350
 Wire Wire Line
 	2750 4150 2750 4250
 Wire Wire Line
@@ -1272,7 +1404,9 @@ Connection ~ 2750 3700
 Wire Wire Line
 	16300 1650 13800 1650
 Wire Wire Line
-	12450 1100 15400 1100
+	12450 1100 14750 1100
+Wire Wire Line
+	14750 1100 15400 1100
 Wire Wire Line
 	12600 3150 12850 3150
 Wire Wire Line
@@ -1292,11 +1426,19 @@ Wire Wire Line
 Wire Wire Line
 	1800 3700 1950 3700
 Wire Wire Line
-	700  2050 3400 2050
+	700  2050 2300 2050
+Wire Wire Line
+	2300 2050 2750 2050
+Wire Wire Line
+	2750 2050 3400 2050
 Wire Wire Line
 	2400 3850 2400 3700
 Wire Wire Line
-	2250 3700 5850 3700
+	2250 3700 2400 3700
+Wire Wire Line
+	2400 3700 2750 3700
+Wire Wire Line
+	2750 3700 5850 3700
 Wire Notes Line
 	950  800  950  4850
 Wire Wire Line
@@ -1313,10 +1455,6 @@ Connection ~ 12050 1500
 Wire Wire Line
 	11800 5400 11800 6850
 Wire Wire Line
-	13950 3900 13950 3650
-Wire Wire Line
-	13950 3350 13950 3150
-Wire Wire Line
 	6450 7100 6450 7200
 Wire Wire Line
 	6800 7100 6800 7200
@@ -1327,7 +1465,9 @@ Wire Wire Line
 Wire Wire Line
 	7850 7100 7850 7200
 Wire Wire Line
-	7150 7600 7150 7800
+	7150 7600 7150 7700
+Wire Wire Line
+	7150 7700 7150 7800
 Wire Wire Line
 	6800 7600 6800 7700
 Connection ~ 7150 7700
@@ -1375,14 +1515,16 @@ Wire Wire Line
 	7500 5600 7500 6800
 Connection ~ 14700 6950
 Wire Wire Line
-	6450 7700 7850 7700
+	6450 7700 6800 7700
+Wire Wire Line
+	6800 7700 7150 7700
+Wire Wire Line
+	7150 7700 7500 7700
+Wire Wire Line
+	7500 7700 7850 7700
 Connection ~ 7500 7700
 Wire Wire Line
 	7850 6800 7850 6100
-Text Notes 1600 6050 0    80   ~ 16
-TODO: label RR signal
-Text Notes 1150 3250 0    60   ~ 0
-Shore Power Check
 Wire Wire Line
 	3700 2750 3700 2400
 Wire Wire Line
@@ -1390,8 +1532,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 2400 2750 2050
 Connection ~ 2750 2050
-Text Notes 9400 8100 0    80   ~ 16
-TODO: pull-down on FET gate
 Wire Wire Line
 	4350 7250 4350 6700
 Wire Wire Line
@@ -1402,44 +1542,35 @@ Wire Wire Line
 	4050 6950 4050 6700
 Wire Wire Line
 	8750 2050 8800 2050
-$Comp
-L R R604
-U 1 1 56B98CCE
-P 8800 2300
-F 0 "R604" V 8880 2300 50  0000 C CNN
-F 1 "30k" V 8800 2300 50  0000 C CNN
-F 2 "" V 8730 2300 30  0000 C CNN
-F 3 "" H 8800 2300 30  0000 C CNN
-	1    8800 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR606
-U 1 1 56B98E6E
-P 8800 2550
-F 0 "#PWR606" H 8800 2300 50  0001 C CNN
-F 1 "GND" H 8800 2400 50  0000 C CNN
-F 2 "" H 8800 2550 50  0000 C CNN
-F 3 "" H 8800 2550 50  0000 C CNN
-	1    8800 2550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8800 1700 8800 2150
+	8800 1450 8800 2050
 Wire Wire Line
-	8800 1700 8200 1700
-$Comp
-L TLP3542 IC?
-U 1 1 56C6E7C7
-P 4750 2200
-F 0 "IC?" H 4750 2610 40  0000 C CNN
-F 1 "TLP3542" H 4750 2532 40  0000 C CNN
-F 2 "DIP6" H 4750 2463 30  0000 C CIN
-F 3 "" H 4750 2250 60  0000 C CNN
-	1    4750 2200
-	1    0    0    -1  
-$EndComp
+	8800 2050 8800 2150
+Wire Wire Line
+	8800 1450 8200 1450
 Connection ~ 8800 2050
 Wire Wire Line
 	8800 2450 8800 2550
+Wire Wire Line
+	10850 8100 10850 7800
+Connection ~ 10850 7800
+Wire Wire Line
+	10850 8400 10850 8500
+Wire Wire Line
+	10850 8500 11400 8500
+Connection ~ 11400 8500
+Wire Wire Line
+	13950 3350 13950 3150
+Connection ~ 13950 3150
+Wire Wire Line
+	13950 4150 13950 4350
+Wire Wire Line
+	13950 3850 13950 3750
+Wire Wire Line
+	13950 3750 13950 3650
+Wire Wire Line
+	13550 3750 13950 3750
+Connection ~ 13950 3750
+Text Notes 13650 3750 0    50   Italic 0
++3.1V
 $EndSCHEMATC

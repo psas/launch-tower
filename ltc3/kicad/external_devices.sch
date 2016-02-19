@@ -55,7 +55,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 7 7
 Title "LTC3 External Power & Triggers"
-Date "2016-02-06"
+Date "2016-02-18"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -63,8 +63,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 8300 10400 0    100  ~ 0
-TODO:\n* Determine values for bleeder resistor\n  and filter capacitor on each output connector.
+Text Notes 700  10250 0    100  ~ 20
+TODO:\n* Determine values for bleeder resistor\n  and filter capacitor on each power output.
 $Comp
 L R R709
 U 1 1 557E02A5
