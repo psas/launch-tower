@@ -64,7 +64,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 8300 10400 0    100  ~ 0
-TODO:\n* Determine values for bleeder resistor\n  and filter capacitor on each output connector.\n* Pick new PolyFuses, 0.5-1.0A max.
+TODO:\n* Determine values for bleeder resistor\n  and filter capacitor on each output connector.
 $Comp
 L R R709
 U 1 1 557E02A5
@@ -401,8 +401,6 @@ Wire Notes Line
 	16050 8450 1000 8450
 Text Notes 1050 8650 0    100  ~ 0
 External Device Triggers
-Text Notes 5250 10300 0    80   ~ 16
-TODO: consolidate opto-isolators to one pn
 $Comp
 L FUSE F?
 U 1 1 56C69602
