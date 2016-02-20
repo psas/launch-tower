@@ -179,8 +179,6 @@ F 3 "" H 12650 4300 60  0000 C CNN
 	1    12650 4300
 	1    0    0    -1  
 $EndComp
-Text Notes 5050 9200 0    100  ~ 0
-TODO:\n* Umbilical connection state\n* Ignition fuse state\n* Table of I2C bus address assignments
 Text HLabel 7300 4450 0    60   Output ~ 0
 12V_EN
 Text HLabel 7300 4650 0    60   Output ~ 0
@@ -205,7 +203,9 @@ Wire Wire Line
 Wire Wire Line
 	14900 3550 15500 3550
 Wire Wire Line
-	15100 3300 15100 3950
+	15100 3300 15100 3400
+Wire Wire Line
+	15100 3400 15100 3950
 Wire Wire Line
 	14900 3400 15100 3400
 Wire Wire Line
@@ -224,11 +224,15 @@ Connection ~ 13250 3550
 Wire Wire Line
 	13400 3550 13250 3550
 Wire Wire Line
-	13250 3400 13250 4300
+	13250 3400 13250 3550
+Wire Wire Line
+	13250 3550 13250 4300
 Wire Wire Line
 	13400 3400 13250 3400
 Wire Wire Line
-	9900 4250 10650 4250
+	9900 4250 10400 4250
+Wire Wire Line
+	10400 4250 10650 4250
 Wire Wire Line
 	4400 4850 4900 4850
 Wire Wire Line
@@ -301,7 +305,9 @@ F 3 "" H 7750 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 5450 7750 5650
+	7750 5450 7750 5550
+Wire Wire Line
+	7750 5550 7750 5650
 Wire Wire Line
 	7750 5550 8000 5550
 Wire Wire Line
@@ -319,7 +325,9 @@ F 3 "" H 10150 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 5450 10150 5650
+	10150 5450 10150 5550
+Wire Wire Line
+	10150 5550 10150 5650
 Wire Wire Line
 	10150 5550 9900 5550
 Wire Wire Line
@@ -345,7 +353,9 @@ Wire Wire Line
 Wire Wire Line
 	7750 3350 7750 2600
 Wire Wire Line
-	7750 2600 10150 2600
+	7750 2600 8950 2600
+Wire Wire Line
+	8950 2600 10150 2600
 Wire Wire Line
 	8950 2600 8950 2700
 Wire Wire Line
@@ -378,7 +388,9 @@ F 3 "" H 10400 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 3050 10400 3800
+	10400 3050 10400 3550
+Wire Wire Line
+	10400 3550 10400 3800
 $Comp
 L +5V #PWR506
 U 1 1 565538D1
@@ -391,7 +403,9 @@ F 3 "" H 7500 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3050 7500 3800
+	7500 3050 7500 3550
+Wire Wire Line
+	7500 3550 7500 3800
 $Comp
 L +5V #PWR502
 U 1 1 56555506
@@ -462,12 +476,14 @@ F 3 "~" H 7500 3950 30  0000 C CNN
 $EndComp
 Connection ~ 7500 3550
 Wire Wire Line
-	7500 4100 7500 6300
+	7500 4100 7500 4250
 Wire Wire Line
-	7250 4250 8000 4250
+	7500 4250 7500 6300
 Connection ~ 10400 3550
 Wire Wire Line
-	10400 4100 10400 5100
+	10400 4100 10400 4250
+Wire Wire Line
+	10400 4250 10400 5100
 Wire Notes Line
 	950  2350 11300 2350
 Wire Notes Line
@@ -478,7 +494,7 @@ Wire Notes Line
 	950  6100 950  2350
 Text Notes 950  6250 0    80   ~ 0
 BeagleBone Expansion Headers
-Text HLabel 7250 4250 0    50   BiDi ~ 0
+Text HLabel 6750 4250 0    50   BiDi ~ 0
 I2C_CLOCK
 Text HLabel 10650 4250 2    50   BiDi ~ 0
 I2C_DATA
@@ -540,28 +556,8 @@ Wire Wire Line
 	8000 4650 7300 4650
 Text Notes 800  6850 0    50   ~ 0
 NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
-Text Notes 8550 9650 0    60   ~ 12
-TODO: pull-ups on I2C1 bus?
-Text Notes 5100 9450 0    60   ~ 12
-TODO: explanatory note on use\nof various I2C busses
-Text Notes 8550 9400 0    80   ~ 16
-TODO: I2C2 label?\n**Questions\nWhy are we using 2 i2c buses?\n***Potential Solution\nI simply moved assignments to i2c2.\n**Anectdote\nThe only valid address for \nEEPROM is 0x54-57 the BBB will only look\nThere for cape/device tree info.
-Text Notes 5050 9650 0    80   ~ 16
-TODO: 41#? 42@?
-Text Notes 8550 9950 0    80   ~ 16
-TODO: pull-ups on I2C1 lines?\nNo-place pull-ups.
-Wire Notes Line
-	5050 9600 6150 9600
-Text Notes 5100 9750 0    50   ~ 0
-Pins 41,42 control two different gpio's each a la the # and @
 Text Notes 800  7600 0    50   Italic 0
 ADDR\n0x10\n0x54\n0x90\n0x98\n0x9A\n
-Wire Notes Line
-	5100 9300 6550 9300
-Wire Notes Line
-	5050 9400 6100 9400
-Wire Notes Line
-	5050 9100 8200 9100
 Wire Wire Line
 	2500 4650 2000 4650
 Wire Wire Line
@@ -574,10 +570,6 @@ Text Label 2450 4750 2    60   ~ 0
 GPIO2_23
 Text Label 2450 4650 2    60   ~ 0
 GPIO2_22
-Wire Notes Line
-	4950 9000 6700 9000
-Wire Notes Line
-	5000 8850 7300 8850
 Text Notes 1050 7600 0    50   Italic 0
 Part\nU203\nU501\nU402\nU203\nU301
 Text Notes 1300 7600 0    50   Italic 0
@@ -612,4 +604,61 @@ Wire Notes Line
 	2150 7750 2150 8150
 Wire Notes Line
 	2150 8150 750  8150
+Wire Wire Line
+	6750 4250 6800 4250
+Wire Wire Line
+	6800 4250 7500 4250
+Wire Wire Line
+	7500 4250 8000 4250
+Wire Wire Line
+	6800 4250 6800 4300
+Connection ~ 6800 4250
+$Comp
+L TEST W?
+U 1 1 56C9D70E
+P 6800 4500
+F 0 "W?" H 6800 4560 50  0000 C CNN
+F 1 "TEST" H 6800 4430 50  0000 C CNN
+F 2 "" H 6800 4500 50  0000 C CNN
+F 3 "" H 6800 4500 50  0000 C CNN
+	1    6800 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9D74D
+P 6800 4750
+F 0 "#PWR?" H 6800 4500 50  0001 C CNN
+F 1 "GND" H 6800 4600 50  0000 C CNN
+F 2 "" H 6800 4750 50  0000 C CNN
+F 3 "" H 6800 4750 50  0000 C CNN
+	1    6800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4750 6800 4700
+$Comp
+L TEST W?
+U 1 1 56C9D96C
+P 10550 4450
+F 0 "W?" H 10550 4510 50  0000 C CNN
+F 1 "TEST" H 10550 4380 50  0000 C CNN
+F 2 "" H 10550 4450 50  0000 C CNN
+F 3 "" H 10550 4450 50  0000 C CNN
+	1    10550 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56C9D9B3
+P 10550 4700
+F 0 "#PWR?" H 10550 4450 50  0001 C CNN
+F 1 "GND" H 10550 4550 50  0000 C CNN
+F 2 "" H 10550 4700 50  0000 C CNN
+F 3 "" H 10550 4700 50  0000 C CNN
+	1    10550 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 4700 10550 4650
 $EndSCHEMATC
