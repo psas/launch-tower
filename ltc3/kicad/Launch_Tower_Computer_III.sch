@@ -162,6 +162,8 @@ F15 "BQ_XALERT" I L 9400 5200 60
 F16 "BQ_EEPROM" O R 11400 6700 60 
 F17 "ROCKET_READY" I L 9400 6800 60 
 F18 "ROCKET_IGNITE" O R 11400 6850 60 
+F19 "IGN_RTL" I L 9400 6950 61 
+F20 "UMB_STATE" I L 9400 6650 61 
 $EndSheet
 $Sheet
 S 12800 6600 2500 1600
@@ -170,6 +172,8 @@ F0 "Rocket Umbilical & Ignition Control" 60
 F1 "rocket_interface.sch" 60
 F2 "ROCKET_READY" O R 15300 6850 60 
 F3 "ROCKET_IGNITE" I L 12800 6850 60 
+F4 "IGN_RTL" O R 15300 7000 61 
+F5 "UMB_STATE" O R 15300 6700 61 
 $EndSheet
 $Sheet
 S 12800 1500 2500 1600
@@ -213,6 +217,10 @@ Entry Wire Line
 	5150 7400 5250 7300
 Entry Wire Line
 	5150 7300 5250 7200
+Text Notes 800  9000 0    100  ~ 20
+TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!\n* Create style legend.\n* Consistent style:\n  * No "embedded" multipliers in R vals.\n* Add test points where appropriate.\n  * Esp. around SMD packages, parts w/ no\n     exposed leads, etc.\n  * through-hole 2x1 pin header (1 to signal, other to gnd)
+Text Notes 800  10200 0    100  ~ 0
+Notes:\n * LTC3 is a single board represented on \n   multiple sheets.
 Wire Bus Line
 	5150 7300 5150 8600
 Wire Bus Line
@@ -321,8 +329,6 @@ Wire Wire Line
 	12800 2050 12650 2050
 Wire Bus Line
 	12550 2150 12550 4750
-Text Notes 800  9000 0    100  ~ 20
-TODO:\n* Finish wiring up sub-sheets.\n  * Bus entries need labels on both sides!\n* Create style legend.\n* Consistent style:\n  * No "embedded" multipliers in R vals.\n* Add test points where appropriate.\n  * Esp. around SMD packages, parts w/ no\n     exposed leads, etc.\n  * through-hole 2x1 pin header (1 to signal, other to gnd)
 Wire Wire Line
 	9400 6800 9150 6800
 Wire Wire Line
@@ -335,6 +341,24 @@ Wire Wire Line
 	15500 6850 15500 8450
 Wire Wire Line
 	15500 8450 9150 8450
-Text Notes 800  10200 0    100  ~ 0
-Notes:\n * LTC3 is a single board represented on \n   multiple sheets.
+Wire Wire Line
+	15300 7000 15400 7000
+Wire Wire Line
+	15400 7000 15400 8350
+Wire Wire Line
+	15400 8350 9250 8350
+Wire Wire Line
+	9250 8350 9250 6950
+Wire Wire Line
+	9250 6950 9400 6950
+Wire Wire Line
+	15300 6700 15600 6700
+Wire Wire Line
+	15600 6700 15600 8550
+Wire Wire Line
+	15600 8550 9050 8550
+Wire Wire Line
+	9050 8550 9050 6650
+Wire Wire Line
+	9050 6650 9400 6650
 $EndSCHEMATC
