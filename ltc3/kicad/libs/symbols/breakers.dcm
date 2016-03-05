@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BREAKER_1P
+D circuit breaker 1p single pole
+K breaker 1p
+$ENDCMP
+#
+#End Doc Library

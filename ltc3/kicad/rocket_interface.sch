@@ -48,14 +48,15 @@ LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
 LIBS:battery_single_cell
+LIBS:breakers
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 6 7
+Sheet 6 8
 Title "LTC3 Rocket Umbilical & Ignition Control"
-Date "2016-02-06"
+Date "2016-03-05"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
