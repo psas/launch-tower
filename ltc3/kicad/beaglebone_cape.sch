@@ -48,14 +48,15 @@ LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
 LIBS:battery_single_cell
+LIBS:breakers
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 5 7
+Sheet 5 8
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2016-02-06"
+Date "2016-03-05"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -203,9 +204,7 @@ Wire Wire Line
 Wire Wire Line
 	14900 3550 15500 3550
 Wire Wire Line
-	15100 3300 15100 3400
-Wire Wire Line
-	15100 3400 15100 3950
+	15100 3300 15100 3950
 Wire Wire Line
 	14900 3400 15100 3400
 Wire Wire Line
@@ -224,15 +223,11 @@ Connection ~ 13250 3550
 Wire Wire Line
 	13400 3550 13250 3550
 Wire Wire Line
-	13250 3400 13250 3550
-Wire Wire Line
-	13250 3550 13250 4300
+	13250 3400 13250 4300
 Wire Wire Line
 	13400 3400 13250 3400
 Wire Wire Line
-	9900 4250 10400 4250
-Wire Wire Line
-	10400 4250 10650 4250
+	9900 4250 10650 4250
 Wire Wire Line
 	4400 4850 4900 4850
 Wire Wire Line
@@ -305,9 +300,7 @@ F 3 "" H 7750 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 5450 7750 5550
-Wire Wire Line
-	7750 5550 7750 5650
+	7750 5450 7750 5650
 Wire Wire Line
 	7750 5550 8000 5550
 Wire Wire Line
@@ -325,9 +318,7 @@ F 3 "" H 10150 5650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 5450 10150 5550
-Wire Wire Line
-	10150 5550 10150 5650
+	10150 5450 10150 5650
 Wire Wire Line
 	10150 5550 9900 5550
 Wire Wire Line
@@ -353,9 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 3350 7750 2600
 Wire Wire Line
-	7750 2600 8950 2600
-Wire Wire Line
-	8950 2600 10150 2600
+	7750 2600 10150 2600
 Wire Wire Line
 	8950 2600 8950 2700
 Wire Wire Line
@@ -388,9 +377,7 @@ F 3 "" H 10400 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10400 3050 10400 3550
-Wire Wire Line
-	10400 3550 10400 3800
+	10400 3050 10400 3800
 $Comp
 L +5V #PWR506
 U 1 1 565538D1
@@ -403,9 +390,7 @@ F 3 "" H 7500 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3050 7500 3550
-Wire Wire Line
-	7500 3550 7500 3800
+	7500 3050 7500 3800
 $Comp
 L +5V #PWR502
 U 1 1 56555506
@@ -476,14 +461,10 @@ F 3 "~" H 7500 3950 30  0000 C CNN
 $EndComp
 Connection ~ 7500 3550
 Wire Wire Line
-	7500 4100 7500 4250
-Wire Wire Line
-	7500 4250 7500 6300
+	7500 4100 7500 6300
 Connection ~ 10400 3550
 Wire Wire Line
-	10400 4100 10400 4250
-Wire Wire Line
-	10400 4250 10400 5100
+	10400 4100 10400 5100
 Wire Notes Line
 	950  2350 11300 2350
 Wire Notes Line
@@ -492,7 +473,7 @@ Wire Notes Line
 	11300 6100 950  6100
 Wire Notes Line
 	950  6100 950  2350
-Text Notes 950  6250 0    80   ~ 0
+Text Notes 950  6300 0    100  ~ 0
 BeagleBone Expansion Headers
 Text HLabel 6750 4250 0    50   BiDi ~ 0
 I2C_CLOCK
@@ -554,9 +535,9 @@ Wire Wire Line
 	7300 4450 8000 4450
 Wire Wire Line
 	8000 4650 7300 4650
-Text Notes 800  6850 0    50   ~ 0
-NOTES:\nDo NOT change ROCKET_IGNITE, \npin default reset state is High-Z \nw/ pulldown resistor.  Other pins\ncan be configured in EEPROM\nat boot time.
-Text Notes 800  7600 0    50   Italic 0
+Text Notes 800  8950 0    80   ~ 0
+NOTES:\n* Do NOT change ROCKET_IGNITE, pin default reset state is\n  High-Z w/ pulldown resistor.  Other pins can be configured in\n  EEPROM at boot time.\n* All I2C devices on LTC3 are slaves. The BBB is the only\n  master so the LTC will not need arbitration.\n
+Text Notes 800  10200 0    80   ~ 0
 ADDR\n0x10\n0x54\n0x90\n0x98\n0x9A\n
 Wire Wire Line
 	2500 4650 2000 4650
@@ -570,46 +551,20 @@ Text Label 2450 4750 2    60   ~ 0
 GPIO2_23
 Text Label 2450 4650 2    60   ~ 0
 GPIO2_22
-Text Notes 1050 7600 0    50   Italic 0
+Text Notes 1250 10200 0    80   ~ 0
 Part\nU203\nU501\nU402\nU203\nU301
-Text Notes 1300 7600 0    50   Italic 0
+Text Notes 1700 10200 0    80   ~ 0
 Type\nBQ77PL900\nEEPROM\nLTC2991\nLTC2990\nLTC2990
-Text Notes 1800 7600 0    50   Italic 0
+Text Notes 2550 10200 0    80   ~ 0
 Location\nB/PM\nBBB\nDC-DC\nPower In\nB/PM
-Text Notes 800  7100 0    50   Italic 0
-i2c Devices
+Text Notes 800  9400 0    80   Italic 0
+I2C Devices
 Wire Notes Line
-	750  7000 2150 7000
+	750  9000 750  8150
 Wire Notes Line
-	2150 7000 2150 7650
-Wire Notes Line
-	2150 7650 750  7650
-Wire Notes Line
-	750  7650 750  7000
-Wire Notes Line
-	750  6900 750  6350
-Wire Notes Line
-	750  6350 2150 6350
-Wire Notes Line
-	2150 6350 2150 6900
-Wire Notes Line
-	2150 6900 750  6900
-Wire Notes Line
-	750  7750 2150 7750
-Wire Notes Line
-	750  7750 750  8150
-Text Notes 800  8100 0    50   ~ 0
-All i2c devices on LTC3 are \nslaves. The BBB is the only \nmaster so the LTC will not need \narbitration.
-Wire Notes Line
-	2150 7750 2150 8150
-Wire Notes Line
-	2150 8150 750  8150
+	4900 9000 750  9000
 Wire Wire Line
-	6750 4250 6800 4250
-Wire Wire Line
-	6800 4250 7500 4250
-Wire Wire Line
-	7500 4250 8000 4250
+	6750 4250 8000 4250
 Wire Wire Line
 	6800 4250 6800 4300
 Connection ~ 6800 4250
@@ -661,4 +616,16 @@ F 3 "" H 10550 4700 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	10550 4700 10550 4650
+Wire Notes Line
+	4900 9000 4900 8150
+Wire Notes Line
+	4900 8150 750  8150
+Wire Notes Line
+	750  9250 750  10250
+Wire Notes Line
+	750  10250 3150 10250
+Wire Notes Line
+	3150 10250 3150 9250
+Wire Notes Line
+	3150 9250 750  9250
 $EndSCHEMATC
