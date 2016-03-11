@@ -1,4 +1,4 @@
-update=Fri 04 Mar 2016 05:52:00 PM PST
+update=Fri 11 Mar 2016 01:12:42 PM PST
 version=1
 last_client=kicad
 [cvpcb]
@@ -45,17 +45,6 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=libs/symbols
@@ -110,3 +99,14 @@ LibName47=libs/symbols/NDS9407
 LibName48=libs/symbols/PI2127
 LibName49=libs/symbols/battery_single_cell
 LibName50=libs/symbols/breakers
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=50
+ERC_TestSimilarLabels=1

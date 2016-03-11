@@ -54,9 +54,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 8 8
+Sheet 7 8
 Title "LTC3 External Device Power"
-Date "2016-03-05"
+Date "2016-03-11"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -779,7 +779,7 @@ Wire Wire Line
 Wire Wire Line
 	3900 8350 3900 8650
 Wire Wire Line
-	2100 5000 2100 8050
+	2100 4600 2100 8050
 Connection ~ 3900 7900
 Connection ~ 3550 7900
 Wire Wire Line
@@ -825,7 +825,7 @@ Wire Wire Line
 Wire Wire Line
 	9100 8350 9100 8650
 Wire Wire Line
-	7300 5300 7300 8050
+	7300 4900 7300 8050
 Connection ~ 9100 7900
 Connection ~ 8750 7900
 Wire Wire Line
@@ -931,11 +931,11 @@ Wire Wire Line
 Wire Wire Line
 	11800 2550 12050 2550
 Wire Wire Line
-	2100 5000 11300 5000
+	2100 4600 11300 4600
 Wire Wire Line
-	11300 5000 11300 2250
+	11300 4600 11300 2250
 Wire Wire Line
-	11500 5300 11500 2450
+	11500 4900 11500 2450
 Connection ~ 11800 2550
 Wire Wire Line
 	11800 2450 12050 2450
@@ -1036,13 +1036,13 @@ EXT_POW_1_LED_CATH
 Wire Wire Line
 	2600 7900 2250 7900
 Wire Wire Line
-	2250 7900 2250 5100
+	2250 7900 2250 4700
 Wire Wire Line
 	7800 7900 7450 7900
 Wire Wire Line
-	7450 7900 7450 5400
+	7450 7900 7450 5000
 Wire Wire Line
-	7450 5400 11600 5400
+	7450 5000 11600 5000
 Text Label 11900 2050 2    50   ~ 0
 EXT_POW_3_FET_D
 Text Label 11900 2150 2    50   ~ 0
@@ -1054,11 +1054,11 @@ EXT_POW_4_LED_CATH
 Wire Wire Line
 	11300 2050 12050 2050
 Wire Wire Line
-	11600 5400 11600 2550
+	11600 5000 11600 2550
 Wire Wire Line
 	12050 2150 11400 2150
 Wire Wire Line
-	11400 2350 11400 5100
+	11400 2350 11400 4700
 Wire Wire Line
 	11600 2350 12050 2350
 Wire Wire Line
@@ -1072,9 +1072,9 @@ EXT_POW_3_OPTO_RELAY_P
 Text Label 11650 6800 2    50   ~ 0
 EXT_POW_4_OPTO_RELAY_P
 Wire Wire Line
-	11500 5300 7300 5300
+	11500 4900 7300 4900
 Wire Wire Line
-	11400 5100 2250 5100
+	11400 4700 2250 4700
 Wire Wire Line
 	10150 6400 12050 6400
 Wire Wire Line

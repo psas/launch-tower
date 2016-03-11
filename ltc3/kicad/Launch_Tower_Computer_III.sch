@@ -56,7 +56,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2016-03-05"
+Date "2016-03-11"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -323,16 +323,6 @@ Wire Wire Line
 Wire Wire Line
 	15500 8450 9150 8450
 $Sheet
-S 12800 3600 2500 1600
-U 56D25DDF
-F0 "External Device Triggers" 50
-F1 "external_triggers.sch" 50
-F2 "EXT_TRIG_EN_1" I L 12800 3850 60 
-F3 "EXT_TRIG_EN_2" I L 12800 3950 60 
-F4 "EXT_TRIG_EN_3" I L 12800 4050 60 
-F5 "EXT_TRIG_EN_4" I L 12800 4150 60 
-$EndSheet
-$Sheet
 S 12800 1500 2500 1600
 U 551C79BE
 F0 "External Device Power" 60
@@ -341,6 +331,16 @@ F2 "EXT_PWR_EN_1" I L 12800 2050 60
 F3 "EXT_PWR_EN_2" I L 12800 2150 60 
 F4 "EXT_PWR_EN_4" I L 12800 2350 60 
 F5 "EXT_PWR_EN_3" I L 12800 2250 60 
+$EndSheet
+$Sheet
+S 12800 3600 2500 1600
+U 56D25DDF
+F0 "External Device Triggers" 50
+F1 "external_triggers.sch" 50
+F2 "EXT_TRIG_EN_1" I L 12800 3850 60 
+F3 "EXT_TRIG_EN_2" I L 12800 3950 60 
+F4 "EXT_TRIG_EN_3" I L 12800 4050 60 
+F5 "EXT_TRIG_EN_4" I L 12800 4150 60 
 $EndSheet
 Wire Bus Line
 	12550 2600 11650 2600
