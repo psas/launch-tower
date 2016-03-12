@@ -49,7 +49,6 @@ LIBS:NDS9407
 LIBS:PI2127
 LIBS:battery_single_cell
 LIBS:breakers
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
@@ -261,7 +260,7 @@ F 3 "" H 1550 7150 60  0000 C CNN
 	1    1550 7150
 	1    0    0    -1  
 $EndComp
-Text HLabel 3800 7250 0    50   3State ~ 0
+Text HLabel 3200 7875 0    50   3State ~ 0
 BQ_EEPROM
 Text HLabel 3800 7150 0    50   3State ~ 0
 BQ_XALERT
@@ -977,9 +976,7 @@ Text Notes 2800 7600 1    50   Italic 0
 thermistor
 Text Notes 14975 3275 0    60   ~ 12
 Maximum Voltage: 33.6V\nMinimum Voltage: 25.6V
-Text Notes 3350 9150 0    60   ~ 12
-TODO: EEPROM input requires\nhigh-voltage buffer
-Text Notes 600  9500 0    80   ~ 16
+Text Notes 650  9750 0    80   ~ 16
 TODO:\n* connect BQ_EEPROM to 0.100" pin headers (2x1, w/ gnd)\n* connect XRST (and other NCs) to test points
 Text Notes 2550 2325 0    80   ~ 16
 Didoes 301 and 304 are used to peak detect transients.  1SS355 is a ge diode.
@@ -1136,6 +1133,39 @@ F 2 "" H 3150 4000 60  0001 C CNN
 F 3 "" H 3150 4000 60  0000 C CNN
 	1    3150 4000
 	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56CC08A0
+P 3150 4300
+F 0 "#PWR?" H 3150 4050 50  0001 C CNN
+F 1 "GND" H 3150 4150 50  0000 C CNN
+F 2 "" H 3150 4300 60  0000 C CNN
+F 3 "" H 3150 4300 60  0000 C CNN
+	1    3150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 56E4B014
+P 3150 8425
+F 0 "P?" H 3150 8575 50  0000 C CNN
+F 1 "CONN_01X02" V 3250 8425 50  0000 C CNN
+F 2 "" H 3150 8425 60  0000 C CNN
+F 3 "" H 3150 8425 60  0000 C CNN
+	1    3150 8425
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E4B689
+P 2750 8200
+F 0 "#PWR?" H 2750 7950 50  0001 C CNN
+F 1 "GND" H 2750 8050 50  0000 C CNN
+F 2 "" H 2750 8200 60  0000 C CNN
+F 3 "" H 2750 8200 60  0000 C CNN
+	1    2750 8200
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4850 8550 4850 8750
@@ -1530,7 +1560,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 7150 4050 7150
 Wire Wire Line
-	4050 7250 3800 7250
+	3200 7250 4050 7250
 Wire Wire Line
 	3450 5250 3450 5400
 Wire Wire Line
@@ -1872,6 +1902,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 4600 5750 4400
 Connection ~ 5750 4400
+<<<<<<< HEAD
 $Comp
 L GND #PWR069
 U 1 1 56CC08A0
@@ -1883,6 +1914,8 @@ F 3 "" H 3150 4300 60  0000 C CNN
 	1    3150 4300
 	1    0    0    -1  
 $EndComp
+=======
+>>>>>>> 21ea4d3074b1ee3b9030998d6ec8818b5c82a82f
 Wire Wire Line
 	3150 4300 3150 4200
 Wire Wire Line
@@ -1894,4 +1927,12 @@ Wire Wire Line
 Wire Wire Line
 	3150 3650 3150 3800
 Connection ~ 4075 4300
+Wire Wire Line
+	3100 8225 3100 8050
+Wire Wire Line
+	3100 8050 2750 8050
+Wire Wire Line
+	2750 8050 2750 8200
+Wire Wire Line
+	3200 8225 3200 7250
 $EndSCHEMATC
