@@ -235,10 +235,10 @@ Wire Wire Line
 Wire Wire Line
 	2000 4950 2500 4950
 $Comp
-L BeagleBone_Black_Expansion_Header C502
+L BeagleBone_Black_Expansion_Header P502
 U 1 1 55E6D53E
 P 3450 4350
-F 0 "C502" H 3450 5550 60  0000 C CNN
+F 0 "P502" H 3450 5550 60  0000 C CNN
 F 1 "BeagleBone_Black_Expansion_Header" H 3450 2950 60  0000 C CNN
 F 2 "" H 3450 4350 60  0001 C CNN
 F 3 "" H 3450 4350 60  0000 C CNN
@@ -246,10 +246,10 @@ F 3 "" H 3450 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L BeagleBone_Black_Expansion_Header C502
+L BeagleBone_Black_Expansion_Header P502
 U 2 1 55E6D67B
 P 8950 4350
-F 0 "C502" H 8950 5550 60  0000 C CNN
+F 0 "P502" H 8950 5550 60  0000 C CNN
 F 1 "BeagleBone_Black_Expansion_Header" H 8950 2950 60  0000 C CNN
 F 2 "" H 8950 4350 60  0001 C CNN
 F 3 "" H 8950 4350 60  0000 C CNN
@@ -535,7 +535,7 @@ Wire Wire Line
 	7300 4450 8000 4450
 Wire Wire Line
 	8000 4650 7300 4650
-Text Notes 800  8950 0    80   ~ 0
+Text Notes 12300 9150 0    80   ~ 0
 NOTES:\n* Do NOT change ROCKET_IGNITE, pin default reset state is\n  High-Z w/ pulldown resistor.  Other pins can be configured in\n  EEPROM at boot time.\n* All I2C devices on LTC3 are slaves. The BBB is the only\n  master so the LTC will not need arbitration.\n
 Text Notes 800  10200 0    80   ~ 0
 ADDR\n0x10\n0x54\n0x90\n0x98\n0x9A\n
@@ -559,10 +559,6 @@ Text Notes 2550 10200 0    80   ~ 0
 Location\nB/PM\nBBB\nDC-DC\nPower In\nB/PM
 Text Notes 800  9400 0    80   Italic 0
 I2C Devices
-Wire Notes Line
-	750  9000 750  8150
-Wire Notes Line
-	4900 9000 750  9000
 Wire Wire Line
 	6750 4250 8000 4250
 Wire Wire Line
@@ -616,10 +612,6 @@ F 3 "" H 10550 4700 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	10550 4700 10550 4650
-Wire Notes Line
-	4900 9000 4900 8150
-Wire Notes Line
-	4900 8150 750  8150
 Wire Notes Line
 	750  9250 750  10250
 Wire Notes Line
