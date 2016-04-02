@@ -196,8 +196,8 @@ ENDDEF
 #
 # BeagleBone_Black_Expansion_Header
 #
-DEF BeagleBone_Black_Expansion_Header C 0 40 Y Y 2 L N
-F0 "C" 0 1200 60 H V C CNN
+DEF BeagleBone_Black_Expansion_Header P 0 40 Y Y 2 L N
+F0 "P" 0 1200 60 H V C CNN
 F1 "BeagleBone_Black_Expansion_Header" 0 -1400 60 H V C CNN
 F2 "" -300 0 60 H V C CNN
 F3 "" -300 0 60 H V C CNN
