@@ -1,8 +1,13 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP BeagleBone_Black_Expansion_Header
-D BeagleBone Black Expansion Headers
-K beaglebone headers
+$CMP BeagleBone_Black_Expansion_Header_P8
+D BeagleBone Black Expansion Header P8
+K beaglebone header
+$ENDCMP
+#
+$CMP BeagleBone_Black_Expansion_Header_P9
+D BeagleBone Black Expansion Header P9
+K beaglebone header
 $ENDCMP
 #
 #End Doc Library
