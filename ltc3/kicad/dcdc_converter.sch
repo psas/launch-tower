@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:Launch_Tower_Computer_III-rescue
 LIBS:BeagleBone_Black
 LIBS:LT8490
 LIBS:LTC299x
@@ -50,6 +49,7 @@ LIBS:NDS9407
 LIBS:PI2127
 LIBS:battery_single_cell
 LIBS:breakers
+LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
