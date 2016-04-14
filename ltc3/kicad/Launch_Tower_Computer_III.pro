@@ -60,7 +60,6 @@ ERC_TestSimilarLabels=1
 version=1
 LibDir=libs/symbols
 [eeschema/libraries]
-LibName1=Launch_Tower_Computer_III-rescue
 LibName2=libs/symbols/BeagleBone_Black
 LibName3=libs/symbols/LT8490
 LibName4=libs/symbols/LTC299x
