@@ -106,7 +106,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 7 8
 Title "LTC3 External Device Power"
-Date "2016-03-11"
+Date "2016-04-16"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

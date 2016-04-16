@@ -1,4 +1,4 @@
-update=Sat 16 Apr 2016 02:21:06 PM PDT
+update=Sat 16 Apr 2016 03:01:23 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -45,17 +45,6 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=libs/symbols;../../../solar/kicad/libs/symbols
@@ -161,3 +150,14 @@ LibName98=Xicor
 LibName99=xilinx
 LibName100=Zilog
 LibName101=libs/symbols/N_MOS_SOT_26
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=50
+ERC_TestSimilarLabels=1
