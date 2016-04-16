@@ -1,4 +1,4 @@
-update=Sat 16 Apr 2016 02:09:37 PM PDT
+update=Sat 16 Apr 2016 02:21:06 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -160,3 +160,4 @@ LibName97=Worldsemi
 LibName98=Xicor
 LibName99=xilinx
 LibName100=Zilog
+LibName101=libs/symbols/N_MOS_SOT_26

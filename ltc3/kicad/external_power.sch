@@ -98,6 +98,7 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:N_MOS_SOT_26
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
