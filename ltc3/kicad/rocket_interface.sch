@@ -1831,4 +1831,6 @@ Text Notes 13000 8250 0    80   ~ 0
 Shorting Bar
 Text Notes 13000 8350 0    50   ~ 0
 (off board)
+Text Notes 13300 6750 0    100  ~ 20
+TODO: replace fuse w/ breaker?
 $EndSCHEMATC
