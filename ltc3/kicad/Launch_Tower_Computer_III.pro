@@ -1,4 +1,4 @@
-update=Sat 16 Apr 2016 01:43:46 PM PDT
+update=Sat 16 Apr 2016 02:09:37 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -58,7 +58,7 @@ LabSize=50
 ERC_TestSimilarLabels=1
 [eeschema]
 version=1
-LibDir=libs/symbols
+LibDir=libs/symbols;../../../solar/kicad/libs/symbols
 [eeschema/libraries]
 LibName1=libs/symbols/4n35
 LibName2=libs/symbols/741g08
