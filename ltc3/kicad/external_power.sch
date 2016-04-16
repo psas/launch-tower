@@ -1,54 +1,103 @@
 EESchema Schematic File Version 2
+LIBS:4n35
+LIBS:741g08
+LIBS:battery_single_cell
 LIBS:BeagleBone_Black
+LIBS:bq77PL900
+LIBS:breakers
+LIBS:CD74HC14
+LIBS:current_shunt
+LIBS:EEPROMs
 LIBS:LT8490
 LIBS:LTC299x
-LIBS:PMV45EN
-LIBS:PTN78020n
-LIBS:EEPROMs
-LIBS:TLP
-LIBS:bq77PL900
-LIBS:current_shunt
-LIBS:741g08
-LIBS:4n35
-LIBS:SNx52x0
-LIBS:switches
-LIBS:CD74HC14
-LIBS:power_nodes
-LIBS:relay_1c
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:SUM110P08-11
 LIBS:NDS9407
 LIBS:PI2127
-LIBS:battery_single_cell
-LIBS:breakers
+LIBS:PMV45EN
+LIBS:power_nodes
+LIBS:PTN78020n
+LIBS:relay_1c
+LIBS:SNx52x0
+LIBS:SUM110P08-11
+LIBS:switches
+LIBS:TLP
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:Lattice
+LIBS:linear
+LIBS:logo
+LIBS:maxim
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:Zilog
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
@@ -78,10 +127,10 @@ $EndComp
 Text HLabel 1500 3450 0    60   Input ~ 0
 EXT_PWR_EN_1
 $Comp
-L GND #PWR0161
+L GND #PWR706
 U 1 1 557E02AD
 P 1650 4100
-F 0 "#PWR0161" H 1650 4100 30  0001 C CNN
+F 0 "#PWR706" H 1650 4100 30  0001 C CNN
 F 1 "GND" H 1650 4030 30  0001 C CNN
 F 2 "" H 1650 4100 60  0000 C CNN
 F 3 "" H 1650 4100 60  0000 C CNN
@@ -111,10 +160,10 @@ F 3 "~" H 3900 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0162
+L GND #PWR704
 U 1 1 557E02DD
 P 3900 3800
-F 0 "#PWR0162" H 3900 3800 30  0001 C CNN
+F 0 "#PWR704" H 3900 3800 30  0001 C CNN
 F 1 "GND" H 3900 3730 30  0001 C CNN
 F 2 "" H 3900 3800 60  0000 C CNN
 F 3 "" H 3900 3800 60  0000 C CNN
@@ -166,10 +215,10 @@ F 3 "" H 2950 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0163
+L +5V #PWR701
 U 1 1 56544A2B
 P 2450 2200
-F 0 "#PWR0163" H 2450 2050 50  0001 C CNN
+F 0 "#PWR701" H 2450 2050 50  0001 C CNN
 F 1 "+5V" H 2450 2340 50  0000 C CNN
 F 2 "" H 2450 2200 60  0000 C CNN
 F 3 "" H 2450 2200 60  0000 C CNN
@@ -190,10 +239,10 @@ $EndComp
 Text HLabel 6700 3450 0    60   Input ~ 0
 EXT_PWR_EN_2
 $Comp
-L GND #PWR0164
+L GND #PWR707
 U 1 1 56CA75BB
 P 6850 4100
-F 0 "#PWR0164" H 6850 4100 30  0001 C CNN
+F 0 "#PWR707" H 6850 4100 30  0001 C CNN
 F 1 "GND" H 6850 4030 30  0001 C CNN
 F 2 "" H 6850 4100 60  0000 C CNN
 F 3 "" H 6850 4100 60  0000 C CNN
@@ -223,10 +272,10 @@ F 3 "~" H 9100 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0165
+L GND #PWR705
 U 1 1 56CA75CD
 P 9100 3800
-F 0 "#PWR0165" H 9100 3800 30  0001 C CNN
+F 0 "#PWR705" H 9100 3800 30  0001 C CNN
 F 1 "GND" H 9100 3730 30  0001 C CNN
 F 2 "" H 9100 3800 60  0000 C CNN
 F 3 "" H 9100 3800 60  0000 C CNN
@@ -278,10 +327,10 @@ F 3 "" H 8150 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0166
+L +5V #PWR702
 U 1 1 56CA760C
 P 7650 2200
-F 0 "#PWR0166" H 7650 2050 50  0001 C CNN
+F 0 "#PWR702" H 7650 2050 50  0001 C CNN
 F 1 "+5V" H 7650 2340 50  0000 C CNN
 F 2 "" H 7650 2200 60  0000 C CNN
 F 3 "" H 7650 2200 60  0000 C CNN
@@ -289,10 +338,10 @@ F 3 "" H 7650 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +12V #PWR0167
+L +12V #PWR708
 U 1 1 56CA7612
 P 11800 5650
-F 0 "#PWR0167" H 11800 5500 50  0001 C CNN
+F 0 "#PWR708" H 11800 5500 50  0001 C CNN
 F 1 "+12V" H 11800 5790 50  0000 C CNN
 F 2 "" H 11800 5650 60  0000 C CNN
 F 3 "" H 11800 5650 60  0000 C CNN
@@ -313,10 +362,10 @@ $EndComp
 Text HLabel 1500 8300 0    60   Input ~ 0
 EXT_PWR_EN_3
 $Comp
-L GND #PWR0168
+L GND #PWR712
 U 1 1 56CA9336
 P 1650 8950
-F 0 "#PWR0168" H 1650 8950 30  0001 C CNN
+F 0 "#PWR712" H 1650 8950 30  0001 C CNN
 F 1 "GND" H 1650 8880 30  0001 C CNN
 F 2 "" H 1650 8950 60  0000 C CNN
 F 3 "" H 1650 8950 60  0000 C CNN
@@ -390,10 +439,10 @@ F 3 "" H 2950 7900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0169
+L +5V #PWR709
 U 1 1 56CA9387
 P 2450 7050
-F 0 "#PWR0169" H 2450 6900 50  0001 C CNN
+F 0 "#PWR709" H 2450 6900 50  0001 C CNN
 F 1 "+5V" H 2450 7190 50  0000 C CNN
 F 2 "" H 2450 7050 60  0000 C CNN
 F 3 "" H 2450 7050 60  0000 C CNN
@@ -414,10 +463,10 @@ $EndComp
 Text HLabel 6700 8300 0    60   Input ~ 0
 EXT_PWR_EN_4
 $Comp
-L GND #PWR0170
+L GND #PWR713
 U 1 1 56CA93AD
 P 6850 8950
-F 0 "#PWR0170" H 6850 8950 30  0001 C CNN
+F 0 "#PWR713" H 6850 8950 30  0001 C CNN
 F 1 "GND" H 6850 8880 30  0001 C CNN
 F 2 "" H 6850 8950 60  0000 C CNN
 F 3 "" H 6850 8950 60  0000 C CNN
@@ -447,10 +496,10 @@ F 3 "~" H 9100 8200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR0171
+L GND #PWR711
 U 1 1 56CA93BF
 P 9100 8650
-F 0 "#PWR0171" H 9100 8650 30  0001 C CNN
+F 0 "#PWR711" H 9100 8650 30  0001 C CNN
 F 1 "GND" H 9100 8580 30  0001 C CNN
 F 2 "" H 9100 8650 60  0000 C CNN
 F 3 "" H 9100 8650 60  0000 C CNN
@@ -502,10 +551,10 @@ F 3 "" H 8150 7900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR0172
+L +5V #PWR710
 U 1 1 56CA93FE
 P 7650 7050
-F 0 "#PWR0172" H 7650 6900 50  0001 C CNN
+F 0 "#PWR710" H 7650 6900 50  0001 C CNN
 F 1 "+5V" H 7650 7190 50  0000 C CNN
 F 2 "" H 7650 7050 60  0000 C CNN
 F 3 "" H 7650 7050 60  0000 C CNN
@@ -583,10 +632,10 @@ Circuit Breakers, 1A x 4, Front Panel
 Text Notes 12700 3900 0    80   ~ 0
 Manual Override Switches, Front Panel
 $Comp
-L GND #PWR0173
+L GND #PWR703
 U 1 1 56DB5084
 P 11800 2800
-F 0 "#PWR0173" H 11800 2550 50  0001 C CNN
+F 0 "#PWR703" H 11800 2550 50  0001 C CNN
 F 1 "GND" H 11808 2626 50  0001 C CNN
 F 2 "" H 11800 2800 50  0000 C CNN
 F 3 "" H 11800 2800 50  0000 C CNN
