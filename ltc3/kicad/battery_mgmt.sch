@@ -30,6 +30,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
+LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -93,6 +94,7 @@ LIBS:transistors
 LIBS:ttl_ieee
 LIBS:valves
 LIBS:video
+LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
@@ -104,7 +106,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 2 8
 Title "Power In, Battery Charge, & PV MPPT"
-Date "2016-04-16"
+Date "2016-04-23"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -2993,10 +2995,10 @@ Wire Wire Line
 	2150 5300 2150 5200
 Connection ~ 2150 5200
 $Comp
-L TEST_1P W?
+L TEST_1P W214
 U 1 1 571D4C5D
 P 9050 8000
-F 0 "W?" H 9050 8270 50  0000 C CNN
+F 0 "W214" H 9050 8270 50  0000 C CNN
 F 1 "TEST_1P" H 9050 8200 50  0001 C CNN
 F 2 "" H 9250 8000 50  0000 C CNN
 F 3 "" H 9250 8000 50  0000 C CNN
@@ -3004,10 +3006,10 @@ F 3 "" H 9250 8000 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P W?
+L TEST_1P W213
 U 1 1 571D5544
 P 9050 7850
-F 0 "W?" H 9050 8120 50  0000 C CNN
+F 0 "W213" H 9050 8120 50  0000 C CNN
 F 1 "TEST_1P" H 9050 8050 50  0001 C CNN
 F 2 "" H 9250 7850 50  0000 C CNN
 F 3 "" H 9250 7850 50  0000 C CNN
@@ -3015,10 +3017,10 @@ F 3 "" H 9250 7850 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P W?
+L TEST_1P W212
 U 1 1 571D5643
 P 9050 7700
-F 0 "W?" H 9050 7970 50  0000 C CNN
+F 0 "W212" H 9050 7970 50  0000 C CNN
 F 1 "TEST_1P" H 9050 7900 50  0001 C CNN
 F 2 "" H 9250 7700 50  0000 C CNN
 F 3 "" H 9250 7700 50  0000 C CNN
@@ -3026,10 +3028,10 @@ F 3 "" H 9250 7700 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TEST_1P W?
+L TEST_1P W211
 U 1 1 571D58B9
 P 9050 7550
-F 0 "W?" H 9050 7820 50  0000 C CNN
+F 0 "W211" H 9050 7820 50  0000 C CNN
 F 1 "TEST_1P" H 9050 7750 50  0001 C CNN
 F 2 "" H 9250 7550 50  0000 C CNN
 F 3 "" H 9250 7550 50  0000 C CNN
