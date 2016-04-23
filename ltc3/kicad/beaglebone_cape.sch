@@ -30,7 +30,6 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -94,7 +93,6 @@ LIBS:transistors
 LIBS:ttl_ieee
 LIBS:valves
 LIBS:video
-LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
