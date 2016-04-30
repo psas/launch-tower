@@ -1,4 +1,4 @@
-update=Sat 23 Apr 2016 03:07:06 PM PDT
+update=Sat 30 Apr 2016 01:55:03 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -159,5 +159,5 @@ SubpartFirstId=65
 NetFmtName=Pcbnew
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
-LabSize=50
+LabSize=40
 ERC_TestSimilarLabels=1
