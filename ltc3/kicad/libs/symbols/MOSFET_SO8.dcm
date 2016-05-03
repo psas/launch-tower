@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+#
+$CMP Q_NMOS_SO8
+D NMOS FET SO-8
+K N-Channel MOSFET
+$ENDCMP
+#
+$CMP Q_PMOS_SO8
+D PMOS FET SO-8
+K P-Channel MOSFET
+$ENDCMP
+#
+#End Doc Library

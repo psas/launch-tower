@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP Q_NMOS_DGS_SOT_26
-D N-channel MOSFET SOT-26 
-K NMOS SOT-26
-$ENDCMP
-#
-#End Doc Library

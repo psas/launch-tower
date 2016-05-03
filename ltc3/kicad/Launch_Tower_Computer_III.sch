@@ -10,7 +10,6 @@ LIBS:current_shunt
 LIBS:EEPROMs
 LIBS:LT8490
 LIBS:LTC299x
-LIBS:NDS9407
 LIBS:PI2127
 LIBS:PMV45EN
 LIBS:power_nodes
@@ -19,7 +18,8 @@ LIBS:relay_1c
 LIBS:SNx52x0
 LIBS:SUM110P08-11
 LIBS:switches2
-LIBS:N_MOS_SOT_26
+LIBS:MOSFET_SO8
+LIBS:MOSFET_SOT26
 LIBS:TLP
 LIBS:74xgxx
 LIBS:74xx
@@ -106,7 +106,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2016-04-30"
+Date "2016-05-02"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
