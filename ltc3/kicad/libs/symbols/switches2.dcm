@@ -5,9 +5,4 @@ D SPST switch
 K SPST single pole throw switch
 $ENDCMP
 #
-$CMP SPST_switch
-D SPST switch
-K SPST single pole throw switch
-$ENDCMP
-#
 #End Doc Library

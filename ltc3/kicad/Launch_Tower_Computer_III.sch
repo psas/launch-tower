@@ -18,7 +18,8 @@ LIBS:PTN78020n
 LIBS:relay_1c
 LIBS:SNx52x0
 LIBS:SUM110P08-11
-LIBS:switches
+LIBS:switches2
+LIBS:N_MOS_SOT_26
 LIBS:TLP
 LIBS:74xgxx
 LIBS:74xx
@@ -88,6 +89,7 @@ LIBS:siliconi
 LIBS:stm8
 LIBS:stm32
 LIBS:supertex
+LIBS:switches
 LIBS:texas
 LIBS:transf
 LIBS:transistors
@@ -98,8 +100,6 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
-LIBS:N_MOS_SOT_26
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
