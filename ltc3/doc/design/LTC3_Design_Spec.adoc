@@ -65,12 +65,64 @@ flexibility.  The LT8490 can be powered with a wide range of input
 voltages.  A single connctor can be used for either the solar panels
 or 12V bench power supplies.
 
-==== Protection
+==== Battery Management and Cell Protection
 
-LiPo cell protection is provided by a Texas Instruments bq77PL900.
-The bq77PL900 is a cell protector and charge balancer that is
-inexpensive and relatively simple to use.
+LiPo cell protection is provided by a Texas Instruments bq77PL900
+("bq").  The bq performs both battery balancing and protection
+for up to 10 lithium-polymer cells.  Cell balancing and protection
+prevent over-charging and -discharging of cells, giving the batteries
+extra run time and lifespan.  It also prevents the overheating of
+cells (a fire hazard), and prevents early capacity degradation.
 
+===== Basic Function
+The bq utilizes two different PMOS devices, which are turned on and
+off by a microcontroller in the chip.  The bq senses battery cell
+voltages through its VC pins (VC1-VC10).  When the battery's voltage
+grows too high, the bq applies a voltage to the gates of the PMOS CHG
+FETs, whose body diodes then prevent current from passing from the
+input to the battery.  Likewise, when the battery's voltage drops too
+low, the bq applies a voltage on the gates of the DSG PMOS FETs, whose
+body diodes prevent current from passing from the battery to the load.
+The charge pump built into the bq allows gate voltages to become high
+enough for the CHG and DSG FETs to switch on and off.
+
+===== Active Balancing
+The bq uses active balancing in its design.  To do this, an integrated
+NMOS in the chip is connected between two of the VC pins and turns on
+when a certain voltage drops across it.  As a result, if one cell's
+voltage is too much greater than another, the voltage drop across the
+NMOS pushes current to the adjacent cell, and so on and so forth.  An
+external 500Ω current-limiting resistor is used in conjunction with a
+0.1μF filter capacitor.
+
+===== Temperature Sensing
+The temperature sensing feature of our design revolves around the TOUT
+and TIN pins on the bq.  A voltage divider network is put in parallel
+with a 10kΩ thermistor, which is taped to the battery pack.  The
+thermistor's resistance decreases with increasing temperature (NTC).
+When the battery pack gets hot, the voltage on the TIN pin becomes
+low, turning off both the DSG and CHG FETs.  This prevents current
+from flowing into our out of the battery, allowing it time to cool
+off.  Once the temperature has stabilized, the bq resumes its regular
+function.
+
+===== Zero-Volt Charging
+The zero-volt charging in our design is driven by another PMOS device
+via the general-purposed open-drain ("GPOD") pin.  When voltage drops
+below the supply voltage of the bq, the 0-V/precharge is enabled.
+When this happens, the GPOD pin drives the 0-V/precharge FET (Q306 in
+the LTC3 schematic).  When this FET is turned on, the CHG FET is
+bypassed and current passes through the GPOD FET, allowing the battery
+to charge.  When the voltage reaches a sustainable level for the bq to
+operate, the GPOD FET is turned off and the CHG FET takes over.
+
+===== Shutdown Mode
+When undervoltage is detected, the bq goes into shutdown mode.  In
+this mode, the DSG FET is turned off and all functions of the bq
+cease.  To exit shutdown mode, a voltage greater than V~STARTUP~ must
+be applied on the PACK+ pin.  This can be done in our system by
+applying an output voltage from the LT8490 onto the PACK+ pin of the
+bq.
 
 === DC Rails
 
@@ -93,7 +145,7 @@ temperature for such a load is approximately 55 °C.
 .LTC3 DC Power Rails
 [width="25%",frame="topbot",options="header"]
 |=======================================
-| Vout | Imin | Ityp | Imax | technology 
+| V~out~ | I~min~ | I~typ~ | I~max~ | technology 
 | 5.0  | ?    | 1.0  | 2.0  | PTN78020W
 | 12.0 | ?    | ?    | 5.0  | PTN78020H
 | 19.0 | ?    | 3.0  | 4.0  | PTN78020H
