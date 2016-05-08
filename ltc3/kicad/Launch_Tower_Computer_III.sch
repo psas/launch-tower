@@ -166,16 +166,16 @@ EXT_TRG_EN_4
 $Sheet
 S 1400 1500 2500 1600
 U 56238165
-F0 "Power In, Battery Charge & PV MPPT" 60
-F1 "battery_mgmt.sch" 60
+F0 "Power In, Charge Controller" 60
+F1 "power_in_charge_controller.sch" 60
 F2 "I2C_CLOCK" B L 1400 1750 60 
 F3 "I2C_DATA" B L 1400 1850 60 
 $EndSheet
 $Sheet
 S 5400 1500 2500 1600
 U 562DD32F
-F0 "Battery Management" 60
-F1 "battery_balance.sch" 60
+F0 "Cell Protection" 60
+F1 "cell_protection.sch" 60
 F2 "BQ_XALERT" B L 5400 2100 60 
 F3 "I2C_DATA" B L 5400 1850 60 
 F4 "I2C_CLOCK" B L 5400 1750 60 
@@ -247,8 +247,6 @@ Entry Wire Line
 	5150 7500 5250 7400
 Entry Wire Line
 	5150 7400 5250 7300
-Text Notes 700  10250 0    100  ~ 20
-TODO:\n* Rename battery sub-sheets: "Power In; Charge Controller", "Battery Protection"
 $Sheet
 S 12800 1500 2500 1600
 U 551C79BE
