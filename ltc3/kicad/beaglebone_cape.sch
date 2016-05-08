@@ -100,13 +100,14 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 5 8
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2016-05-02"
+Date "2016-05-07"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -223,9 +224,9 @@ F 3 "" H 12900 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text HLabel 7700 4450 0    60   Output ~ 0
-12V_EN
+12V_ENn
 Text HLabel 7700 4650 0    60   Output ~ 0
-19V_EN
+19V_ENn
 Wire Notes Line
 	12550 4750 12550 2350
 Wire Notes Line

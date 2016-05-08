@@ -100,13 +100,14 @@ LIBS:Worldsemi
 LIBS:Xicor
 LIBS:xilinx
 LIBS:Zilog
+LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2016-05-02"
+Date "2016-05-07"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -184,8 +185,8 @@ S 5400 6600 2500 1600
 U 550535FB
 F0 "DC-DC Converters" 60
 F1 "dcdc_converter.sch" 50
-F2 "19V_EN" I L 5400 7400 60 
-F3 "12V_EN" I L 5400 7300 60 
+F2 "19V_ENn" I L 5400 7400 60 
+F3 "12V_ENn" I L 5400 7300 60 
 F4 "I2C_CLOCK" B L 5400 6850 60 
 F5 "I2C_DATA" B L 5400 6950 60 
 $EndSheet
@@ -202,8 +203,8 @@ F6 "EXT_PWR_EN_1" O R 11400 4850 60
 F7 "EXT_PWR_EN_2" O R 11400 4950 60 
 F8 "EXT_PWR_EN_3" O R 11400 5050 60 
 F9 "EXT_PWR_EN_4" O R 11400 5150 60 
-F10 "12V_EN" O R 11400 6400 60 
-F11 "19V_EN" O R 11400 6500 60 
+F10 "12V_ENn" O R 11400 6400 60 
+F11 "19V_ENn" O R 11400 6500 60 
 F12 "I2C_CLOCK" B L 9400 4850 60 
 F13 "I2C_DATA" B L 9400 4950 60 
 F14 "BQ_XALERT" I L 9400 5200 60 
@@ -247,7 +248,7 @@ Entry Wire Line
 Entry Wire Line
 	5150 7400 5250 7300
 Text Notes 700  10250 0    100  ~ 20
-TODO:\n* Create style legend.\n* Consistent style:\n  * No "embedded" multipliers in R vals.\n* Add test points where appropriate.\n  * Esp. around SMD packages, parts w/ no\n     exposed leads, etc.\n  * through-hole 2x1 pin header (1 to signal, other to gnd)
+TODO:\n* Rename battery sub-sheets: "Power In; Charge Controller", "Battery Protection"
 $Sheet
 S 12800 1500 2500 1600
 U 551C79BE
@@ -413,13 +414,13 @@ ROCKET_READYn
 Text Label 15450 7000 0    40   ~ 0
 IGN_RTL
 Text Label 5250 7300 2    40   ~ 0
-12V_EN
+12V_ENn
 Text Label 5250 7400 2    40   ~ 0
-19V_EN
+19V_ENn
 Text Label 11550 6400 0    40   ~ 0
-12V_EN
+12V_ENn
 Text Label 11550 6500 0    40   ~ 0
-19V_EN
+19V_ENn
 Text Label 5150 6850 2    40   ~ 0
 I2C_CLOCK
 Text Label 5150 6950 2    40   ~ 0
