@@ -107,7 +107,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 4 8
 Title "LTC3 DC-DC Converters"
-Date "2016-05-07"
+Date "2016-05-09"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""

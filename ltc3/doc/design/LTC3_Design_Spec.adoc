@@ -23,7 +23,6 @@ either the design is incorrect, or the document needs to be updated!
 == Power
 
 === Sources
-
 Power for LTC3 will be sourced from a bench power supply while in the
 lab, and photovoltaic panels while in the field.
 
@@ -33,9 +32,7 @@ the 19 VDC rail, which requires an overhead of 4 VDC.  At minimum, a
 footnote:[Refer to Texas Instruments PTN78020[WH\] datasheet, Aug.
 2011, page 10, "Input Voltage Considerations"]
 
-
 === Battery
-
 The heart of the LTC3 power circuitry is a 28.8 V, 8s2p LiPo battery
 pack.  The 28.8 V nominal voltage enables the use of buck converters
 on 5V and 19V power rails.  (Configurable buck converters are cheap
@@ -48,7 +45,6 @@ circuit, as most off-the-shelf chargers are designed for 12V nominal
 MPPT and 4s cell configurations.
 
 ==== TODO
-
 * Based on assumptions: 90% efficiency, calc. 96W of power (a
   conservative estimate), 4 hours pure battery, we need a capacity of
   13.2Ah at 28.8V nominal.
@@ -56,7 +52,6 @@ MPPT and 4s cell configurations.
   us into our 4 hours.
 
 ==== Charge Controller
-
 LTC3 uses the Linear Technologies LT8490, a switching buck/boost
 regulator that integrates a charger and solar MPPT.  It is robust and
 inexpensive.  Implementation of circuits based on the LT8490 are
@@ -66,7 +61,6 @@ voltages.  A single connctor can be used for either the solar panels
 or 12V bench power supplies.
 
 ==== Battery Management and Cell Protection
-
 LiPo cell protection is provided by a Texas Instruments bq77PL900
 ("bq").  The bq performs both battery balancing and protection
 for up to 10 lithium-polymer cells.  Cell balancing and protection
@@ -124,8 +118,8 @@ be applied on the PACK+ pin.  This can be done in our system by
 applying an output voltage from the LT8490 onto the PACK+ pin of the
 bq.
 
-=== DC Rails
 
+=== DC Rails
 LTC3 provides three DC power rails:
 
 * 5 VDC for the Beaglebone and cape
@@ -150,6 +144,7 @@ temperature for such a load is approximately 55 °C.
 | 12.0 | ?    | ?    | 5.0  | PTN78020H
 | 19.0 | ?    | 3.0  | 4.0  | PTN78020H
 |=======================================
+
 
 
 == Ignition Subsystem
@@ -198,6 +193,7 @@ current) will be used to monitor the temperature of the main battery.
 * Internal Ethernet switch.
 
 
+
 == External Device Support
 
 LTC3 provides power and trigger support for four external devices
@@ -229,17 +225,32 @@ the mainboard.  An on-board three-pin header is jumpered accordingly
 to select the signal, whichever suits the device being triggered.
 
 
+
+== User Interface
+
+=== BAKERCON Hazard Gauge
+Indicates at a glance how close ignition battery power is to the
+rocket ignition outlet (to which the away box is connected).  Three
+super-bright LED indicators are mounted to the enclosure exterior.
+The first, yellow, lights when the ignition battery relay closes.  The
+second, also yellow, lights when the rocket ignition relay closes.
+The third, red, lights when power reaches the outlet.
+
+The ignition sub-system is still fully functional when the 12V and 19V
+supplies are disabled.  Thus, the BAKERCON is powered off of the 5V
+supply.
+
+
+
 == Physical
 
 === Printed Circuit Board
-
 Trace widths must be sufficient minimize circuit impedance, and to
 limit temperature rise.  Assume a maximum ambient temperature
 (enclosure interior) of 60°C.  Maximum trace temperature rise should
 be no more than 20°C.
 
 === External Connectors
-
 IDEA: Powerpole connectors are mounted to the enclosure with
 http://www.portableuniversalpower.com/anderson-autogrip/[Anderson
 AutoGrips].  They're robust and inexpensive.

@@ -107,7 +107,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 8
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2016-05-07"
+Date "2016-05-09"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -278,13 +278,13 @@ EXT_TRG_EN_4
 Wire Bus Line
 	5150 7400 5150 8600
 Wire Bus Line
-	11650 8600 5150 8600
+	5150 8600 11650 8600
 Wire Bus Line
-	11650 6500 11650 8600
+	11650 8600 11650 6500
 Wire Bus Line
 	1150 6100 9150 6100
 Wire Bus Line
-	9150 4950 9150 6100
+	9150 6100 9150 4950
 Wire Bus Line
 	5050 6100 5050 6850
 Wire Bus Line
@@ -392,7 +392,7 @@ Entry Wire Line
 Wire Bus Line
 	15550 6950 15550 8450
 Wire Bus Line
-	9150 8450 15550 8450
+	15550 8450 9150 8450
 Text Label 9250 6650 2    40   ~ 0
 UMB_CONn
 Text Label 9250 6750 2    40   ~ 0
@@ -434,5 +434,5 @@ Wire Wire Line
 Wire Wire Line
 	9250 6650 9400 6650
 Wire Bus Line
-	9150 6750 9150 8450
+	9150 8450 9150 6750
 $EndSCHEMATC

@@ -107,7 +107,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 2 8
 Title "Power In, Battery Charge, & PV MPPT"
-Date "2016-05-07"
+Date "2016-05-09"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
