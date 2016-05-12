@@ -27,7 +27,6 @@ LIBS:siliconi
 LIBS:opto
 LIBS:atmel
 LIBS:contrib
-LIBS:valves
 LIBS:headers
 LIBS:DIP_switches
 LIBS:LTC299x

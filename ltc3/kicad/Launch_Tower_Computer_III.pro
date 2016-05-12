@@ -44,7 +44,6 @@ LibName12=display
 LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
-LibName16=valves
 [eeschema]
 version=1
 LibDir=libs/symbols;../../../solar/kicad/libs/symbols
@@ -144,7 +143,6 @@ LibName92=texas
 LibName93=transf
 LibName94=transistors
 LibName95=ttl_ieee
-LibName96=valves
 LibName97=video
 LibName98=Worldsemi
 LibName99=Xicor

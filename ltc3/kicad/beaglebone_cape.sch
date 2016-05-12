@@ -93,7 +93,6 @@ LIBS:texas
 LIBS:transf
 LIBS:transistors
 LIBS:ttl_ieee
-LIBS:valves
 LIBS:video
 LIBS:Xicor
 LIBS:xilinx
