@@ -148,9 +148,29 @@ temperature for such a load is approximately 55 °C.
 
 
 == Ignition Subsystem
-* The ignition signal is controlled by two relays in series
-** One on the ignition board controlled by RocketReady (from the FC)
-** One on the relay board controlled by the LTC
+
+The ignition system functions off three different relays.  The rocket,
+which is connected with an umbilical cord, tells the LTC it is
+prepared to launch by sending a "ROCKET_READY" signal to the LTC.
+This activates a solid state relay (IC601) which pushes signal to the
+following AND gate.
+
+When the LTC sees the rocket ready signal and shore power, after a 5
+second delay the second relay (K601) is triggered. Additionally, an
+LED lights up indicating the rocket is "ready to launch," and assuming
+the relay locks, the first light on the "BAKERCON" indicator will
+light up.
+
+The third relay is activated by the "ROCKET_IGNITE" pin from the
+beaglebone on the LTC3. At this point the second light on the BAKERCON
+idicator is lit.  When this signal is active, the third relay (K602)
+closes and the system goes through a breaker arm, switch, and banana
+jack to ensure launch is desired. When these three are connected, the
+third and final BAKERCON indicator light is active.
+
+The final step to launching the rocket is connecting the short-bar,
+known as the launch key, to the away box.  When all of these
+conditions have been met, the rocket will launch.
 
 
 
@@ -203,9 +223,6 @@ LTC3 provides power and trigger support for four external devices
 Power is supplied through two-terminal Anderson Powerpole connectors,
 available from the exterior of the LTC enclosure.  Current to each
 connector is limited by a 2 A PPTC (PolyFuse).
-
-TODO: 2 A x 4 external devices exceeds the TI DC-DC converter's max
-rating.
 
 Each power connector is controlled independently by the computer.
 Photorelays, driven via GPIO through a MOSFET, are used to switch the
