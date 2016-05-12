@@ -31,6 +31,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
+LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -93,10 +94,6 @@ LIBS:texas
 LIBS:transf
 LIBS:transistors
 LIBS:ttl_ieee
-LIBS:video
-LIBS:Xicor
-LIBS:xilinx
-LIBS:Zilog
 LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
