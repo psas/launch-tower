@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name LTC3)(type KiCad)(uri "$(KIPRJMOD)/libs/footprints.pretty")(options "")(descr "LTC3 custom footprints"))
-)

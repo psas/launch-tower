@@ -31,7 +31,6 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -94,12 +93,11 @@ LIBS:texas
 LIBS:transf
 LIBS:transistors
 LIBS:ttl_ieee
-LIBS:Launch_Tower_Computer_III-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 1 8
+Sheet 1 6
 Title "Launch Tower Computer 3 (LTC3)"
 Date "2016-05-09"
 Rev "A"
@@ -157,23 +155,6 @@ Text Label 12650 4050 2    40   ~ 0
 EXT_TRG_EN_3
 Text Label 12650 4150 2    40   ~ 0
 EXT_TRG_EN_4
-$Sheet
-S 1400 1500 2500 1600
-U 56238165
-F0 "Power In, Charge Controller" 60
-F1 "power_in_charge_controller.sch" 60
-F2 "I2C_CLOCK" B L 1400 1750 60 
-F3 "I2C_DATA" B L 1400 1850 60 
-$EndSheet
-$Sheet
-S 5400 1500 2500 1600
-U 562DD32F
-F0 "Cell Protection" 60
-F1 "cell_protection.sch" 60
-F2 "BQ_XALERT" B L 5400 2100 60 
-F3 "I2C_DATA" B L 5400 1850 60 
-F4 "I2C_CLOCK" B L 5400 1750 60 
-$EndSheet
 $Sheet
 S 5400 6600 2500 1600
 U 550535FB
