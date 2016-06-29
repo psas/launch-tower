@@ -1,0 +1,5 @@
+# Compiled Objects
+
+Items in this sub-directory have been generated from other source
+materials.  Where the objects here diverge from their source materials,
+their source materials should be considered authoritative.

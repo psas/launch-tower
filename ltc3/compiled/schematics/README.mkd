@@ -1,0 +1,4 @@
+# Launch Tower Computer III Schematics
+
+This directory contains PDF schematics for each board in the LTC3
+design.
