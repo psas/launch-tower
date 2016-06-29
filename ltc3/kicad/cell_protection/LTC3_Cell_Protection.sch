@@ -94,9 +94,9 @@ EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 3 3
-Title "Battery Management"
-Date "2016-05-09"
+Sheet 1 1
+Title "Cell Protection"
+Date "2016-06-28"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
