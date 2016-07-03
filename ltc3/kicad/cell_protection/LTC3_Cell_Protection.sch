@@ -1870,4 +1870,11 @@ Wire Wire Line
 	2100 3100 2100 3000
 Text Notes 9100 5650 0    100  ~ 20
 TODO: select connectors
+Wire Wire Line
+	4250 1100 4250 1250
+Connection ~ 4250 1150
+Connection ~ 4250 1200
+Wire Wire Line
+	3750 1100 3750 1200
+Connection ~ 3750 1150
 $EndSCHEMATC
