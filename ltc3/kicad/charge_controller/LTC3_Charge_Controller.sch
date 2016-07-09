@@ -1643,6 +1643,10 @@ F 0 "F1" H 1300 2900 50  0000 C CNN
 F 1 "15A" H 1250 2700 50  0000 C CNN
 F 2 "LTC3:Fuseholder_Auto_Blade_Regular_Keystone_3557-2" H 1350 2750 60  0001 C CNN
 F 3 "" H 1350 2750 60  0000 C CNN
+F 4 "-" H 1350 2750 60  0001 C CNN "Spec"
+F 5 "-" H 1350 2750 60  0001 C CNN "Note"
+F 6 "Keystone" H 1350 2750 60  0001 C CNN "Mfg_Name"
+F 7 "3557-2" H 1350 2750 60  0001 C CNN "Mfg_PN"
 	1    1350 2750
 	1    0    0    -1  
 $EndComp
