@@ -28,7 +28,6 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -134,8 +133,12 @@ U 1 1 56238A75
 P 9400 2400
 F 0 "L1" V 9350 2400 50  0000 C CNN
 F 1 "10µH" V 9500 2400 50  0000 C CNN
-F 2 "Inductors:Inductor_1212" H 9400 2400 60  0001 C CNN
+F 2 "LTC3:Coilcraft_SER2900" H 9400 2400 60  0001 C CNN
 F 3 "" H 9400 2400 60  0000 C CNN
+F 4 "-" H 9400 2400 60  0001 C CNN "Spec"
+F 5 "-" H 9400 2400 60  0001 C CNN "Note"
+F 6 "Coilcraft" H 9400 2400 60  0001 C CNN "Mfg_Name"
+F 7 "SER2915L-103KL" H 9400 2400 60  0001 C CNN "Mfg_PN"
 	1    9400 2400
 	0    -1   -1   0   
 $EndComp
