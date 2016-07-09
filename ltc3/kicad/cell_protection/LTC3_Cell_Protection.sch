@@ -28,7 +28,6 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -421,9 +420,13 @@ L CONN_01X08 P4
 U 1 1 5657F8B3
 P 9650 6300
 F 0 "P4" H 9650 6750 50  0000 C CNN
-F 1 "CONN_BATT_SENSE" V 9800 6300 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x04_Straight_43045-0828" H 9650 6300 60  0001 C CNN
-F 3 "" H 9650 6300 60  0000 C CNN
+F 1 "XH header, straight" V 9750 6300 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B08B-XH-A_08x2.50mm_Straight" H 9650 6300 60  0001 C CNN
+F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 9650 6300 60  0001 C CNN
+F 4 "-" H 9650 6300 60  0001 C CNN "Spec"
+F 5 "CONN_BATT_SENSE" V 9850 6300 50  0000 C CIN "Note"
+F 6 "JST" H 9650 6300 60  0001 C CNN "Mfg_Name"
+F 7 "B8B-XH-A" H 9650 6300 60  0001 C CNN "Mfg_PN"
 	1    9650 6300
 	1    0    0    -1  
 $EndComp
@@ -432,9 +435,13 @@ L CONN_01X02 P3
 U 1 1 565867F3
 P 9650 5050
 F 0 "P3" H 9650 5200 50  0000 C CNN
-F 1 "CONN_BATT_MAIN" V 9800 5050 50  0000 C CNN
+F 1 "Micro Fit header, vert." V 9750 5050 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 9650 5050 60  0001 C CNN
 F 3 "" H 9650 5050 60  0000 C CNN
+F 4 "-" H 9650 5050 60  0001 C CNN "Spec"
+F 5 "CONN_BATT_MAIN" V 9850 5050 50  0000 C CIN "Note"
+F 6 "Molex" H 9650 5050 60  0001 C CNN "Mfg_Name"
+F 7 "43045-0228" H 9650 5050 60  0001 C CNN "Mfg_PN"
 	1    9650 5050
 	1    0    0    -1  
 $EndComp
@@ -1016,6 +1023,10 @@ F 0 "F1" H 9400 3450 50  0000 C CNN
 F 1 "10A" H 9200 3350 50  0000 C CNN
 F 2 "LTC3:Fuseholder_Auto_Blade_Regular_Keystone_3557-2" H 9300 3400 60  0001 C CNN
 F 3 "" H 9300 3400 60  0000 C CNN
+F 4 "-" H 9300 3400 60  0001 C CNN "Spec"
+F 5 "-" H 9300 3400 60  0001 C CNN "Note"
+F 6 "Keystone" H 9300 3400 60  0001 C CNN "Mfg_Name"
+F 7 "3557-2" H 9300 3400 60  0001 C CNN "Mfg_PN"
 	1    9300 3400
 	0    1    1    0   
 $EndComp
@@ -1868,13 +1879,4 @@ F 3 "" H 2100 3100 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	2100 3100 2100 3000
-Text Notes 9100 5650 0    100  ~ 20
-TODO: select connectors
-Wire Wire Line
-	4250 1100 4250 1250
-Connection ~ 4250 1150
-Connection ~ 4250 1200
-Wire Wire Line
-	3750 1100 3750 1200
-Connection ~ 3750 1150
 $EndSCHEMATC
