@@ -97,7 +97,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Charge Controller"
-Date "2016-06-28"
+Date "2016-07-16"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -3230,38 +3230,6 @@ F 6 "Yageo" H 6250 9100 60  0001 C CNN "Mfg_Name"
 F 7 "RC0805FR-0710KL" H 6250 9100 60  0001 C CNN "Mfg_PN"
 	1    6250 9100
 	0    1    1    0   
-$EndComp
-$Comp
-L CONN_01X03 P9
-U 1 1 578D5A28
-P 16150 7900
-F 0 "P9" H 16150 8100 50  0000 C CNN
-F 1 "JST XH housing" V 16250 7900 50  0000 C CNN
-F 2 "~" H 16150 7900 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 16150 7900 50  0001 C CNN
-F 4 "-" H 16150 7900 60  0001 C CNN "Spec"
-F 5 "-" H 16150 7900 60  0001 C CNN "Note"
-F 6 "JST" H 16150 7900 60  0001 C CNN "Mfg_Name"
-F 7 "XHP-3" H 16150 7900 60  0001 C CNN "Mfg_PN"
-	1    16150 7900
-	-1   0    0    -1  
-$EndComp
-Text Notes 16450 8400 2    80   ~ 16
-TODO: make pretty
-$Comp
-L CONN_01X02 P8
-U 1 1 578D7C34
-P 15700 7900
-F 0 "P8" H 15700 7750 50  0000 C CNN
-F 1 "MicroFit recept." V 15800 7900 50  0000 C CNN
-F 2 "~" H 15700 7900 60  0001 C CNN
-F 3 "~" H 15700 7900 60  0000 C CNN
-F 4 "-" H 15700 7900 60  0001 C CNN "Spec"
-F 5 "-" V 15900 7900 50  0001 C CIN "Note"
-F 6 "Molex" H 15700 7900 60  0001 C CNN "Mfg_Name"
-F 7 "43025-0200" H 15700 7900 60  0001 C CNN "Mfg_PN"
-	1    15700 7900
-	-1   0    0    -1  
 $EndComp
 $Comp
 L R R32
