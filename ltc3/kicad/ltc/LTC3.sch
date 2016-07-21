@@ -31,6 +31,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
+LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -93,6 +94,7 @@ LIBS:texas
 LIBS:transf
 LIBS:transistors
 LIBS:ttl_ieee
+LIBS:LTC3-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000

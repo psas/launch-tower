@@ -31,6 +31,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
+LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -93,11 +94,12 @@ LIBS:texas
 LIBS:transf
 LIBS:transistors
 LIBS:ttl_ieee
+LIBS:LTC3-cache
 EELAYER 25 0
 EELAYER END
 $Descr B 17000 11000
 encoding utf-8
-Sheet 6 6
+Sheet 4 6
 Title "LTC3 Rocket Umbilical & Ignition Control"
 Date "2016-05-09"
 Rev "A"
@@ -538,9 +540,11 @@ $EndComp
 Text Notes 2950 10350 0    60   ~ 0
 VCC for \nCD74HC14
 $Comp
-L RELAY_1C K601
+L RELAY_1C-RESCUE-LTC3 K601
 U 1 1 5658C6AE
 P 13350 1550
+AR Path="/5658C6AE" Ref="K601"  Part="1" 
+AR Path="/5598112B/5658C6AE" Ref="K601"  Part="1" 
 F 0 "K601" H 13350 1890 50  0000 C CNN
 F 1 "RELAY_1C" H 13350 1200 50  0000 C CNN
 F 2 "LTC3:G5LE-14" H 13350 1700 60  0001 C CNN
@@ -640,9 +644,11 @@ F 3 "" H 11200 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RELAY_1C K602
+L RELAY_1C-RESCUE-LTC3 K602
 U 1 1 56704258
 P 12350 5900
+AR Path="/56704258" Ref="K602"  Part="1" 
+AR Path="/5598112B/56704258" Ref="K602"  Part="1" 
 F 0 "K602" H 12350 6240 50  0000 C CNN
 F 1 "RELAY_1C" H 12350 5550 50  0000 C CNN
 F 2 "LTC3:G5LE-14" H 12350 6050 60  0001 C CNN
