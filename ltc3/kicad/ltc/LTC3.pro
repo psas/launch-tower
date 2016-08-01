@@ -1,4 +1,4 @@
-update=7/20/2016 6:51:02 PM
+update=Mon 01 Aug 2016 01:48:14 PM PDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -44,17 +44,6 @@ LibName12=display
 LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=100
-ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=../libs/symbols
@@ -154,3 +143,13 @@ LibName92=texas
 LibName93=transf
 LibName94=transistors
 LibName95=ttl_ieee
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=100
