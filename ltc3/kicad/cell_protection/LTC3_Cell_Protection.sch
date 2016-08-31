@@ -5,7 +5,6 @@ LIBS:battery_single_cell
 LIBS:bq77PL900
 LIBS:breakers
 LIBS:CD74HC14
-LIBS:current_shunt
 LIBS:LT8490
 LIBS:LTC299x
 LIBS:MOSFET_SO8
@@ -1964,4 +1963,12 @@ Text Label 15450 2450 1    80   ~ 0
 I2C_DATA
 Text Label 15600 2450 1    80   ~ 0
 I2C_CLK
+Text Notes 15800 2200 0    80   ~ 0
+change connector to 4 pin w/5v/Gnd
+Text Notes 13450 2750 0    80   ~ 0
+CHANGE THIS GROUND TO BE DIFF FROM BOARD GND
+Text Notes 8450 2100 0    80   ~ 0
+Move away from output to input
+Text Notes 1000 5200 0    80   ~ 0
+Goodbye
 $EndSCHEMATC
