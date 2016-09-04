@@ -96,7 +96,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Cell Protection"
-Date "2016-07-16"
+Date "2016-08-31"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
