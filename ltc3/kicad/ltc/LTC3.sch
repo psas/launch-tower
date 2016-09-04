@@ -99,7 +99,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 6
 Title "Launch Tower Computer 3 (LTC3)"
-Date "2016-09-03"
+Date "2016-09-04"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
