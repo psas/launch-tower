@@ -1059,21 +1059,6 @@ F 8 "15V" H 4650 3800 60  0001 C CNN "Spec"
 	0    1    1    0   
 $EndComp
 $Comp
-L LT8490 U3
-U 1 1 5623AE69
-P 7250 6950
-F 0 "U3" H 7250 6850 60  0000 C CNN
-F 1 "LT8490" H 7250 7050 60  0000 C CNN
-F 2 "LTC3:LT8490" H 7200 7100 60  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/LT8490/Linear_Technology-LT8490-High_Voltage_High_Current_Buck_Boost_Battery_Charge_Controller_w_MPPT.pdf" H 7200 7100 60  0001 C CNN
-F 4 "Linear" H 7250 6950 60  0001 C CNN "Mfg_Name"
-F 5 "LT8490IUKJ#PBF" H 7250 6950 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 7250 6950 60  0001 C CNN "Note"
-F 7 "-" H 7250 6950 60  0001 C CNN "Spec"
-	1    7250 6950
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C15
 U 1 1 5637CE48
 P 6000 3900
@@ -1297,17 +1282,6 @@ F 7 "-" H 1400 5250 60  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR22
-U 1 1 56570E3B
-P 14350 4550
-F 0 "#PWR22" H 14350 4550 30  0001 C CNN
-F 1 "GND" H 14350 4480 30  0001 C CNN
-F 2 "" H 14350 4550 60  0000 C CNN
-F 3 "" H 14350 4550 60  0000 C CNN
-	1    14350 4550
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C34
 U 1 1 56570E48
 P 14350 3450
@@ -1332,17 +1306,6 @@ F 1 "+5V" H 13450 3240 50  0000 C CNN
 F 2 "" H 13450 3100 60  0000 C CNN
 F 3 "" H 13450 3100 60  0000 C CNN
 	1    13450 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR23
-U 1 1 56597843
-P 13450 4650
-F 0 "#PWR23" H 13450 4400 50  0001 C CNN
-F 1 "GND" H 13450 4500 50  0001 C CNN
-F 2 "" H 13450 4650 60  0000 C CNN
-F 3 "" H 13450 4650 60  0000 C CNN
-	1    13450 4650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2001,49 +1964,12 @@ $EndComp
 $Comp
 L GND #PWR35
 U 1 1 578371A1
-P 15150 7350
-F 0 "#PWR35" H 15150 7100 50  0001 C CNN
-F 1 "GND" H 15150 7200 50  0001 C CNN
-F 2 "" H 15150 7350 50  0000 C CNN
-F 3 "" H 15150 7350 50  0000 C CNN
-	1    15150 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X03 P7
-U 1 1 5789D4E5
-P 15900 7000
-F 0 "P7" H 15900 7200 50  0000 C CNN
-F 1 "JST XH header" V 16000 7000 50  0000 C CNN
-F 2 "Connectors_JST:JST_XH_B03B-XH-A_03x2.50mm_Straight" H 15900 7000 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 15900 7000 50  0001 C CNN
-F 4 "JST" H 15900 7000 60  0001 C CNN "Mfg_Name"
-F 5 "B3B-XH-A(LF)(SN)" H 15900 7000 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 15900 7000 60  0001 C CNN "Note"
-F 7 "-" H 15900 7000 60  0001 C CNN "Spec"
-	1    15900 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR32
-U 1 1 578A853C
-P 15550 6750
-F 0 "#PWR32" H 15550 6600 50  0001 C CNN
-F 1 "+5V" H 15550 6890 50  0000 C CNN
-F 2 "" H 15550 6750 50  0000 C CNN
-F 3 "" H 15550 6750 50  0000 C CNN
-	1    15550 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR31
-U 1 1 578A97B0
-P 15300 6750
-F 0 "#PWR31" H 15300 6600 50  0001 C CNN
-F 1 "+3.3V" H 15300 6890 50  0000 C CNN
-F 2 "" H 15300 6750 50  0000 C CNN
-F 3 "" H 15300 6750 50  0000 C CNN
-	1    15300 6750
+P 15150 6450
+F 0 "#PWR35" H 15150 6200 50  0001 C CNN
+F 1 "GND" H 15150 6300 50  0001 C CNN
+F 2 "" H 15150 6450 50  0000 C CNN
+F 3 "" H 15150 6450 50  0000 C CNN
+	1    15150 6450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2314,21 +2240,6 @@ F 3 "" H 16200 5900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P5
-U 1 1 578B361C
-P 15000 4050
-F 0 "P5" H 15000 4200 50  0000 C CNN
-F 1 "JST XH header" V 15100 4050 50  0000 C CNN
-F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 15000 4050 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 15000 4050 50  0001 C CNN
-F 4 "JST" H 15000 4050 60  0001 C CNN "Mfg_Name"
-F 5 "B2B-XH-A(LF)(SN)" H 15000 4050 60  0001 C CNN "Mfg_PN"
-F 6 "to LTC" V 15200 4050 50  0000 C CIN "Note"
-F 7 "-" H 15000 4050 60  0001 C CNN "Spec"
-	1    15000 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L D D2
 U 1 1 578D1529
 P 6300 3900
@@ -2582,6 +2493,116 @@ Text Label 14400 4100 0    50   ~ 0
 I2C_DATA
 Text Notes 7450 1150 0    60   Italic 0
 "Be sure to place all of  the filter components\n(CSX, RSX, CCX) close to the LT8490 for best\nperformance."
+$Comp
+L R R?
+U 1 1 57CCF7A9
+P 15700 2200
+F 0 "R?" H 15770 2246 50  0000 L CNN
+F 1 "75k" H 15770 2155 50  0000 L CNN
+F 2 "" V 15630 2200 50  0000 C CNN
+F 3 "" H 15700 2200 50  0000 C CNN
+	1    15700 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57CD034B
+P 16100 2200
+F 0 "R?" H 16170 2246 50  0000 L CNN
+F 1 "75k" H 16170 2155 50  0000 L CNN
+F 2 "" V 16030 2200 50  0000 C CNN
+F 3 "" H 16100 2200 50  0000 C CNN
+	1    16100 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57CD0459
+P 15700 3150
+F 0 "R?" H 15770 3196 50  0000 L CNN
+F 1 "12k" H 15770 3105 50  0000 L CNN
+F 2 "" V 15630 3150 50  0000 C CNN
+F 3 "" H 15700 3150 50  0000 C CNN
+	1    15700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 57CD058D
+P 16100 3150
+F 0 "R?" H 16170 3196 50  0000 L CNN
+F 1 "12k" H 16170 3105 50  0000 L CNN
+F 2 "" V 16030 3150 50  0000 C CNN
+F 3 "" H 16100 3150 50  0000 C CNN
+	1    16100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57CD16D2
+P 15700 3400
+F 0 "#PWR?" H 15700 3150 50  0001 C CNN
+F 1 "GND" H 15705 3227 50  0000 C CNN
+F 2 "" H 15700 3400 50  0000 C CNN
+F 3 "" H 15700 3400 50  0000 C CNN
+	1    15700 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57CD17D4
+P 16100 3400
+F 0 "#PWR?" H 16100 3150 50  0001 C CNN
+F 1 "GND" H 16105 3227 50  0000 C CNN
+F 2 "" H 16100 3400 50  0000 C CNN
+F 3 "" H 16100 3400 50  0000 C CNN
+	1    16100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P?
+U 1 1 57CD7D8C
+P 15000 4050
+F 0 "P?" H 15078 4091 50  0000 L CNN
+F 1 "CONN_01X04" H 15078 4000 50  0000 L CNN
+F 2 "" H 15000 4050 50  0000 C CNN
+F 3 "" H 15000 4050 50  0000 C CNN
+	1    15000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57CD7EA2
+P 14650 3650
+F 0 "#PWR?" H 14650 3500 50  0001 C CNN
+F 1 "+5V" H 14665 3823 50  0000 C CNN
+F 2 "" H 14650 3650 50  0000 C CNN
+F 3 "" H 14650 3650 50  0000 C CNN
+	1    14650 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 57CDCBAA
+P 14650 4350
+F 0 "#PWR?" H 14650 4100 50  0001 C CNN
+F 1 "GNDREF" H 14655 4177 50  0000 C CNN
+F 2 "" H 14650 4350 50  0000 C CNN
+F 3 "" H 14650 4350 50  0000 C CNN
+	1    14650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P?
+U 1 1 57CEE601
+P 7150 10050
+F 0 "P?" V 6850 9950 50  0000 L CNN
+F 1 "CONN_01X02" V 7200 9250 50  0000 L CNN
+F 2 "" H 7150 10050 50  0000 C CNN
+F 3 "" H 7150 10050 50  0000 C CNN
+	1    7150 10050
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	8800 3200 10000 3200
 Wire Wire Line
@@ -2593,9 +2614,9 @@ Wire Wire Line
 Wire Wire Line
 	8300 2000 8500 2000
 Wire Wire Line
-	8800 1600 8800 1700
+	8800 1700 8800 1600
 Wire Wire Line
-	8800 2200 8800 2600
+	8800 2600 8800 2200
 Wire Wire Line
 	9300 7100 9300 5550
 Wire Wire Line
@@ -2673,15 +2694,11 @@ Wire Wire Line
 Wire Wire Line
 	16100 2800 11900 2800
 Wire Wire Line
-	16100 1600 16100 2800
-Wire Wire Line
 	11800 3700 12700 3700
 Wire Wire Line
 	11800 2750 11800 3700
 Wire Wire Line
 	11800 2750 15700 2750
-Wire Wire Line
-	15700 1600 15700 2750
 Wire Wire Line
 	13600 1600 15750 1600
 Wire Wire Line
@@ -2731,7 +2748,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 3800 8450 4400
 Wire Wire Line
-	9400 4400 8450 4400
+	8450 4400 9400 4400
 Wire Wire Line
 	8650 4300 8650 4400
 Wire Wire Line
@@ -3019,7 +3036,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 2100 7900 2100
 Wire Wire Line
-	6950 1600 8800 1600
+	8800 1600 6950 1600
 Wire Wire Line
 	7650 1600 7650 1700
 Wire Wire Line
@@ -3407,18 +3424,6 @@ Wire Wire Line
 Wire Wire Line
 	15150 6300 15700 6300
 Wire Wire Line
-	15150 6300 15150 7350
-Wire Wire Line
-	15550 6750 15550 6900
-Wire Wire Line
-	15550 6900 15700 6900
-Wire Wire Line
-	15300 6750 15300 7000
-Wire Wire Line
-	15300 7000 15700 7000
-Wire Wire Line
-	15700 7100 15150 7100
-Wire Wire Line
 	16200 5850 16200 5900
 Wire Wire Line
 	6650 900  6400 900 
@@ -3574,7 +3579,6 @@ Connection ~ 3450 1000
 Connection ~ 3450 3000
 Connection ~ 2450 7900
 Connection ~ 2050 7900
-Connection ~ 15150 7100
 Connection ~ 13200 1600
 Connection ~ 13700 1600
 Connection ~ 6400 1600
@@ -3586,12 +3590,113 @@ Connection ~ 16200 5300
 Connection ~ 15150 5300
 Connection ~ 15700 1600
 Connection ~ 16100 1600
-Text Notes 14900 3700 0    100  ~ 0
-Change connector to 4 pin header with I2C/5V/GND
-Text Notes 15650 7300 0    100  ~ 0
-goodbye
-Text Notes 7250 8850 0    100  ~ 0
-UART from Status 2 pin header
-Text Notes 13200 4700 0    100  ~ 0
-USE THE CONNECTOR GROUND FROM BEAGLEBONE NOT FROM LT8490 FOR THIS CHIP
+Wire Wire Line
+	16100 2350 16100 3000
+Wire Wire Line
+	16100 2050 16100 1600
+Wire Wire Line
+	15700 2050 15700 1600
+Wire Wire Line
+	15700 2350 15700 3000
+Connection ~ 15700 2750
+Connection ~ 16100 2800
+Wire Wire Line
+	15700 3400 15700 3300
+Wire Wire Line
+	16100 3400 16100 3300
+Wire Wire Line
+	14800 3900 14650 3900
+Wire Wire Line
+	14650 3900 14650 3650
+Wire Wire Line
+	14650 4350 14650 4200
+Wire Wire Line
+	14650 4200 14800 4200
+Wire Wire Line
+	15150 6450 15150 6300
+Wire Wire Line
+	8800 2200 8700 2200
+Connection ~ 8750 2200
+Wire Wire Line
+	8650 1700 8800 1700
+Connection ~ 8750 1700
+Connection ~ 8700 1700
+Wire Wire Line
+	8650 2600 8800 2600
+Connection ~ 8750 2600
+Connection ~ 8700 2600
+Wire Wire Line
+	8700 3100 8800 3100
+Connection ~ 8750 3100
+Wire Wire Line
+	10000 3100 10100 3100
+Connection ~ 10050 3100
+Wire Wire Line
+	10000 2600 10150 2600
+Connection ~ 10050 2600
+Connection ~ 10100 2600
+Wire Wire Line
+	10000 1700 10150 1700
+Connection ~ 10050 1700
+Connection ~ 10100 1700
+Wire Wire Line
+	10000 2200 10100 2200
+Connection ~ 10050 2200
+Connection ~ 7400 9250
+$Comp
+L LT8490 U3
+U 1 1 5623AE69
+P 7250 6950
+F 0 "U3" H 7250 6850 60  0000 C CNN
+F 1 "LT8490" H 7250 7050 60  0000 C CNN
+F 2 "LTC3:LT8490" H 7200 7100 60  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/LT8490/Linear_Technology-LT8490-High_Voltage_High_Current_Buck_Boost_Battery_Charge_Controller_w_MPPT.pdf" H 7200 7100 60  0001 C CNN
+F 4 "Linear" H 7250 6950 60  0001 C CNN "Mfg_Name"
+F 5 "LT8490IUKJ#PBF" H 7250 6950 60  0001 C CNN "Mfg_PN"
+F 6 "-" H 7250 6950 60  0001 C CNN "Note"
+F 7 "-" H 7250 6950 60  0001 C CNN "Spec"
+	1    7250 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 9250 7200 9250
+Wire Wire Line
+	7200 9250 7200 9850
+Wire Wire Line
+	7100 9850 6950 9850
+Wire Wire Line
+	6950 9850 6950 10100
+$Comp
+L GND #PWR?
+U 1 1 57CF2999
+P 6950 10100
+F 0 "#PWR?" H 6950 9850 50  0001 C CNN
+F 1 "GND" H 6955 9927 50  0000 C CNN
+F 2 "" H 6950 10100 50  0000 C CNN
+F 3 "" H 6950 10100 50  0000 C CNN
+	1    6950 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 57CF7313
+P 13450 4650
+F 0 "#PWR?" H 13450 4400 50  0001 C CNN
+F 1 "GNDREF" H 13455 4477 50  0000 C CNN
+F 2 "" H 13450 4650 50  0000 C CNN
+F 3 "" H 13450 4650 50  0000 C CNN
+	1    13450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR?
+U 1 1 57CF7845
+P 14350 4550
+F 0 "#PWR?" H 14350 4300 50  0001 C CNN
+F 1 "GNDREF" H 14355 4377 50  0000 C CNN
+F 2 "" H 14350 4550 50  0000 C CNN
+F 3 "" H 14350 4550 50  0000 C CNN
+	1    14350 4550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
