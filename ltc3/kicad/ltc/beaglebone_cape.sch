@@ -6,7 +6,6 @@ LIBS:BeagleBone_Black
 LIBS:bq77PL900
 LIBS:breakers
 LIBS:CD74HC14
-LIBS:current_shunt
 LIBS:EEPROMs
 LIBS:LT8490
 LIBS:LTC299x
@@ -100,7 +99,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 3 6
 Title "LTC3 BeagleBone Black Cape Interface"
-Date "2016-08-01"
+Date "2016-09-03"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
