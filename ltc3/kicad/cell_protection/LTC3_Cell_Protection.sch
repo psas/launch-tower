@@ -27,7 +27,6 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -97,7 +96,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Cell Protection"
-Date "2016-09-06"
+Date "2016-09-07"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -431,12 +430,12 @@ L D D1
 U 1 1 5652EBFB
 P 2750 3000
 F 0 "D1" H 2750 2900 50  0000 C CNN
-F 1 "1SS355" H 2750 3100 50  0000 C CNN
-F 2 "Diodes_SMD:TUMD2" H 2750 3000 60  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Rohm-1SS355-Switching_Diode.pdf" H 2750 3000 60  0001 C CNN
-F 4 "Standard 80V 100mA" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "Rohm" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "1SS355TE-17" H 0   0   50  0001 C CNN "Mfg_PN"
+F 1 "CDSU4148" H 2750 3100 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-523" H 2750 3000 60  0001 C CNN
+F 3 "~" H 2750 3000 60  0001 C CNN
+F 4 "Standard 75V 150mA" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Comchip" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "CDSU4148" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "-" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    2750 3000
@@ -661,12 +660,12 @@ L D D6
 U 1 1 565B72A6
 P 8550 3000
 F 0 "D6" H 8550 3100 50  0000 C CNN
-F 1 "1SS355" H 8550 2900 50  0000 C CNN
-F 2 "Diodes_SMD:TUMD2" H 8550 3000 60  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Rohm-1SS355-Switching_Diode.pdf" H 8550 3000 60  0001 C CNN
-F 4 "Standard 80V 100mA" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "Rohm" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "1SS355TE-17" H 0   0   50  0001 C CNN "Mfg_PN"
+F 1 "CDSU4148" H 8550 2900 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-523" H 8550 3000 60  0001 C CNN
+F 3 "~" H 8550 3000 60  0001 C CNN
+F 4 "Standard 75V 150mA" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Comchip" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "CDSU4148" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "-" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    8550 3000
@@ -1104,7 +1103,7 @@ F 2 "~" H 11050 6300 60  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 11050 6300 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
+F 6 "XHP-8" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "OFFBOARD; mates to P4" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    11050 6300
@@ -1119,8 +1118,8 @@ F 1 "MicroFit connector" V 11150 5050 50  0000 C CNN
 F 2 "~" H 11050 5050 60  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 11050 5050 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "JST" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
+F 5 "Molex" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "43025-0200" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "OFFBOARD; mates to P3" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    11050 5050
@@ -1587,7 +1586,7 @@ U 1 1 578C7D35
 P 16050 3700
 F 0 "P9" H 16050 3950 50  0000 C CNN
 F 1 "XH header" V 16150 3700 50  0000 C CNN
-F 2 "Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 16050 3700 60  0001 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 16050 3700 60  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 16050 3700 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 16050 3700 60  0001 C CNN "Mfg_Name"
@@ -1693,7 +1692,7 @@ F 2 "~" H 12050 2150 60  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 12050 2150 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 12050 2150 60  0001 C CNN "Mfg_Name"
-F 6 "-" H 12050 2150 60  0001 C CNN "Mfg_PN"
+F 6 "XHP-2" H 12050 2150 60  0001 C CNN "Mfg_PN"
 F 7 "OFFBOARD; mates to P11" V 12250 2150 50  0001 C CIN "Note"
 F 8 "-" H 12050 2150 60  0001 C CNN "Spec"
 	1    12050 2150
