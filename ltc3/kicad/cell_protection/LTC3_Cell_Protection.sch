@@ -27,6 +27,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
+LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -1586,7 +1587,7 @@ U 1 1 578C7D35
 P 16050 3700
 F 0 "P9" H 16050 3950 50  0000 C CNN
 F 1 "XH header" V 16150 3700 50  0000 C CNN
-F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 16050 3700 60  0001 C CNN
+F 2 "Connectors_JST:JST_EH_B04B-EH-A_04x2.50mm_Straight" H 16050 3700 60  0001 C CNN
 F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 16050 3700 60  0001 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 16050 3700 60  0001 C CNN "Mfg_Name"
