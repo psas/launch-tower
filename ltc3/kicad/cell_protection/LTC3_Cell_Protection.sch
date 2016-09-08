@@ -2512,4 +2512,11 @@ Connection ~ 2450 2700
 Connection ~ 2250 1400
 Connection ~ 2050 1950
 Connection ~ 2450 1950
+Wire Wire Line
+	5050 1900 5050 2000
+Connection ~ 5050 1950
+Wire Wire Line
+	5550 1900 5550 2050
+Connection ~ 5550 1950
+Connection ~ 5550 2000
 $EndSCHEMATC
