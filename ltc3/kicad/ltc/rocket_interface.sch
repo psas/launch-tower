@@ -625,12 +625,12 @@ U 1 1 5658C6AE
 P 13350 1550
 F 0 "K401" H 13350 1890 50 0000 C CNN
 F 1 "RELAY_1C" H 13350 1200 50 0000 C CNN
-F 2 "~" H 13350 1700 60 0001 C CNN
+F 2 "LTC3:G5LE-14" H 13350 1700 60 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/Omron-G5LE-Single_Pole_10A_Power_Relay.pdf" H 13350 1700 60 0001 C CNN
 F 4 "SPDT (1 Form C) 5VDC Coil" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Omron" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "G5LE-14 DC5" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "-" H 0 0 50 0001 C CNN "Note"
+F 7 "ign batt relay" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    13350 1550
 	1    0    0    -1  
@@ -743,12 +743,12 @@ U 1 1 56704258
 P 12350 5900
 F 0 "K402" H 12350 6240 50 0000 C CNN
 F 1 "RELAY_1C" H 12350 5550 50 0000 C CNN
-F 2 "~" H 12350 6050 60 0001 C CNN
+F 2 "LTC3:G5LE-14" H 12350 6050 60 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/Omron-G5LE-Single_Pole_10A_Power_Relay.pdf" H 12350 6050 60 0001 C CNN
 F 4 "SPDT (1 Form C) 5VDC Coil" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Omron" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "G5LE-14 DC5" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "-" H 0 0 50 0001 C CNN "Note"
+F 7 "ign relay" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    12350 5900
 	1    0    0    -1  
@@ -841,7 +841,7 @@ U 1 1 5675114F
 P 2850 6150
 F 0 "J401" H 3050 6650 60 0000 C CNN
 F 1 "RJ45" H 2700 6650 60 0000 C CNN
-F 2 "~" H 2850 6150 60 0001 C CNN
+F 2 "LTC3:RJ45_8_SHIELDED" H 2850 6150 60 0001 C CNN
 F 3 "~" H 2850 6150 60 0000 C CNN
 F 4 "Right angle, Shielded Cat5e" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Stewart" H 0 0 50 0001 C CNN "Mfg_Name"
