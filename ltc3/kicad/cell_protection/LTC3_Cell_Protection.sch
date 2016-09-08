@@ -96,7 +96,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Cell Protection"
-Date "2016-09-07"
+Date "2016-09-08"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -523,8 +523,8 @@ P 10350 7100
 F 0 "P4" H 10350 7550 50  0000 C CNN
 F 1 "XH header" V 10450 7100 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B08B-XH-A_08x2.50mm_Straight" H 10350 7100 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 10350 7100 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 10350 7100 60  0001 C CNN
+F 4 "8 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 10350 7100 60  0001 C CNN "Mfg_Name"
 F 6 "B8B-XH-A(LF)(SN)" H 10350 7100 60  0001 C CNN "Mfg_PN"
 F 7 "CONN_BATT_SENSE" V 10550 7100 50  0000 C CIN "Note"
@@ -539,8 +539,8 @@ P 10350 5850
 F 0 "P3" H 10350 6000 50  0000 C CNN
 F 1 "MicroFit header" V 10450 5850 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 10350 5850 60  0001 C CNN
-F 3 "~" H 10350 5850 60  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 10350 5850 60  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 10350 5850 60  0001 C CNN "Mfg_Name"
 F 6 "43045-0228" H 10350 5850 60  0001 C CNN "Mfg_PN"
 F 7 "CONN_BATT_MAIN" V 10550 5850 50  0000 C CIN "Note"
@@ -1100,8 +1100,8 @@ P 11050 6300
 F 0 "P6" H 11050 6750 50  0000 C CNN
 F 1 "XH connector" V 11150 6300 50  0000 C CNN
 F 2 "~" H 11050 6300 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 11050 6300 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 11050 6300 60  0001 C CNN
+F 4 "8 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 0   0   50  0001 C CNN "Mfg_Name"
 F 6 "XHP-8" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "OFFBOARD; mates to P4" H 0   0   50  0001 C CNN "Note"
@@ -1116,8 +1116,8 @@ P 11050 5050
 F 0 "P5" H 11050 5200 50  0000 C CNN
 F 1 "MicroFit connector" V 11150 5050 50  0000 C CNN
 F 2 "~" H 11050 5050 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 11050 5050 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-Micro_Fit_3_Family.pdf" H 11050 5050 60  0001 C CNN
+F 4 "2 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 0   0   50  0001 C CNN "Mfg_Name"
 F 6 "43025-0200" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "OFFBOARD; mates to P3" H 0   0   50  0001 C CNN "Note"
@@ -1132,8 +1132,8 @@ P 3100 7450
 F 0 "P1" H 3100 7600 50  0000 C CNN
 F 1 "XH header" H 3100 7300 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B02B-XH-A_08x2.50mm_Straight" H 3100 7450 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 3100 7450 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 3100 7450 60  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 0   0   50  0001 C CNN "Mfg_Name"
 F 6 "B2B-XH-A(LF)(SN)" H 0   0   50  0001 C CNN "Mfg_PN"
 F 7 "to thermistor" H 3100 7200 50  0000 C CIN "Note"
@@ -1544,8 +1544,8 @@ P 1000 2500
 F 0 "P8" H 1000 2650 50  0000 C CNN
 F 1 "MicroFit header" V 1100 2500 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 1000 2500 50  0001 C CNN
-F 3 "~" H 1000 2500 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 1000 2500 50  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 1000 2500 60  0001 C CNN "Mfg_Name"
 F 6 "43045-0228" H 1000 2500 60  0001 C CNN "Mfg_PN"
 F 7 "to LTC" V 1200 2500 50  0000 C CIN "Note"
@@ -1571,8 +1571,8 @@ P 1000 1800
 F 0 "P7" H 1000 1950 50  0000 C CNN
 F 1 "MicroFit header" V 1100 1800 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 1000 1800 50  0001 C CNN
-F 3 "~" H 1000 1800 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 1000 1800 50  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 1000 1800 60  0001 C CNN "Mfg_Name"
 F 6 "43045-0228" H 1000 1800 60  0001 C CNN "Mfg_PN"
 F 7 "to Charge Controller" V 1200 1800 50  0000 C CIN "Note"
@@ -1587,8 +1587,8 @@ P 16050 3700
 F 0 "P9" H 16050 3950 50  0000 C CNN
 F 1 "XH header" V 16150 3700 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 16050 3700 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 16050 3700 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 16050 3700 60  0001 C CNN
+F 4 "4 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 16050 3700 60  0001 C CNN "Mfg_Name"
 F 6 "B4B-XH-A(LF)(SN)" H 16050 3700 60  0001 C CNN "Mfg_PN"
 F 7 "to LTC" V 16250 3700 50  0000 C CIN "Note"
@@ -1689,8 +1689,8 @@ P 12050 2150
 F 0 "P10" H 12050 2350 50  0000 C CNN
 F 1 "XH connector" V 12150 2150 50  0000 C CNN
 F 2 "~" H 12050 2150 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 12050 2150 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 12050 2150 60  0001 C CNN
+F 4 "2 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 12050 2150 60  0001 C CNN "Mfg_Name"
 F 6 "XHP-2" H 12050 2150 60  0001 C CNN "Mfg_PN"
 F 7 "OFFBOARD; mates to P11" V 12250 2150 50  0001 C CIN "Note"
@@ -1705,11 +1705,11 @@ P 12550 2150
 F 0 "P11" H 12550 2300 50  0000 C CNN
 F 1 "XH header" V 12650 2150 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B02B-XH-A_08x2.50mm_Straight" H 12550 2150 60  0001 C CNN
-F 3 "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf" H 12550 2150 60  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 12550 2150 60  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 12550 2150 60  0001 C CNN "Mfg_Name"
 F 6 "B2B-XH-A(LF)(SN)" H 12550 2150 60  0001 C CNN "Mfg_PN"
-F 7 "-" V 12750 2150 50  0001 C CIN "Note"
+F 7 "to batt temp sense" V 12750 2150 50  0001 C CIN "Note"
 F 8 "-" H 12550 2150 60  0001 C CNN "Spec"
 	1    12550 2150
 	-1   0    0    -1  
@@ -2427,6 +2427,10 @@ Wire Wire Line
 	13400 1900 13400 2200
 Wire Wire Line
 	13400 2200 12750 2200
+Wire Wire Line
+	5050 1900 5050 2000
+Wire Wire Line
+	5550 1900 5550 2050
 Connection ~ 5600 5550
 Connection ~ 12000 8450
 Connection ~ 12000 8050
@@ -2511,11 +2515,7 @@ Connection ~ 2450 2700
 Connection ~ 2250 1400
 Connection ~ 2050 1950
 Connection ~ 2450 1950
-Wire Wire Line
-	5050 1900 5050 2000
 Connection ~ 5050 1950
-Wire Wire Line
-	5550 1900 5550 2050
 Connection ~ 5550 1950
 Connection ~ 5550 2000
 $EndSCHEMATC
