@@ -651,13 +651,13 @@ U 1 1 572AC6D6
 P 13050 6300
 F 0 "P202" H 13050 6450 50  0000 C CNN
 F 1 "XH header" V 13250 6300 50  0000 C CNN
-F 2 "~" H 13050 6300 50  0001 C CNN
-F 3 "~" H 13050 6300 50  0001 C CNN
+F 2 "Connectors_JST:JST_EH_B02B-XH-A_02x2.50mm_Straight" H 13050 6300 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 13050 6300 50  0001 C CNN
 F 4 "Through-hole type shrouded header, straight" H 13050 6300 60  0001 C CNN "Mfg_Desc"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 6 "JST" H 13050 6300 60  0001 C CNN "Mfg_Name"
-F 7 "-" H 13050 6300 60  0001 C CNN "Mfg_PN"
-F 8 "-" H 13050 6300 60  0001 C CNN "Note"
+F 7 "B2B-XH-A(LF)(SN)" H 13050 6300 60  0001 C CNN "Mfg_PN"
+F 8 "to front panel" H 13050 6300 60  0001 C CNN "Note"
 F 9 "-" H 13050 6300 60  0001 C CNN "Spec"
 	1    13050 6300
 	1    0    0    -1  
@@ -667,14 +667,14 @@ L CONN_01X02 P203
 U 1 1 572AC6DE
 P 13800 6300
 F 0 "P203" H 13850 6500 50  0000 R CNN
-F 1 "XH housing" V 13950 6300 50  0000 C CNN
+F 1 "XH connector" V 13950 6300 50  0000 C CNN
 F 2 "~" H 13800 6300 50  0001 C CNN
-F 3 "~" H 13800 6300 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 13800 6300 50  0001 C CNN
 F 4 "housing, 9-contact" H 13800 6300 60  0001 C CNN "Mfg_Desc"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "2 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
 F 6 "JST" H 13800 6300 60  0001 C CNN "Mfg_Name"
-F 7 "-" H 13800 6300 60  0001 C CNN "Mfg_PN"
-F 8 "-" H 13800 6300 60  0001 C CNN "Note"
+F 7 "XHP-2" H 13800 6300 60  0001 C CNN "Mfg_PN"
+F 8 "OFF-BOARD; mates to P202" H 13800 6300 60  0001 C CNN "Note"
 F 9 "-" H 13800 6300 60  0001 C CNN "Spec"
 	1    13800 6300
 	-1   0    0    -1  
@@ -711,11 +711,11 @@ P 13800 4800
 F 0 "P201" H 13800 4950 50  0000 C CNN
 F 1 "MicroFit header" V 13950 4800 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 13800 4800 50  0001 C CNN
-F 3 "~" H 13800 4800 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 13800 4800 50  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 13800 4800 60  0001 C CNN "Mfg_Name"
-F 6 "43045-0200" H 13800 4800 60  0001 C CNN "Mfg_PN"
-F 7 "-" V 14000 4400 50  0001 L CNN "Note"
+F 6 "43045-0228" H 13800 4800 60  0001 C CNN "Mfg_PN"
+F 7 "to cell protection" V 14000 4400 50  0001 L CNN "Note"
 F 8 "-" H 13800 4800 60  0001 C CNN "Spec"
 	1    13800 4800
 	-1   0    0    -1  
@@ -1016,7 +1016,7 @@ U 1 1 57CBA8BF
 P 3450 2750
 F 0 "D201" H 3450 2850 50  0000 C CNN
 F 1 "CDSU4148" H 3450 2650 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-523" H 3450 2750 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-523" H 3450 2750 50  0001 C CNN
 F 3 "~" H 3450 2750 50  0000 C CNN
 F 4 "Standard 75V 150mA" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Comchip" H 0   0   50  0001 C CNN "Mfg_Name"
@@ -1043,7 +1043,7 @@ U 1 1 57CBC862
 P 3450 6000
 F 0 "D202" H 3450 6100 50  0000 C CNN
 F 1 "CDSU4148" H 3450 5900 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-523" H 3450 6000 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-523" H 3450 6000 50  0001 C CNN
 F 3 "~" H 3450 6000 50  0000 C CNN
 F 4 "Standard 75V 150mA" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Comchip" H 0   0   50  0001 C CNN "Mfg_Name"
@@ -1086,7 +1086,7 @@ U 1 1 57CC128D
 P 3450 9400
 F 0 "D203" H 3450 9500 50  0000 C CNN
 F 1 "CDSU4148" H 3450 9300 50  0000 C CNN
-F 2 "Diodes_SMD:SOD-523" H 3450 9400 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-523" H 3450 9400 50  0001 C CNN
 F 3 "~" H 3450 9400 50  0000 C CNN
 F 4 "Standard 75V 150mA" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Comchip" H 0   0   50  0001 C CNN "Mfg_Name"

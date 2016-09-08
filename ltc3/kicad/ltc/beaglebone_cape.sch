@@ -394,13 +394,13 @@ L CONN_01X04 P303
 U 1 1 5773408D
 P 15800 6250
 F 0 "P303" H 15800 6500 50  0000 C CNN
-F 1 "JST PH header" V 15950 6250 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_B4B-PH-K_02x2.00mm_Straight" H 15800 6250 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-PH_connector.pdf" H 15800 6250 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 1 "XH header" V 15950 6250 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 15800 6250 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 15800 6250 50  0001 C CNN
+F 4 "4 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 15800 6250 60  0001 C CNN "Mfg_Name"
-F 6 "B4B-PH-K-S" H 15800 6250 60  0001 C CNN "Mfg_PN"
-F 7 "To Charge Controller" V 16050 6250 50  0000 C CNN "Note"
+F 6 "B4B-XH-A(LF)(SN)" H 15800 6250 60  0001 C CNN "Mfg_PN"
+F 7 "to charge controller" V 16050 6250 50  0000 C CNN "Note"
 F 8 "-" H 15800 6250 60  0001 C CNN "Spec"
 	1    15800 6250
 	1    0    0    -1  
@@ -484,13 +484,13 @@ L CONN_01X04 P304
 U 1 1 57D1AB59
 P 15800 7350
 F 0 "P304" H 15800 7600 50  0000 C CNN
-F 1 "JST PH header" V 15950 7350 50  0000 C CNN
-F 2 "Connectors_JST:JST_PH_B4B-PH-K_02x2.00mm_Straight" H 15800 7350 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-PH_connector.pdf" H 15800 7350 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 1 "XH header" V 15950 7350 50  0000 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 15800 7350 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 15800 7350 50  0001 C CNN
+F 4 "4 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "JST" H 15800 7350 60  0001 C CNN "Mfg_Name"
-F 6 "B4B-PH-K-S" H 15800 7350 60  0001 C CNN "Mfg_PN"
-F 7 "To Cell Protection" V 16050 7350 50  0000 C CNN "Note"
+F 6 "B4B-XH-A(LF)(SN)" H 15800 7350 60  0001 C CNN "Mfg_PN"
+F 7 "to cell protection" V 16050 7350 50  0000 C CNN "Note"
 F 8 "-" H 15800 7350 60  0001 C CNN "Spec"
 	1    15800 7350
 	1    0    0    -1  
@@ -643,6 +643,8 @@ Text Label 2400 4400 2    60   ~ 0
 GPIO2_22
 Text Label 8000 6300 2    60   ~ 0
 GPIO1_16
+Text Notes 12000 7650 0    100  Italic 20
+TODO: add off-board JST XH connectors
 Wire Notes Line
 	12550 4600 12550 2200
 Wire Notes Line

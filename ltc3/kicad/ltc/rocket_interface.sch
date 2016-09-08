@@ -673,7 +673,7 @@ F 3 "~" H 15800 7800 60  0000 C CNN
 F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
 F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "To Away Box" V 16000 7800 60  0000 C CNN "Note"
+F 7 "OFF-BOARD; to away box" V 16000 7800 60  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    15800 7800
 	1    0    0    -1  
@@ -856,13 +856,13 @@ L CONN_01X10 P404
 U 1 1 56752909
 P 1250 7400
 F 0 "P404" H 1250 7950 50  0000 C CNN
-F 1 "Molex Micro-Fit header" V 1350 7400 50  0000 C CNN
+F 1 "MicroFit header" V 1350 7400 50  0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x05_Straight_43045-1028" H 1250 7400 60  0001 C CNN
-F 3 "~" H 1250 7400 60  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 1250 7400 60  0001 C CNN
+F 4 "10 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 1250 7400 60  0001 C CNN "Mfg_Name"
-F 6 "-" H 1250 7400 60  0001 C CNN "Mfg_PN"
-F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 6 "43045-1028" H 1250 7400 60  0001 C CNN "Mfg_PN"
+F 7 "to front panel" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 1250 7400 60  0001 C CNN "Spec"
 	1    1250 7400
 	-1   0    0    -1  
@@ -1248,13 +1248,13 @@ L CONN_01X02 P403
 U 1 1 572D4A34
 P 13800 5950
 F 0 "P403" H 13600 6150 50  0000 L CNN
-F 1 "43045-0200" V 13900 5950 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Angled_43045-020x" H 13800 5950 50  0001 C CNN
-F 3 "~" H 13800 5950 50  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "MicroFit3 1x2 header" V 14000 5950 50  0000 C CIN "Note"
+F 1 "MicroFit header" V 13900 5950 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 13800 5950 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 13800 5950 50  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Molex" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "43045-0228" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "to front panel" V 14000 5950 50  0001 C CIN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    13800 5950
 	1    0    0    -1  
@@ -1264,13 +1264,13 @@ L CONN_01X02 P402
 U 1 1 572D4A3C
 P 14750 5900
 F 0 "P402" H 14750 6100 50  0000 R CNN
-F 1 "43025-0200" V 14950 5900 50  0000 C CNN
+F 1 "MicroFit connector" V 14950 5900 50  0000 C CNN
 F 2 "~" H 14750 5900 50  0001 C CNN
-F 3 "~" H 14750 5900 50  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "MicroFit3 1x2 recept." V 14850 5900 50  0000 C CIN "Note"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-Micro_Fit_3_Family.pdf" H 14750 5900 50  0001 C CNN
+F 4 "2 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Molex" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "43025-0200" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "OFF-BOARD; mates to P403" V 14850 5900 50  0001 C CIN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    14750 5900
 	-1   0    0    -1  
@@ -1344,13 +1344,13 @@ L CONN_01X02 P406
 U 1 1 572EE19E
 P 13800 7800
 F 0 "P406" H 13600 8000 50  0000 L CNN
-F 1 "43045-0200" V 13900 7800 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Angled_43045-020x" H 13800 7800 50  0001 C CNN
-F 3 "~" H 13800 7800 50  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "MicroFit3 1x2 header" V 14000 7800 50  0000 C CIN "Note"
+F 1 "MicroFit header" V 13900 7800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 13800 7800 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 13800 7800 50  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Molex" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "43045-0228" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "to front panel" V 14000 7800 50  0001 C CIN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    13800 7800
 	1    0    0    -1  
@@ -1360,13 +1360,13 @@ L CONN_01X02 P407
 U 1 1 572EE2CC
 P 14750 7800
 F 0 "P407" H 14750 8000 50  0000 R CNN
-F 1 "43025-0200" V 14950 7800 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 14750 7800 50  0001 C CNN
-F 3 "~" H 14750 7800 50  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "MicroFit3 1x2 recept." V 14850 7800 50  0000 C CIN "Note"
+F 1 "MicroFit connector" V 14950 7800 50  0000 C CNN
+F 2 "~" H 14750 7800 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-Micro_Fit_3_Family.pdf" H 14750 7800 50  0001 C CNN
+F 4 "2 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Molex" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "43025-0200" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "OFF-BOARD; mates to P406" V 14850 7800 50  0001 C CIN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    14750 7800
 	-1   0    0    -1  
@@ -1434,13 +1434,13 @@ L CONN_01X04 P409
 U 1 1 572FA32D
 P 6900 8450
 F 0 "P409" V 7100 8650 50  0000 R CNN
-F 1 "PHR-4" V 7000 8650 50  0000 R CNN
+F 1 "XH connector" V 7000 8650 50  0000 R CNN
 F 2 "~" H 6900 8450 50  0001 C CNN
-F 3 "~" H 6900 8450 50  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 6900 8450 50  0001 C CNN
+F 4 "4 pos connector" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "JST" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "XHP-4" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "OFF-BOARD; mates to P405" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    6900 8450
 	0    -1   -1   0   
@@ -1450,13 +1450,13 @@ L CONN_01X04 P405
 U 1 1 572FE813
 P 6900 7500
 F 0 "P405" V 7100 7700 50  0000 R CNN
-F 1 "S4B-PH-K" V 7000 7700 50  0000 R CNN
-F 2 "Connectors_JST:JST_PH_S4B-PH-K_04x2.00mm_Angled" H 6900 7500 50  0001 C CNN
-F 3 "~" H 6900 7500 50  0000 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
-F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
-F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 1 "XH header" V 7000 7700 50  0000 R CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 6900 7500 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 6900 7500 50  0001 C CNN
+F 4 "4 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "JST" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "B4B-XH-A(LF)(SN)" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "to front panel" H 0   0   50  0001 C CNN "Note"
 F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    6900 7500
 	0    -1   1    0   
@@ -1606,11 +1606,11 @@ P 15750 950
 F 0 "P401" H 15750 1100 50  0000 C CNN
 F 1 "MicroFit header" V 15850 1050 50  0000 R CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 15750 950 50  0001 C CNN
-F 3 "~" H 15750 950 50  0001 C CNN
-F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 15750 950 50  0001 C CNN
+F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
 F 5 "Molex" H 15750 950 60  0001 C CNN "Mfg_Name"
-F 6 "43045-0200" H 15750 950 60  0001 C CNN "Mfg_PN"
-F 7 "IGN BATT IN" V 15950 1050 50  0000 R CIN "Note"
+F 6 "43045-0228" H 15750 950 60  0001 C CNN "Mfg_PN"
+F 7 "to ignition batt" V 15950 1050 50  0000 R CIN "Note"
 F 8 "-" H 15750 950 60  0001 C CNN "Spec"
 	1    15750 950 
 	1    0    0    -1  
@@ -2317,4 +2317,6 @@ Connection ~ 7850 6200
 Connection ~ 7100 6800
 Connection ~ 7850 6800
 Connection ~ 7850 7150
+Text Notes 15000 8050 0    60   ~ 0
+To Away Box
 $EndSCHEMATC
