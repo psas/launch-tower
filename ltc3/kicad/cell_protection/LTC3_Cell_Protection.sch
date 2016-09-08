@@ -432,7 +432,7 @@ P 2750 3000
 F 0 "D1" H 2750 2900 50 0000 C CNN
 F 1 "CDSU4148" H 2750 3100 50 0000 C CNN
 F 2 "Diodes_SMD:SOD-523" H 2750 3000 60 0001 C CNN
-F 3 "~" H 2750 3000 60 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/ComChip-CDSU4148-SMD_Switching_Diode.pdf" H 2750 3000 60 0001 C CNN
 F 4 "Standard 75V 150mA" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Comchip" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "CDSU4148" H 0 0 50 0001 C CNN "Mfg_PN"
@@ -662,7 +662,7 @@ P 8550 3000
 F 0 "D6" H 8550 3100 50 0000 C CNN
 F 1 "CDSU4148" H 8550 2900 50 0000 C CNN
 F 2 "Diodes_SMD:SOD-523" H 8550 3000 60 0001 C CNN
-F 3 "~" H 8550 3000 60 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/ComChip-CDSU4148-SMD_Switching_Diode.pdf" H 8550 3000 60 0001 C CNN
 F 4 "Standard 75V 150mA" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Comchip" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "CDSU4148" H 0 0 50 0001 C CNN "Mfg_PN"
