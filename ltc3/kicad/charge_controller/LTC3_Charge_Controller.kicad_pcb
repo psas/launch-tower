@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew "(2016-05-27 BZR 6836, Git 4441a4b)-product")
 
   (general
-    (links 572)
+    (links 581)
     (no_connects 0)
-    (area 92.405999 61.725999 194.506001 144.826001)
+    (area 42.423199 60.5199 199.831029 145.9171)
     (thickness 1.6)
     (drawings 4)
     (tracks 824)
     (zones 0)
-    (modules 419)
+    (modules 428)
     (nets 68)
   )
 
@@ -17,7 +17,7 @@
     (0 F.Cu signal)
     (1 Ground.Plane signal hide)
     (2 In2.Cu signal)
-    (31 B.Cu signal)
+    (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -245,6 +245,114 @@
     (via_drill 0.4318)
     (uvia_dia 0.3556)
     (uvia_drill 0.10668)
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D33303)
+    (at 164.656 72.826)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D332FE)
+    (at 164.656 71.751)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D332F9)
+    (at 164.681 70.151)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D332F4)
+    (at 164.681 69.076)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D33299)
+    (at 186.931 103.426)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D33294)
+    (at 183.331 103.426)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D3328F)
+    (at 186.931 104.901)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D33283)
+    (at 185.156 101.976)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D3327E)
+    (at 183.331 104.901)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND) (zone_connect 2))
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57D218DC)
