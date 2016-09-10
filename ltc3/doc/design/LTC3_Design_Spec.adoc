@@ -1,14 +1,8 @@
 = Portland State Aerospace Society Launch Tower Computer 3 Design Specification
 PSAS Avionics Team <psas-avionics@lists.psas.pdx.edu>
-v0.1, 24 October 2015: DRAFT
+v0.5, 14 July 2016: DRAFT
 
 :imagesdir: ./images
-
-
-NB: This document is most totally a work in progress.  In fact, you
-probably shouldn't even bother to read the following words unless
-you're planning on editing them.  Move along, people...
-
 
 
 == Summary
@@ -23,8 +17,8 @@ either the design is incorrect, or the document needs to be updated!
 == Power
 
 === Sources
-Power for LTC3 will be sourced from a bench power supply while in the
-lab, and photovoltaic panels while in the field.
+LTC3 will get its power from a bench power supply while in the lab,
+and photovoltaic panels and batteries while in the field.
 
 Minimum input voltage is determined by the DC-DC converter supplying
 the 19 VDC rail, which requires an overhead of 4 VDC.  At minimum, a
@@ -33,16 +27,14 @@ footnote:[Refer to Texas Instruments PTN78020[WH\] datasheet, Aug.
 2011, page 10, "Input Voltage Considerations"]
 
 === Battery
-The heart of the LTC3 power circuitry is a 28.8 V, 8s2p LiPo battery
-pack.  The 28.8 V nominal voltage enables the use of buck converters
-on 5V and 19V power rails.  (Configurable buck converters are cheap
-and plentiful, and have higher efficiencies than the boost
-converters.)  The 8s2p configuration enables us to charge-balance
-individual cells.
-
-The downside of this approach is the need for a custom charging
-circuit, as most off-the-shelf chargers are designed for 12V nominal
-MPPT and 4s cell configurations.
+LTC3 uses a 28.8V, 8s2p LiPo battery pack.  The 28.8V nominal voltage
+enables the use of buck converters on all three DC power rails.
+Configurable buck converters are cheap and plentiful, and have higher
+efficiencies than the boost converters.  Furthermore, the 8s2p
+configuration enables us to charge-balance individual cells.  The
+downside is the need for a custom charging circuit, as most
+off-the-shelf chargers are designed for 12V nominal MPPT and 4s cell
+configurations.
 
 ==== TODO
 * Based on assumptions: 90% efficiency, calc. 96W of power (a
@@ -120,16 +112,16 @@ bq.
 
 
 === DC Rails
-LTC3 provides three DC power rails:
+LTC3 has three DC power rails:
 
-* 5 VDC for the Beaglebone and cape
-* 12 VDC for the Ethernet switch and external device support
-* 19 VDC for rocket shore power
+* 5 VDC, for the Beaglebone, cape, and supporting logic
+* 12 VDC, for the Ethernet switch and external device support
+* 19 VDC, for rocket shore power
 
-DC power rails are supplied by separate Texas Instruments PTN78020
-switching regulator ICs.  The PTN78020 is a wide-input, wide-output,
-adjustable 6 A regulator.  A PTN78020W converter is used for the 5 VDC
-rail; PTN78020H converters are used for the 12 VDC and 19 VDC rails.
+DC power rails are supplied by Texas Instruments PTN78020 switching
+regulators.  The PTN78020 is a wide-input, wide-output, adjustable 6 A
+regulator.  A PTN78020W converter is used for the 5 VDC rail;
+PTN78020H converters are used for the 12 VDC and 19 VDC rails.
 
 Based on the temperature derating curves in the PTN78020 datasheet
 (rev. Aug. 2011), our worst case scenario is 4.0A load on the 12V DC
@@ -138,12 +130,12 @@ temperature for such a load is approximately 55 °C.
 
 .LTC3 DC Power Rails
 [width="25%",frame="topbot",options="header"]
-|=======================================
-| V~out~ | I~min~ | I~typ~ | I~max~ | technology 
-| 5.0  | ?    | 1.0  | 2.0  | PTN78020W
-| 12.0 | ?    | ?    | 5.0  | PTN78020H
-| 19.0 | ?    | 3.0  | 4.0  | PTN78020H
-|=======================================
+|===============================================
+| V~out~ | I~min~ | I~typ~ | I~max~ | Part Num.
+| 5.0    | ?      | 1.0    | 2.0    | PTN78020W
+| 12.0   | ?      | ?      | 5.0    | PTN78020H
+| 19.0   | ?      | 3.0    | 4.0    | PTN78020H
+|===============================================
 
 
 
