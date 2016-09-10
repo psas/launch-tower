@@ -16,7 +16,7 @@
   (layers
     (0 F.Cu signal)
     (1 Ground.Plane signal hide)
-    (2 In2.Cu signal)
+    (2 In2.Cu signal hide)
     (31 B.Cu signal hide)
     (32 B.Adhes user hide)
     (33 F.Adhes user)
@@ -1592,7 +1592,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57CF8A1B)
-    (at 112.956 107.526)
+    (at 113.231 107.576)
     (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -1604,7 +1604,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57CF8A17)
-    (at 113.956 107.526)
+    (at 114.231 107.576)
     (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -1616,7 +1616,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57CF8A13)
-    (at 114.956 107.526)
+    (at 115.231 107.576)
     (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -1628,7 +1628,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57CF8A0D)
-    (at 115.956 107.526)
+    (at 116.231 107.576)
     (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -1640,7 +1640,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57CF89E6)
-    (at 116.956 107.526)
+    (at 117.231 107.576)
     (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -1652,7 +1652,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8278) (tstamp 57CF89E1)
-    (at 117.956 107.526)
+    (at 118.231 107.576)
     (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
@@ -1664,7 +1664,7 @@
   )
 
   (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CF8610) (tstamp 57CF89DC)
-    (at 118.956 107.526)
+    (at 119.231 107.576)
     (fp_text reference REF** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )

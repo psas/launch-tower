@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew "(2016-05-27 BZR 6836, Git 4441a4b)-product")
 
   (general
-    (links 319)
+    (links 323)
     (no_connects 0)
-    (area 103.533999 64.649999 195.884001 133.654001)
+    (area 98.441772 63.5487 201.104229 134.4863)
     (thickness 1.6)
     (drawings 4)
     (tracks 413)
     (zones 0)
-    (modules 241)
+    (modules 245)
     (nets 58)
   )
 
@@ -23,7 +23,7 @@
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
-    (37 F.SilkS user)
+    (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
     (40 Dwgs.User user)
@@ -217,6 +217,54 @@
     (add_net "Net-(U1-Pad28)")
     (add_net "Net-(U1-Pad29)")
     (add_net "Net-(U1-Pad31)")
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CFA055) (tstamp 57D351F3)
+    (at 112.459 72.85)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CFA055) (tstamp 57D351D1)
+    (at 115.509 81.025)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CFA055) (tstamp 57D351CB)
+    (at 109.809 88.025)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
+  )
+
+  (module LTC3:Via_.6mm (layer F.Cu) (tedit 57CFA055) (tstamp 57D351C5)
+    (at 109.809 86.9)
+    (fp_text reference REF** (at 0 1.27) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value Via_.6mm (at 0 -1.27) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 1 GND) (zone_connect 2))
   )
 
   (module Resistors_SMD:R_0805 (layer F.Cu) (tedit 5415CDEB) (tstamp 57CF8F81)
