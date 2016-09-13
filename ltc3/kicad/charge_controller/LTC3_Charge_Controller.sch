@@ -27,7 +27,6 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:bbd
 LIBS:brooktre
 LIBS:cmos4000
 LIBS:cmos_ieee
@@ -97,7 +96,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Charge Controller"
-Date "2016-09-08"
+Date "2016-09-13"
 Rev "A"
 Comp "Portland State Aerospace Society <http://psas.pdx.edu/>"
 Comment1 ""
@@ -113,10 +112,11 @@ F 0 "L1" V 9350 2400 50  0000 C CNN
 F 1 "10uH" V 9500 2400 50  0000 C CNN
 F 2 "LTC3:Coilcraft_SER2900" H 9400 2400 60  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/passives/Coilcraft-SER2900-Shielded_Power_Inductors.pdf" H 9400 2400 60  0001 C CNN
-F 4 "Coilcraft" H 9400 2400 60  0001 C CNN "Mfg_Name"
-F 5 "SER2915L-103KL" H 9400 2400 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9400 2400 60  0001 C CNN "Note"
-F 7 "-" H 9400 2400 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Coilcraft" H 9400 2400 60  0001 C CNN "Mfg_Name"
+F 6 "SER2915L-103KL" H 9400 2400 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9400 2400 60  0001 C CNN "Note"
+F 8 "-" H 9400 2400 60  0001 C CNN "Spec"
 	1    9400 2400
 	0    -1   -1   0   
 $EndComp
@@ -182,10 +182,11 @@ F 0 "R21" V 6950 2100 50  0000 C CNN
 F 1 "10" V 7150 2100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6980 2100 30  0001 C CNN
 F 3 "~" H 7050 2100 30  0001 C CNN
-F 4 "Yageo" H 7050 2100 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0710RL" H 7050 2100 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 7050 2100 60  0001 C CNN "Note"
-F 7 "-" H 7050 2100 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 7050 2100 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0710RL" H 7050 2100 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 7050 2100 60  0001 C CNN "Note"
+F 8 "-" H 7050 2100 60  0001 C CNN "Spec"
 	1    7050 2100
 	1    0    0    1   
 $EndComp
@@ -288,10 +289,11 @@ F 0 "R9" V 2350 4950 50  0000 C CNN
 F 1 "196k" V 2550 4950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2380 4950 30  0001 C CNN
 F 3 "~" H 2450 4950 30  0001 C CNN
-F 4 "Yageo" H 2450 4950 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07196KL" H 2450 4950 60  0001 C CNN "Mfg_PN"
-F 6 "-" V 2650 4950 50  0001 C CNN "Note"
-F 7 "1%" V 2650 4950 50  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 2450 4950 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07196KL" H 2450 4950 60  0001 C CNN "Mfg_PN"
+F 7 "-" V 2650 4950 50  0001 C CNN "Note"
+F 8 "1%" V 2650 4950 50  0001 C CNN "Spec"
 	1    2450 4950
 	1    0    0    -1  
 $EndComp
@@ -303,10 +305,11 @@ F 0 "R10" V 2350 5450 50  0000 C CNN
 F 1 "8.06k" V 2550 5450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2380 5450 30  0001 C CNN
 F 3 "~" H 2450 5450 30  0001 C CNN
-F 4 "Rohm" H 2450 5450 60  0001 C CNN "Mfg_Name"
-F 5 "MCR10EZHF8061" H 2450 5450 60  0001 C CNN "Mfg_PN"
-F 6 "-" V 2650 5450 50  0001 C CNN "Note"
-F 7 "1%" V 2650 5450 50  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Rohm" H 2450 5450 60  0001 C CNN "Mfg_Name"
+F 6 "MCR10EZHF8061" H 2450 5450 60  0001 C CNN "Mfg_PN"
+F 7 "-" V 2650 5450 50  0001 C CNN "Note"
+F 8 "1%" V 2650 5450 50  0001 C CNN "Spec"
 	1    2450 5450
 	1    0    0    -1  
 $EndComp
@@ -329,10 +332,11 @@ F 0 "R1" V 1150 8700 50  0000 C CNN
 F 1 "110k" V 1350 8700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 1180 8700 30  0001 C CNN
 F 3 "~" H 1250 8700 30  0001 C CNN
-F 4 "Yageo" H 1250 8700 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07110KL" H 1250 8700 60  0001 C CNN "Mfg_PN"
-F 6 "-" V 1050 8700 50  0001 C CNN "Note"
-F 7 "1%" H 1250 8700 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 1250 8700 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07110KL" H 1250 8700 60  0001 C CNN "Mfg_PN"
+F 7 "-" V 1050 8700 50  0001 C CNN "Note"
+F 8 "1%" H 1250 8700 60  0001 C CNN "Spec"
 	1    1250 8700
 	1    0    0    -1  
 $EndComp
@@ -344,10 +348,11 @@ F 0 "R2" V 1150 9200 50  0000 C CNN
 F 1 "35.7k" V 1350 9200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 1180 9200 30  0001 C CNN
 F 3 "~" H 1250 9200 30  0001 C CNN
-F 4 "Yageo" H 1250 9200 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0735K7L" H 1250 9200 60  0001 C CNN "Mfg_PN"
-F 6 "-" V 1050 9200 50  0001 C CNN "Note"
-F 7 "1%" H 1250 9200 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 1250 9200 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0735K7L" H 1250 9200 60  0001 C CNN "Mfg_PN"
+F 7 "-" V 1050 9200 50  0001 C CNN "Note"
+F 8 "1%" H 1250 9200 60  0001 C CNN "Spec"
 	1    1250 9200
 	1    0    0    -1  
 $EndComp
@@ -359,10 +364,11 @@ F 0 "R7" V 1950 7650 50  0000 C CNN
 F 1 "93.1k" V 2150 7650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 1980 7650 30  0001 C CNN
 F 3 "~" H 2050 7650 30  0001 C CNN
-F 4 "Yageo" H 2050 7650 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0793K1L" H 2050 7650 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 2050 7650 60  0001 C CNN "Note"
-F 7 "-" H 2050 7650 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 2050 7650 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0793K1L" H 2050 7650 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 2050 7650 60  0001 C CNN "Note"
+F 8 "-" H 2050 7650 60  0001 C CNN "Spec"
 	1    2050 7650
 	1    0    0    -1  
 $EndComp
@@ -374,10 +380,11 @@ F 0 "R8" V 1950 8200 50  0000 C CNN
 F 1 "7.68k" V 2150 8200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 1980 8200 30  0001 C CNN
 F 3 "~" H 2050 8200 30  0001 C CNN
-F 4 "Yageo" H 2050 8200 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-077K68L" H 2050 8200 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 2050 8200 60  0001 C CNN "Note"
-F 7 "-" H 2050 8200 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 2050 8200 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-077K68L" H 2050 8200 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 2050 8200 60  0001 C CNN "Note"
+F 8 "-" H 2050 8200 60  0001 C CNN "Spec"
 	1    2050 8200
 	1    0    0    -1  
 $EndComp
@@ -389,10 +396,11 @@ F 0 "R11" V 2350 8200 50  0000 C CNN
 F 1 "16.5k" V 2550 8200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2380 8200 30  0001 C CNN
 F 3 "~" H 2450 8200 30  0001 C CNN
-F 4 "Yageo" H 2450 8200 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0716K5L" H 2450 8200 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 2450 8200 60  0001 C CNN "Note"
-F 7 "-" H 2450 8200 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 2450 8200 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0716K5L" H 2450 8200 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 2450 8200 60  0001 C CNN "Note"
+F 8 "-" H 2450 8200 60  0001 C CNN "Spec"
 	1    2450 8200
 	1    0    0    -1  
 $EndComp
@@ -420,10 +428,11 @@ F 0 "R13" V 3650 7800 50  0000 C CNN
 F 1 "215k" V 3450 7800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 3480 7800 30  0001 C CNN
 F 3 "~" H 3550 7800 30  0001 C CNN
-F 4 "Yageo" H 3550 7800 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07215KL" H 3550 7800 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 3550 7800 60  0001 C CNN "Note"
-F 7 "-" H 3550 7800 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 3550 7800 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07215KL" H 3550 7800 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 3550 7800 60  0001 C CNN "Note"
+F 8 "-" H 3550 7800 60  0001 C CNN "Spec"
 	1    3550 7800
 	-1   0    0    1   
 $EndComp
@@ -467,10 +476,11 @@ F 0 "R14" V 4200 8200 50  0000 C CNN
 F 1 "21k" V 4400 8200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4230 8200 30  0001 C CNN
 F 3 "~" H 4300 8200 30  0001 C CNN
-F 4 "Yageo" H 4300 8200 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0721KL" H 4300 8200 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 4300 8200 60  0001 C CNN "Note"
-F 7 "-" H 4300 8200 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 4300 8200 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0721KL" H 4300 8200 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 4300 8200 60  0001 C CNN "Note"
+F 8 "-" H 4300 8200 60  0001 C CNN "Spec"
 	1    4300 8200
 	1    0    0    -1  
 $EndComp
@@ -498,10 +508,11 @@ F 0 "R18" V 5250 9100 50  0000 C CNN
 F 1 "243k" V 5450 9100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 5280 9100 30  0001 C CNN
 F 3 "~" H 5350 9100 30  0001 C CNN
-F 4 "Yageo" H 5350 9100 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07243KL" H 5350 9100 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 5350 9100 60  0001 C CNN "Note"
-F 7 "-" H 5350 9100 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 5350 9100 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07243KL" H 5350 9100 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 5350 9100 60  0001 C CNN "Note"
+F 8 "-" H 5350 9100 60  0001 C CNN "Spec"
 	1    5350 9100
 	1    0    0    -1  
 $EndComp
@@ -513,10 +524,11 @@ F 0 "R16" V 4900 8600 50  0000 C CNN
 F 1 "25.5k" V 5100 8600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 4930 8600 30  0001 C CNN
 F 3 "~" H 5000 8600 30  0001 C CNN
-F 4 "Vishay" H 5000 8600 60  0001 C CNN "Mfg_Name"
-F 5 "CRCW080527K1FKTA" H 5000 8600 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 5000 8600 60  0001 C CNN "Note"
-F 7 "-" H 5000 8600 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Vishay" H 5000 8600 60  0001 C CNN "Mfg_Name"
+F 6 "CRCW080527K1FKTA" H 5000 8600 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 5000 8600 60  0001 C CNN "Note"
+F 8 "-" H 5000 8600 60  0001 C CNN "Spec"
 	1    5000 8600
 	1    0    0    -1  
 $EndComp
@@ -528,10 +540,11 @@ F 0 "R17" V 5250 8600 50  0000 C CNN
 F 1 "3.01k" V 5450 8600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 5280 8600 30  0001 C CNN
 F 3 "~" H 5350 8600 30  0001 C CNN
-F 4 "Yageo" H 5350 8600 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-073K01L" H 5350 8600 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 5350 8600 60  0001 C CNN "Note"
-F 7 "-" H 5350 8600 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 5350 8600 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-073K01L" H 5350 8600 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 5350 8600 60  0001 C CNN "Note"
+F 8 "-" H 5350 8600 60  0001 C CNN "Spec"
 	1    5350 8600
 	1    0    0    -1  
 $EndComp
@@ -575,10 +588,11 @@ F 0 "R23" V 7480 9950 50  0000 C CNN
 F 1 "549" V 7300 9950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 7330 9950 30  0001 C CNN
 F 3 "~" H 7400 9950 30  0001 C CNN
-F 4 "Yageo" H 7400 9950 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07549RL" H 7400 9950 60  0001 C CNN "Mfg_PN"
-F 6 "RDSA" V 7200 9950 50  0000 C CIN "Note"
-F 7 "-" H 7400 9950 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 7400 9950 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07549RL" H 7400 9950 60  0001 C CNN "Mfg_PN"
+F 7 "RDSA" V 7200 9950 50  0000 C CIN "Note"
+F 8 "-" H 7400 9950 60  0001 C CNN "Spec"
 	1    7400 9950
 	-1   0    0    1   
 $EndComp
@@ -590,10 +604,11 @@ F 0 "D3" H 7400 9600 50  0000 C CNN
 F 1 "GREEN" H 7400 9400 50  0000 C CNN
 F 2 "LEDs:LED_1206" H 7400 9500 60  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/indicators/Lite_On-LTST_C150CKT-LED_Red_1206.pdf" H 7400 9500 60  0001 C CNN
-F 4 "Lite-On" H 7400 9500 60  0001 C CNN "Mfg_Name"
-F 5 "LTST-C150GKT" H 7400 9500 60  0001 C CNN "Mfg_PN"
-F 6 "STATUS" H 7400 9300 50  0001 C CIN "Note"
-F 7 "-" H 7400 9500 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Lite-On" H 7400 9500 60  0001 C CNN "Mfg_Name"
+F 6 "LTST-C150GKT" H 7400 9500 60  0001 C CNN "Mfg_PN"
+F 7 "STATUS" H 7400 9300 50  0001 C CIN "Note"
+F 8 "-" H 7400 9500 60  0001 C CNN "Spec"
 	1    7400 9500
 	0    -1   -1   0   
 $EndComp
@@ -605,10 +620,11 @@ F 0 "D4" H 7850 9600 50  0000 C CNN
 F 1 "RED" H 7850 9400 50  0000 C CNN
 F 2 "LEDs:LED_1206" H 7850 9500 60  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/indicators/Lite_On-LTST_C150GKT-LED_Green_1206.pdf" H 7850 9500 60  0001 C CNN
-F 4 "Lite-On" H 7850 9500 60  0001 C CNN "Mfg_Name"
-F 5 "LTST-C150CKT" H 7850 9500 60  0001 C CNN "Mfg_PN"
-F 6 "FAULT" H 7850 9500 50  0001 C CIN "Note"
-F 7 "-" H 7850 9500 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Lite-On" H 7850 9500 60  0001 C CNN "Mfg_Name"
+F 6 "LTST-C150CKT" H 7850 9500 60  0001 C CNN "Mfg_PN"
+F 7 "FAULT" H 7850 9500 50  0001 C CIN "Note"
+F 8 "-" H 7850 9500 60  0001 C CNN "Spec"
 	1    7850 9500
 	0    -1   -1   0   
 $EndComp
@@ -620,10 +636,11 @@ F 0 "R26" V 8450 8900 50  0000 C CNN
 F 1 "1.3k" V 8550 9000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 9000 30  0001 C CNN
 F 3 "~" H 8550 9000 30  0001 C CNN
-F 4 "Yageo" H 8550 9000 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-071K3L" H 8550 9000 60  0001 C CNN "Mfg_PN"
-F 6 "RDSB" V 8450 9150 50  0000 C CIN "Note"
-F 7 "-" H 8550 9000 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 8550 9000 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-071K3L" H 8550 9000 60  0001 C CNN "Mfg_PN"
+F 7 "RDSB" V 8450 9150 50  0000 C CIN "Note"
+F 8 "-" H 8550 9000 60  0001 C CNN "Spec"
 	1    8550 9000
 	0    1    1    0   
 $EndComp
@@ -635,10 +652,11 @@ F 0 "R27" V 8450 9050 50  0000 C CNN
 F 1 "3.32k" V 8550 9200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8480 9200 30  0001 C CNN
 F 3 "~" H 8550 9200 30  0001 C CNN
-F 4 "Yageo" H 8550 9200 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-073K32L" H 8550 9200 60  0001 C CNN "Mfg_PN"
-F 6 "RDFB" V 8450 9300 50  0000 C CIN "Note"
-F 7 "-" H 8550 9200 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 8550 9200 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-073K32L" H 8550 9200 60  0001 C CNN "Mfg_PN"
+F 7 "RDFB" V 8450 9300 50  0000 C CIN "Note"
+F 8 "-" H 8550 9200 60  0001 C CNN "Spec"
 	1    8550 9200
 	0    1    1    0   
 $EndComp
@@ -650,10 +668,11 @@ F 0 "R30" V 9050 9900 50  0000 C CNN
 F 1 "200k" V 9250 9900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 9080 9900 30  0001 C CNN
 F 3 "~" H 9150 9900 30  0001 C CNN
-F 4 "Yageo" H 9150 9900 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07200KL" H 9150 9900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9150 9900 60  0001 C CNN "Note"
-F 7 "-" H 9150 9900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 9150 9900 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07200KL" H 9150 9900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9150 9900 60  0001 C CNN "Note"
+F 8 "-" H 9150 9900 60  0001 C CNN "Spec"
 	1    9150 9900
 	1    0    0    -1  
 $EndComp
@@ -740,10 +759,11 @@ F 0 "R33" V 10050 6650 50  0000 C CNN
 F 1 "11.5k" V 10250 6650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 10080 6650 30  0001 C CNN
 F 3 "~" H 10150 6650 30  0001 C CNN
-F 4 "Yageo" H 10150 6650 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0711K5L" H 10150 6650 60  0001 C CNN "Mfg_PN"
-F 6 "RDAC01" V 10350 6650 50  0000 C CIN "Note"
-F 7 "-" H 10150 6650 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 10150 6650 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0711K5L" H 10150 6650 60  0001 C CNN "Mfg_PN"
+F 7 "RDAC01" V 10350 6650 50  0000 C CIN "Note"
+F 8 "-" H 10150 6650 60  0001 C CNN "Spec"
 	1    10150 6650
 	0    1    1    0   
 $EndComp
@@ -755,10 +775,11 @@ F 0 "R35" V 11600 6650 50  0000 C CNN
 F 1 "57.6k" V 11800 6650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 11630 6650 30  0001 C CNN
 F 3 "~" H 11700 6650 30  0001 C CNN
-F 4 "Yageo" H 11700 6650 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0757K6L" H 11700 6650 60  0001 C CNN "Mfg_PN"
-F 6 "RDAC02" V 11900 6650 50  0000 C CIN "Note"
-F 7 "-" H 11700 6650 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 11700 6650 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0757K6L" H 11700 6650 60  0001 C CNN "Mfg_PN"
+F 7 "RDAC02" V 11900 6650 50  0000 C CIN "Note"
+F 8 "-" H 11700 6650 60  0001 C CNN "Spec"
 	1    11700 6650
 	0    1    1    0   
 $EndComp
@@ -770,10 +791,11 @@ F 0 "R37" V 12000 6950 50  0000 C CNN
 F 1 "10.2k" V 12200 6950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 12030 6950 30  0001 C CNN
 F 3 "~" H 12100 6950 30  0001 C CNN
-F 4 "Yageo" H 12100 6950 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0710K2L" H 12100 6950 60  0001 C CNN "Mfg_PN"
-F 6 "RFBOUT2" V 12300 6950 50  0000 C CIN "Note"
-F 7 "-" H 12100 6950 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 12100 6950 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0710K2L" H 12100 6950 60  0001 C CNN "Mfg_PN"
+F 7 "RFBOUT2" V 12300 6950 50  0000 C CIN "Note"
+F 8 "-" H 12100 6950 60  0001 C CNN "Spec"
 	1    12100 6950
 	1    0    0    -1  
 $EndComp
@@ -785,10 +807,11 @@ F 0 "R36" V 12000 6200 50  0000 C CNN
 F 1 "294k" V 12200 6200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 12030 6200 30  0001 C CNN
 F 3 "~" H 12100 6200 30  0001 C CNN
-F 4 "Yageo" H 12100 6200 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07294KL" H 12100 6200 60  0001 C CNN "Mfg_PN"
-F 6 "RFBOUT1" V 12300 6200 50  0000 C CIN "Note"
-F 7 "-" H 12100 6200 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 12100 6200 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07294KL" H 12100 6200 60  0001 C CNN "Mfg_PN"
+F 7 "RFBOUT1" V 12300 6200 50  0000 C CIN "Note"
+F 8 "-" H 12100 6200 60  0001 C CNN "Spec"
 	1    12100 6200
 	1    0    0    -1  
 $EndComp
@@ -1207,10 +1230,11 @@ F 0 "R22" V 6850 9100 50  0000 C CNN
 F 1 "53.6k" V 7050 9100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 6880 9100 30  0001 C CNN
 F 3 "~" H 6950 9100 30  0001 C CNN
-F 4 "Yageo" H 6950 9100 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0753K6L" H 6950 9100 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 6950 9100 60  0001 C CNN "Note"
-F 7 "-" H 6950 9100 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 6950 9100 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0753K6L" H 6950 9100 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 6950 9100 60  0001 C CNN "Note"
+F 8 "-" H 6950 9100 60  0001 C CNN "Spec"
 	1    6950 9100
 	1    0    0    -1  
 $EndComp
@@ -1287,10 +1311,11 @@ F 0 "Q6" H 12550 5750 50  0000 R CNN
 F 1 "ZVP3310F" H 12750 5600 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 12400 5750 29  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Diodes_Inc-ZVP3310FTA-P_Channel_Enhancement_Mode_Vertical_DMOS_FET.pdf" H 12200 5650 60  0001 C CNN
-F 4 "Diodes Inc." H 12200 5650 60  0001 C CNN "Mfg_Name"
-F 5 "ZVP3310FTA" H 12200 5650 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 12200 5650 60  0001 C CNN "Note"
-F 7 "-" H 12200 5650 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Diodes Inc." H 12200 5650 60  0001 C CNN "Mfg_Name"
+F 6 "ZVP3310FTA" H 12200 5650 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 12200 5650 60  0001 C CNN "Note"
+F 8 "-" H 12200 5650 60  0001 C CNN "Spec"
 	1    12200 5650
 	-1   0    0    1   
 $EndComp
@@ -1318,10 +1343,11 @@ F 0 "D5" H 14400 5900 50  0000 C CNN
 F 1 "BZT52C13" H 14400 6100 50  0000 C CNN
 F 2 "Diodes_SMD:SOD-123" H 14400 6000 60  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Diodes_Inc-BZT52C13-Surface_Mount_Zener_Diode.pdf" H 14400 6000 60  0001 C CNN
-F 4 "Diodes Inc." H 14400 6000 60  0001 C CNN "Mfg_Name"
-F 5 "BZT52C13-7-F" H 14400 6000 60  0001 C CNN "Mfg_PN"
-F 6 "13V" H 14400 6200 50  0000 C CIN "Note"
-F 7 "-" H 14400 6000 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Diodes Inc." H 14400 6000 60  0001 C CNN "Mfg_Name"
+F 6 "BZT52C13-7-F" H 14400 6000 60  0001 C CNN "Mfg_PN"
+F 7 "13V" H 14400 6200 50  0000 C CIN "Note"
+F 8 "-" H 14400 6000 60  0001 C CNN "Spec"
 	1    14400 6000
 	0    1    1    0   
 $EndComp
@@ -1333,10 +1359,11 @@ F 0 "Q7" H 14200 7050 50  0000 R CNN
 F 1 "MMBT5550L" H 14450 6900 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 14050 7050 29  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/ON_Semi-MMBT5550LT1G-High_Voltage_NPN_BJT.pdf" H 13850 6950 60  0001 C CNN
-F 4 "ON Semi" H 13850 6950 60  0001 C CNN "Mfg_Name"
-F 5 "MMBT5550LT1G" H 13850 6950 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 13850 6950 60  0001 C CNN "Note"
-F 7 "-" H 13850 6950 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "ON Semi" H 13850 6950 60  0001 C CNN "Mfg_Name"
+F 6 "MMBT5550LT1G" H 13850 6950 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 13850 6950 60  0001 C CNN "Note"
+F 8 "-" H 13850 6950 60  0001 C CNN "Spec"
 	1    13850 6950
 	1    0    0    -1  
 $EndComp
@@ -1348,10 +1375,11 @@ F 0 "R41" V 14300 7650 50  0000 C CNN
 F 1 "26.1k" V 14500 7650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 14330 7650 30  0001 C CNN
 F 3 "~" H 14400 7650 30  0001 C CNN
-F 4 "Yageo" H 14400 7650 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0726K1L" H 14400 7650 60  0001 C CNN "Mfg_PN"
-F 6 "RLIM3" V 14600 7650 50  0000 C CIN "Note"
-F 7 "-" H 14400 7650 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 14400 7650 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0726K1L" H 14400 7650 60  0001 C CNN "Mfg_PN"
+F 7 "RLIM3" V 14600 7650 50  0000 C CIN "Note"
+F 8 "-" H 14400 7650 60  0001 C CNN "Spec"
 	1    14400 7650
 	1    0    0    -1  
 $EndComp
@@ -1418,12 +1446,12 @@ $EndComp
 $Comp
 L GND #PWR1
 U 1 1 56925DEA
-P 1200 2250
-F 0 "#PWR1" H 1200 2000 50  0001 C CNN
-F 1 "GND" H 1200 2100 50  0001 C CNN
-F 2 "" H 1200 2250 60  0000 C CNN
-F 3 "" H 1200 2250 60  0000 C CNN
-	1    1200 2250
+P 1050 2150
+F 0 "#PWR1" H 1050 1900 50  0001 C CNN
+F 1 "GND" H 1050 2000 50  0001 C CNN
+F 2 "" H 1050 2150 60  0000 C CNN
+F 3 "" H 1050 2150 60  0000 C CNN
+	1    1050 2150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1532,10 +1560,11 @@ F 0 "F1" H 1300 2900 50  0000 C CNN
 F 1 "15A" H 1250 2700 50  0000 C CNN
 F 2 "LTC3:Fuseholder_Auto_Blade_Regular_Keystone_3557-2" H 1350 2750 60  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/fuses/Keystone-3557_2-automotive_fuse_holder_vertical.pdf" H 1350 2750 60  0001 C CNN
-F 4 "Keystone" H 1350 2750 60  0001 C CNN "Mfg_Name"
-F 5 "3557-2" H 1350 2750 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 1350 2750 60  0001 C CNN "Note"
-F 7 "-" H 1350 2750 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Keystone" H 1350 2750 60  0001 C CNN "Mfg_Name"
+F 6 "3557-2" H 1350 2750 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 1350 2750 60  0001 C CNN "Note"
+F 8 "-" H 1350 2750 60  0001 C CNN "Spec"
 	1    1350 2750
 	1    0    0    -1  
 $EndComp
@@ -1547,10 +1576,11 @@ F 0 "W1" H 1250 3450 40  0000 C CNN
 F 1 "TEST" H 1250 3280 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 1250 3350 60  0001 C CNN
 F 3 "~" H 1250 3350 60  0001 C CNN
-F 4 "-" H 1250 3350 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 1250 3350 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 1250 3350 60  0001 C CNN "Note"
-F 7 "-" H 1250 3350 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 1250 3350 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 1250 3350 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 1250 3350 60  0001 C CNN "Note"
+F 8 "-" H 1250 3350 60  0001 C CNN "Spec"
 	1    1250 3350
 	0    -1   -1   0   
 $EndComp
@@ -1573,10 +1603,11 @@ F 0 "W3" H 1250 1250 40  0000 C CNN
 F 1 "TEST" H 1250 1280 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 1250 1350 60  0001 C CNN
 F 3 "~" H 1250 1350 60  0001 C CNN
-F 4 "-" H 1250 1350 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 1250 1350 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 1250 1350 60  0001 C CNN "Note"
-F 7 "-" H 1250 1350 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 1250 1350 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 1250 1350 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 1250 1350 60  0001 C CNN "Note"
+F 8 "-" H 1250 1350 60  0001 C CNN "Spec"
 	1    1250 1350
 	0    1    1    0   
 $EndComp
@@ -1599,10 +1630,11 @@ F 0 "W4" H 3800 960 40  0000 C CNN
 F 1 "TEST" H 3800 830 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 3800 900 60  0001 C CNN
 F 3 "~" H 3800 900 60  0001 C CNN
-F 4 "-" H 3800 900 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 3800 900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 3800 900 60  0001 C CNN "Note"
-F 7 "-" H 3800 900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 3800 900 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 3800 900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 3800 900 60  0001 C CNN "Note"
+F 8 "-" H 3800 900 60  0001 C CNN "Spec"
 	1    3800 900 
 	1    0    0    -1  
 $EndComp
@@ -1625,10 +1657,11 @@ F 0 "W2" H 1250 7100 40  0000 C CNN
 F 1 "TEST" H 1250 7080 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 1250 7150 60  0001 C CNN
 F 3 "~" H 1250 7150 60  0001 C CNN
-F 4 "-" H 1250 7150 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 1250 7150 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 1250 7150 60  0001 C CNN "Note"
-F 7 "-" H 1250 7150 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 1250 7150 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 1250 7150 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 1250 7150 60  0001 C CNN "Note"
+F 8 "-" H 1250 7150 60  0001 C CNN "Spec"
 	1    1250 7150
 	0    1    1    0   
 $EndComp
@@ -1651,10 +1684,11 @@ F 0 "W5" H 8450 9975 50  0000 C CNN
 F 1 "TEST" H 8450 9830 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 8450 9900 60  0001 C CNN
 F 3 "~" H 8450 9900 60  0001 C CNN
-F 4 "-" H 8450 9900 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 8450 9900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 8450 9900 60  0001 C CNN "Note"
-F 7 "-" H 8450 9900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 8450 9900 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 8450 9900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 8450 9900 60  0001 C CNN "Note"
+F 8 "-" H 8450 9900 60  0001 C CNN "Spec"
 	1    8450 9900
 	0    1    1    0   
 $EndComp
@@ -1699,10 +1733,11 @@ F 0 "W12" H 16200 5710 40  0000 C CNN
 F 1 "TEST" H 16200 5580 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 16200 5650 60  0001 C CNN
 F 3 "~" H 16200 5650 60  0001 C CNN
-F 4 "-" H 16200 5650 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 16200 5650 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 16200 5650 60  0001 C CNN "Note"
-F 7 "-" H 16200 5650 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 16200 5650 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 16200 5650 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 16200 5650 60  0001 C CNN "Note"
+F 8 "-" H 16200 5650 60  0001 C CNN "Spec"
 	1    16200 5650
 	0    1    1    0   
 $EndComp
@@ -1714,10 +1749,11 @@ F 0 "W11" H 13000 6350 40  0000 C CNN
 F 1 "TEST" H 13000 6180 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 13000 6250 60  0001 C CNN
 F 3 "~" H 13000 6250 60  0001 C CNN
-F 4 "-" H 13000 6250 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 13000 6250 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 13000 6250 60  0001 C CNN "Note"
-F 7 "-" H 13000 6250 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 13000 6250 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 13000 6250 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 13000 6250 60  0001 C CNN "Note"
+F 8 "-" H 13000 6250 60  0001 C CNN "Spec"
 	1    13000 6250
 	0    1    1    0   
 $EndComp
@@ -1756,10 +1792,11 @@ F 0 "D1" V 5400 3900 50  0000 R CNN
 F 1 "CMMR1U-02" H 5300 4000 50  0000 C CNN
 F 2 "Diodes_SMD:SOD-123" H 5300 3900 50  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Central_Semi-CMMR1U_Series-Ultra_Fast_SMT_Rectifier.pdf" H 5300 3900 50  0001 C CNN
-F 4 "Central Semi" H 5300 3900 60  0001 C CNN "Mfg_Name"
-F 5 "CMMR1U-02 TR" H 5300 3900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 5300 3900 60  0001 C CNN "Note"
-F 7 "-" H 5300 3900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Central Semi" H 5300 3900 60  0001 C CNN "Mfg_Name"
+F 6 "CMMR1U-02 TR" H 5300 3900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 5300 3900 60  0001 C CNN "Note"
+F 8 "-" H 5300 3900 60  0001 C CNN "Spec"
 	1    5300 3900
 	0    -1   -1   0   
 $EndComp
@@ -1771,10 +1808,11 @@ F 0 "U4" H 13400 3950 50  0000 L CNN
 F 1 "LTC2990" H 13300 3850 50  0000 L CNN
 F 2 "LTC3:MSOP-10" H 12750 4300 50  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/LTC299x/Linear-LTC2990-Quad_I2C_Voltage_Current_and_Temp_Monitor.pdf" H 12850 4400 50  0001 C CNN
-F 4 "Linear" H 13450 3900 60  0001 C CNN "Mfg_Name"
-F 5 "LTC2990IMS#PBF" H 13450 3900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 13450 3900 60  0001 C CNN "Note"
-F 7 "-" H 13450 3900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Linear" H 13450 3900 60  0001 C CNN "Mfg_Name"
+F 6 "LTC2990IMS#PBF" H 13450 3900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 13450 3900 60  0001 C CNN "Note"
+F 8 "-" H 13450 3900 60  0001 C CNN "Spec"
 	1    13450 3900
 	1    0    0    -1  
 $EndComp
@@ -1786,10 +1824,11 @@ F 0 "W10" V 9050 8270 50  0000 C CNN
 F 1 "TEST_1P" H 9050 8200 50  0001 C CNN
 F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 9250 8000 50  0001 C CNN
 F 3 "~" H 9250 8000 50  0001 C CNN
-F 4 "-" H 9050 8000 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 9050 8000 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9050 8000 60  0001 C CNN "Note"
-F 7 "-" H 9050 8000 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 9050 8000 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 9050 8000 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9050 8000 60  0001 C CNN "Note"
+F 8 "-" H 9050 8000 60  0001 C CNN "Spec"
 	1    9050 8000
 	0    1    1    0   
 $EndComp
@@ -1801,10 +1840,11 @@ F 0 "W9" V 9050 8100 50  0000 C CNN
 F 1 "TEST_1P" H 9050 8050 50  0001 C CNN
 F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 9250 7850 50  0001 C CNN
 F 3 "~" H 9250 7850 50  0001 C CNN
-F 4 "-" H 9050 7850 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 9050 7850 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9050 7850 60  0001 C CNN "Note"
-F 7 "-" H 9050 7850 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 9050 7850 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 9050 7850 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9050 7850 60  0001 C CNN "Note"
+F 8 "-" H 9050 7850 60  0001 C CNN "Spec"
 	1    9050 7850
 	0    1    1    0   
 $EndComp
@@ -1816,10 +1856,11 @@ F 0 "W8" V 9050 7950 50  0000 C CNN
 F 1 "TEST_1P" H 9050 7900 50  0001 C CNN
 F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 9250 7700 50  0001 C CNN
 F 3 "~" H 9250 7700 50  0001 C CNN
-F 4 "-" H 9050 7700 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 9050 7700 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9050 7700 60  0001 C CNN "Note"
-F 7 "-" H 9050 7700 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 9050 7700 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 9050 7700 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9050 7700 60  0001 C CNN "Note"
+F 8 "-" H 9050 7700 60  0001 C CNN "Spec"
 	1    9050 7700
 	0    1    1    0   
 $EndComp
@@ -1831,10 +1872,11 @@ F 0 "W7" V 9050 7800 50  0000 C CNN
 F 1 "TEST_1P" H 9050 7750 50  0001 C CNN
 F 2 "Measurement_Points:Measurement_Point_Square-SMD-Pad_Small" H 9250 7550 50  0001 C CNN
 F 3 "~" H 9250 7550 50  0001 C CNN
-F 4 "-" H 9050 7550 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 9050 7550 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9050 7550 60  0001 C CNN "Note"
-F 7 "-" H 9050 7550 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 9050 7550 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 9050 7550 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9050 7550 60  0001 C CNN "Note"
+F 8 "-" H 9050 7550 60  0001 C CNN "Spec"
 	1    9050 7550
 	0    1    1    0   
 $EndComp
@@ -1846,10 +1888,11 @@ F 0 "W6" H 8800 9975 50  0000 C CNN
 F 1 "TEST" H 8800 9830 40  0001 C CNN
 F 2 "Measurement_Points:Test_Point_2Pads" H 8800 9900 60  0001 C CNN
 F 3 "~" H 8800 9900 60  0001 C CNN
-F 4 "-" H 8800 9900 60  0001 C CNN "Mfg_Name"
-F 5 "-" H 8800 9900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 8800 9900 60  0001 C CNN "Note"
-F 7 "-" H 8800 9900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 8800 9900 60  0001 C CNN "Mfg_Name"
+F 6 "-" H 8800 9900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 8800 9900 60  0001 C CNN "Note"
+F 8 "-" H 8800 9900 60  0001 C CNN "Spec"
 	1    8800 9900
 	0    1    1    0   
 $EndComp
@@ -1861,10 +1904,11 @@ F 0 "Q2" H 8850 2000 50  0000 L CNN
 F 1 "BSC028N06NS" H 8900 1900 50  0000 L CNN
 F 2 "Power_Integrations:SO-8" H 8950 1805 50  0001 L CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Infineon-BSC028N06NS-OptiMOS_Power_Transistor.pdf" H 8700 1850 50  0001 L CNN
-F 4 "Infineon" H 8500 1900 60  0001 C CNN "Mfg_Name"
-F 5 "BSC028N06NS" H 8500 1900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 8500 1900 60  0001 C CNN "Note"
-F 7 "-" H 8500 1900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Infineon" H 8500 1900 60  0001 C CNN "Mfg_Name"
+F 6 "BSC028N06NS" H 8500 1900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 8500 1900 60  0001 C CNN "Note"
+F 8 "-" H 8500 1900 60  0001 C CNN "Spec"
 	1    8500 1900
 	1    0    0    -1  
 $EndComp
@@ -1876,10 +1920,11 @@ F 0 "U1" H 2150 1750 50  0000 C CNN
 F 1 "PI2127" H 2500 1350 50  0000 C CNN
 F 2 "LTC3:LGA-17" H 2600 950 100 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Picor-PI2127-60_Volt_12_Amp_Full_Function_Active_ORing_Solution.pdf" H 2600 950 100 0001 C CNN
-F 4 "Picor" H 2500 1300 60  0001 C CNN "Mfg_Name"
-F 5 "PI2127-01-LGIZ" H 2500 1300 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 2500 1300 60  0001 C CNN "Note"
-F 7 "-" H 2500 1300 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Picor" H 2500 1300 60  0001 C CNN "Mfg_Name"
+F 6 "PI2127-01-LGIZ" H 2500 1300 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 2500 1300 60  0001 C CNN "Note"
+F 8 "-" H 2500 1300 60  0001 C CNN "Spec"
 	1    2500 1300
 	1    0    0    -1  
 $EndComp
@@ -1891,22 +1936,23 @@ F 0 "Q1" H 1850 5650 50  0000 L CNN
 F 1 "ZVN4525E6" H 1850 5350 50  0000 L CNN
 F 2 "LTC3:SOT-26" H 1950 5600 50  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Diodes_Inc-ZVN4525E6-250V_N_Channel_Enhancement_Mode_MOSFET.pdf" H 1750 5500 50  0001 C CNN
-F 4 "Diodes, Inc." H 1750 5500 60  0001 C CNN "Mfg_Name"
-F 5 "ZVN4525E6TA" H 1750 5500 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 1750 5500 60  0001 C CNN "Note"
-F 7 "-" H 1750 5500 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Diodes, Inc." H 1750 5500 60  0001 C CNN "Mfg_Name"
+F 6 "ZVN4525E6TA" H 1750 5500 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 1750 5500 60  0001 C CNN "Note"
+F 8 "-" H 1750 5500 60  0001 C CNN "Spec"
 	1    1750 5500
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR56
 U 1 1 578371A1
-P 15150 6450
-F 0 "#PWR56" H 15150 6200 50  0001 C CNN
-F 1 "GND" H 15150 6300 50  0001 C CNN
-F 2 "" H 15150 6450 50  0000 C CNN
-F 3 "" H 15150 6450 50  0000 C CNN
-	1    15150 6450
+P 15150 7050
+F 0 "#PWR56" H 15150 6800 50  0001 C CNN
+F 1 "GND" H 15150 6900 50  0001 C CNN
+F 2 "" H 15150 7050 50  0000 C CNN
+F 3 "" H 15150 7050 50  0000 C CNN
+	1    15150 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1917,10 +1963,11 @@ F 0 "U2" H 2150 3750 50  0000 C CNN
 F 1 "PI2127" H 2500 3350 50  0000 C CNN
 F 2 "LTC3:LGA-17" H 2600 2950 100 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Picor-PI2127-60_Volt_12_Amp_Full_Function_Active_ORing_Solution.pdf" H 2600 2950 100 0001 C CNN
-F 4 "Picor" H 2500 3300 60  0001 C CNN "Mfg_Name"
-F 5 "PI2127-01-LGIZ" H 2500 3300 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 2500 3300 60  0001 C CNN "Note"
-F 7 "-" H 2500 3300 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Picor" H 2500 3300 60  0001 C CNN "Mfg_Name"
+F 6 "PI2127-01-LGIZ" H 2500 3300 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 2500 3300 60  0001 C CNN "Note"
+F 8 "-" H 2500 3300 60  0001 C CNN "Spec"
 	1    2500 3300
 	1    0    0    -1  
 $EndComp
@@ -1964,10 +2011,11 @@ F 0 "R15" V 4800 3400 50  0000 C CNN
 F 1 "0" V 5000 3400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 4830 3400 30  0001 C CNN
 F 3 "~" H 4900 3400 30  0001 C CNN
-F 4 "Yageo" H 4900 3400 60  0001 C CNN "Mfg_Name"
-F 5 "RC0603JR-070RL" H 4900 3400 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 4900 3400 60  0001 C CNN "Note"
-F 7 "-" H 4900 3400 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 4900 3400 60  0001 C CNN "Mfg_Name"
+F 6 "RC0603JR-070RL" H 4900 3400 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 4900 3400 60  0001 C CNN "Note"
+F 8 "-" H 4900 3400 60  0001 C CNN "Spec"
 	1    4900 3400
 	1    0    0    -1  
 $EndComp
@@ -1979,10 +2027,11 @@ F 0 "R28" V 8950 3400 50  0000 C CNN
 F 1 "10" V 9150 3400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8980 3400 30  0001 C CNN
 F 3 "~" H 9050 3400 30  0001 C CNN
-F 4 "Yageo" H 9050 3400 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0710RL" H 9050 3400 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9050 3400 60  0001 C CNN "Note"
-F 7 "-" H 9050 3400 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 9050 3400 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0710RL" H 9050 3400 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9050 3400 60  0001 C CNN "Note"
+F 8 "-" H 9050 3400 60  0001 C CNN "Spec"
 	1    9050 3400
 	0    -1   1    0   
 $EndComp
@@ -1994,10 +2043,11 @@ F 0 "R29" V 8950 3900 50  0000 C CNN
 F 1 "10" V 9150 3900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 8980 3900 30  0001 C CNN
 F 3 "~" H 9050 3900 30  0001 C CNN
-F 4 "Yageo" H 9050 3900 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0710RL" H 9050 3900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 9050 3900 60  0001 C CNN "Note"
-F 7 "-" H 9050 3900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 9050 3900 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0710RL" H 9050 3900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 9050 3900 60  0001 C CNN "Note"
+F 8 "-" H 9050 3900 60  0001 C CNN "Spec"
 	1    9050 3900
 	0    -1   1    0   
 $EndComp
@@ -2009,10 +2059,11 @@ F 0 "R25" V 8200 2250 50  0000 C CNN
 F 1 "0" V 8400 2250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8230 2250 30  0001 C CNN
 F 3 "~" H 8300 2250 30  0001 C CNN
-F 4 "Yageo" H 8300 2250 60  0001 C CNN "Mfg_Name"
-F 5 "RC0603JR-070RL" H 8300 2250 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 8300 2250 60  0001 C CNN "Note"
-F 7 "-" H 8300 2250 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 8300 2250 60  0001 C CNN "Mfg_Name"
+F 6 "RC0603JR-070RL" H 8300 2250 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 8300 2250 60  0001 C CNN "Note"
+F 8 "-" H 8300 2250 60  0001 C CNN "Spec"
 	1    8300 2250
 	1    0    0    -1  
 $EndComp
@@ -2024,10 +2075,11 @@ F 0 "R34" V 10300 3600 50  0000 C CNN
 F 1 "0" V 10500 3600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 10330 3600 30  0001 C CNN
 F 3 "~" H 10400 3600 30  0001 C CNN
-F 4 "Yageo" H 10400 3600 60  0001 C CNN "Mfg_Name"
-F 5 "RC0603JR-070RL" H 10400 3600 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 10400 3600 60  0001 C CNN "Note"
-F 7 "-" H 10400 3600 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 10400 3600 60  0001 C CNN "Mfg_Name"
+F 6 "RC0603JR-070RL" H 10400 3600 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 10400 3600 60  0001 C CNN "Note"
+F 8 "-" H 10400 3600 60  0001 C CNN "Spec"
 	1    10400 3600
 	1    0    0    -1  
 $EndComp
@@ -2039,10 +2091,11 @@ F 0 "R39" V 13750 1250 50  0000 C CNN
 F 1 "10" V 13950 1250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 13780 1250 30  0001 C CNN
 F 3 "~" H 13850 1250 30  0001 C CNN
-F 4 "Yageo" H 13850 1250 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0710RL" H 13850 1250 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 13850 1250 60  0001 C CNN "Note"
-F 7 "-" H 13850 1250 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 13850 1250 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0710RL" H 13850 1250 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 13850 1250 60  0001 C CNN "Note"
+F 8 "-" H 13850 1250 60  0001 C CNN "Spec"
 	1    13850 1250
 	1    0    0    1   
 $EndComp
@@ -2086,10 +2139,11 @@ F 0 "R32" V 10000 7550 50  0000 C CNN
 F 1 "11.5k" V 10200 7550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 10030 7550 30  0001 C CNN
 F 3 "~" H 10100 7550 30  0001 C CNN
-F 4 "Yageo" H 10100 7550 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-0711K5L" H 10100 7550 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 10100 7550 60  0001 C CNN "Note"
-F 7 "-" H 10100 7550 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 10100 7550 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-0711K5L" H 10100 7550 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 10100 7550 60  0001 C CNN "Note"
+F 8 "-" H 10100 7550 60  0001 C CNN "Spec"
 	1    10100 7550
 	1    0    0    -1  
 $EndComp
@@ -2101,10 +2155,11 @@ F 0 "R24" V 7930 9950 50  0000 C CNN
 F 1 "549" V 7750 9950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 7780 9950 30  0001 C CNN
 F 3 "~" H 7850 9950 30  0001 C CNN
-F 4 "Yageo" H 7850 9950 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-07549RL" H 7850 9950 60  0001 C CNN "Mfg_PN"
-F 6 "RDFA" V 7650 9950 50  0000 C CIN "Note"
-F 7 "-" H 7850 9950 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 7850 9950 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-07549RL" H 7850 9950 60  0001 C CNN "Mfg_PN"
+F 7 "RDFA" V 7650 9950 50  0000 C CIN "Note"
+F 8 "-" H 7850 9950 60  0001 C CNN "Spec"
 	1    7850 9950
 	-1   0    0    1   
 $EndComp
@@ -2116,10 +2171,11 @@ F 0 "R12" V 3000 8450 50  0000 C CNN
 F 1 "3.32k" V 2800 8450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805" V 2830 8450 30  0001 C CNN
 F 3 "~" H 2900 8450 30  0001 C CNN
-F 4 "Yageo" H 2900 8450 60  0001 C CNN "Mfg_Name"
-F 5 "RC0805FR-073K32L" H 2900 8450 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 2900 8450 60  0001 C CNN "Note"
-F 7 "-" H 2900 8450 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 2900 8450 60  0001 C CNN "Mfg_Name"
+F 6 "RC0805FR-073K32L" H 2900 8450 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 2900 8450 60  0001 C CNN "Note"
+F 8 "-" H 2900 8450 60  0001 C CNN "Spec"
 	1    2900 8450
 	0    -1   -1   0   
 $EndComp
@@ -2131,10 +2187,11 @@ F 0 "Q3" H 8850 2900 50  0000 L CNN
 F 1 "BSC028N06NS" H 8900 2800 50  0000 L CNN
 F 2 "Power_Integrations:SO-8" H 8950 2705 50  0001 L CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Infineon-BSC028N06NS-OptiMOS_Power_Transistor.pdf" H 8700 2750 50  0001 L CNN
-F 4 "Infineon" H 8500 2800 60  0001 C CNN "Mfg_Name"
-F 5 "BSC028N06NS" H 8500 2800 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 8500 2800 60  0001 C CNN "Note"
-F 7 "-" H 8500 2800 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Infineon" H 8500 2800 60  0001 C CNN "Mfg_Name"
+F 6 "BSC028N06NS" H 8500 2800 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 8500 2800 60  0001 C CNN "Note"
+F 8 "-" H 8500 2800 60  0001 C CNN "Spec"
 	1    8500 2800
 	1    0    0    -1  
 $EndComp
@@ -2146,10 +2203,11 @@ F 0 "Q4" H 10650 2000 50  0000 L CNN
 F 1 "BSC028N06NS" H 10650 1700 50  0000 L CNN
 F 2 "Power_Integrations:SO-8" H 10750 1805 50  0001 L CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Infineon-BSC028N06NS-OptiMOS_Power_Transistor.pdf" H 10500 1850 50  0001 L CNN
-F 4 "Infineon" H 10300 1900 60  0001 C CNN "Mfg_Name"
-F 5 "BSC028N06NS" H 10300 1900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 10300 1900 60  0001 C CNN "Note"
-F 7 "-" H 10300 1900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Infineon" H 10300 1900 60  0001 C CNN "Mfg_Name"
+F 6 "BSC028N06NS" H 10300 1900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 10300 1900 60  0001 C CNN "Note"
+F 8 "-" H 10300 1900 60  0001 C CNN "Spec"
 	1    10300 1900
 	-1   0    0    -1  
 $EndComp
@@ -2161,10 +2219,11 @@ F 0 "Q5" H 10650 2900 50  0000 L CNN
 F 1 "BSC028N06NS" H 10650 2600 50  0000 L CNN
 F 2 "Power_Integrations:SO-8" H 10750 2705 50  0001 L CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Infineon-BSC028N06NS-OptiMOS_Power_Transistor.pdf" H 10500 2750 50  0001 L CNN
-F 4 "Infineon" H 10300 2800 60  0001 C CNN "Mfg_Name"
-F 5 "BSC028N06NS" H 10300 2800 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 10300 2800 60  0001 C CNN "Note"
-F 7 "-" H 10300 2800 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Infineon" H 10300 2800 60  0001 C CNN "Mfg_Name"
+F 6 "BSC028N06NS" H 10300 2800 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 10300 2800 60  0001 C CNN "Note"
+F 8 "-" H 10300 2800 60  0001 C CNN "Spec"
 	1    10300 2800
 	-1   0    0    -1  
 $EndComp
@@ -2187,10 +2246,11 @@ F 0 "D2" V 6400 3900 50  0000 R CNN
 F 1 "CMMR1U-02" H 6300 3750 50  0000 C CNN
 F 2 "Diodes_SMD:SOD-123" H 6300 3900 50  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Central_Semi-CMMR1U_Series-Ultra_Fast_SMT_Rectifier.pdf" H 6300 3900 50  0001 C CNN
-F 4 "Central Semi" H 6300 3900 60  0001 C CNN "Mfg_Name"
-F 5 "CMMR1U-02 TR" H 6300 3900 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 6300 3900 60  0001 C CNN "Note"
-F 7 "-" H 6300 3900 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Central Semi" H 6300 3900 60  0001 C CNN "Mfg_Name"
+F 6 "CMMR1U-02 TR" H 6300 3900 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 6300 3900 60  0001 C CNN "Note"
+F 8 "-" H 6300 3900 60  0001 C CNN "Spec"
 	1    6300 3900
 	0    -1   -1   0   
 $EndComp
@@ -2485,10 +2545,11 @@ F 0 "U3" H 7250 6850 60  0000 C CNN
 F 1 "LT8490" H 7250 7050 60  0000 C CNN
 F 2 "LTC3:LT8490" H 7200 7100 60  0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/LT8490/Linear_Technology-LT8490-High_Voltage_High_Current_Buck_Boost_Battery_Charge_Controller_w_MPPT.pdf" H 7200 7100 60  0001 C CNN
-F 4 "Linear" H 7250 6950 60  0001 C CNN "Mfg_Name"
-F 5 "LT8490IUKJ#PBF" H 7250 6950 60  0001 C CNN "Mfg_PN"
-F 6 "-" H 7250 6950 60  0001 C CNN "Note"
-F 7 "-" H 7250 6950 60  0001 C CNN "Spec"
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Linear" H 7250 6950 60  0001 C CNN "Mfg_Name"
+F 6 "LT8490IUKJ#PBF" H 7250 6950 60  0001 C CNN "Mfg_PN"
+F 7 "-" H 7250 6950 60  0001 C CNN "Note"
+F 8 "-" H 7250 6950 60  0001 C CNN "Spec"
 	1    7250 6950
 	1    0    0    -1  
 $EndComp
@@ -2512,6 +2573,146 @@ F 1 "GNDREF" H 14355 4377 50  0000 C CNN
 F 2 "" H 14350 4550 50  0000 C CNN
 F 3 "" H 14350 4550 50  0000 C CNN
 	1    14350 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR47
+U 1 1 57D52BBA
+P 12600 4150
+F 0 "#PWR47" H 12600 3900 50  0001 C CNN
+F 1 "GND" H 12605 3977 50  0000 C CNN
+F 2 "" H 12600 4150 50  0000 C CNN
+F 3 "" H 12600 4150 50  0000 C CNN
+	1    12600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4N25 U5
+U 1 1 57D55565
+P 4800 10050
+F 0 "U5" H 4800 10465 50  0000 C CNN
+F 1 "4N25" H 4800 10374 50  0000 C CNN
+F 2 "Housings_DIP:DIP-6_W7.62mm" H 4800 10283 50  0001 C CIN
+F 3 "~" H 4800 10050 50  0000 L CNN
+F 4 "opto-isolator, 1-ch, 2500Vrms" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Lite-On" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "4N25" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 8 "-" H 0   0   50  0001 C CNN "Spec"
+	1    4800 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R47
+U 1 1 57D59664
+P 3850 10050
+F 0 "R47" H 3920 10096 50  0000 L CNN
+F 1 "TBD" H 3920 10005 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 3780 10050 50  0001 C CNN
+F 3 "~" H 3850 10050 50  0000 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "-" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "-" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 8 "-" H 0   0   50  0001 C CNN "Spec"
+	1    3850 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR15
+U 1 1 57D59FB2
+P 3850 10200
+F 0 "#PWR15" H 3850 9950 50  0001 C CNN
+F 1 "GND" H 3855 10027 50  0000 C CNN
+F 2 "" H 3850 10200 50  0000 C CNN
+F 3 "" H 3850 10200 50  0000 C CNN
+	1    3850 10200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R49
+U 1 1 57D7B5EB
+P 7150 9550
+F 0 "R49" H 7200 9750 50  0000 L CNN
+F 1 "0" H 7200 9400 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 7080 9550 50  0001 C CNN
+F 3 "~" H 7150 9550 50  0000 C CNN
+F 4 "1/8W" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "RC0805JR-070RL" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 8 "-" H 0   0   50  0001 C CNN "Spec"
+	1    7150 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR31
+U 1 1 57D7B9F4
+P 7150 9850
+F 0 "#PWR31" H 7150 9600 50  0001 C CNN
+F 1 "GND" H 7155 9677 50  0000 C CNN
+F 2 "" H 7150 9850 50  0000 C CNN
+F 3 "" H 7150 9850 50  0000 C CNN
+	1    7150 9850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R48
+U 1 1 57D7C3ED
+P 5700 9100
+F 0 "R48" H 5770 9146 50  0000 L CNN
+F 1 "0" H 5770 9055 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" V 5630 9100 50  0001 C CNN
+F 3 "~" H 5700 9100 50  0000 C CNN
+F 4 "1/8W" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Mfg_Name"
+F 6 "RC0805JR-070RL" H 0   0   50  0001 C CNN "Mfg_PN"
+F 7 "-" H 0   0   50  0001 C CNN "Note"
+F 8 "-" H 0   0   50  0001 C CNN "Spec"
+	1    5700 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR25
+U 1 1 57D7D291
+P 5700 9350
+F 0 "#PWR25" H 5700 9100 50  0001 C CNN
+F 1 "GND" H 5705 9177 50  0000 C CNN
+F 2 "" H 5700 9350 50  0000 C CNN
+F 3 "" H 5700 9350 50  0000 C CNN
+	1    5700 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P1
+U 1 1 57D808C2
+P 650 2050
+F 0 "P1" H 650 1600 50  0000 C CNN
+F 1 "MicroFit header" V 750 2050 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x04_Straight_43045-0828" H 569 1567 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 650 2050 50  0001 C CNN
+F 4 "8 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Molex" H 650 2050 60  0001 C CNN "Mfg_Name"
+F 6 "43045-0828" H 650 2050 60  0001 C CNN "Mfg_PN"
+F 7 "DC_IN" H 650 1500 50  0000 C CNN "Note"
+F 8 "-" H 650 2050 60  0001 C CNN "Spec"
+	1    650  2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X04 P2
+U 1 1 57D8B209
+P 15900 6750
+F 0 "P2" H 15850 7000 50  0000 L CNN
+F 1 "MicroFit header" V 16050 6750 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428" H 15900 6750 50  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 15900 6750 50  0001 C CNN
+F 4 "4 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
+F 5 "Molex" H 15900 6750 60  0001 C CNN "Mfg_Name"
+F 6 "43045-0428" H 15900 6750 60  0001 C CNN "Mfg_PN"
+F 7 "DC_OUT" H 15900 7150 50  0000 C CNN "Note"
+F 8 "-" H 15900 6750 60  0001 C CNN "Spec"
+	1    15900 6750
 	1    0    0    -1  
 $EndComp
 Text Label 8500 2900 2    60   ~ 0
@@ -2588,7 +2789,7 @@ Text Notes 15350 9200 0    100  ~ 0
 1% Resistors\n75V Capacitors
 Text Label 10200 2400 0    60   ~ 0
 SW2
-Text Label 15650 6200 2    50   ~ 0
+Text Label 15450 6600 2    50   ~ 0
 VBATT
 Text Label 14400 4000 0    50   ~ 0
 I2C_CLOCK
@@ -2602,8 +2803,12 @@ Text Label 1000 1000 3    50   ~ 0
 PV_IN
 Text Label 1000 2750 1    50   ~ 0
 LAB_IN
+Text Label 13450 3100 0    50   ~ 0
++5v
 Wire Wire Line
-	8800 3200 10000 3200
+	8800 3200 9400 3200
+Wire Wire Line
+	9400 3200 10000 3200
 Wire Wire Line
 	10000 3200 10000 3100
 Wire Wire Line
@@ -2615,7 +2820,9 @@ Wire Wire Line
 Wire Wire Line
 	8800 1700 8800 1600
 Wire Wire Line
-	8800 2600 8800 2200
+	8800 2600 8800 2400
+Wire Wire Line
+	8800 2400 8800 2200
 Wire Wire Line
 	1250 3550 1250 3650
 Wire Wire Line
@@ -2631,7 +2838,9 @@ Wire Wire Line
 Wire Wire Line
 	1250 9500 1250 9350
 Wire Wire Line
-	1250 8850 1250 9050
+	1250 8850 1250 8950
+Wire Wire Line
+	1250 8950 1250 9050
 Wire Wire Line
 	1500 8950 1250 8950
 Wire Wire Line
@@ -2677,7 +2886,9 @@ Wire Wire Line
 Wire Wire Line
 	13700 5650 13700 6400
 Wire Wire Line
-	12400 5650 13700 5650
+	12400 5650 13000 5650
+Wire Wire Line
+	13000 5650 13700 5650
 Wire Wire Line
 	11900 3800 12700 3800
 Wire Wire Line
@@ -2691,13 +2902,33 @@ Wire Wire Line
 Wire Wire Line
 	11800 2750 15700 2750
 Wire Wire Line
-	13600 1600 15750 1600
+	13600 1600 13700 1600
 Wire Wire Line
-	16050 1600 16200 1600
+	13700 1600 13850 1600
+Wire Wire Line
+	13850 1600 14350 1600
+Wire Wire Line
+	14350 1600 14750 1600
+Wire Wire Line
+	14750 1600 15250 1600
+Wire Wire Line
+	15250 1600 15700 1600
+Wire Wire Line
+	15700 1600 15750 1600
+Wire Wire Line
+	16050 1600 16100 1600
+Wire Wire Line
+	16100 1600 16200 1600
 Wire Wire Line
 	1400 5100 1400 3000
 Wire Wire Line
-	1250 3000 1900 3000
+	1250 3000 1400 3000
+Wire Wire Line
+	1400 3000 1700 3000
+Wire Wire Line
+	1700 3000 1750 3000
+Wire Wire Line
+	1750 3000 1900 3000
 Wire Wire Line
 	10900 1600 10900 5750
 Wire Wire Line
@@ -2739,7 +2970,9 @@ Wire Wire Line
 Wire Wire Line
 	8450 3800 8450 4400
 Wire Wire Line
-	8450 4400 9400 4400
+	8450 4400 8650 4400
+Wire Wire Line
+	8650 4400 9400 4400
 Wire Wire Line
 	8650 4300 8650 4400
 Wire Wire Line
@@ -2751,15 +2984,21 @@ Wire Wire Line
 Wire Wire Line
 	7400 3900 7400 5150
 Wire Wire Line
-	7400 3900 8900 3900
+	7400 3900 8650 3900
+Wire Wire Line
+	8650 3900 8900 3900
 Wire Wire Line
 	9200 3900 9400 3900
 Wire Wire Line
 	9200 3400 9400 3400
 Wire Wire Line
-	7250 3400 8900 3400
+	7250 3400 8450 3400
 Wire Wire Line
-	9400 3200 9400 3500
+	8450 3400 8900 3400
+Wire Wire Line
+	9400 3200 9400 3400
+Wire Wire Line
+	9400 3400 9400 3500
 Wire Wire Line
 	5600 3400 6950 3400
 Wire Wire Line
@@ -2769,7 +3008,9 @@ Wire Wire Line
 Wire Wire Line
 	10700 4900 7850 4900
 Wire Wire Line
-	7700 3550 7700 5150
+	7700 3550 7700 4800
+Wire Wire Line
+	7700 4800 7700 5150
 Wire Wire Line
 	10550 4800 7700 4800
 Wire Wire Line
@@ -2779,7 +3020,9 @@ Wire Wire Line
 Wire Wire Line
 	7100 2900 7100 5150
 Wire Wire Line
-	6950 2650 6950 5150
+	6950 2650 6950 3400
+Wire Wire Line
+	6950 3400 6950 5150
 Wire Wire Line
 	6800 2600 6800 5150
 Wire Wire Line
@@ -2819,51 +3062,79 @@ Wire Wire Line
 Wire Wire Line
 	2700 5200 2700 6650
 Wire Wire Line
-	1250 6800 5450 6800
+	1250 6800 1500 6800
+Wire Wire Line
+	1500 6800 5450 6800
 Wire Wire Line
 	3450 4700 2450 4700
 Wire Wire Line
-	7850 9200 8400 9200
+	7850 9200 8350 9200
 Wire Wire Line
-	7400 9000 8400 9000
+	8350 9200 8400 9200
+Wire Wire Line
+	7400 9000 8300 9000
+Wire Wire Line
+	8300 9000 8400 9000
 Wire Wire Line
 	9150 9550 8000 9550
 Wire Wire Line
 	9500 9000 9500 7100
 Wire Wire Line
-	2450 5100 2450 5300
+	2450 5100 2450 5200
 Wire Wire Line
-	1850 5200 2700 5200
+	2450 5200 2450 5300
+Wire Wire Line
+	1850 5200 2450 5200
+Wire Wire Line
+	2450 5200 2700 5200
 Wire Wire Line
 	4650 7850 4650 8050
 Wire Wire Line
-	9050 7400 9700 7400
+	9050 7400 9150 7400
 Wire Wire Line
-	9050 7100 10400 7100
+	9150 7400 9700 7400
+Wire Wire Line
+	9050 7100 9150 7100
+Wire Wire Line
+	9150 7100 9500 7100
+Wire Wire Line
+	9500 7100 10100 7100
+Wire Wire Line
+	10100 7100 10400 7100
 Wire Wire Line
 	10100 7100 10100 7400
 Wire Wire Line
-	10100 7700 10100 8000
+	10100 7700 10100 7800
+Wire Wire Line
+	10100 7800 10100 8000
 Wire Wire Line
 	9050 6950 10700 6950
 Wire Wire Line
-	10700 6950 10700 7900
+	10700 6950 10700 7800
+Wire Wire Line
+	10700 7800 10700 7900
 Wire Wire Line
 	10100 7800 10700 7800
 Wire Wire Line
-	10300 6650 11550 6650
+	10300 6650 11250 6650
+Wire Wire Line
+	11250 6650 11550 6650
 Wire Wire Line
 	12100 6650 11850 6650
 Wire Wire Line
-	9050 6500 12100 6500
+	9050 6500 9150 6500
 Wire Wire Line
-	850  2100 1200 2100
+	9150 6500 12100 6500
 Wire Wire Line
-	2050 8350 2050 9500
+	2050 8350 2050 9350
+Wire Wire Line
+	2050 9350 2050 9500
 Wire Wire Line
 	3900 8050 3900 7950
 Wire Wire Line
-	4300 8350 4300 8600
+	4300 8350 4300 8500
+Wire Wire Line
+	4300 8500 4300 8600
 Wire Wire Line
 	4650 8500 4650 8350
 Wire Wire Line
@@ -2879,7 +3150,9 @@ Wire Wire Line
 Wire Wire Line
 	6400 9100 6500 9100
 Wire Wire Line
-	6500 8750 6500 9450
+	6500 8750 6500 9100
+Wire Wire Line
+	6500 9100 6500 9450
 Wire Wire Line
 	6000 9750 6000 9850
 Wire Wire Line
@@ -2891,13 +3164,23 @@ Wire Wire Line
 Wire Wire Line
 	4650 8500 4300 8500
 Wire Wire Line
-	4300 7850 5450 7850
+	4300 7850 4650 7850
+Wire Wire Line
+	4650 7850 5350 7850
+Wire Wire Line
+	5350 7850 5450 7850
 Wire Wire Line
 	4300 8050 4300 7850
 Wire Wire Line
-	5000 8750 5000 8950
+	5000 8750 5000 8850
 Wire Wire Line
-	5350 8750 5350 8950
+	5000 8850 5000 8950
+Wire Wire Line
+	5350 8750 5350 8800
+Wire Wire Line
+	5350 8800 5350 8850
+Wire Wire Line
+	5350 8850 5350 8950
 Wire Wire Line
 	5350 8850 5000 8850
 Wire Wire Line
@@ -2921,15 +3204,25 @@ Wire Wire Line
 Wire Wire Line
 	7850 9700 7850 9800
 Wire Wire Line
-	7400 9700 7400 9800
+	7400 9700 7400 9750
 Wire Wire Line
-	7100 8850 8150 8850
+	7400 9750 7400 9800
+Wire Wire Line
+	7100 8850 7700 8850
+Wire Wire Line
+	7700 8850 8150 8850
 Wire Wire Line
 	7700 8850 7700 8750
 Wire Wire Line
-	8150 8750 8150 10200
+	8150 8750 8150 8850
 Wire Wire Line
-	9150 8150 9150 9750
+	8150 8850 8150 10200
+Wire Wire Line
+	9150 8150 9150 8850
+Wire Wire Line
+	9150 8850 9150 9550
+Wire Wire Line
+	9150 9550 9150 9750
 Wire Wire Line
 	9150 10200 9150 10050
 Wire Wire Line
@@ -2937,7 +3230,9 @@ Wire Wire Line
 Wire Wire Line
 	8800 9000 8800 9200
 Wire Wire Line
-	8700 9000 9500 9000
+	8700 9000 8800 9000
+Wire Wire Line
+	8800 9000 9500 9000
 Wire Wire Line
 	8000 9550 8000 8750
 Wire Wire Line
@@ -2945,7 +3240,9 @@ Wire Wire Line
 Wire Wire Line
 	9700 7400 9700 7650
 Wire Wire Line
-	10700 8200 10700 8400
+	10700 8200 10700 8300
+Wire Wire Line
+	10700 8300 10700 8400
 Wire Wire Line
 	10100 8100 10100 8300
 Wire Wire Line
@@ -2955,13 +3252,19 @@ Wire Wire Line
 Wire Wire Line
 	11250 6750 11250 6650
 Wire Wire Line
-	12100 7100 12100 7300
+	12100 7100 12100 7200
+Wire Wire Line
+	12100 7200 12100 7300
 Wire Wire Line
 	11250 7050 11250 7200
 Wire Wire Line
 	11250 7200 12100 7200
 Wire Wire Line
-	12100 6350 12100 6800
+	12100 6350 12100 6500
+Wire Wire Line
+	12100 6500 12100 6650
+Wire Wire Line
+	12100 6650 12100 6800
 Wire Wire Line
 	14350 1600 14350 1700
 Wire Wire Line
@@ -2971,19 +3274,27 @@ Wire Wire Line
 Wire Wire Line
 	5300 4150 5300 4050
 Wire Wire Line
-	4300 2000 4300 2200
+	4300 2000 4300 2100
+Wire Wire Line
+	4300 2100 4300 2200
 Wire Wire Line
 	4050 2000 4050 2100
 Wire Wire Line
-	3800 2100 4300 2100
+	3800 2100 4050 2100
+Wire Wire Line
+	4050 2100 4300 2100
 Wire Wire Line
 	3800 2000 3800 2100
 Wire Wire Line
-	5300 2000 5300 2200
+	5300 2000 5300 2100
+Wire Wire Line
+	5300 2100 5300 2200
 Wire Wire Line
 	5050 2000 5050 2100
 Wire Wire Line
-	4800 2100 5300 2100
+	4800 2100 5050 2100
+Wire Wire Line
+	5050 2100 5300 2100
 Wire Wire Line
 	4800 2000 4800 2100
 Wire Wire Line
@@ -3005,11 +3316,17 @@ Wire Wire Line
 Wire Wire Line
 	9050 6350 9150 6350
 Wire Wire Line
-	8400 2400 9100 2400
+	8400 2400 8800 2400
 Wire Wire Line
-	9700 2400 10550 2400
+	8800 2400 9100 2400
 Wire Wire Line
-	10000 2200 10000 2600
+	9700 2400 10000 2400
+Wire Wire Line
+	10000 2400 10550 2400
+Wire Wire Line
+	10000 2200 10000 2400
+Wire Wire Line
+	10000 2400 10000 2600
 Wire Wire Line
 	4900 3800 4800 3800
 Wire Wire Line
@@ -3017,13 +3334,23 @@ Wire Wire Line
 Wire Wire Line
 	4400 3800 4500 3800
 Wire Wire Line
-	7900 2000 7900 2200
+	7900 2000 7900 2100
+Wire Wire Line
+	7900 2100 7900 2200
 Wire Wire Line
 	7650 2000 7650 2100
 Wire Wire Line
 	7650 2100 7900 2100
 Wire Wire Line
-	8800 1600 6950 1600
+	8800 1600 7900 1600
+Wire Wire Line
+	7900 1600 7650 1600
+Wire Wire Line
+	7650 1600 7200 1600
+Wire Wire Line
+	7200 1600 7050 1600
+Wire Wire Line
+	7050 1600 6950 1600
 Wire Wire Line
 	7650 1600 7650 1700
 Wire Wire Line
@@ -3031,7 +3358,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 4150 5300 4150
 Wire Wire Line
-	5600 4050 5600 5000
+	5600 4050 5600 4150
+Wire Wire Line
+	5600 4150 5600 5000
 Wire Wire Line
 	5600 3400 5600 3750
 Wire Wire Line
@@ -3041,7 +3370,9 @@ Wire Wire Line
 Wire Wire Line
 	6300 4150 6000 4150
 Wire Wire Line
-	6000 4050 6000 4900
+	6000 4050 6000 4150
+Wire Wire Line
+	6000 4150 6000 4900
 Wire Wire Line
 	6000 3550 6000 3750
 Wire Wire Line
@@ -3055,7 +3386,9 @@ Wire Wire Line
 Wire Wire Line
 	12850 2200 12850 2000
 Wire Wire Line
-	11850 2000 11850 2200
+	11850 2000 11850 2100
+Wire Wire Line
+	11850 2100 11850 2200
 Wire Wire Line
 	11500 2000 11500 2100
 Wire Wire Line
@@ -3063,13 +3396,31 @@ Wire Wire Line
 Wire Wire Line
 	11850 1600 11850 1700
 Wire Wire Line
-	9400 3800 9400 4450
+	9400 3800 9400 3900
+Wire Wire Line
+	9400 3900 9400 4400
+Wire Wire Line
+	9400 4400 9400 4450
 Wire Wire Line
 	10700 2000 10300 2000
 Wire Wire Line
 	10300 2900 10400 2900
 Wire Wire Line
-	10000 1600 13300 1600
+	10000 1600 10900 1600
+Wire Wire Line
+	10900 1600 11500 1600
+Wire Wire Line
+	11500 1600 11850 1600
+Wire Wire Line
+	11850 1600 12300 1600
+Wire Wire Line
+	12300 1600 12850 1600
+Wire Wire Line
+	12850 1600 13050 1600
+Wire Wire Line
+	13050 1600 13200 1600
+Wire Wire Line
+	13200 1600 13300 1600
 Wire Wire Line
 	12300 1600 12300 1700
 Wire Wire Line
@@ -3079,7 +3430,9 @@ Wire Wire Line
 Wire Wire Line
 	15250 2200 15250 2000
 Wire Wire Line
-	14750 2000 14750 2200
+	14750 2000 14750 2100
+Wire Wire Line
+	14750 2100 14750 2200
 Wire Wire Line
 	11500 2100 11850 2100
 Wire Wire Line
@@ -3093,29 +3446,45 @@ Wire Wire Line
 Wire Wire Line
 	5350 5900 5350 6050
 Wire Wire Line
-	4900 5900 5450 5900
+	4900 5900 5350 5900
 Wire Wire Line
-	2450 5600 2450 6100
+	5350 5900 5450 5900
+Wire Wire Line
+	2450 5600 2450 5800
+Wire Wire Line
+	2450 5800 2450 6050
+Wire Wire Line
+	2450 6050 2450 6100
 Wire Wire Line
 	5450 6950 5350 6950
 Wire Wire Line
 	5350 6950 5350 7100
 Wire Wire Line
-	2450 7100 5450 7100
+	2450 7100 5350 7100
 Wire Wire Line
-	2450 7100 2450 8050
+	5350 7100 5450 7100
 Wire Wire Line
-	2450 8350 2450 8550
+	2450 7100 2450 7900
+Wire Wire Line
+	2450 7900 2450 8050
+Wire Wire Line
+	2450 8350 2450 8450
+Wire Wire Line
+	2450 8450 2450 8550
 Wire Wire Line
 	3050 8450 3200 8450
 Wire Wire Line
 	2050 7500 2050 7150
 Wire Wire Line
-	2050 7800 2050 8050
+	2050 7800 2050 7900
+Wire Wire Line
+	2050 7900 2050 8050
 Wire Wire Line
 	5350 7850 5350 7700
 Wire Wire Line
-	6800 8750 6800 9450
+	6800 8750 6800 9350
+Wire Wire Line
+	6800 9350 6800 9450
 Wire Wire Line
 	6800 9850 6800 9750
 Wire Wire Line
@@ -3125,7 +3494,9 @@ Wire Wire Line
 Wire Wire Line
 	6950 8950 6950 8750
 Wire Wire Line
-	9150 7100 9150 7400
+	9150 7100 9150 7250
+Wire Wire Line
+	9150 7250 9150 7400
 Wire Wire Line
 	9150 7250 9050 7250
 Wire Wire Line
@@ -3199,13 +3570,33 @@ Wire Wire Line
 Wire Wire Line
 	5950 1600 5950 1700
 Wire Wire Line
-	3450 1600 6650 1600
+	3450 1600 3800 1600
+Wire Wire Line
+	3800 1600 4050 1600
+Wire Wire Line
+	4050 1600 4300 1600
+Wire Wire Line
+	4300 1600 4800 1600
+Wire Wire Line
+	4800 1600 5050 1600
+Wire Wire Line
+	5050 1600 5300 1600
+Wire Wire Line
+	5300 1600 5950 1600
+Wire Wire Line
+	5950 1600 6400 1600
+Wire Wire Line
+	6400 1600 6550 1600
+Wire Wire Line
+	6550 1600 6650 1600
 Wire Wire Line
 	1850 5700 1850 5800
 Wire Wire Line
 	1850 5800 2450 5800
 Wire Wire Line
-	1400 5400 1400 5600
+	1400 5400 1400 5500
+Wire Wire Line
+	1400 5500 1400 5600
 Wire Wire Line
 	1550 5500 1400 5500
 Wire Wire Line
@@ -3217,7 +3608,11 @@ Wire Wire Line
 Wire Notes Line
 	2950 6350 1050 6350
 Wire Wire Line
-	14350 3600 14350 4550
+	14350 3600 14350 3800
+Wire Wire Line
+	14350 3800 14350 3900
+Wire Wire Line
+	14350 3900 14350 4550
 Wire Wire Line
 	14200 3800 14350 3800
 Wire Wire Line
@@ -3235,7 +3630,9 @@ Wire Notes Line
 Wire Notes Line
 	12050 4900 12050 2850
 Wire Wire Line
-	13450 3100 13450 3300
+	13450 3100 13450 3200
+Wire Wire Line
+	13450 3200 13450 3300
 Wire Wire Line
 	13450 4650 13450 4500
 Wire Wire Line
@@ -3259,13 +3656,23 @@ Wire Wire Line
 Wire Wire Line
 	8400 2650 8400 2400
 Wire Wire Line
-	7400 8750 7400 9300
+	7400 8750 7400 9000
 Wire Wire Line
-	7850 8750 7850 9300
+	7400 9000 7400 9250
+Wire Wire Line
+	7400 9250 7400 9300
+Wire Wire Line
+	7850 8750 7850 9200
+Wire Wire Line
+	7850 9200 7850 9300
 Wire Wire Line
 	12100 6050 12100 5850
 Wire Wire Line
-	13950 6100 13950 6750
+	13950 6100 13950 6250
+Wire Wire Line
+	13950 6250 13950 6400
+Wire Wire Line
+	13950 6400 13950 6750
 Wire Wire Line
 	14400 5650 14400 5800
 Wire Wire Line
@@ -3291,13 +3698,17 @@ Wire Wire Line
 Wire Wire Line
 	12100 5300 12100 5450
 Wire Wire Line
-	16200 1600 16200 5450
+	16200 1600 16200 5300
 Wire Wire Line
-	15150 6200 15700 6200
+	16200 5300 16200 5450
+Wire Wire Line
+	15550 6700 15700 6700
 Wire Wire Line
 	13950 5650 14400 5650
 Wire Wire Line
-	13950 5300 13950 5800
+	13950 5300 13950 5650
+Wire Wire Line
+	13950 5650 13950 5800
 Wire Notes Line
 	11500 5200 11500 5950
 Wire Notes Line
@@ -3313,23 +3724,43 @@ Wire Wire Line
 Wire Wire Line
 	4400 4050 4500 4050
 Wire Wire Line
-	4400 3800 4400 4250
+	4400 3800 4400 4050
 Wire Wire Line
-	4900 3100 6300 3100
+	4400 4050 4400 4250
+Wire Wire Line
+	4900 3100 5300 3100
+Wire Wire Line
+	5300 3100 6300 3100
 Wire Wire Line
 	13700 6400 13950 6400
 Wire Notes Line
 	13550 5950 13550 8100
 Wire Wire Line
-	4900 3550 4900 5900
+	4900 3550 4900 3800
 Wire Wire Line
-	900  1000 1900 1000
+	4900 3800 4900 4050
 Wire Wire Line
-	3450 1000 3100 1000
+	4900 4050 4900 5900
+Wire Wire Line
+	900  1000 1250 1000
+Wire Wire Line
+	1250 1000 1750 1000
+Wire Wire Line
+	1750 1000 1900 1000
+Wire Wire Line
+	3450 1000 3250 1000
+Wire Wire Line
+	3250 1000 3100 1000
 Wire Wire Line
 	1900 1100 1750 1100
 Wire Wire Line
-	1750 1000 1750 1500
+	1750 1000 1750 1100
+Wire Wire Line
+	1750 1100 1750 1200
+Wire Wire Line
+	1750 1200 1750 1300
+Wire Wire Line
+	1750 1300 1750 1500
 Wire Wire Line
 	1750 1200 1900 1200
 Wire Wire Line
@@ -3339,7 +3770,13 @@ Wire Wire Line
 Wire Wire Line
 	3100 1100 3250 1100
 Wire Wire Line
-	3250 1000 3250 1500
+	3250 1000 3250 1100
+Wire Wire Line
+	3250 1100 3250 1200
+Wire Wire Line
+	3250 1200 3250 1300
+Wire Wire Line
+	3250 1300 3250 1500
 Wire Wire Line
 	3250 1200 3100 1200
 Wire Wire Line
@@ -3347,7 +3784,9 @@ Wire Wire Line
 Wire Wire Line
 	3250 1500 3100 1500
 Wire Wire Line
-	2500 1900 2500 2350
+	2500 1900 2500 2200
+Wire Wire Line
+	2500 2200 2500 2350
 Wire Wire Line
 	1900 1600 1750 1600
 Wire Wire Line
@@ -3357,11 +3796,19 @@ Wire Wire Line
 Wire Wire Line
 	1750 2200 2500 2200
 Wire Wire Line
-	3450 3000 3100 3000
+	3450 3000 3250 3000
+Wire Wire Line
+	3250 3000 3100 3000
 Wire Wire Line
 	1900 3100 1750 3100
 Wire Wire Line
-	1750 3000 1750 3500
+	1750 3000 1750 3100
+Wire Wire Line
+	1750 3100 1750 3200
+Wire Wire Line
+	1750 3200 1750 3300
+Wire Wire Line
+	1750 3300 1750 3500
 Wire Wire Line
 	1750 3200 1900 3200
 Wire Wire Line
@@ -3371,7 +3818,13 @@ Wire Wire Line
 Wire Wire Line
 	3100 3100 3250 3100
 Wire Wire Line
-	3250 3000 3250 3500
+	3250 3000 3250 3100
+Wire Wire Line
+	3250 3100 3250 3200
+Wire Wire Line
+	3250 3200 3250 3300
+Wire Wire Line
+	3250 3300 3250 3500
 Wire Wire Line
 	3250 3200 3100 3200
 Wire Wire Line
@@ -3379,7 +3832,9 @@ Wire Wire Line
 Wire Wire Line
 	3250 3500 3100 3500
 Wire Wire Line
-	2500 3900 2500 4350
+	2500 3900 2500 4200
+Wire Wire Line
+	2500 4200 2500 4350
 Wire Wire Line
 	1900 3600 1750 3600
 Wire Wire Line
@@ -3389,7 +3844,15 @@ Wire Wire Line
 Wire Wire Line
 	1750 4200 2500 4200
 Wire Wire Line
-	3450 750  3450 4700
+	3450 750  3450 900 
+Wire Wire Line
+	3450 900  3450 1000
+Wire Wire Line
+	3450 1000 3450 1600
+Wire Wire Line
+	3450 1600 3450 3000
+Wire Wire Line
+	3450 3000 3450 4700
 Wire Wire Line
 	5350 5600 5350 5750
 Wire Wire Line
@@ -3405,15 +3868,15 @@ Wire Wire Line
 Wire Wire Line
 	10400 2900 10400 3450
 Wire Wire Line
-	15150 6300 15700 6300
-Wire Wire Line
 	16200 5850 16200 5900
 Wire Wire Line
 	6650 900  6400 900 
 Wire Wire Line
 	6400 900  6400 1600
 Wire Wire Line
-	6550 1600 6550 2800
+	6550 1600 6550 1850
+Wire Wire Line
+	6550 1850 6550 2800
 Wire Notes Line
 	7350 700  6300 700 
 Wire Notes Line
@@ -3433,17 +3896,25 @@ Wire Wire Line
 Wire Wire Line
 	6800 2300 6800 2250
 Wire Wire Line
-	15150 5300 15150 6200
+	15150 5300 15150 6600
 Wire Wire Line
-	12100 5300 16200 5300
+	12100 5300 13950 5300
 Wire Wire Line
-	16100 2350 16100 3000
+	13950 5300 15150 5300
+Wire Wire Line
+	15150 5300 16200 5300
+Wire Wire Line
+	16100 2350 16100 2800
+Wire Wire Line
+	16100 2800 16100 3000
 Wire Wire Line
 	16100 2050 16100 1600
 Wire Wire Line
 	15700 2050 15700 1600
 Wire Wire Line
-	15700 2350 15700 3000
+	15700 2350 15700 2750
+Wire Wire Line
+	15700 2750 15700 3000
 Wire Wire Line
 	15700 3400 15700 3300
 Wire Wire Line
@@ -3457,23 +3928,47 @@ Wire Wire Line
 Wire Wire Line
 	14650 4200 14800 4200
 Wire Wire Line
-	15150 6450 15150 6300
+	15150 7050 15150 6900
 Wire Wire Line
-	8800 2200 8700 2200
+	8800 2200 8750 2200
 Wire Wire Line
-	8650 1700 8800 1700
+	8750 2200 8700 2200
 Wire Wire Line
-	8650 2600 8800 2600
+	8650 1700 8700 1700
 Wire Wire Line
-	8700 3100 8800 3100
+	8700 1700 8750 1700
 Wire Wire Line
-	10000 3100 10100 3100
+	8750 1700 8800 1700
 Wire Wire Line
-	10000 2600 10150 2600
+	8650 2600 8700 2600
 Wire Wire Line
-	10000 1700 10150 1700
+	8700 2600 8750 2600
 Wire Wire Line
-	10000 2200 10100 2200
+	8750 2600 8800 2600
+Wire Wire Line
+	8700 3100 8750 3100
+Wire Wire Line
+	8750 3100 8800 3100
+Wire Wire Line
+	10000 3100 10050 3100
+Wire Wire Line
+	10050 3100 10100 3100
+Wire Wire Line
+	10000 2600 10050 2600
+Wire Wire Line
+	10050 2600 10100 2600
+Wire Wire Line
+	10100 2600 10150 2600
+Wire Wire Line
+	10000 1700 10050 1700
+Wire Wire Line
+	10050 1700 10100 1700
+Wire Wire Line
+	10100 1700 10150 1700
+Wire Wire Line
+	10000 2200 10050 2200
+Wire Wire Line
+	10050 2200 10100 2200
 Wire Wire Line
 	7050 9250 7400 9250
 Wire Wire Line
@@ -3483,9 +3978,101 @@ Wire Wire Line
 Wire Wire Line
 	1250 1150 1250 1000
 Wire Wire Line
-	850  2000 1200 2000
+	1050 2000 1050 2150
 Wire Wire Line
-	1200 2000 1200 2250
+	14650 3100 13450 3100
+Wire Wire Line
+	12600 4150 12600 4000
+Wire Wire Line
+	12600 4000 12700 4000
+Wire Wire Line
+	12700 3800 12700 3900
+Wire Wire Line
+	4500 9950 4350 9950
+Wire Wire Line
+	4350 9950 4350 9650
+Wire Wire Line
+	4350 9650 5750 9650
+Wire Wire Line
+	7050 9250 7050 10050
+Wire Wire Line
+	5750 9650 5750 10050
+Wire Wire Line
+	5750 10050 7050 10050
+Wire Wire Line
+	4100 10150 4500 10150
+Wire Wire Line
+	5100 10050 5350 10050
+Wire Wire Line
+	5100 10150 5350 10150
+Wire Wire Line
+	4100 10150 4100 9900
+Wire Wire Line
+	4100 9900 3850 9900
+Wire Wire Line
+	7250 8750 7250 8950
+Wire Wire Line
+	7250 8950 7150 8950
+Wire Wire Line
+	7150 8950 7150 9400
+Wire Wire Line
+	7150 9700 7150 9850
+Wire Wire Line
+	7100 8750 7100 8850
+Wire Wire Line
+	5700 9350 5700 9250
+Wire Wire Line
+	6650 8750 6650 8900
+Wire Wire Line
+	6650 8900 5700 8900
+Wire Wire Line
+	5700 8900 5700 8950
+Wire Wire Line
+	900  2200 850  2200
+Wire Wire Line
+	900  1900 900  2000
+Wire Wire Line
+	900  2000 900  2100
+Wire Wire Line
+	900  2100 900  2200
+Wire Wire Line
+	850  1900 900  1900
+Wire Wire Line
+	900  1000 900  1700
+Wire Wire Line
+	900  1700 900  1800
+Wire Wire Line
+	900  1700 850  1700
+Wire Wire Line
+	900  1800 850  1800
+Wire Wire Line
+	850  2300 900  2300
+Wire Wire Line
+	900  2300 900  2400
+Wire Wire Line
+	900  2400 900  2750
+Wire Wire Line
+	900  2400 850  2400
+Wire Wire Line
+	15550 6700 15550 6600
+Wire Wire Line
+	15150 6600 15550 6600
+Wire Wire Line
+	15550 6600 15700 6600
+Wire Wire Line
+	15550 6800 15550 6900
+Wire Wire Line
+	15150 6900 15550 6900
+Wire Wire Line
+	15550 6900 15700 6900
+Wire Wire Line
+	850  2000 900  2000
+Wire Wire Line
+	900  2000 1050 2000
+Wire Wire Line
+	850  2100 900  2100
+Wire Wire Line
+	15550 6800 15700 6800
 Connection ~ 1400 3000
 Connection ~ 1700 3000
 Connection ~ 1250 8950
@@ -3630,200 +4217,11 @@ Connection ~ 10100 1700
 Connection ~ 10050 2200
 Connection ~ 7400 9250
 Connection ~ 1250 1000
-Connection ~ 1200 2100
-Wire Wire Line
-	14650 3100 13450 3100
-Text Label 13450 3100 0    50   ~ 0
-+5v
-$Comp
-L GND #PWR47
-U 1 1 57D52BBA
-P 12600 4150
-F 0 "#PWR47" H 12600 3900 50  0001 C CNN
-F 1 "GND" H 12605 3977 50  0000 C CNN
-F 2 "" H 12600 4150 50  0000 C CNN
-F 3 "" H 12600 4150 50  0000 C CNN
-	1    12600 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	12600 4150 12600 4000
-Wire Wire Line
-	12600 4000 12700 4000
-Wire Wire Line
-	12700 3800 12700 3900
-$Comp
-L 4N25 U5
-U 1 1 57D55565
-P 4800 10050
-F 0 "U5" H 4800 10465 50  0000 C CNN
-F 1 "4N25" H 4800 10374 50  0000 C CNN
-F 2 "Housings_DIP:DIP-6_W7.62mm" H 4800 10283 50  0000 C CIN
-F 3 "" H 4800 10050 50  0000 L CNN
-	1    4800 10050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 9950 4350 9950
-Wire Wire Line
-	4350 9950 4350 9650
-Wire Wire Line
-	4350 9650 5750 9650
-Wire Wire Line
-	7050 9250 7050 10050
-Wire Wire Line
-	5750 9650 5750 10050
-Wire Wire Line
-	5750 10050 7050 10050
-Wire Wire Line
-	4100 10150 4500 10150
 Connection ~ 7400 9750
-Wire Wire Line
-	5100 10050 5350 10050
-Wire Wire Line
-	5100 10150 5350 10150
-$Comp
-L R R47
-U 1 1 57D59664
-P 3850 10050
-F 0 "R47" H 3920 10096 50  0000 L CNN
-F 1 "TBD" H 3920 10005 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 3780 10050 50  0001 C CNN
-F 3 "" H 3850 10050 50  0000 C CNN
-	1    3850 10050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 10150 4100 9900
-Wire Wire Line
-	4100 9900 3850 9900
-$Comp
-L GND #PWR15
-U 1 1 57D59FB2
-P 3850 10200
-F 0 "#PWR15" H 3850 9950 50  0001 C CNN
-F 1 "GND" H 3855 10027 50  0000 C CNN
-F 2 "" H 3850 10200 50  0000 C CNN
-F 3 "" H 3850 10200 50  0000 C CNN
-	1    3850 10200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7250 8750 7250 8950
-Wire Wire Line
-	7250 8950 7150 8950
-Wire Wire Line
-	7150 8950 7150 9400
-$Comp
-L R R49
-U 1 1 57D7B5EB
-P 7150 9550
-F 0 "R49" H 7200 9750 50  0000 L CNN
-F 1 "0" H 7200 9400 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 7080 9550 50  0001 C CNN
-F 3 "" H 7150 9550 50  0000 C CNN
-	1    7150 9550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 9700 7150 9850
-$Comp
-L GND #PWR31
-U 1 1 57D7B9F4
-P 7150 9850
-F 0 "#PWR31" H 7150 9600 50  0001 C CNN
-F 1 "GND" H 7155 9677 50  0000 C CNN
-F 2 "" H 7150 9850 50  0000 C CNN
-F 3 "" H 7150 9850 50  0000 C CNN
-	1    7150 9850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 8750 7100 8850
-$Comp
-L R R48
-U 1 1 57D7C3ED
-P 5700 9100
-F 0 "R48" H 5770 9146 50  0000 L CNN
-F 1 "0" H 5770 9055 50  0000 L CNN
-F 2 "Resistors_SMD:R_0805" V 5630 9100 50  0001 C CNN
-F 3 "" H 5700 9100 50  0000 C CNN
-	1    5700 9100
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR25
-U 1 1 57D7D291
-P 5700 9350
-F 0 "#PWR25" H 5700 9100 50  0001 C CNN
-F 1 "GND" H 5705 9177 50  0000 C CNN
-F 2 "" H 5700 9350 50  0000 C CNN
-F 3 "" H 5700 9350 50  0000 C CNN
-	1    5700 9350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 9350 5700 9250
-Wire Wire Line
-	6650 8750 6650 8900
-Wire Wire Line
-	6650 8900 5700 8900
-Wire Wire Line
-	5700 8900 5700 8950
-$Comp
-L CONN_01X08 P1
-U 1 1 57D808C2
-P 650 2050
-F 0 "P1" H 569 1385 50  0000 C CNN
-F 1 "CONN_01X08" H 569 1476 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x04_Straight_43045-0828" H 569 1567 50  0000 C CNN
-F 3 "" H 650 2050 50  0000 C CNN
-	1    650  2050
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	850  2200 950  2200
-Wire Wire Line
-	950  2200 950  2100
-Connection ~ 950  2100
-Wire Wire Line
-	850  1900 950  1900
-Wire Wire Line
-	950  1900 950  2000
-Connection ~ 950  2000
-Wire Wire Line
-	900  1000 900  1800
-Wire Wire Line
-	900  1700 850  1700
-Wire Wire Line
-	900  1800 850  1800
 Connection ~ 900  1700
-Wire Wire Line
-	850  2300 900  2300
-Wire Wire Line
-	900  2300 900  2750
-Wire Wire Line
-	900  2400 850  2400
 Connection ~ 900  2400
-$Comp
-L CONN_01X04 P2
-U 1 1 57D8B209
-P 15900 6250
-F 0 "P2" H 15978 6291 50  0000 L CNN
-F 1 "Molex MicroFit" H 15978 6200 50  0000 L CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428" H 15900 6250 50  0001 C CNN
-F 3 "" H 15900 6250 50  0000 C CNN
-	1    15900 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	15550 6200 15550 6100
-Wire Wire Line
-	15550 6100 15700 6100
-Connection ~ 15550 6200
-Wire Wire Line
-	15550 6300 15550 6400
-Wire Wire Line
-	15550 6400 15700 6400
-Connection ~ 15550 6300
+Connection ~ 900  2000
+Connection ~ 900  2100
+Connection ~ 15550 6600
+Connection ~ 15550 6900
 $EndSCHEMATC
