@@ -1,9 +1,9 @@
 (kicad_pcb (version 4) (host pcbnew "(2016-05-27 BZR 6836, Git 4441a4b)-product")
 
   (general
-    (links 333)
+    (links 346)
     (no_connects 0)
-    (area 103.533999 64.649999 195.884001 133.654001)
+    (area 98.441772 63.5487 201.104229 134.7163)
     (thickness 1.6)
     (drawings 5)
     (tracks 414)
@@ -39,7 +39,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 1)
     (trace_clearance 0.1238)
     (zone_clearance 0.508)
@@ -69,7 +69,7 @@
     (grid_origin 68.834 76.2)
     (visible_elements 7FFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_ffffffff)
+      (layerselection 0x010f0_ffffffff)
       (usegerberextensions false)
       (excludeedgelayer true)
       (linewidth 0.100000)
@@ -89,7 +89,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory ""))
   )
