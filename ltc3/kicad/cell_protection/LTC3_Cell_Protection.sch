@@ -122,10 +122,10 @@ F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L GND #PWR12
 U 1 1 564DE030
 P 5450 8800
-F 0 "#PWR01" H 5450 8550 50  0001 C CNN
+F 0 "#PWR12" H 5450 8550 50  0001 C CNN
 F 1 "GND" H 5450 8650 50  0001 C CNN
 F 2 "" H 5450 8800 60  0000 C CNN
 F 3 "" H 5450 8800 60  0000 C CNN
@@ -309,10 +309,10 @@ F 8 "10V" H 0   0   50  0001 C CNN "Spec"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR02
+L GND #PWR7
 U 1 1 5650209A
 P 3600 6000
-F 0 "#PWR02" H 3600 5750 50  0001 C CNN
+F 0 "#PWR7" H 3600 5750 50  0001 C CNN
 F 1 "GND" H 3600 5850 50  0001 C CNN
 F 2 "" H 3600 6000 60  0000 C CNN
 F 3 "" H 3600 6000 60  0000 C CNN
@@ -352,10 +352,10 @@ F 8 "50V X7R" H 0   0   50  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR03
+L GND #PWR3
 U 1 1 5650665C
 P 2000 7200
-F 0 "#PWR03" H 2000 6950 50  0001 C CNN
+F 0 "#PWR3" H 2000 6950 50  0001 C CNN
 F 1 "GND" H 2000 7050 50  0001 C CNN
 F 2 "" H 2000 7200 60  0000 C CNN
 F 3 "" H 2000 7200 60  0000 C CNN
@@ -475,10 +475,10 @@ F 8 "50V X7R" H 0   0   50  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L GND #PWR2
 U 1 1 5652F47D
 P 1600 3800
-F 0 "#PWR04" H 1600 3550 50  0001 C CNN
+F 0 "#PWR2" H 1600 3550 50  0001 C CNN
 F 1 "GND" H 1600 3650 50  0001 C CNN
 F 2 "" H 1600 3800 60  0000 C CNN
 F 3 "" H 1600 3800 60  0000 C CNN
@@ -531,22 +531,6 @@ F 6 "B8B-XH-A(LF)(SN)" H 10350 7100 60  0001 C CNN "Mfg_PN"
 F 7 "CONN_BATT_SENSE" V 10550 7100 50  0000 C CIN "Note"
 F 8 "-" H 10350 7100 60  0001 C CNN "Spec"
 	1    10350 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P3
-U 1 1 565867F3
-P 10350 5850
-F 0 "P3" H 10350 6000 50  0000 C CNN
-F 1 "MicroFit header" V 10450 5850 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 10350 5850 60  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 10350 5850 60  0001 C CNN
-F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "Molex" H 10350 5850 60  0001 C CNN "Mfg_Name"
-F 6 "43045-0228" H 10350 5850 60  0001 C CNN "Mfg_PN"
-F 7 "CONN_BATT_MAIN" V 10550 5850 50  0000 C CIN "Note"
-F 8 "-" H 10350 5850 60  0001 C CNN "Spec"
-	1    10350 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -694,10 +678,10 @@ F 8 "50V X7R" H 0   0   50  0001 C CNN "Spec"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L GND #PWR15
 U 1 1 565B72B8
 P 8950 3800
-F 0 "#PWR06" H 8950 3550 50  0001 C CNN
+F 0 "#PWR15" H 8950 3550 50  0001 C CNN
 F 1 "GND" H 8950 3650 50  0001 C CNN
 F 2 "" H 8950 3800 60  0000 C CNN
 F 3 "" H 8950 3800 60  0000 C CNN
@@ -705,10 +689,10 @@ F 3 "" H 8950 3800 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR11
 U 1 1 565D2BB8
 P 5000 5700
-F 0 "#PWR07" H 5000 5450 50  0001 C CNN
+F 0 "#PWR11" H 5000 5450 50  0001 C CNN
 F 1 "GND" H 5000 5550 50  0001 C CNN
 F 2 "" H 5000 5700 60  0000 C CNN
 F 3 "" H 5000 5700 60  0000 C CNN
@@ -716,10 +700,10 @@ F 3 "" H 5000 5700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR08
+L GND #PWR9
 U 1 1 565F5A93
 P 3975 7850
-F 0 "#PWR08" H 3975 7600 50  0001 C CNN
+F 0 "#PWR9" H 3975 7600 50  0001 C CNN
 F 1 "GND" H 3975 7700 50  0001 C CNN
 F 2 "" H 3975 7850 60  0000 C CNN
 F 3 "" H 3975 7850 60  0000 C CNN
@@ -775,10 +759,10 @@ F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR5
 U 1 1 565FA5A2
 P 2600 7900
-F 0 "#PWR09" H 2600 7650 50  0001 C CNN
+F 0 "#PWR5" H 2600 7650 50  0001 C CNN
 F 1 "GND" H 2600 7750 50  0001 C CNN
 F 2 "" H 2600 7900 60  0000 C CNN
 F 3 "" H 2600 7900 60  0000 C CNN
@@ -834,10 +818,10 @@ F 8 "75V X7R" H 0   0   50  0001 C CNN "Spec"
 	0    -1   1    0   
 $EndComp
 $Comp
-L GND #PWR010
+L GND #PWR13
 U 1 1 565E5619
 P 5850 10000
-F 0 "#PWR010" H 5850 9750 50  0001 C CNN
+F 0 "#PWR13" H 5850 9750 50  0001 C CNN
 F 1 "GND" H 5850 9850 50  0001 C CNN
 F 2 "" H 5850 10000 60  0000 C CNN
 F 3 "" H 5850 10000 60  0000 C CNN
@@ -1308,10 +1292,10 @@ F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR011
+L GND #PWR14
 U 1 1 56CBF3B2
 P 6850 5450
-F 0 "#PWR011" H 6850 5200 50  0001 C CNN
+F 0 "#PWR14" H 6850 5200 50  0001 C CNN
 F 1 "GND" H 6850 5300 50  0001 C CNN
 F 2 "" H 6850 5450 60  0000 C CNN
 F 3 "" H 6850 5450 60  0000 C CNN
@@ -1351,10 +1335,10 @@ F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR8
 U 1 1 56E4B689
 P 3800 8550
-F 0 "#PWR012" H 3800 8300 50  0001 C CNN
+F 0 "#PWR8" H 3800 8300 50  0001 C CNN
 F 1 "GND" H 3800 8400 50  0001 C CNN
 F 2 "" H 3800 8550 60  0000 C CNN
 F 3 "" H 3800 8550 60  0000 C CNN
@@ -1410,10 +1394,10 @@ F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR10
 U 1 1 56E4A519
 P 4400 8550
-F 0 "#PWR013" H 4400 8300 50  0001 C CNN
+F 0 "#PWR10" H 4400 8300 50  0001 C CNN
 F 1 "GND" H 4408 8377 50  0001 C CNN
 F 2 "" H 4400 8550 50  0000 C CNN
 F 3 "" H 4400 8550 50  0000 C CNN
@@ -1517,10 +1501,10 @@ F 8 "-" H 0   0   50  0001 C CNN "Spec"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR6
 U 1 1 573455B4
 P 3400 3900
-F 0 "#PWR014" H 3400 3650 50  0001 C CNN
+F 0 "#PWR6" H 3400 3650 50  0001 C CNN
 F 1 "GND" H 3405 3727 50  0000 C CNN
 F 2 "" H 3400 3900 50  0000 C CNN
 F 3 "" H 3400 3900 50  0000 C CNN
@@ -1528,47 +1512,15 @@ F 3 "" H 3400 3900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P8
-U 1 1 57916EF5
-P 1000 2500
-F 0 "P8" H 1000 2650 50  0000 C CNN
-F 1 "MicroFit header" V 1100 2500 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 1000 2500 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 1000 2500 50  0001 C CNN
-F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "Molex" H 1000 2500 60  0001 C CNN "Mfg_Name"
-F 6 "43045-0228" H 1000 2500 60  0001 C CNN "Mfg_PN"
-F 7 "to LTC" V 1200 2500 50  0000 C CIN "Note"
-F 8 "-" H 1000 2500 60  0001 C CNN "Spec"
-	1    1000 2500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GND #PWR015
+L GND #PWR1
 U 1 1 579182C2
 P 1350 2700
-F 0 "#PWR015" H 1350 2450 50  0001 C CNN
+F 0 "#PWR1" H 1350 2450 50  0001 C CNN
 F 1 "GND" H 1350 2550 50  0000 C CNN
 F 2 "" H 1350 2700 50  0000 C CNN
 F 3 "" H 1350 2700 50  0000 C CNN
 	1    1350 2700
 	1    0    0    -1  
-$EndComp
-$Comp
-L CONN_01X02 P7
-U 1 1 5791B878
-P 1000 1800
-F 0 "P7" H 1000 1950 50  0000 C CNN
-F 1 "MicroFit header" V 1100 1800 50  0000 C CNN
-F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 1000 1800 50  0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 1000 1800 50  0001 C CNN
-F 4 "2 pos vertical header" H 0   0   50  0001 C CNN "Mfg_Description"
-F 5 "Molex" H 1000 1800 60  0001 C CNN "Mfg_Name"
-F 6 "43045-0228" H 1000 1800 60  0001 C CNN "Mfg_PN"
-F 7 "to Charge Controller" V 1200 1800 50  0000 C CIN "Note"
-F 8 "-" H 1000 1800 60  0001 C CNN "Spec"
-	1    1000 1800
-	-1   0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 P9
@@ -1619,10 +1571,10 @@ F 8 "1%" H 0   0   50  0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR4
 U 1 1 57CCAA03
 P 2250 1550
-F 0 "#PWR017" H 2250 1300 50  0001 C CNN
+F 0 "#PWR4" H 2250 1300 50  0001 C CNN
 F 1 "GND" H 2250 1400 50  0001 C CNN
 F 2 "" H 2250 1550 50  0000 C CNN
 F 3 "" H 2250 1550 50  0000 C CNN
@@ -1694,10 +1646,10 @@ F 8 "-" H 12550 2150 60  0001 C CNN "Spec"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GNDREF #PWR018
+L GNDREF #PWR16
 U 1 1 57D06FAE
 P 14300 2550
-F 0 "#PWR018" H 14300 2300 50  0001 C CNN
+F 0 "#PWR16" H 14300 2300 50  0001 C CNN
 F 1 "GNDREF" H 14300 2400 50  0001 C CNN
 F 2 "" H 14300 2550 50  0000 C CNN
 F 3 "" H 14300 2550 50  0000 C CNN
@@ -1705,10 +1657,10 @@ F 3 "" H 14300 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDREF #PWR019
+L GNDREF #PWR17
 U 1 1 57D073A4
 P 15200 2550
-F 0 "#PWR019" H 15200 2300 50  0001 C CNN
+F 0 "#PWR17" H 15200 2300 50  0001 C CNN
 F 1 "GNDREF" H 15200 2400 50  0001 C CNN
 F 2 "" H 15200 2550 50  0000 C CNN
 F 3 "" H 15200 2550 50  0000 C CNN
@@ -1716,10 +1668,10 @@ F 3 "" H 15200 2550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDREF #PWR020
+L GNDREF #PWR18
 U 1 1 57D080E8
 P 15700 4000
-F 0 "#PWR020" H 15700 3750 50  0001 C CNN
+F 0 "#PWR18" H 15700 3750 50  0001 C CNN
 F 1 "GNDREF" H 15700 3850 50  0001 C CNN
 F 2 "" H 15700 4000 50  0000 C CNN
 F 3 "" H 15700 4000 50  0000 C CNN
@@ -2329,15 +2281,15 @@ Wire Wire Line
 Wire Wire Line
 	3400 3900 3400 3800
 Wire Wire Line
-	1200 2550 1350 2550
+	1100 2550 1350 2550
 Wire Wire Line
 	1350 1850 1350 2700
 Wire Wire Line
-	1200 1850 1350 1850
+	1100 1850 1350 1850
 Wire Wire Line
-	1200 1750 1600 1750
+	1100 1750 1600 1750
 Wire Wire Line
-	1200 2450 1600 2450
+	1100 2450 1600 2450
 Wire Wire Line
 	15550 1900 15550 3750
 Wire Wire Line
@@ -2523,4 +2475,78 @@ Wire Wire Line
 Wire Wire Line
 	6000 3900 6000 3800
 Connection ~ 6000 3800
+$Comp
+L CONN_01X04 P8
+U 1 1 57D8F6AB
+P 900 2500
+F 0 "P8" H 900 2750 50  0000 C CNN
+F 1 "XH header" V 1000 2500 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428" H 900 2500 60  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 900 2500 60  0001 C CNN
+F 4 "4 pos vertical header" H -15150 -1200 50  0001 C CNN "Mfg_Description"
+F 5 "JST" H 900 2500 60  0001 C CNN "Mfg_Name"
+F 6 "B4B-XH-A(LF)(SN)" H 900 2500 60  0001 C CNN "Mfg_PN"
+F 7 "to Charge Controller" V 1100 2500 50  0000 C CIN "Note"
+F 8 "-" H 900 2500 60  0001 C CNN "Spec"
+	1    900  2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 2350 1200 2350
+Wire Wire Line
+	1200 2350 1200 2450
+Connection ~ 1200 2450
+Wire Wire Line
+	1100 2650 1200 2650
+Wire Wire Line
+	1200 2650 1200 2550
+Connection ~ 1200 2550
+$Comp
+L CONN_01X04 P7
+U 1 1 57D905AB
+P 900 1800
+F 0 "P7" H 900 2050 50  0000 C CNN
+F 1 "XH header" V 1000 1800 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428" H 900 1800 60  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 900 1800 60  0001 C CNN
+F 4 "4 pos vertical header" H -15150 -1900 50  0001 C CNN "Mfg_Description"
+F 5 "JST" H 900 1800 60  0001 C CNN "Mfg_Name"
+F 6 "B4B-XH-A(LF)(SN)" H 900 1800 60  0001 C CNN "Mfg_PN"
+F 7 "to LTC" V 1100 1800 50  0000 C CIN "Note"
+F 8 "-" H 900 1800 60  0001 C CNN "Spec"
+	1    900  1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 1650 1200 1650
+Wire Wire Line
+	1200 1650 1200 1750
+Connection ~ 1200 1750
+Wire Wire Line
+	1100 1950 1200 1950
+Wire Wire Line
+	1200 1950 1200 1850
+Connection ~ 1200 1850
+$Comp
+L CONN_01X04 P3
+U 1 1 57D96F09
+P 10350 5850
+F 0 "P3" H 10350 6100 50  0000 C CNN
+F 1 "XH header" V 10450 5850 50  0000 C CNN
+F 2 "Connectors_Molex:Molex_Microfit3_Header_02x02_Straight_43045-0428" H 10350 5850 60  0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 10350 5850 60  0001 C CNN
+F 4 "4 pos vertical header" H -5700 2150 50  0001 C CNN "Mfg_Description"
+F 5 "JST" H 10350 5850 60  0001 C CNN "Mfg_Name"
+F 6 "B4B-XH-A(LF)(SN)" H 10350 5850 60  0001 C CNN "Mfg_PN"
+F 7 "BATT_MAIN_CONN" V 10550 5850 50  0000 C CIN "Note"
+F 8 "-" H 10350 5850 60  0001 C CNN "Spec"
+	1    10350 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5700 10150 5700
+Connection ~ 10000 5700
+Wire Wire Line
+	10000 6000 10150 6000
+Connection ~ 10000 6000
 $EndSCHEMATC
