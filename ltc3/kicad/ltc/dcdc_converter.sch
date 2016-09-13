@@ -651,7 +651,7 @@ U 1 1 572AC6D6
 P 13050 6300
 F 0 "P202" H 13050 6450 50 0000 C CNN
 F 1 "XH header" V 13250 6300 50 0000 C CNN
-F 2 "Connectors_JST:JST_EH_B02B-XH-A_02x2.50mm_Straight" H 13050 6300 50 0001 C CNN
+F 2 "Connectors_JST:JST_XH_B02B-XH-A_02x2.50mm_Straight" H 13050 6300 50 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 13050 6300 50 0001 C CNN
 F 4 "2 pos vertical header" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "JST" H 13050 6300 60 0001 C CNN "Mfg_Name"
@@ -1372,8 +1372,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 9400 7150 9250
 Wire Wire Line
-	7150 4350 7150 5450
-Wire Wire Line
 	7150 6000 7150 5850
 Wire Wire Line
 	6650 2350 6650 2200
@@ -1727,6 +1725,8 @@ Wire Wire Line
 	14250 4850 14000 4850
 Wire Wire Line
 	14000 4950 14250 4950
+Wire Wire Line
+	7150 4350 7150 5450
 Connection ~ 3450 9100
 Connection ~ 7150 8000
 Connection ~ 7150 4600

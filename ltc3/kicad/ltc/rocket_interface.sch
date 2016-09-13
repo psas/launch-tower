@@ -663,10 +663,10 @@ F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P408
+L CONN_01X02 P409
 U 1 1 56482BE5
 P 15800 7800
-F 0 "P408" H 15700 7950 50 0000 C CNN
+F 0 "P409" H 15700 7950 50 0000 C CNN
 F 1 "CONN_01x02" V 15900 7800 50 0000 C CNN
 F 2 "~" H 15800 7800 60 0001 C CNN
 F 3 "~" H 15800 7800 60 0000 C CNN
@@ -852,10 +852,10 @@ F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X10 P404
+L CONN_01X10 P408
 U 1 1 56752909
 P 1250 7400
-F 0 "P404" H 1250 7950 50 0000 C CNN
+F 0 "P408" H 1250 7950 50 0000 C CNN
 F 1 "MicroFit header" V 1350 7400 50 0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x05_Straight_43045-1028" H 1250 7400 60 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 1250 7400 60 0001 C CNN
@@ -1155,7 +1155,7 @@ F 6 "RC0805FR-075K1L" H 0 0 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    4000 7250
-	0    1    1    0  
+	0    1    1    0   
 $EndComp
 $Comp
 L R R419
@@ -1214,81 +1214,81 @@ $EndComp
 $Comp
 L SPST SW401
 U 1 1 572D4A24
-P 15600 6250
-F 0 "SW401" H 15600 6150 50 0000 C CNN
-F 1 "SPST" H 15600 6400 50 0000 C CNN
-F 2 "~" H 15620 6250 60 0001 C CNN
-F 3 "~" H 15620 6250 60 0000 C CNN
-F 4 "-" H 0 0 50 0001 C CNN "Mfg_Description"
-F 5 "-" H 0 0 50 0001 C CNN "Mfg_Name"
-F 6 "-" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "OFF-BOARD" H 0 0 50 0001 C CNN "Note"
-F 8 "-" H 0 0 50 0001 C CNN "Spec"
-	1    15600 6250
+P 15600 6300
+F 0 "SW401" H 15600 6200 50 0000 C CNN
+F 1 "SPST" H 15600 6450 50 0000 C CNN
+F 2 "~" H 15620 6300 60 0001 C CNN
+F 3 "~" H 15620 6300 60 0000 C CNN
+F 4 "-" H 0 50 50 0001 C CNN "Mfg_Description"
+F 5 "-" H 0 50 50 0001 C CNN "Mfg_Name"
+F 6 "-" H 0 50 50 0001 C CNN "Mfg_PN"
+F 7 "OFF-BOARD" H 0 50 50 0001 C CNN "Note"
+F 8 "-" H 0 50 50 0001 C CNN "Spec"
+	1    15600 6300
 	-1   0    0    1   
 $EndComp
 $Comp
 L BREAKER_1P M401
 U 1 1 572D4A2B
-P 15600 5850
-F 0 "M401" H 15600 5975 50 0000 C CNN
-F 1 "10A" H 15600 5775 50 0000 C CNN
-F 2 "~" H 15600 5850 50 0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/TE-W28_Series-Push_To_Reset_Fuseholder_Type_Thermal_Circuit_Breaker.pdf" H 15600 5850 50 0001 C CNN
-F 4 "10A 250VAC 32VDC" H 0 0 50 0001 C CNN "Mfg_Description"
-F 5 "TE" H 0 0 50 0001 C CNN "Mfg_Name"
-F 6 "W28-XQ1A-10" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "OFF-BOARD" H 0 0 50 0001 C CNN "Note"
-F 8 "-" H 0 0 50 0001 C CNN "Spec"
-	1    15600 5850
+P 15600 5900
+F 0 "M401" H 15600 6025 50 0000 C CNN
+F 1 "10A" H 15600 5825 50 0000 C CNN
+F 2 "~" H 15600 5900 50 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/TE-W28_Series-Push_To_Reset_Fuseholder_Type_Thermal_Circuit_Breaker.pdf" H 15600 5900 50 0001 C CNN
+F 4 "10A 250VAC 32VDC" H 0 50 50 0001 C CNN "Mfg_Description"
+F 5 "TE" H 0 50 50 0001 C CNN "Mfg_Name"
+F 6 "W28-XQ1A-10" H 0 50 50 0001 C CNN "Mfg_PN"
+F 7 "OFF-BOARD" H 0 50 50 0001 C CNN "Note"
+F 8 "-" H 0 50 50 0001 C CNN "Spec"
+	1    15600 5900
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P403
+L CONN_01X02 P402
 U 1 1 572D4A34
 P 13800 5950
-F 0 "P403" H 13600 6150 50 0000 L CNN
+F 0 "P402" H 13600 6150 50 0000 L CNN
 F 1 "MicroFit header" V 13900 5950 50 0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 13800 5950 50 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 13800 5950 50 0001 C CNN
 F 4 "2 pos vertical header" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Molex" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "43045-0228" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "to front panel" V 14000 5950 50 0001 C CIN "Note"
+F 7 "to front panel; mates to P403" V 14000 5950 50 0001 C CIN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    13800 5950
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P402
+L CONN_01X02 P403
 U 1 1 572D4A3C
-P 14750 5900
-F 0 "P402" H 14750 6100 50 0000 R CNN
-F 1 "MicroFit connector" V 14950 5900 50 0000 C CNN
-F 2 "~" H 14750 5900 50 0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-Micro_Fit_3_Family.pdf" H 14750 5900 50 0001 C CNN
-F 4 "2 pos connector" H 0 0 50 0001 C CNN "Mfg_Description"
-F 5 "Molex" H 0 0 50 0001 C CNN "Mfg_Name"
-F 6 "43025-0200" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "OFF-BOARD; mates to P403" V 14850 5900 50 0001 C CIN "Note"
-F 8 "-" H 0 0 50 0001 C CNN "Spec"
-	1    14750 5900
+P 14750 5950
+F 0 "P403" H 14750 6150 50 0000 R CNN
+F 1 "MicroFit connector" V 14950 5950 50 0000 C CNN
+F 2 "~" H 14750 5950 50 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-Micro_Fit_3_Family.pdf" H 14750 5950 50 0001 C CNN
+F 4 "2 pos connector" H 0 50 50 0001 C CNN "Mfg_Description"
+F 5 "Molex" H 0 50 50 0001 C CNN "Mfg_Name"
+F 6 "43025-0200" H 0 50 50 0001 C CNN "Mfg_PN"
+F 7 "OFF-BOARD; mates to P402" V 14850 5950 50 0001 C CIN "Note"
+F 8 "-" H 0 50 50 0001 C CNN "Spec"
+	1    14750 5950
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Jumper_NC_Small JP401
 U 1 1 572D4A47
-P 15600 6700
-F 0 "JP401" H 15600 6800 50 0000 C CNN
-F 1 "Banana Jack 1x2" H 15600 6800 50 0001 C CNN
-F 2 "~" H 15600 6700 50 0001 C CNN
-F 3 "~" H 15600 6700 50 0000 C CNN
-F 4 "-" H 0 0 50 0001 C CNN "Mfg_Description"
-F 5 "-" H 0 0 50 0001 C CNN "Mfg_Name"
-F 6 "-" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "Shorting Bar" H 15600 6650 50 0000 C CIN "Note"
-F 8 "-" H 0 0 50 0001 C CNN "Spec"
-	1    15600 6700
+P 15600 6750
+F 0 "JP401" H 15600 6850 50 0000 C CNN
+F 1 "Banana Jack 1x2" H 15600 6850 50 0001 C CNN
+F 2 "~" H 15600 6750 50 0001 C CNN
+F 3 "~" H 15600 6750 50 0000 C CNN
+F 4 "-" H 0 50 50 0001 C CNN "Mfg_Description"
+F 5 "-" H 0 50 50 0001 C CNN "Mfg_Name"
+F 6 "-" H 0 50 50 0001 C CNN "Mfg_PN"
+F 7 "Shorting Bar" H 15600 6700 50 0000 C CIN "Note"
+F 8 "-" H 0 50 50 0001 C CNN "Spec"
+	1    15600 6750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1340,33 +1340,33 @@ F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X02 P406
+L CONN_01X02 P404
 U 1 1 572EE19E
 P 13800 7800
-F 0 "P406" H 13600 8000 50 0000 L CNN
+F 0 "P404" H 13600 8000 50 0000 L CNN
 F 1 "MicroFit header" V 13900 7800 50 0000 C CNN
 F 2 "Connectors_Molex:Molex_Microfit3_Header_02x01_Straight_43045-0228" H 13800 7800 50 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-43045-Micro_Fit_3_dual_row_vertical_through_hole_header.pdf" H 13800 7800 50 0001 C CNN
 F 4 "2 pos vertical header" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Molex" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "43045-0228" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "to front panel" V 14000 7800 50 0001 C CIN "Note"
+F 7 "to front panel; mates to P405" V 14000 7800 50 0001 C CIN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    13800 7800
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_01X02 P407
+L CONN_01X02 P405
 U 1 1 572EE2CC
 P 14750 7800
-F 0 "P407" H 14750 8000 50 0000 R CNN
+F 0 "P405" H 14750 8000 50 0000 R CNN
 F 1 "MicroFit connector" V 14950 7800 50 0000 C CNN
 F 2 "~" H 14750 7800 50 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/Molex-Micro_Fit_3_Family.pdf" H 14750 7800 50 0001 C CNN
 F 4 "2 pos connector" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "Molex" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "43025-0200" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "OFF-BOARD; mates to P406" V 14850 7800 50 0001 C CIN "Note"
+F 7 "OFF-BOARD; mates to P404" V 14850 7800 50 0001 C CIN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    14750 7800
 	-1   0    0    -1  
@@ -1430,80 +1430,80 @@ F 7 "-" H 0 0 50 0001 C CNN "Spec"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X04 P409
+L CONN_01X04 P407
 U 1 1 572FA32D
 P 6900 8450
-F 0 "P409" V 7100 8650 50 0000 R CNN
+F 0 "P407" V 7100 8650 50 0000 R CNN
 F 1 "XH connector" V 7000 8650 50 0000 R CNN
 F 2 "~" H 6900 8450 50 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 6900 8450 50 0001 C CNN
 F 4 "4 pos connector" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "JST" H 0 0 50 0001 C CNN "Mfg_Name"
 F 6 "XHP-4" H 0 0 50 0001 C CNN "Mfg_PN"
-F 7 "OFF-BOARD; mates to P405" H 0 0 50 0001 C CNN "Note"
+F 7 "OFF-BOARD; mates to P406" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    6900 8450
 	0    -1   -1   0   
 $EndComp
 $Comp
-L CONN_01X04 P405
+L CONN_01X04 P406
 U 1 1 572FE813
 P 6900 7650
-F 0 "P405" V 7100 7850 50 0000 R CNN
+F 0 "P406" V 7100 7850 50 0000 R CNN
 F 1 "XH header" V 7000 7850 50 0000 R CNN
-F 2 "Connectors_JST:JST_XH_B04B-XH-A_02x2.50mm_Straight" H 6900 7650 50 0001 C CNN
+F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 6900 7650 50 0001 C CNN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/connectors/JST-XH-2.5mm_pitch_Disconnectable_Crimp_style_connectors.pdf" H 6900 7650 50 0001 C CNN
 F 4 "4 pos vertical header" H 0 150 50 0001 C CNN "Mfg_Description"
 F 5 "JST" H 0 150 50 0001 C CNN "Mfg_Name"
 F 6 "B4B-XH-A(LF)(SN)" H 0 150 50 0001 C CNN "Mfg_PN"
-F 7 "to front panel" H 0 150 50 0001 C CNN "Note"
+F 7 "to front panel; mates to P407" H 0 150 50 0001 C CNN "Note"
 F 8 "-" H 0 150 50 0001 C CNN "Spec"
 	1    6900 7650
 	0    -1   1    0   
 $EndComp
 $Comp
-L Q_NMOS_SOT26 Q402
+L PMV45EN Q402
 U 1 1 573012D7
 P 6650 6100
 F 0 "Q402" H 6500 6300 50 0000 L CNN
-F 1 "ZVN4525E6" V 6900 6100 50 0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 6850 6200 50 0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Diodes_Inc-ZVN4525E6-250V_N_Channel_Enhancement_Mode_MOSFET.pdf" H 6650 6100 50 0001 C CNN
-F 4 "MOSFET N-CH 250V 230MA" H 0 -100 50 0001 C CNN "Mfg_Description"
-F 5 "Diodes, Inc." H 0 -100 50 0001 C CNN "Mfg_Name"
-F 6 "ZVN4525E6TA" H 0 -100 50 0001 C CNN "Mfg_PN"
+F 1 "PMV45EN" V 6900 6100 50 0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6850 6200 50 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/NXP-PMV45EN-N_Channel_TrenchMOS_logic_level_FET.pdf" H 6650 6100 50 0001 C CNN
+F 4 "MOSFET N-CH 30V" H 0 -100 50 0001 C CNN "Mfg_Description"
+F 5 "NXP" H 0 -100 50 0001 C CNN "Mfg_Name"
+F 6 "PMV45EN2R" H 0 -100 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 -100 50 0001 C CNN "Note"
 F 8 "-" H 0 -100 50 0001 C CNN "Spec"
 	1    6650 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_SOT26 Q403
+L PMV45EN Q403
 U 1 1 57301362
 P 7400 6100
 F 0 "Q403" H 7250 6300 50 0000 L CNN
-F 1 "ZVN4525E6" V 7650 6100 50 0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 7600 6200 50 0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Diodes_Inc-ZVN4525E6-250V_N_Channel_Enhancement_Mode_MOSFET.pdf" H 7400 6100 50 0001 C CNN
-F 4 "MOSFET N-CH 250V 230MA" H 0 -100 50 0001 C CNN "Mfg_Description"
-F 5 "Diodes, Inc." H 0 -100 50 0001 C CNN "Mfg_Name"
-F 6 "ZVN4525E6TA" H 0 -100 50 0001 C CNN "Mfg_PN"
+F 1 "PMV45EN" V 7650 6100 50 0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7600 6200 50 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/NXP-PMV45EN-N_Channel_TrenchMOS_logic_level_FET.pdf" H 7400 6100 50 0001 C CNN
+F 4 "MOSFET N-CH 30V" H 0 -100 50 0001 C CNN "Mfg_Description"
+F 5 "NXP" H 0 -100 50 0001 C CNN "Mfg_Name"
+F 6 "PMV45EN2R" H 0 -100 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 -100 50 0001 C CNN "Note"
 F 8 "-" H 0 -100 50 0001 C CNN "Spec"
 	1    7400 6100
 	1    0    0    -1  
 $EndComp
 $Comp
-L Q_NMOS_SOT26 Q404
+L PMV45EN Q404
 U 1 1 5730144D
 P 8150 6100
 F 0 "Q404" H 8000 6300 50 0000 L CNN
-F 1 "ZVN4525E6" V 8400 6100 50 0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 8350 6200 50 0001 C CNN
-F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/Diodes_Inc-ZVN4525E6-250V_N_Channel_Enhancement_Mode_MOSFET.pdf" H 8150 6100 50 0001 C CNN
-F 4 "MOSFET N-CH 250V 230MA" H 0 -100 50 0001 C CNN "Mfg_Description"
-F 5 "Diodes, Inc." H 0 -100 50 0001 C CNN "Mfg_Name"
-F 6 "ZVN4525E6TA" H 0 -100 50 0001 C CNN "Mfg_PN"
+F 1 "PMV45EN" V 8400 6100 50 0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 8350 6200 50 0001 C CNN
+F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/NXP-PMV45EN-N_Channel_TrenchMOS_logic_level_FET.pdf" H 8150 6100 50 0001 C CNN
+F 4 "MOSFET N-CH 30V" H 0 -100 50 0001 C CNN "Mfg_Description"
+F 5 "NXP" H 0 -100 50 0001 C CNN "Mfg_Name"
+F 6 "PMV45EN2R" H 0 -100 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 -100 50 0001 C CNN "Note"
 F 8 "-" H 0 -100 50 0001 C CNN "Spec"
 	1    8150 6100
@@ -1556,12 +1556,12 @@ L R R416
 U 1 1 5730D8C8
 P 6350 6400
 F 0 "R416" H 6420 6446 50 0000 L CNN
-F 1 "30k" H 6420 6355 50 0000 L CNN
+F 1 "10k" H 6420 6355 50 0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 6280 6400 50 0001 C CNN
 F 3 "~" H 6350 6400 50 0000 C CNN
 F 4 "1% 1/8W" H 0 -100 50 0001 C CNN "Mfg_Description"
 F 5 "Yageo" H 0 -100 50 0001 C CNN "Mfg_Name"
-F 6 "RC0805FR-0730KL" H 0 -100 50 0001 C CNN "Mfg_PN"
+F 6 "RC0805FR-0710KL" H 0 -100 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 -100 50 0001 C CNN "Note"
 F 8 "-" H 0 -100 50 0001 C CNN "Spec"
 	1    6350 6400
@@ -1572,12 +1572,12 @@ L R R417
 U 1 1 5730EB7B
 P 7100 6400
 F 0 "R417" H 7170 6446 50 0000 L CNN
-F 1 "30k" H 7170 6355 50 0000 L CNN
+F 1 "10k" H 7170 6355 50 0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 7030 6400 50 0001 C CNN
 F 3 "~" H 7100 6400 50 0000 C CNN
 F 4 "1% 1/8W" H 0 -100 50 0001 C CNN "Mfg_Description"
 F 5 "Yageo" H 0 -100 50 0001 C CNN "Mfg_Name"
-F 6 "RC0805FR-0730KL" H 0 -100 50 0001 C CNN "Mfg_PN"
+F 6 "RC0805FR-0710KL" H 0 -100 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 -100 50 0001 C CNN "Note"
 F 8 "-" H 0 -100 50 0001 C CNN "Spec"
 	1    7100 6400
@@ -1588,12 +1588,12 @@ L R R418
 U 1 1 5730EC91
 P 7850 6400
 F 0 "R418" H 7920 6446 50 0000 L CNN
-F 1 "30k" H 7920 6355 50 0000 L CNN
+F 1 "10k" H 7920 6355 50 0000 L CNN
 F 2 "Resistors_SMD:R_0805" V 7780 6400 50 0001 C CNN
 F 3 "~" H 7850 6400 50 0000 C CNN
 F 4 "1% 1/8W" H 0 -100 50 0001 C CNN "Mfg_Description"
 F 5 "Yageo" H 0 -100 50 0001 C CNN "Mfg_Name"
-F 6 "RC0805FR-0730KL" H 0 -100 50 0001 C CNN "Mfg_PN"
+F 6 "RC0805FR-0710KL" H 0 -100 50 0001 C CNN "Mfg_PN"
 F 7 "-" H 0 -100 50 0001 C CNN "Note"
 F 8 "-" H 0 -100 50 0001 C CNN "Spec"
 	1    7850 6400
@@ -1641,7 +1641,7 @@ F 2 "TO_SOT_Packages_SMD:SOT-23" H 15750 2675 50 0001 L CIN
 F 3 "https://github.com/psas/launch-tower/blob/master/ltc3/doc/datasheets/semiconductors/NXP-PMV45EN-N_Channel_TrenchMOS_logic_level_FET.pdf" H 15550 2750 50 0001 L CNN
 F 4 "MOSFET N-CH 30V" H 0 0 50 0001 C CNN "Mfg_Description"
 F 5 "NXP" H 15550 2750 60 0001 C CNN "Mfg_Name"
-F 6 "PMV45EN" H 15550 2750 60 0001 C CNN "Mfg_PN"
+F 6 "PMV45EN2R" H 15550 2750 60 0001 C CNN "Mfg_PN"
 F 7 "-" H 15550 2750 60 0001 C CNN "Note"
 F 8 "-" H 15550 2750 60 0001 C CNN "Spec"
 	1    15550 2750
@@ -1661,7 +1661,7 @@ F 6 "RC0805JR-070RL" H 0 0 50 0001 C CNN "Mfg_PN"
 F 7 "Dialight LED may not require ext. R" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    6750 7100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L R R423
@@ -1677,7 +1677,7 @@ F 6 "RC0805JR-070RL" H 0 0 50 0001 C CNN "Mfg_PN"
 F 7 "Dialight LED may not require ext. R" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    7100 6900
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L R R425
@@ -1693,7 +1693,7 @@ F 6 "RC0805JR-070RL" H 0 0 50 0001 C CNN "Mfg_PN"
 F 7 "Dialight LED may not require ext. R" H 0 0 50 0001 C CNN "Note"
 F 8 "-" H 0 0 50 0001 C CNN "Spec"
 	1    7350 7100
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Text Notes 3850 10350 0    60   ~ 0
 Bypass Capacitors\n(one per IC VCC)
@@ -1774,37 +1774,37 @@ Wire Wire Line
 Wire Notes Line
 	14200 5350 9150 5350
 Wire Wire Line
-	15100 5950 14950 5950
+	15100 6000 14950 6000
 Wire Wire Line
-	15100 6900 15100 5950
+	15100 6950 15100 6000
 Wire Wire Line
-	16000 6900 15100 6900
+	16000 6950 15100 6950
 Wire Wire Line
-	16000 6700 16000 6900
+	16000 6750 16000 6950
 Wire Wire Line
-	15700 6700 16000 6700
+	15700 6750 16000 6750
 Wire Wire Line
-	15250 6700 15500 6700
+	15250 6750 15500 6750
 Wire Wire Line
-	15250 6500 15250 6700
+	15250 6550 15250 6750
 Wire Wire Line
-	16000 6500 15250 6500
+	16000 6550 15250 6550
 Wire Wire Line
-	16000 6250 16000 6500
+	16000 6300 16000 6550
 Wire Wire Line
-	15800 6250 16000 6250
+	15800 6300 16000 6300
 Wire Wire Line
-	15250 6250 15400 6250
+	15250 6300 15400 6300
 Wire Wire Line
-	15250 6050 15250 6250
+	15250 6100 15250 6300
 Wire Wire Line
-	16000 6050 15250 6050
+	16000 6100 15250 6100
 Wire Wire Line
-	16000 5850 16000 6050
+	16000 5900 16000 6100
 Wire Wire Line
-	15850 5850 16000 5850
+	15850 5900 16000 5900
 Wire Wire Line
-	15350 5850 14950 5850
+	15350 5900 14950 5900
 Wire Notes Line
 	16150 8450 14450 8450
 Wire Notes Line
@@ -2232,21 +2232,15 @@ Wire Wire Line
 Wire Wire Line
 	8250 5750 8250 5900
 Wire Wire Line
-	6350 5100 6350 6250
-Wire Wire Line
 	6750 7250 6750 7450
 Wire Wire Line
 	6750 6300 6750 6950
 Wire Wire Line
 	7100 5150 7100 6250
 Wire Wire Line
-	7100 6100 7200 6100
-Wire Wire Line
 	8850 5200 7850 5200
 Wire Wire Line
 	7850 5200 7850 6250
-Wire Wire Line
-	7850 6100 7950 6100
 Wire Wire Line
 	7500 6300 7500 6900
 Wire Wire Line
@@ -2291,8 +2285,6 @@ Wire Notes Line
 	8600 10050 6150 10050
 Wire Notes Line
 	6150 10050 6150 8050
-Wire Wire Line
-	6350 6100 6450 6100
 Wire Notes Line
 	8900 4750 8900 700 
 Wire Wire Line
@@ -2315,6 +2307,14 @@ Wire Wire Line
 	15550 1000 15300 1000
 Wire Wire Line
 	15300 1000 15300 900 
+Wire Wire Line
+	6350 5100 6350 6250
+Wire Wire Line
+	6450 6150 6350 6150
+Wire Wire Line
+	7200 6150 7100 6150
+Wire Wire Line
+	7950 6150 7850 6150
 Connection ~ 11200 6350
 Connection ~ 11200 5750
 Connection ~ 12200 2000
@@ -2368,13 +2368,13 @@ Connection ~ 6750 5750
 Connection ~ 7500 5750
 Connection ~ 10200 7750
 Connection ~ 10050 6800
-Connection ~ 6350 6100
-Connection ~ 7100 6100
-Connection ~ 7850 6100
 Connection ~ 7100 6700
 Connection ~ 7850 6700
 Connection ~ 7850 7300
 Connection ~ 15300 1200
 Connection ~ 15300 1100
 Connection ~ 15300 900 
+Connection ~ 6350 6150
+Connection ~ 7100 6150
+Connection ~ 7850 6150
 $EndSCHEMATC
