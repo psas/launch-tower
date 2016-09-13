@@ -2503,4 +2503,24 @@ Wire Wire Line
 	16200 2900 16200 950 
 Wire Wire Line
 	16200 950  14300 950 
+Wire Wire Line
+	5450 2600 5500 2600
+Wire Wire Line
+	5500 2600 5500 2700
+Connection ~ 5500 2700
+Wire Wire Line
+	6050 2600 6000 2600
+Wire Wire Line
+	6000 2600 6000 2700
+Connection ~ 6000 2700
+Wire Wire Line
+	5450 3900 5500 3900
+Wire Wire Line
+	5500 3900 5500 3800
+Connection ~ 5500 3800
+Wire Wire Line
+	6050 3900 6000 3900
+Wire Wire Line
+	6000 3900 6000 3800
+Connection ~ 6000 3800
 $EndSCHEMATC
