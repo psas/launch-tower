@@ -1,3 +1,0 @@
-# Launch Tower Computer Gerbers
-
-This directory contains Gerber design files for the LTC3 main board.

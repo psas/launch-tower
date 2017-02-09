@@ -1,4 +1,0 @@
-# Cell Protection Gerbers
-
-This directory contains Gerber design files for the LTC3 cell
-protection board.
