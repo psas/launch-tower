@@ -24,3 +24,5 @@ Remaining
 7. Create some proof-of-concept software that can at least twiddle the
    various GPIOs, relays, etc.
 8. Devise a test plan for each board.
+9. Move sym-lib-table and fp-lib-table files to ./lt3/kicad and symlink
+   them from KiCad project dirs.
