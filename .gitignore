@@ -1,6 +1,7 @@
+# vim Turds
+*.sw[op]
+*.vim
+
 *.*#*
-*.swp
-*[.-]bak
-*[.-]bck
 _autosave-*
 _saved_*
