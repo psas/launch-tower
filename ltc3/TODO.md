@@ -4,17 +4,17 @@ More or less in order of priority.  Many tasks can be completed in
 parallel.
 
 
+## Pending
+
 * Finish off-board schematic.  [Paul]
 
 * Update design files and BOMs (parts subsitutions made during board
   assembly; layout errors discovered; etc.)  [Paul]
-  * Replace PI2127 ideal diodes with single SPDT toggle switch.
   * Fix air-trace on LTC3.
-  * Tag commit that contains the design files (and Gerbers) from which
-    the rev 1 boards were made.
  
 * Figure out how to replace PI2127 ideal diodes on charge controller
   with an off-board switch and mod wires.  [Andy]
+  * Update schematic.
 
 * Assemble LTC3 board.  [Andy]
 
@@ -37,3 +37,9 @@ parallel.
 
 * Create some proof-of-concept software that can at least twiddle the
   various GPIOs, relays, etc.  [Paul]
+
+
+## Done
+
+* Tag commit that contains the design files (and Gerbers) from which
+  the rev 1 boards were made.  [Paul]
