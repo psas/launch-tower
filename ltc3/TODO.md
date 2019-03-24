@@ -10,7 +10,6 @@ parallel.
 
 * Update design files and BOMs (parts subsitutions made during board
   assembly; layout errors discovered; etc.)  [Paul]
-  * Fix air-trace on LTC3.
  
 * Figure out how to replace PI2127 ideal diodes on charge controller
   with an off-board switch and mod wires.  [Andy]
@@ -43,3 +42,4 @@ parallel.
 
 * Tag commit that contains the design files (and Gerbers) from which
   the rev 1 boards were made.  [Paul]
+* Fix air-trace on LTC board layout.  [Paul]
