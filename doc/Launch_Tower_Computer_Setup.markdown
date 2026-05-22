@@ -16,10 +16,14 @@
  1. Update the package list `apt-get update`
  2. Install all updates. `apt-get upgrade`
  3. Update password to the PSAS standard with `passwd`
- 4. Install the phidgets library and webservice
- 5. Check that launch-tower-comm runs and connects without errors using the prefconfigured usb network on the bbb
+ 4. Install the [phidgets](https://www.phidgets.com/docs/Phidget22admin_Guide) library and webservice
+ 5. Check that [launch-tower-comm](https://github.com/psas/launch-tower-comm) runs and connects without errors using the prefconfigured usb network on the bbb
+
 
 ## Configure Systemd Networkd
+
+[Systemd Networkd](https://man7.org/linux/man-pages/man8/systemd-networkd.8.html)
+
  1. Create a link file to give a persistent name to the network interface
 
  eg. /etc/systemd/network/10-wifi-dongle.link
@@ -43,6 +47,9 @@
  This will tell systemd to give this interface a static ip address, and let hostapd control it.
 
 ## Configure Hostapd
+
+[hostapd](https://manpages.debian.org/testing/hostapd/hostapd.8.en.html)
+
  1. Edit /etc/hostapd/hostapd.conf
 
  ```

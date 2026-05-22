@@ -40,5 +40,3 @@ Contents
 - ltc3
    - Everything related to the design and manufacture of the third generation launch tower computer, LTC3. 
 
-- os
-   - Everything needed to bring up a fresh, bootable Debian GNU/Linux system, just the way we like it.
